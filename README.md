@@ -10,7 +10,7 @@ interface, a command-line interface, automated tests, and sample results.
 ## 1. Install and run
 
 Use **Python 3.10 or later**; this project was tested with Python 3.12.14 and
-Matplotlib 3.10.8. Open a terminal in the extracted `Swingpoints_project` folder.
+Matplotlib 3.10.8. Open a terminal in the extracted `swingpoints_project` folder.
 
 On macOS/Linux:
 
