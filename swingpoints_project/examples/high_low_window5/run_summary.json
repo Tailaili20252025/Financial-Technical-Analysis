@@ -1,0 +1,14 @@
+{
+  "source_name": "data.json",
+  "source_sha256": "c0613f68f5141d02d110c94ccf05bdb021efeda5d5534446ea4e27b12e4eb71f",
+  "observed_bars": 374,
+  "first_timestamp": "2023-05-19T09:16:00",
+  "last_timestamp": "2023-05-19T15:29:00",
+  "window": 5,
+  "basis": "high-low",
+  "swing_highs": 18,
+  "swing_lows": 22,
+  "intervals_not_one_minute": 0,
+  "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
+  "gap_policy": "No filling; window counts observations, including across gaps/sessions."
+}

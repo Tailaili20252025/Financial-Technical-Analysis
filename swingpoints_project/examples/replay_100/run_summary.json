@@ -1,0 +1,14 @@
+{
+  "source_name": "data.csv",
+  "source_sha256": "76fc3a3bfb9b48b6c8baa85b858a7a8cdfbbd8d07e8078865f0c9794af7d4d7e",
+  "observed_bars": 100,
+  "first_timestamp": "2023-05-19T09:16:00",
+  "last_timestamp": "2023-05-19T10:55:00",
+  "window": 2,
+  "basis": "close",
+  "swing_highs": 13,
+  "swing_lows": 12,
+  "intervals_not_one_minute": 0,
+  "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
+  "gap_policy": "No filling; window counts observations, including across gaps/sessions."
+}
