@@ -5,12 +5,12 @@ A documented Python implementation of **Steps 1 and 2** in the supplied
 display local swing highs and lows. Includes CSV and JSON examples, a desktop
 interface, a command-line interface, automated tests, and sample results.
 
-Start with `QUICKSTART_ZH.md` if you prefer the beginner instructions in Chinese.
+
 
 ## 1. Install and run
 
 Use **Python 3.10 or later**; this project was tested with Python 3.12.14 and
-Matplotlib 3.10.8. Open a terminal in the extracted `swingpoints_project` folder.
+Matplotlib 3.10.8. Open a terminal in the extracted `Swingpoints_project` folder.
 
 On macOS/Linux:
 
