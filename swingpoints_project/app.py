@@ -9,15 +9,16 @@ from swingpoints import DataError, detect_swings, load_prices
 
 def positive_integer(value: str) -> int:
     """
-    Check if the argument is positive and greater than 1
+    Convert an input string to an integer greater than or equal to 1.
+
     Args:
-        value - integer valuea as a string 
+        value (str): The command-line argument to convert.
 
     Result:
-        Integer represenation
+        int: The converted integer, which is at least 1.
+
     Exception:
-        ValueError if value<1
-        ValueError if value is not Integer
+        argparse.ArgumentTypeError: If conversion fails or the integer is below 1.
     """
     try:
         number = int(value)
@@ -29,6 +30,24 @@ def positive_integer(value: str) -> int:
 
 
 def main(argv=None) -> int:
+    """
+    Parse command-line options and run the price analysis or desktop interface.
+
+    CLI mode loads prices, optionally limits the observed history, detects swings,
+    plots the results and saves four output files. GUI mode starts the Tk event
+    loop. Existing result files in the selected output directory are replaced.
+
+    Args:
+        argv (list[str] or None): Arguments without the script name. None uses
+            the arguments supplied to the current Python process.
+
+    Result:
+        int: 0 on success, or 1 for handled loading, analysis, export or GUI errors.
+
+    Exception:
+        SystemExit: Raised by argparse for help (0) or invalid arguments (2).
+        Handled runtime errors are printed to standard error and return 1.
+    """
     parser = argparse.ArgumentParser(description="Steps 1-2: load CSV/JSON, plot prices and causal swing points.")
     parser.add_argument("input", nargs="?", type=Path, help="CSV or JSON price file")
     parser.add_argument("--window", type=positive_integer, default=2, help="bars on each side of a pivot (default: 2)")
