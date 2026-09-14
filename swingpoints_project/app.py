@@ -8,6 +8,17 @@ from swingpoints import DataError, detect_swings, load_prices
 
 
 def positive_integer(value: str) -> int:
+    """
+    Check if the argument is positive and greater than 1
+    Args:
+        value - integer valuea as a string 
+
+    Result:
+        Integer represenation
+    Exception:
+        ValueError if value<1
+        ValueError if value is not Integer
+    """
     try:
         number = int(value)
         if number < 1:
