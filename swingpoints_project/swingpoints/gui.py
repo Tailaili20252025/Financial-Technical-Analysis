@@ -11,12 +11,13 @@ from .data import DataError, load_prices
 from .detector import detect_swings
 from .output import export_results
 from .plotting import draw_prices
+from .trendlines import TrendSettings, detect_trendlines, select_trendlines
 
 
 class SwingApp:
     """File picker, configurable detector, historical cutoff, chart and table."""
 
-    def __init__(self, root, window=2, basis="close", output=Path("output")):
+    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None):
         """
         Build the desktop controls, chart canvas and swing-results table.
 
@@ -27,6 +28,7 @@ class SwingApp:
             root (tkinter.Tk): Existing Tk root window.
             window (int): Initial detector window shown in the controls; default is 2.
             basis (str): Initial price basis; default is 'close'.
+            settings (TrendSettings or None): Initial trendline settings.
             output (Path): Initial export-directory preference; default is Path("output").
 
         Result:
@@ -37,8 +39,8 @@ class SwingApp:
         """
         self.root, self.output = root, output
         self.bars, self.source, self.current_run = [], None, None
-        root.title("SwingPoints | Steps 1-2")
-        root.geometry("1250x850")
+        root.title("SwingPoints | Steps 1-3")
+        root.geometry("1350x950")
         controls = ttk.Frame(root, padding=8)
         controls.pack(fill="x")
         ttk.Button(controls, text="Open CSV / JSON", command=self.choose_file).pack(side="left", padx=4)
@@ -56,14 +58,39 @@ class SwingApp:
         ttk.Button(controls, text="Next bar", command=self.next_bar).pack(side="left", padx=4)
         self.export_button = ttk.Button(controls, text="Export visible results", command=self.export, state="disabled")
         self.export_button.pack(side="left", padx=8)
+        settings = settings or TrendSettings()
+        trend_controls = ttk.Frame(root, padding=(8, 2))
+        trend_controls.pack(fill="x")
+        self.trend_tolerance = tk.StringVar(value=str(settings.tolerance_percent))
+        self.trend_lookback = tk.StringVar(value=str(settings.lookback))
+        self.min_touches = tk.StringVar(value=str(settings.min_touches))
+        self.max_lines = tk.StringVar(value=str(settings.max_per_direction))
+        for label, variable in (("Trend tolerance (%)", self.trend_tolerance),
+                                ("Anchor lookback", self.trend_lookback),
+                                ("Min touches", self.min_touches), ("Max lines / direction", self.max_lines)):
+            ttk.Label(trend_controls, text=label).pack(side="left", padx=(8, 4))
+            ttk.Entry(trend_controls, textvariable=variable, width=6).pack(side="left")
         self.status = tk.StringVar(value="Open a CSV or JSON file. Window = bars on each side; all timestamps refer to completed bars.")
         ttk.Label(root, textvariable=self.status, padding=(12, 6)).pack(fill="x")
         self.figure = Figure(figsize=(12, 5.2))
         self.canvas = FigureCanvasTkAgg(self.figure, master=root)
         self.canvas.get_tk_widget().pack(fill="both", expand=True)
         NavigationToolbar2Tk(self.canvas, root).update()
-        table_frame = ttk.Frame(root, padding=(10, 4))
-        table_frame.pack(fill="x")
+        notebook = ttk.Notebook(root)
+        notebook.pack(fill="x", padx=10, pady=4)
+        table_frame = ttk.Frame(notebook)
+        notebook.add(table_frame, text="Confirmed swings")
+        trend_frame = ttk.Frame(notebook)
+        notebook.add(trend_frame, text="Displayed trendlines")
+        trend_columns = ("line_id", "direction", "anchor1_bar", "anchor2_bar", "created_bar", "touch_count", "status", "broken_bar")
+        self.trend_table = ttk.Treeview(trend_frame, columns=trend_columns, show="headings", height=7)
+        for col in trend_columns:
+            self.trend_table.heading(col, text=col.replace("_", " ").title())
+            self.trend_table.column(col, width=130, anchor="center")
+        trend_scrollbar = ttk.Scrollbar(trend_frame, orient="vertical", command=self.trend_table.yview)
+        self.trend_table.configure(yscrollcommand=trend_scrollbar.set)
+        self.trend_table.pack(side="left", fill="both", expand=True)
+        trend_scrollbar.pack(side="right", fill="y")
         columns = ("kind", "price", "pivot_bar", "pivot_time", "confirmed_bar", "confirmed_at")
         self.table = ttk.Treeview(table_frame, columns=columns, show="headings", height=7)
         for col in columns:
@@ -120,7 +147,7 @@ class SwingApp:
 
     def refresh(self):
         """
-        Recalculate and display swings for the selected observed-bar prefix.
+        Recalculate swings and trendlines for the selected observed-bar prefix.
 
         Reads settings from the interface. If no data has been loaded, an information
         dialog is shown. Only confirmed events within the selected prefix are displayed.
@@ -146,23 +173,32 @@ class SwingApp:
                 raise ValueError(f"Observed bars must be between 1 and {len(self.bars)}.")
             visible = self.bars[:count]
             basis = self.basis.get()
+            settings = TrendSettings(float(self.trend_tolerance.get()), int(self.trend_lookback.get()),
+                                     int(self.min_touches.get()), int(self.max_lines.get()))
             points = detect_swings(visible, window, basis)
+            lines = detect_trendlines(visible, points, settings)
+            selected = select_trendlines(lines, settings)
         except ValueError as exc:
             messagebox.showerror("Invalid settings", str(exc))
             return
-        draw_prices(self.figure, visible, points, window, basis, self.source.name)
+        draw_prices(self.figure, visible, points, window, basis, self.source.name, lines, settings)
         self.canvas.draw()
         self.table.delete(*self.table.get_children())
         for point in points:
             record = point.as_record()
             self.table.insert("", "end", values=[record[key] for key in self.table["columns"]])
-        self.current_run = (self.source, visible, points, window, basis)
+        self.trend_table.delete(*self.trend_table.get_children())
+        for line in selected:
+            record = line.as_record(visible, True)
+            self.trend_table.insert("", "end", values=[record[key] if record[key] is not None else ""
+                                                      for key in self.trend_table["columns"]])
+        self.current_run = (self.source, visible, points, window, basis, lines, settings)
         self.export_button.configure(state="normal")
         extra = " | Not enough history for this window" if count < 2*window+1 else ""
         if any((b.timestamp-a.timestamp).total_seconds() != 60 for a,b in zip(visible,visible[1:])):
             extra += " | Non-minute intervals present; windows count bars"
         self.status.set(f"{self.source.name} | {count}/{len(self.bars)} observed bars | {len(points)} confirmed swings | "
-                        f"Latest observed: {visible[-1].timestamp}{extra}")
+                        f"{len(selected)} displayed trendlines | Latest observed: {visible[-1].timestamp}{extra}")
 
     def next_bar(self):
         """
@@ -200,7 +236,7 @@ class SwingApp:
             None.
 
         Result:
-            None: Saves four result files and displays a success message. Does nothing
+            None: Saves six result files and displays a success message. Does nothing
                 when no run exists or the destination dialog is cancelled.
 
         Exception:
@@ -214,14 +250,14 @@ class SwingApp:
         if not folder:
             return
         try:
-            source, bars, points, window, basis = self.current_run
-            export_results(folder, source, bars, points, window, basis, self.figure)
-            messagebox.showinfo("Saved", f"Chart, swing table and run summary saved to:\n{folder}")
+            source, bars, points, window, basis, lines, settings = self.current_run
+            export_results(folder, source, bars, points, window, basis, self.figure, lines, settings)
+            messagebox.showinfo("Saved", f"Chart, swing/trendline tables and run summary saved to:\n{folder}")
         except (OSError, ValueError) as exc:
             messagebox.showerror("Cannot export", str(exc))
 
 
-def launch(path=None, window=2, basis="close", output=Path("output")):
+def launch(path=None, window=2, basis="close", output=Path("output"), settings=None):
     """
     Create the desktop application and run its Tk event loop.
 
@@ -245,7 +281,7 @@ def launch(path=None, window=2, basis="close", output=Path("output")):
         root = tk.Tk()
     except tk.TclError as exc:
         raise RuntimeError("Tk could not open a display. Install Python with Tk or use CLI mode.") from exc
-    app = SwingApp(root, window, basis, output)
+    app = SwingApp(root, window, basis, output, settings)
     if path:
         app.load(path)
     root.mainloop()

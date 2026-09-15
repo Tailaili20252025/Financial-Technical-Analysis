@@ -1,0 +1,26 @@
+{
+  "source_name": "data.csv",
+  "source_sha256": "76fc3a3bfb9b48b6c8baa85b858a7a8cdfbbd8d07e8078865f0c9794af7d4d7e",
+  "observed_bars": 374,
+  "first_timestamp": "2023-05-19T09:16:00",
+  "last_timestamp": "2023-05-19T15:29:00",
+  "window": 5,
+  "basis": "high-low",
+  "trend_settings": {
+    "tolerance_percent": 0.5,
+    "lookback": 20,
+    "min_touches": 2,
+    "max_per_direction": 3
+  },
+  "trendline_candidates": 51,
+  "trendlines_displayed": 6,
+  "trendlines_up": 28,
+  "trendlines_down": 23,
+  "trendline_timing_rule": "Created at second anchor confirmation; dashed segment is retrospective. Stop at first crossing beyond tolerance.",
+  "trendline_time_axis": "Elapsed minutes, including gaps; no extrapolation beyond observed history.",
+  "swing_highs": 18,
+  "swing_lows": 22,
+  "intervals_not_one_minute": 0,
+  "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
+  "gap_policy": "No filling; window counts observations, including across gaps/sessions."
+}

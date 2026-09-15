@@ -1,8 +1,8 @@
 # SwingPoints project
 
-A documented Python implementation of **Steps 1 and 2** in the supplied
+A documented Python implementation of **Steps 1, 2 and 3** in the supplied
 *Model Steps Complete.pdf*: read prices, plot Close/High/Low, and identify and
-display local swing highs and lows. Includes CSV and JSON examples, a desktop
+display local swing highs/lows and rising/falling trendlines. Includes CSV and JSON examples, a desktop
 interface, a command-line interface, automated tests, and sample results.
 
 Start with `QUICKSTART_ZH.md` if you prefer the beginner instructions in Chinese.
@@ -29,17 +29,19 @@ py -m venv .venv
 .\.venv\Scripts\python.exe app.py data/data.csv
 ```
 
-The default command saves four files in `output/`:
+The default command saves six files in `output/`:
 
 | File | Content |
 | --- | --- |
-| `prices.png` | Close, High and Low lines with swing and confirmation markers |
+| `prices.png` | Close, High and Low lines with swings and selected trendlines |
 | `swing_points.csv` | Swing results suitable for Excel or later Python work |
 | `swing_points.json` | The same results in machine-readable JSON |
-| `run_summary.json` | Input hash, observed range, settings and swing counts |
+| `trendlines.csv` | All accepted trendlines, touch counts, timing and displayed flag |
+| `trendlines.json` | The same trendline records in JSON |
+| `run_summary.json` | Input hash, observed range, settings, swing and trendline counts |
 
 Opening `output/prices.png` requires no Python graphical display. Re-running
-with the same output folder replaces those four results; use a different folder
+with the same output folder replaces those six results; use a different folder
 to keep multiple runs. The original input is never intentionally overwritten.
 
 ## 2. Desktop interface
@@ -58,7 +60,9 @@ Or `python app.py --gui` to start with a file picker. The interface provides:
 - **Next bar**: reveal one more observed bar, then recompute the same prefix.
 - **Export visible results**: save exactly the currently plotted run. Apply any
   changed settings first. Exports use the plotted settings, not unapplied edits.
-- A chart toolbar for zooming/panning and a table of pivot/confirmation times.
+- Trend tolerance, anchor lookback, minimum touches and maximum lines per direction.
+- A chart toolbar and separate tables for confirmed swings and displayed trendlines.
+- See [STEP3.md](STEP3.md) for exact trendline rules, settings and export fields.
 
 Tkinter is optional for the command-line workflow. Test your Python's Tk
 installation with `python -m tkinter`. If it is unavailable, use a Python
@@ -191,6 +195,7 @@ and display to the observed prefix; automated prefix tests enforce this rule.
 | `app.py` | Parses commands and runs loading, detection, plotting and export |
 | `swingpoints/data.py` | Defines a price bar; reads and validates CSV/JSON |
 | `swingpoints/detector.py` | Defines swing events and the streaming algorithm |
+| `swingpoints/trendlines.py` | Defines, validates and ranks rising/falling trendlines |
 | `swingpoints/plotting.py` | Draws price lines, pivots and confirmation times |
 | `swingpoints/output.py` | Writes charts, swing tables and metadata |
 | `swingpoints/gui.py` | Desktop controls and historical replay |
@@ -219,8 +224,9 @@ for completed_bar in bars:
 ```
 
 This milestone contains deterministic analysis, not machine learning or price
-prediction. Trendlines, breakout rules, trading decisions and later model steps
-are outside the requested implementation.
+prediction. Step 3 trendlines are implemented with explicit timing and tolerance rules.
+Later breakout-confirmation and prediction steps remain outside this milestone.
+See [STEP3.md](STEP3.md) for the algorithm and [TESTING.md](TESTING.md) for validation.
 
 ## 7. Tests and included results
 
@@ -245,18 +251,12 @@ Reproducible sample runs are included in `examples/`:
 These are descriptive counts, not performance scores. See `TESTING.md` for the
 executed validation and the remaining manual desktop checks.
 
-## 8. Git commit included in the download
+## 8. Step 3 source and branch history
 
-No external repository was supplied. The code is committed in a new local Git
-repository. The download includes `swingpoints.bundle`, a portable copy of that
-repository and commit history. To restore it after unzipping:
+This code extends the uploaded `Add-Step3` branch snapshot, which already includes
+function documentation from `Add-Function-Notation`. Upload the update files to
+`Add-Step3` and open a PR against the appropriate base described in the delivery guide.
 
-```bash
-git clone swingpoints.bundle swingpoints_committed
-cd swingpoints_committed
-git log -1 --oneline
-git status
-```
-
-The extracted source itself can be run immediately; restoring the bundle is
-only needed to inspect or continue the Git history. No GitHub push was made.
+The existing `swingpoints.bundle` and older example/output folders are retained
+as historical Step 1–2 artifacts. They do **not** contain this Step 3 revision.
+Use the current source files and `examples/step3_*` for this milestone.

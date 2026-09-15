@@ -5,6 +5,7 @@ import sys
 from pathlib import Path
 
 from swingpoints import DataError, detect_swings, load_prices
+from swingpoints.trendlines import TrendSettings, detect_trendlines, select_trendlines
 
 
 def positive_integer(value: str) -> int:
@@ -34,7 +35,7 @@ def main(argv=None) -> int:
     Parse command-line options and run the price analysis or desktop interface.
 
     CLI mode loads prices, optionally limits the observed history, detects swings,
-    plots the results and saves four output files. GUI mode starts the Tk event
+    plots the results and saves six output files. GUI mode starts the Tk event
     loop. Existing result files in the selected output directory are replaced.
 
     Args:
@@ -48,7 +49,7 @@ def main(argv=None) -> int:
         SystemExit: Raised by argparse for help (0) or invalid arguments (2).
         Handled runtime errors are printed to standard error and return 1.
     """
-    parser = argparse.ArgumentParser(description="Steps 1-2: load CSV/JSON, plot prices and causal swing points.")
+    parser = argparse.ArgumentParser(description="Steps 1-3: load CSV/JSON, plot prices, confirmed swings and trendlines.")
     parser.add_argument("input", nargs="?", type=Path, help="CSV or JSON price file")
     parser.add_argument("--window", type=positive_integer, default=2, help="bars on each side of a pivot (default: 2)")
     parser.add_argument("--basis", choices=["close", "high-low"], default="close", help="series used to detect swings")
@@ -56,13 +57,26 @@ def main(argv=None) -> int:
     parser.add_argument("--output", type=Path, default=Path("output"), help="output directory (default: output)")
     parser.add_argument("--show", action="store_true", help="also open a Matplotlib chart window")
     parser.add_argument("--gui", action="store_true", help="open desktop app with file picker, chart and table")
+    parser.add_argument("--trend-tolerance", type=float, default=0.5,
+                        help="touch/break tolerance as percent of first anchor price (default: 0.5)")
+    parser.add_argument("--trend-lookback", type=positive_integer, default=20,
+                        help="previous same-kind swings to try per second anchor (default: 20)")
+    parser.add_argument("--min-touches", type=positive_integer, default=2,
+                        help="minimum confirmed touches for displaying a line (at least 2)")
+    parser.add_argument("--max-trendlines", type=positive_integer, default=3,
+                        help="maximum displayed lines per direction (default: 3)")
     args = parser.parse_args(argv)
+    try:
+        settings = TrendSettings(args.trend_tolerance, args.trend_lookback,
+                                 args.min_touches, args.max_trendlines)
+    except ValueError as exc:
+        parser.error(str(exc))
     if args.gui:
         if args.show or args.until is not None:
             parser.error("--gui has its own chart and observed-bars control; omit --show and --until.")
         try:
             from swingpoints.gui import launch
-            launch(args.input, args.window, args.basis, args.output)
+            launch(args.input, args.window, args.basis, args.output, settings)
         except (ImportError, RuntimeError) as exc:
             print(f"Desktop interface unavailable: {exc}\nUse the command-line mode to save charts instead.", file=sys.stderr)
             return 1
@@ -83,12 +97,16 @@ def main(argv=None) -> int:
         from swingpoints.output import export_results
 
         points = detect_swings(bars, args.window, args.basis)
-        fig = plt.figure(figsize=(13, 7))
-        draw_prices(fig, bars, points, args.window, args.basis, args.input.name)
-        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig)
+        lines = detect_trendlines(bars, points, settings)
+        selected = select_trendlines(lines, settings)
+        fig = plt.figure(figsize=(14, 8))
+        draw_prices(fig, bars, points, args.window, args.basis, args.input.name, lines, settings)
+        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings)
         print(f"Loaded {len(bars)} bars: {bars[0].timestamp} to {bars[-1].timestamp}")
         print(f"Swing highs: {sum(p.kind == 'high' for p in points)} | Swing lows: {sum(p.kind == 'low' for p in points)}")
-        print(f"Saved chart, CSV/JSON swing table and summary to {output.resolve()}")
+        print(f"Trendlines: {len(lines)} accepted candidates | displayed: "
+              f"{sum(line.kind == 'up' for line in selected)} up / {sum(line.kind == 'down' for line in selected)} down")
+        print(f"Saved chart, CSV/JSON swing and trendline tables, and summary to {output.resolve()}")
         if len(bars) < 2*args.window + 1:
             print("Not enough bars for this window; no confirmed swings yet.")
         if any((b.timestamp-a.timestamp).total_seconds() != 60 for a,b in zip(bars,bars[1:])):

@@ -1,3 +1,10 @@
+# Step 3 更新提示
+
+程序现在会自动计算和绘制趋势线，原来的运行命令仍可使用。
+详见 [STEP3_ZH.md](STEP3_ZH.md) 的中文说明。每次运行现在输出六个文件，
+新增 `trendlines.csv` 和 `trendlines.json`。旧 `examples`/`output` 内容是历史结果；
+新示例在 `examples/step3_close_window2` 和 `examples/step3_high_low_window5`。
+
 # 如何运行和理解这个程序
 
 这个任务只完成老师 PDF 的前两步：读取数据并画价格图，计算并显示 Swing High / Low。
@@ -106,7 +113,7 @@ python app.py data/data.csv --until 100 --output output/first100
 python -m unittest discover -s tests -v
 ```
 
-看到 `Ran 15 tests` 和 `OK` 表示自动化检查通过。测试包括：
+看到 `Ran 34 tests` 和 `OK` 表示自动化检查通过。测试包括：
 已知例子的高低点、确认延迟、读取两种格式、错误数据处理，以及追加未来数据
 后不能改写此前已确认事件。
 
