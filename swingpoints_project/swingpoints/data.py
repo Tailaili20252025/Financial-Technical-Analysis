@@ -18,10 +18,15 @@ class DataError(ValueError):
 class Bar:
     """One completed bar. Timestamps retain the input's timezone convention."""
 
+    # timestamp: Timestamp of the completed bar; preserves the input timezone or naive time.
     timestamp: datetime
+    # high: Highest price in this bar, in the input price units.
     high: float
+    # low: Lowest price in this bar, in the input price units.
     low: float
+    # close: Closing price in this bar, in the input price units.
     close: float
+    # open: Opening price; None when the optional input field is absent.
     open: float | None = None
 
 

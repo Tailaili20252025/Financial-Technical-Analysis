@@ -37,15 +37,23 @@ class SwingApp:
         Exception:
             tkinter.TclError: If Tk cannot create or configure the interface.
         """
+        # root: Tk root window owning the widgets and application event loop.
+        # output: Preferred initial export directory; the user selects the actual destination.
         self.root, self.output = root, output
+        # bars: All validated bars in chronological order; empty until a file is loaded.
+        # source: Path of the loaded input file; None before a successful load.
+        # current_run: Last successful plot snapshot (source, bars, points, window, basis, lines, settings); None initially.
         self.bars, self.source, self.current_run = [], None, None
         root.title("SwingPoints | Steps 1-3")
         root.geometry("1350x950")
         controls = ttk.Frame(root, padding=8)
         controls.pack(fill="x")
         ttk.Button(controls, text="Open CSV / JSON", command=self.choose_file).pack(side="left", padx=4)
+        # window: StringVar for neighbours on each side; converted to an integer on Apply.
         self.window = tk.StringVar(value=str(window))
+        # basis: StringVar selecting "close" or "high-low" swing detection.
         self.basis = tk.StringVar(value=basis)
+        # cutoff: StringVar for the number of observed bars (1..len(bars)), not an index.
         self.cutoff = tk.StringVar(value="1")
         for label, variable, choices in (("Window", self.window, None), ("Swing basis", self.basis, ["close", "high-low"]),
                                          ("Observed bars", self.cutoff, None)):
@@ -56,23 +64,31 @@ class SwingApp:
                 ttk.Entry(controls, textvariable=variable, width=7).pack(side="left")
         ttk.Button(controls, text="Apply / replay", command=self.refresh).pack(side="left", padx=8)
         ttk.Button(controls, text="Next bar", command=self.next_bar).pack(side="left", padx=4)
+        # export_button: Export button; disabled until a successful analysis is displayed.
         self.export_button = ttk.Button(controls, text="Export visible results", command=self.export, state="disabled")
         self.export_button.pack(side="left", padx=8)
         settings = settings or TrendSettings()
         trend_controls = ttk.Frame(root, padding=(8, 2))
         trend_controls.pack(fill="x")
+        # trend_tolerance: StringVar holding tolerance in percent of the first anchor price.
         self.trend_tolerance = tk.StringVar(value=str(settings.tolerance_percent))
+        # trend_lookback: StringVar for the count of earlier same-kind anchor candidates.
         self.trend_lookback = tk.StringVar(value=str(settings.lookback))
+        # min_touches: StringVar for the minimum confirmed touches required for display.
         self.min_touches = tk.StringVar(value=str(settings.min_touches))
+        # max_lines: StringVar for the maximum displayed lines per direction.
         self.max_lines = tk.StringVar(value=str(settings.max_per_direction))
         for label, variable in (("Trend tolerance (%)", self.trend_tolerance),
                                 ("Anchor lookback", self.trend_lookback),
                                 ("Min touches", self.min_touches), ("Max lines / direction", self.max_lines)):
             ttk.Label(trend_controls, text=label).pack(side="left", padx=(8, 4))
             ttk.Entry(trend_controls, textvariable=variable, width=6).pack(side="left")
+        # status: StringVar bound to the status label showing the latest analysis summary.
         self.status = tk.StringVar(value="Open a CSV or JSON file. Window = bars on each side; all timestamps refer to completed bars.")
         ttk.Label(root, textvariable=self.status, padding=(12, 6)).pack(fill="x")
+        # figure: Matplotlib Figure containing prices, swing markers and trendlines.
         self.figure = Figure(figsize=(12, 5.2))
+        # canvas: FigureCanvasTkAgg that embeds the Matplotlib figure in the Tk window.
         self.canvas = FigureCanvasTkAgg(self.figure, master=root)
         self.canvas.get_tk_widget().pack(fill="both", expand=True)
         NavigationToolbar2Tk(self.canvas, root).update()
@@ -83,6 +99,7 @@ class SwingApp:
         trend_frame = ttk.Frame(notebook)
         notebook.add(trend_frame, text="Displayed trendlines")
         trend_columns = ("line_id", "direction", "anchor1_bar", "anchor2_bar", "created_bar", "touch_count", "status", "broken_bar")
+        # trend_table: Treeview listing selected displayed trendlines, not all exported candidates.
         self.trend_table = ttk.Treeview(trend_frame, columns=trend_columns, show="headings", height=7)
         for col in trend_columns:
             self.trend_table.heading(col, text=col.replace("_", " ").title())
@@ -92,6 +109,7 @@ class SwingApp:
         self.trend_table.pack(side="left", fill="both", expand=True)
         trend_scrollbar.pack(side="right", fill="y")
         columns = ("kind", "price", "pivot_bar", "pivot_time", "confirmed_bar", "confirmed_at")
+        # table: Treeview listing confirmed swings and separate pivot/confirmation times.
         self.table = ttk.Treeview(table_frame, columns=columns, show="headings", height=7)
         for col in columns:
             self.table.heading(col, text=col.replace("_", " ").title())

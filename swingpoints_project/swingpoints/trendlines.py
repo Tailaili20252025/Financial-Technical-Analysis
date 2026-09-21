@@ -18,9 +18,13 @@ from .detector import SwingPoint
 class TrendSettings:
     """Explicit project choices, not universal financial definitions."""
 
+    # tolerance_percent: Allowed price deviation as percent of the FIRST anchor price; 0.5 means 0.5%.
     tolerance_percent: float = 0.5
+    # lookback: Maximum number of earlier same-kind swings tried for each second anchor.
     lookback: int = 20
+    # min_touches: Minimum confirmed touches for display selection, not candidate creation.
     min_touches: int = 2
+    # max_per_direction: Maximum selected chart lines separately for up and down directions.
     max_per_direction: int = 3
 
     def __post_init__(self):
@@ -48,13 +52,21 @@ class TrendSettings:
 class TrendLine:
     """One observed candidate; indices are zero-based and slope is price/minute."""
 
+    # kind: Direction: "up" for rising support or "down" for falling resistance.
     kind: str
+    # first: Earlier confirmed swing anchor; defines the line origin and tolerance scale.
     first: SwingPoint
+    # second: Later anchor; its confirmation bar is the line creation time.
     second: SwingPoint
+    # slope: Fixed price change per elapsed minute, including overnight/session gaps.
     slope: float
+    # tolerance: Absolute price tolerance: first.price * tolerance_percent / 100.
     tolerance: float
+    # touches: Distinct same-kind swings within tolerance, confirmed before any first break.
     touches: tuple[SwingPoint, ...]
+    # broken_index: Zero-based first breach bar after creation; None if unbroken so far.
     broken_index: int | None
+    # observed_end: Zero-based final bar of this analysis prefix; not a future projection.
     observed_end: int
 
     @property

@@ -18,12 +18,19 @@ from .data import Bar
 class SwingPoint:
     """Indices are zero-based internally; exported bar numbers are one-based."""
 
+    # kind: Extremum type: "high" for a peak or "low" for a trough.
     kind: str
+    # price: Pivot price: Close, or High/Low according to basis.
     price: float
+    # pivot_index: Zero-based position of the pivot in the full observed bar sequence.
     pivot_index: int
+    # pivot_time: Timestamp of the original peak or trough, before confirmation.
     pivot_time: datetime
+    # confirmed_index: Zero-based bar position when the right-hand window completes.
     confirmed_index: int
+    # confirmed_at: Timestamp when this swing first becomes available to analysis.
     confirmed_at: datetime
+    # basis: Price selection: "close" for both kinds, or "high-low" for High/Low.
     basis: str
 
     def as_record(self) -> dict:
@@ -87,9 +94,13 @@ class SwingDetector:
             raise ValueError("window must be an integer of at least 1.")
         if basis not in ("close", "high-low"):
             raise ValueError("basis must be 'close' or 'high-low'.")
+        # window: Required neighbouring bars on EACH side; counts observations, not minutes.
         self.window = window
+        # basis: Extremum source: "close" or "high-low".
         self.basis = basis
+        # _bars: Rolling buffer of at most 2 * window + 1 completed bars, oldest first.
         self._bars = deque(maxlen=2 * window + 1)
+        # _index: Zero-based position of the latest consumed bar; -1 before the first update.
         self._index = -1
 
     def update(self, bar: Bar) -> list[SwingPoint]:
