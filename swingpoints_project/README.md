@@ -44,35 +44,127 @@ Opening `output/prices.png` requires no Python graphical display. Re-running
 with the same output folder replaces those six results; use a different folder
 to keep multiple runs. The original input is never intentionally overwritten.
 
-## 2. Desktop interface
+## 2. GUI - Tkinter usage and install
+
+Tkinter supplies the desktop window, controls and file dialogs. Matplotlib draws
+inside it through `FigureCanvasTkAgg`. The GUI runs the same Steps 1–3 as the CLI:
+load and validate data, detect confirmed swings, then calculate and plot trendlines.
+
+### Install and check Tkinter
+
+Use the Python environment created in Section 1. Tkinter requires Python's Tk
+support and a local graphical desktop; it is not installed by `requirements.txt`.
+Do not use `pip install tkinter` as a repair command.
+
+On macOS, open Terminal in `swingpoints_project` and run:
 
 ```bash
-python app.py --gui data/data.csv
+source .venv/bin/activate
+python --version
+python -m tkinter
 ```
 
-Or `python app.py --gui` to start with a file picker. The interface provides:
+A small demonstration window confirms that Tk is working. Close it before launching
+the application. If `_tkinter` or `tkinter` is missing, install a Python distribution
+with Tcl/Tk support. The python.org macOS installer includes it. Verify the new
+interpreter with `python3 -m tkinter` before creating a fresh environment:
 
-- **Open CSV / JSON**: choose an input file.
-- **Window**: number of bars on each side of the candidate pivot; initially 2.
-- **Swing basis**: `close` or `high-low`.
-- **Observed bars**: historical cutoff. Enter 100, then select **Apply / replay**
-  to show only the first 100 bars and swings confirmed by that point.
-- **Next bar**: reveal one more observed bar, then recompute the same prefix.
-- **Export visible results**: save exactly the currently plotted run. Apply any
-  changed settings first. Exports use the plotted settings, not unapplied edits.
-- Trend tolerance, anchor lookback, minimum touches and maximum lines per direction.
-- A chart toolbar and separate tables for confirmed swings and displayed trendlines.
-- See [STEP3.md](STEP3.md) for exact trendline rules, settings and export fields.
+```bash
+# Run outside the old virtual environment, using the verified Python interpreter.
+python3 -m venv .venv-tk
+source .venv-tk/bin/activate
+python -m pip install -r requirements.txt
+python -m tkinter
+```
 
-Tkinter is optional for the command-line workflow. Test your Python's Tk
-installation with `python -m tkinter`. If it is unavailable, use a Python
-installation built with Tk, or use the CLI to save PNG charts. The desktop
-interface requires a local graphical display.
+Creating another venv with the same Tk-less interpreter will not repair Tk.
+On Windows, use a full Python installation with Tcl/Tk support and test with
+`.\.venv\Scripts\python.exe -m tkinter`. On Linux, install your distribution's
+Tkinter package for the Python interpreter you use, then repeat the check.
 
-**Validation limitation:** this build environment had no display, so desktop
-controls were not interactively verified. The shared loading, detection,
-plotting and export workflow was tested through the CLI. A manual desktop
-checklist is in `TESTING.md`.
+Official references: [Python Tkinter documentation](https://docs.python.org/3/library/tkinter.html)
+and [Python on macOS with Tcl/Tk](https://www.python.org/download/mac/tcltk/).
+
+### Launch the application
+
+From `swingpoints_project`, with the environment active:
+
+```bash
+# Open the example data immediately.
+python app.py --gui data/data.csv
+
+# Or open an empty window, then click Open CSV / JSON.
+python app.py --gui
+```
+
+Windows PowerShell without activation:
+
+```powershell
+.\.venv\Scripts\python.exe app.py --gui data/data.csv
+```
+
+The terminal remains occupied until the GUI window is closed.
+
+### Controls and settings
+
+| Control | Meaning and use |
+| --- | --- |
+| Open CSV / JSON | Select and validate a file; a successful load analyses all its bars. |
+| Window | Neighbours required on each side of a pivot; default 2. At least `2 * window + 1` observed bars are needed for the first possible swing. |
+| Swing basis | `close` uses Close for peaks and troughs; `high-low` uses High for peaks and Low for troughs. |
+| Observed bars | Number of bars to analyse from the beginning of the sorted data, between 1 and the loaded count. |
+| Apply / replay | Validate current controls and recalculate the selected historical prefix. |
+| Next bar | Increase the observed count by one and recalculate with the current settings; stops at the last loaded bar. |
+| Trend tolerance (%) | Allowed deviation as a percentage of the first anchor price; default 0.5 means 0.5%, not 50%. |
+| Anchor lookback | Number of earlier same-kind swing anchors considered per later anchor; default 20. |
+| Min touches | Minimum confirmed touches for a line to be eligible for display; default 2. |
+| Max lines / direction | Display cap for each direction separately; default 3 up and 3 down. |
+| Export visible results | Select an existing destination folder and save the last successfully displayed analysis. |
+
+For replay, enter a smaller observed count, click **Apply / replay**, then click
+**Next bar**. Opening a file initially shows all bars, so reduce this count first.
+With `window=2`, a pivot becomes confirmed two observations after it occurs.
+
+The chart toolbar provides navigation, pan, zoom and figure saving. The **Confirmed
+swings** tab lists pivot and confirmation times; **Displayed trendlines** lists
+selected lines and break status. Export writes the six files in Section 1;
+trendline CSV/JSON includes all accepted candidates and a `displayed` flag.
+
+Click **Apply / replay** after editing settings and before exporting. Export uses
+the last successful plot snapshot, not unapplied control edits. Choose a separate
+folder for each dataset to avoid replacing a previous run's six output files.
+See [STEP3.md](STEP3.md) for the full trendline rules.
+
+### How gui.py connects the controls
+
+`launch()` creates `tk.Tk()`, builds `SwingApp`, optionally loads the input, then
+starts `root.mainloop()`. Buttons bind callbacks using `command=self.refresh`
+(without parentheses). `StringVar` connects text fields to Python values;
+`refresh()` reads and validates those values before analysing data. `canvas.draw()`
+redraws the plot; the two `Treeview` widgets display the result tables.
+
+Attributes are documented beside their first assignment. For example, `self.cutoff`
+is a bar count, while `self.current_run` stores the last successful export snapshot.
+The current callbacks run synchronously on the Tk thread; large datasets can make
+the interface temporarily unresponsive. Background processing is not implemented.
+
+### Troubleshooting and a short manual check
+
+- `python: command not found`: activate the virtual environment first.
+- `can't open file app.py`: change into the folder containing `app.py`.
+- `No module named matplotlib`: run `python -m pip install -r requirements.txt`
+  in the same environment used to launch the GUI.
+- `No module named _tkinter`: use the Tk-enabled interpreter described above.
+- `no display name` / Tk cannot open a display: run on a local desktop, or use
+  `python app.py data/data.csv` to produce a PNG without the GUI.
+- No swings or lines: check the observed count and settings; insufficient history
+  or no qualifying price pattern can legitimately produce an empty result.
+
+Manual check: open the sample CSV; apply 100 observed bars; advance to 101; change
+basis and apply; inspect both result tabs; export to a new folder and verify the
+six files. This checks actual window interaction, which automated CLI tests alone
+cannot establish. The development environment did not provide an interactive
+Tk desktop; see [TESTING.md](TESTING.md) for the existing test checklist.
 
 ## 3. Command-line examples
 

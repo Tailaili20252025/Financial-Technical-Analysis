@@ -58,15 +58,58 @@ JSON 输入运行方法：
 python app.py data/data.json --output output/json
 ```
 
-## 4. 打开可操作的窗口
+## 4. GUI：Tkinter 安装与使用
+
+在包含 `app.py` 的 `swingpoints_project` 文件夹打开终端。
+如果已经创建虚拟环境，依次运行：
+
+```bash
+source .venv/bin/activate
+python -m tkinter
+```
+
+出现小测试窗口说明 Tkinter 可用。关闭测试窗口，再启动程序：
 
 ```bash
 python app.py --gui data/data.csv
 ```
 
-你可以在窗口里选文件、修改 Window、切换检测依据，并导出结果。
-如果提示 Tkinter 或显示环境不可用，先使用第 3 步生成图片。
-开发环境没有图形显示器，因此窗口点击操作尚未现场验证；命令行流程已测试。
+也可以运行 `python app.py --gui`，然后点击 **Open CSV / JSON** 选文件。
+读取文件后会自动完成 Step 1–3，并显示全部数据的分析结果。
+
+1. **Window**：拐点左右各比较多少条数据，默认 2，不一定是两分钟。
+2. **Swing basis**：`close` 用收盘价；`high-low` 用最高价找高点、最低价找低点。
+3. **Observed bars**：只分析从头开始的前 N 条数据。输入 100，点击
+   **Apply / replay**，就只显示当时能够确认的结果。
+4. **Next bar**：再增加一条已观察数据并重新分析。读入文件时已显示全部数据，
+   因此要先减少 Observed bars 才能逐步回放。
+5. 趋势线设置依次是：容差百分比、向前考虑的同类 swing 数量、最少触点、
+   每个方向最多显示几条线。默认分别为 0.5、20、2、3。
+6. 下方两个标签页分别列出已确认的 swing points 和图中选中的 trendlines。
+7. 修改设置后先点击 **Apply / replay**，再点 **Export visible results**，
+   选择已建好的结果文件夹。保存的是上一次成功显示的结果，包括 PNG、
+   swing CSV/JSON、trendline CSV/JSON、run_summary.json 共六个文件。
+   不同数据请选择不同文件夹，同名结果文件会被覆盖。
+
+如果提示找不到 `tkinter` / `_tkinter`，不要运行 `pip install tkinter`。
+Mac 可安装 python.org 提供的带 Tcl/Tk 的 Python。在旧虚拟环境外，先确认
+新解释器的 `python3 -m tkinter` 能打开测试窗口，再建立新环境：
+
+```bash
+python3 -m venv .venv-tk
+source .venv-tk/bin/activate
+python -m pip install -r requirements.txt
+python app.py --gui data/data.csv
+```
+
+使用不带 Tk 的同一个 Python 重建环境不能解决这个问题。若终端提示
+`python: command not found`，先激活环境；若找不到 `app.py`，先进入项目目录。
+GUI 需要本地图形桌面；没有显示环境时仍可以用命令行导出图片。
+
+`gui.py` 中的 `SwingApp` 保存界面状态，按钮通过 `command=...` 调用相应方法，
+`StringVar` 保存输入框内容，Matplotlib 的 canvas 显示图形。当前分析在主线程
+同步执行，大数据运行期间窗口可能暂时不响应。开发环境未实际点击测试 GUI。
+英文安装说明、全部控件说明和排错见 [README 第 2 节](README.md#2-gui---tkinter-usage-and-install)。
 
 ## 5. Window 是什么意思
 
