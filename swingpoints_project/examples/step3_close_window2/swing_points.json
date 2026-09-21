@@ -1,0 +1,1012 @@
+[
+  {
+    "kind": "high",
+    "price": 369.0,
+    "pivot_bar": 3,
+    "pivot_time": "2023-05-19T09:18:00",
+    "confirmed_bar": 5,
+    "confirmed_at": "2023-05-19T09:20:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 357.65,
+    "pivot_bar": 5,
+    "pivot_time": "2023-05-19T09:20:00",
+    "confirmed_bar": 7,
+    "confirmed_at": "2023-05-19T09:22:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 378.9,
+    "pivot_bar": 6,
+    "pivot_time": "2023-05-19T09:21:00",
+    "confirmed_bar": 8,
+    "confirmed_at": "2023-05-19T09:23:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 362.35,
+    "pivot_bar": 9,
+    "pivot_time": "2023-05-19T09:24:00",
+    "confirmed_bar": 11,
+    "confirmed_at": "2023-05-19T09:26:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 336.2,
+    "pivot_bar": 13,
+    "pivot_time": "2023-05-19T09:28:00",
+    "confirmed_bar": 15,
+    "confirmed_at": "2023-05-19T09:30:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 358.6,
+    "pivot_bar": 17,
+    "pivot_time": "2023-05-19T09:32:00",
+    "confirmed_bar": 19,
+    "confirmed_at": "2023-05-19T09:34:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 351.65,
+    "pivot_bar": 18,
+    "pivot_time": "2023-05-19T09:33:00",
+    "confirmed_bar": 20,
+    "confirmed_at": "2023-05-19T09:35:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 417.45,
+    "pivot_bar": 27,
+    "pivot_time": "2023-05-19T09:42:00",
+    "confirmed_bar": 29,
+    "confirmed_at": "2023-05-19T09:44:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 401.3,
+    "pivot_bar": 32,
+    "pivot_time": "2023-05-19T09:47:00",
+    "confirmed_bar": 34,
+    "confirmed_at": "2023-05-19T09:49:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 503.6,
+    "pivot_bar": 41,
+    "pivot_time": "2023-05-19T09:56:00",
+    "confirmed_bar": 43,
+    "confirmed_at": "2023-05-19T09:58:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 490.85,
+    "pivot_bar": 43,
+    "pivot_time": "2023-05-19T09:58:00",
+    "confirmed_bar": 45,
+    "confirmed_at": "2023-05-19T10:00:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 541.95,
+    "pivot_bar": 47,
+    "pivot_time": "2023-05-19T10:02:00",
+    "confirmed_bar": 49,
+    "confirmed_at": "2023-05-19T10:04:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 570.95,
+    "pivot_bar": 50,
+    "pivot_time": "2023-05-19T10:05:00",
+    "confirmed_bar": 52,
+    "confirmed_at": "2023-05-19T10:07:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 552.5,
+    "pivot_bar": 52,
+    "pivot_time": "2023-05-19T10:07:00",
+    "confirmed_bar": 54,
+    "confirmed_at": "2023-05-19T10:09:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 567.6,
+    "pivot_bar": 55,
+    "pivot_time": "2023-05-19T10:10:00",
+    "confirmed_bar": 57,
+    "confirmed_at": "2023-05-19T10:12:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 505.1,
+    "pivot_bar": 57,
+    "pivot_time": "2023-05-19T10:12:00",
+    "confirmed_bar": 59,
+    "confirmed_at": "2023-05-19T10:14:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 494.7,
+    "pivot_bar": 63,
+    "pivot_time": "2023-05-19T10:18:00",
+    "confirmed_bar": 65,
+    "confirmed_at": "2023-05-19T10:20:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 536.0,
+    "pivot_bar": 65,
+    "pivot_time": "2023-05-19T10:20:00",
+    "confirmed_bar": 67,
+    "confirmed_at": "2023-05-19T10:22:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 522.0,
+    "pivot_bar": 67,
+    "pivot_time": "2023-05-19T10:22:00",
+    "confirmed_bar": 69,
+    "confirmed_at": "2023-05-19T10:24:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 547.8,
+    "pivot_bar": 69,
+    "pivot_time": "2023-05-19T10:24:00",
+    "confirmed_bar": 71,
+    "confirmed_at": "2023-05-19T10:26:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 486.2,
+    "pivot_bar": 78,
+    "pivot_time": "2023-05-19T10:33:00",
+    "confirmed_bar": 80,
+    "confirmed_at": "2023-05-19T10:35:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 554.7,
+    "pivot_bar": 86,
+    "pivot_time": "2023-05-19T10:41:00",
+    "confirmed_bar": 88,
+    "confirmed_at": "2023-05-19T10:43:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 515.55,
+    "pivot_bar": 91,
+    "pivot_time": "2023-05-19T10:46:00",
+    "confirmed_bar": 93,
+    "confirmed_at": "2023-05-19T10:48:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 520.8,
+    "pivot_bar": 93,
+    "pivot_time": "2023-05-19T10:48:00",
+    "confirmed_bar": 95,
+    "confirmed_at": "2023-05-19T10:50:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 506.5,
+    "pivot_bar": 98,
+    "pivot_time": "2023-05-19T10:53:00",
+    "confirmed_bar": 100,
+    "confirmed_at": "2023-05-19T10:55:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 523.1,
+    "pivot_bar": 101,
+    "pivot_time": "2023-05-19T10:56:00",
+    "confirmed_bar": 103,
+    "confirmed_at": "2023-05-19T10:58:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 495.3,
+    "pivot_bar": 107,
+    "pivot_time": "2023-05-19T11:02:00",
+    "confirmed_bar": 109,
+    "confirmed_at": "2023-05-19T11:04:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 504.95,
+    "pivot_bar": 108,
+    "pivot_time": "2023-05-19T11:03:00",
+    "confirmed_bar": 110,
+    "confirmed_at": "2023-05-19T11:05:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 498.4,
+    "pivot_bar": 111,
+    "pivot_time": "2023-05-19T11:06:00",
+    "confirmed_bar": 113,
+    "confirmed_at": "2023-05-19T11:08:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 515.05,
+    "pivot_bar": 114,
+    "pivot_time": "2023-05-19T11:09:00",
+    "confirmed_bar": 116,
+    "confirmed_at": "2023-05-19T11:11:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 494.45,
+    "pivot_bar": 121,
+    "pivot_time": "2023-05-19T11:16:00",
+    "confirmed_bar": 123,
+    "confirmed_at": "2023-05-19T11:18:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 435.55,
+    "pivot_bar": 125,
+    "pivot_time": "2023-05-19T11:20:00",
+    "confirmed_bar": 127,
+    "confirmed_at": "2023-05-19T11:22:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 448.2,
+    "pivot_bar": 129,
+    "pivot_time": "2023-05-19T11:24:00",
+    "confirmed_bar": 131,
+    "confirmed_at": "2023-05-19T11:26:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 512.6,
+    "pivot_bar": 137,
+    "pivot_time": "2023-05-19T11:32:00",
+    "confirmed_bar": 139,
+    "confirmed_at": "2023-05-19T11:34:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 500.1,
+    "pivot_bar": 139,
+    "pivot_time": "2023-05-19T11:34:00",
+    "confirmed_bar": 141,
+    "confirmed_at": "2023-05-19T11:36:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 513.4,
+    "pivot_bar": 142,
+    "pivot_time": "2023-05-19T11:37:00",
+    "confirmed_bar": 144,
+    "confirmed_at": "2023-05-19T11:39:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 488.15,
+    "pivot_bar": 147,
+    "pivot_time": "2023-05-19T11:42:00",
+    "confirmed_bar": 149,
+    "confirmed_at": "2023-05-19T11:44:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 498.4,
+    "pivot_bar": 148,
+    "pivot_time": "2023-05-19T11:43:00",
+    "confirmed_bar": 150,
+    "confirmed_at": "2023-05-19T11:45:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 462.8,
+    "pivot_bar": 153,
+    "pivot_time": "2023-05-19T11:48:00",
+    "confirmed_bar": 155,
+    "confirmed_at": "2023-05-19T11:50:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 484.15,
+    "pivot_bar": 155,
+    "pivot_time": "2023-05-19T11:50:00",
+    "confirmed_bar": 157,
+    "confirmed_at": "2023-05-19T11:52:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 470.0,
+    "pivot_bar": 156,
+    "pivot_time": "2023-05-19T11:51:00",
+    "confirmed_bar": 158,
+    "confirmed_at": "2023-05-19T11:53:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 455.7,
+    "pivot_bar": 161,
+    "pivot_time": "2023-05-19T11:56:00",
+    "confirmed_bar": 163,
+    "confirmed_at": "2023-05-19T11:58:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 435.55,
+    "pivot_bar": 166,
+    "pivot_time": "2023-05-19T12:01:00",
+    "confirmed_bar": 168,
+    "confirmed_at": "2023-05-19T12:03:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 448.55,
+    "pivot_bar": 168,
+    "pivot_time": "2023-05-19T12:03:00",
+    "confirmed_bar": 170,
+    "confirmed_at": "2023-05-19T12:05:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 441.2,
+    "pivot_bar": 170,
+    "pivot_time": "2023-05-19T12:05:00",
+    "confirmed_bar": 172,
+    "confirmed_at": "2023-05-19T12:07:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 449.6,
+    "pivot_bar": 171,
+    "pivot_time": "2023-05-19T12:06:00",
+    "confirmed_bar": 173,
+    "confirmed_at": "2023-05-19T12:08:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 471.95,
+    "pivot_bar": 177,
+    "pivot_time": "2023-05-19T12:12:00",
+    "confirmed_bar": 179,
+    "confirmed_at": "2023-05-19T12:14:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 470.2,
+    "pivot_bar": 179,
+    "pivot_time": "2023-05-19T12:14:00",
+    "confirmed_bar": 181,
+    "confirmed_at": "2023-05-19T12:16:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 475.6,
+    "pivot_bar": 184,
+    "pivot_time": "2023-05-19T12:19:00",
+    "confirmed_bar": 186,
+    "confirmed_at": "2023-05-19T12:21:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 451.5,
+    "pivot_bar": 186,
+    "pivot_time": "2023-05-19T12:21:00",
+    "confirmed_bar": 188,
+    "confirmed_at": "2023-05-19T12:23:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 485.9,
+    "pivot_bar": 188,
+    "pivot_time": "2023-05-19T12:23:00",
+    "confirmed_bar": 190,
+    "confirmed_at": "2023-05-19T12:25:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 464.9,
+    "pivot_bar": 191,
+    "pivot_time": "2023-05-19T12:26:00",
+    "confirmed_bar": 193,
+    "confirmed_at": "2023-05-19T12:28:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 480.3,
+    "pivot_bar": 193,
+    "pivot_time": "2023-05-19T12:28:00",
+    "confirmed_bar": 195,
+    "confirmed_at": "2023-05-19T12:30:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 474.75,
+    "pivot_bar": 195,
+    "pivot_time": "2023-05-19T12:30:00",
+    "confirmed_bar": 197,
+    "confirmed_at": "2023-05-19T12:32:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 521.2,
+    "pivot_bar": 200,
+    "pivot_time": "2023-05-19T12:35:00",
+    "confirmed_bar": 202,
+    "confirmed_at": "2023-05-19T12:37:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 502.9,
+    "pivot_bar": 202,
+    "pivot_time": "2023-05-19T12:37:00",
+    "confirmed_bar": 204,
+    "confirmed_at": "2023-05-19T12:39:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 537.2,
+    "pivot_bar": 205,
+    "pivot_time": "2023-05-19T12:40:00",
+    "confirmed_bar": 207,
+    "confirmed_at": "2023-05-19T12:42:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 504.0,
+    "pivot_bar": 207,
+    "pivot_time": "2023-05-19T12:42:00",
+    "confirmed_bar": 209,
+    "confirmed_at": "2023-05-19T12:44:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 509.5,
+    "pivot_bar": 211,
+    "pivot_time": "2023-05-19T12:46:00",
+    "confirmed_bar": 213,
+    "confirmed_at": "2023-05-19T12:48:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 474.45,
+    "pivot_bar": 214,
+    "pivot_time": "2023-05-19T12:49:00",
+    "confirmed_bar": 216,
+    "confirmed_at": "2023-05-19T12:51:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 489.45,
+    "pivot_bar": 217,
+    "pivot_time": "2023-05-19T12:52:00",
+    "confirmed_bar": 219,
+    "confirmed_at": "2023-05-19T12:54:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 474.35,
+    "pivot_bar": 219,
+    "pivot_time": "2023-05-19T12:54:00",
+    "confirmed_bar": 221,
+    "confirmed_at": "2023-05-19T12:56:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 486.45,
+    "pivot_bar": 223,
+    "pivot_time": "2023-05-19T12:58:00",
+    "confirmed_bar": 225,
+    "confirmed_at": "2023-05-19T13:00:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 453.6,
+    "pivot_bar": 229,
+    "pivot_time": "2023-05-19T13:04:00",
+    "confirmed_bar": 231,
+    "confirmed_at": "2023-05-19T13:06:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 447.6,
+    "pivot_bar": 232,
+    "pivot_time": "2023-05-19T13:07:00",
+    "confirmed_bar": 234,
+    "confirmed_at": "2023-05-19T13:09:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 489.4,
+    "pivot_bar": 238,
+    "pivot_time": "2023-05-19T13:13:00",
+    "confirmed_bar": 240,
+    "confirmed_at": "2023-05-19T13:15:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 444.15,
+    "pivot_bar": 241,
+    "pivot_time": "2023-05-19T13:16:00",
+    "confirmed_bar": 243,
+    "confirmed_at": "2023-05-19T13:18:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 459.55,
+    "pivot_bar": 243,
+    "pivot_time": "2023-05-19T13:18:00",
+    "confirmed_bar": 245,
+    "confirmed_at": "2023-05-19T13:20:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 459.45,
+    "pivot_bar": 247,
+    "pivot_time": "2023-05-19T13:22:00",
+    "confirmed_bar": 249,
+    "confirmed_at": "2023-05-19T13:24:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 456.85,
+    "pivot_bar": 249,
+    "pivot_time": "2023-05-19T13:24:00",
+    "confirmed_bar": 251,
+    "confirmed_at": "2023-05-19T13:26:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 468.9,
+    "pivot_bar": 253,
+    "pivot_time": "2023-05-19T13:28:00",
+    "confirmed_bar": 255,
+    "confirmed_at": "2023-05-19T13:30:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 480.4,
+    "pivot_bar": 256,
+    "pivot_time": "2023-05-19T13:31:00",
+    "confirmed_bar": 258,
+    "confirmed_at": "2023-05-19T13:33:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 476.0,
+    "pivot_bar": 258,
+    "pivot_time": "2023-05-19T13:33:00",
+    "confirmed_bar": 260,
+    "confirmed_at": "2023-05-19T13:35:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 506.9,
+    "pivot_bar": 266,
+    "pivot_time": "2023-05-19T13:41:00",
+    "confirmed_bar": 268,
+    "confirmed_at": "2023-05-19T13:43:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 482.2,
+    "pivot_bar": 269,
+    "pivot_time": "2023-05-19T13:44:00",
+    "confirmed_bar": 271,
+    "confirmed_at": "2023-05-19T13:46:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 499.05,
+    "pivot_bar": 272,
+    "pivot_time": "2023-05-19T13:47:00",
+    "confirmed_bar": 274,
+    "confirmed_at": "2023-05-19T13:49:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 462.1,
+    "pivot_bar": 278,
+    "pivot_time": "2023-05-19T13:53:00",
+    "confirmed_bar": 280,
+    "confirmed_at": "2023-05-19T13:55:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 377.25,
+    "pivot_bar": 291,
+    "pivot_time": "2023-05-19T14:06:00",
+    "confirmed_bar": 293,
+    "confirmed_at": "2023-05-19T14:08:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 424.4,
+    "pivot_bar": 298,
+    "pivot_time": "2023-05-19T14:13:00",
+    "confirmed_bar": 300,
+    "confirmed_at": "2023-05-19T14:15:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 363.5,
+    "pivot_bar": 301,
+    "pivot_time": "2023-05-19T14:16:00",
+    "confirmed_bar": 303,
+    "confirmed_at": "2023-05-19T14:18:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 377.15,
+    "pivot_bar": 303,
+    "pivot_time": "2023-05-19T14:18:00",
+    "confirmed_bar": 305,
+    "confirmed_at": "2023-05-19T14:20:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 357.45,
+    "pivot_bar": 304,
+    "pivot_time": "2023-05-19T14:19:00",
+    "confirmed_bar": 306,
+    "confirmed_at": "2023-05-19T14:21:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 366.8,
+    "pivot_bar": 310,
+    "pivot_time": "2023-05-19T14:25:00",
+    "confirmed_bar": 312,
+    "confirmed_at": "2023-05-19T14:27:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 355.5,
+    "pivot_bar": 312,
+    "pivot_time": "2023-05-19T14:27:00",
+    "confirmed_bar": 314,
+    "confirmed_at": "2023-05-19T14:29:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 369.0,
+    "pivot_bar": 314,
+    "pivot_time": "2023-05-19T14:29:00",
+    "confirmed_bar": 316,
+    "confirmed_at": "2023-05-19T14:31:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 374.35,
+    "pivot_bar": 317,
+    "pivot_time": "2023-05-19T14:32:00",
+    "confirmed_bar": 319,
+    "confirmed_at": "2023-05-19T14:34:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 364.05,
+    "pivot_bar": 318,
+    "pivot_time": "2023-05-19T14:33:00",
+    "confirmed_bar": 320,
+    "confirmed_at": "2023-05-19T14:35:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 345.9,
+    "pivot_bar": 322,
+    "pivot_time": "2023-05-19T14:37:00",
+    "confirmed_bar": 324,
+    "confirmed_at": "2023-05-19T14:39:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 351.0,
+    "pivot_bar": 323,
+    "pivot_time": "2023-05-19T14:38:00",
+    "confirmed_bar": 325,
+    "confirmed_at": "2023-05-19T14:40:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 321.65,
+    "pivot_bar": 328,
+    "pivot_time": "2023-05-19T14:43:00",
+    "confirmed_bar": 330,
+    "confirmed_at": "2023-05-19T14:45:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 309.25,
+    "pivot_bar": 333,
+    "pivot_time": "2023-05-19T14:48:00",
+    "confirmed_bar": 335,
+    "confirmed_at": "2023-05-19T14:50:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 334.65,
+    "pivot_bar": 340,
+    "pivot_time": "2023-05-19T14:55:00",
+    "confirmed_bar": 342,
+    "confirmed_at": "2023-05-19T14:57:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 314.8,
+    "pivot_bar": 342,
+    "pivot_time": "2023-05-19T14:57:00",
+    "confirmed_bar": 344,
+    "confirmed_at": "2023-05-19T14:59:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 332.85,
+    "pivot_bar": 346,
+    "pivot_time": "2023-05-19T15:01:00",
+    "confirmed_bar": 348,
+    "confirmed_at": "2023-05-19T15:03:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 302.5,
+    "pivot_bar": 349,
+    "pivot_time": "2023-05-19T15:04:00",
+    "confirmed_bar": 351,
+    "confirmed_at": "2023-05-19T15:06:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 259.7,
+    "pivot_bar": 359,
+    "pivot_time": "2023-05-19T15:14:00",
+    "confirmed_bar": 361,
+    "confirmed_at": "2023-05-19T15:16:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 268.95,
+    "pivot_bar": 360,
+    "pivot_time": "2023-05-19T15:15:00",
+    "confirmed_bar": 362,
+    "confirmed_at": "2023-05-19T15:17:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 247.15,
+    "pivot_bar": 365,
+    "pivot_time": "2023-05-19T15:20:00",
+    "confirmed_bar": 367,
+    "confirmed_at": "2023-05-19T15:22:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 262.0,
+    "pivot_bar": 367,
+    "pivot_time": "2023-05-19T15:22:00",
+    "confirmed_bar": 369,
+    "confirmed_at": "2023-05-19T15:24:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "low",
+    "price": 259.0,
+    "pivot_bar": 370,
+    "pivot_time": "2023-05-19T15:25:00",
+    "confirmed_bar": 372,
+    "confirmed_at": "2023-05-19T15:27:00",
+    "delay_bars": 2,
+    "basis": "close"
+  },
+  {
+    "kind": "high",
+    "price": 263.85,
+    "pivot_bar": 371,
+    "pivot_time": "2023-05-19T15:26:00",
+    "confirmed_bar": 373,
+    "confirmed_at": "2023-05-19T15:28:00",
+    "delay_bars": 2,
+    "basis": "close"
+  }
+]
