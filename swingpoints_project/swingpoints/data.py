@@ -26,6 +26,22 @@ class Bar:
 
 
 def _timestamp(value, row: int) -> datetime:
+    """
+    Parse a timestamp while preserving the timezone convention in the input.
+
+    Accepts DD/MM/YY or DD/MM/YYYY with hours and minutes, optionally seconds.
+    A trailing Z in an ISO timestamp is interpreted as UTC.
+
+    Args:
+        value (str): An ISO 8601 or supported day-first date/time string.
+        row (int): One-based input record number for error messages.
+
+    Result:
+        datetime: The parsed timestamp; no timezone is assigned to a naive input.
+
+    Exception:
+        DataError: If the value is not a nonempty string or no format matches.
+    """
     if not isinstance(value, str) or not value.strip():
         raise DataError(f"Record {row}: timestamp must be a nonempty date/time string.")
     value = value.strip()
@@ -42,6 +58,20 @@ def _timestamp(value, row: int) -> datetime:
 
 
 def _number(value, name: str, row: int) -> float:
+    """
+    Convert a price field to a finite, strictly positive floating-point number.
+
+    Args:
+        value: A number or numeric string to validate; booleans are rejected.
+        name (str): Field name, such as high, low or close.
+        row (int): One-based input record number for error messages.
+
+    Result:
+        float: The validated price.
+
+    Exception:
+        DataError: If conversion fails, the value is boolean, nonfinite or not positive.
+    """
     try:
         if isinstance(value, bool):
             raise ValueError
@@ -54,12 +84,25 @@ def _number(value, name: str, row: int) -> float:
 
 
 def load_prices(path: str | Path) -> list[Bar]:
-    """Load a single instrument from CSV or JSON, validate, and sort by time.
+    """
+    Load and validate prices for one instrument from a CSV or JSON file.
 
-    Required fields: timestamp, high, low, close. Open is optional but validated
-    when present. Field names are case-insensitive. JSON accepts an array of
-    records or {"data": [records]}. Duplicate timestamps are errors, not drops.
-    CSV uses comma by default and also accepts semicolon/tab delimiters.
+    Required fields are timestamp, high, low and close. Open is optional but
+    validated when present. Names are case-insensitive; CSV supports comma,
+    semicolon and tab delimiters. JSON accepts a record array or a data array
+    inside an object. Low must not exceed Open/Close, which must not exceed High.
+    Duplicate records are rejected and missing prices are never filled.
+
+    Args:
+        path (str or Path): Path to the input .csv or .json file.
+
+    Result:
+        list[Bar]: A nonempty list of validated bars sorted by timestamp.
+
+    Exception:
+        DataError: If reading or decoding fails, the format is unsupported, or
+            records contain missing fields, invalid prices/dates, duplicate timestamps
+            or mixed timezone-aware and timezone-naive timestamps.
     """
     path = Path(path)
     try:

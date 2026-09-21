@@ -17,6 +17,24 @@ class SwingApp:
     """File picker, configurable detector, historical cutoff, chart and table."""
 
     def __init__(self, root, window=2, basis="close", output=Path("output")):
+        """
+        Build the desktop controls, chart canvas and swing-results table.
+
+        No input data is loaded here. Export starts disabled and is enabled after a
+        successful analysis. Detector settings are validated when results are refreshed.
+
+        Args:
+            root (tkinter.Tk): Existing Tk root window.
+            window (int): Initial detector window shown in the controls; default is 2.
+            basis (str): Initial price basis; default is 'close'.
+            output (Path): Initial export-directory preference; default is Path("output").
+
+        Result:
+            None: Creates widgets and initializes empty data and analysis state.
+
+        Exception:
+            tkinter.TclError: If Tk cannot create or configure the interface.
+        """
         self.root, self.output = root, output
         self.bars, self.source, self.current_run = [], None, None
         root.title("SwingPoints | Steps 1-2")
@@ -57,11 +75,38 @@ class SwingApp:
         scrollbar.pack(side="right", fill="y")
 
     def choose_file(self):
+        """
+        Open a file-selection dialog and load the selected price file.
+
+        Args:
+            None.
+
+        Result:
+            None: Loads the selected file; cancelling the dialog leaves the state unchanged.
+
+        Exception:
+            DataError from loading is handled by load() and displayed in a dialog.
+            Tk dialog errors may propagate.
+        """
         name = filedialog.askopenfilename(filetypes=[("Price data", "*.csv *.json"), ("All files", "*")])
         if name:
             self.load(Path(name))
 
     def load(self, path):
+        """
+        Load a price file and refresh the interface using all of its bars.
+
+        Args:
+            path (str or Path): Input CSV or JSON file to load.
+
+        Result:
+            None: On success, stores the bars and source path, resets export state,
+                sets the observed-bar count and requests a chart/table refresh.
+
+        Exception:
+            DataError: Caught and displayed in a dialog; the existing data is retained.
+            Unexpected GUI or plotting errors are not caught here.
+        """
         try:
             bars = load_prices(path)
         except DataError as exc:
@@ -74,6 +119,24 @@ class SwingApp:
         self.refresh()
 
     def refresh(self):
+        """
+        Recalculate and display swings for the selected observed-bar prefix.
+
+        Reads settings from the interface. If no data has been loaded, an information
+        dialog is shown. Only confirmed events within the selected prefix are displayed.
+
+        Args:
+            None.
+
+        Result:
+            None: On success, redraws the chart/table, records the current run,
+                enables export and updates the status message.
+
+        Exception:
+            ValueError: Invalid window, basis or observed-bar count is caught and
+                displayed in a dialog. Previously displayed results are retained.
+            Unexpected plotting or GUI errors propagate.
+        """
         if not self.bars:
             messagebox.showinfo("Open data", "Choose a CSV or JSON file first.")
             return
@@ -102,6 +165,19 @@ class SwingApp:
                         f"Latest observed: {visible[-1].timestamp}{extra}")
 
     def next_bar(self):
+        """
+        Advance the replay cutoff by one bar and refresh the displayed results.
+
+        Args:
+            None.
+
+        Result:
+            None: Increases the observed count by one, capped at the loaded data length.
+
+        Exception:
+            ValueError: Missing data or an invalid count is caught and shown in a dialog.
+            Other errors raised during refresh may propagate.
+        """
         try:
             if not self.bars:
                 raise ValueError("Open a price file first.")
@@ -114,6 +190,23 @@ class SwingApp:
             messagebox.showerror("Cannot advance", str(exc))
 
     def export(self):
+        """
+        Ask for a destination and export the last successfully displayed analysis.
+
+        Uses the stored current_run and displayed figure. Editing a control without
+        applying it does not change the run being exported.
+
+        Args:
+            None.
+
+        Result:
+            None: Saves four result files and displays a success message. Does nothing
+                when no run exists or the destination dialog is cancelled.
+
+        Exception:
+            OSError or ValueError: Export failures are caught and shown in a dialog.
+            Other rendering or GUI errors may propagate.
+        """
         if self.current_run is None:
             return
         folder = filedialog.askdirectory(title="Export the currently displayed run",
@@ -129,6 +222,25 @@ class SwingApp:
 
 
 def launch(path=None, window=2, basis="close", output=Path("output")):
+    """
+    Create the desktop application and run its Tk event loop.
+
+    Requires Tkinter, Matplotlib and an available graphical display. Input-data
+    validation errors are displayed by the application instead of closing it.
+
+    Args:
+        path (str, Path or None): Optional price file to load immediately.
+        window (int): Initial detector window; default is 2.
+        basis (str): Initial price basis; default is 'close'.
+        output (Path): Initial export-directory preference.
+
+    Result:
+        None: Returns after the Tk event loop ends, normally when the window closes.
+
+    Exception:
+        RuntimeError: If the initial Tk root cannot be created, such as when no
+            graphical display is available. Later GUI errors may propagate.
+    """
     try:
         root = tk.Tk()
     except tk.TclError as exc:

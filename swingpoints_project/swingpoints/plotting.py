@@ -9,10 +9,29 @@ from .detector import SwingPoint
 
 def draw_prices(fig: Figure, bars: list[Bar], points: list[SwingPoint], window: int,
                 basis: str, source: str = "Price data") -> None:
-    """Plot only an observed prefix; markers distinguish pivot and availability.
+    """
+    Draw Close, High and Low prices with pivot and confirmation markers.
 
-    Triangle = original pivot location; x = time it became known, placed at
-    the pivot's price (not the price of that confirmation bar).
+    Triangles indicate original pivot locations. Crosses indicate confirmation
+    times at the pivot price, not the confirmation bar price. The shaded right
+    edge marks bars with insufficient later context for confirmation. The caller
+    must provide events matching the visible history; this function does not filter
+    out events beyond a replay cutoff.
+
+    Args:
+        fig (Figure): Existing Matplotlib figure to clear and redraw.
+        bars (list[Bar]): Nonempty chronological sequence of observed bars.
+        points (list[SwingPoint]): Swings confirmed within the observed history.
+        window (int): Detector window, used in the title and right-edge shading.
+        basis (str): Detector price basis to display in the title.
+        source (str): Descriptive chart title prefix; default is 'Price data'.
+
+    Result:
+        None: Modifies the supplied figure without saving it or opening a window.
+
+    Exception:
+        IndexError: If bars is empty.
+        Matplotlib rendering errors propagate to the caller.
     """
     fig.clear()
     ax = fig.add_subplot(111)
