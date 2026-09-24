@@ -1,3 +1,11 @@
+## Added: SMA, EMA, RSI, MACD, ATR, VWAP, ROC and CCI
+
+This incremental update keeps the existing Steps 1–3. Run the same command to also
+produce `indicators.png` and `indicators.csv/json`. Original `data.csv` has no
+volume, so VWAP is explicitly unavailable for this input. See [INDICATORS.md](INDICATORS.md)
+for settings, formulas, results and GUI instructions. Each run now saves nine files;
+older examples below remain historical Step 1–3 examples.
+
 # SwingPoints project
 
 A documented Python implementation of **Steps 1, 2 and 3** in the supplied

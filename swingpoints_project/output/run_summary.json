@@ -6,9 +6,72 @@
   "last_timestamp": "2023-05-19T15:29:00",
   "window": 2,
   "basis": "close",
+  "trend_settings": {
+    "tolerance_percent": 0.5,
+    "lookback": 20,
+    "min_touches": 2,
+    "max_per_direction": 3
+  },
+  "trendline_candidates": 152,
+  "trendlines_displayed": 6,
+  "trendlines_up": 83,
+  "trendlines_down": 69,
+  "trendline_timing_rule": "Created at second anchor confirmation; dashed segment is retrospective. Stop at first crossing beyond tolerance.",
+  "trendline_time_axis": "Elapsed minutes, including gaps; no extrapolation beyond observed history.",
   "swing_highs": 49,
   "swing_lows": 52,
   "intervals_not_one_minute": 0,
   "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
-  "gap_policy": "No filling; window counts observations, including across gaps/sessions."
+  "gap_policy": "No filling; window counts observations, including across gaps/sessions.",
+  "indicators": {
+    "settings": {
+      "sma_period": 20,
+      "ema_period": 20,
+      "rsi_period": 14,
+      "macd_fast": 12,
+      "macd_slow": 26,
+      "macd_signal": 9,
+      "atr_period": 14,
+      "roc_period": 12,
+      "cci_period": 20,
+      "vwap_reset": "session"
+    },
+    "valid_counts": {
+      "sma": 355,
+      "ema": 355,
+      "rsi": 360,
+      "macd": 349,
+      "macd_signal": 341,
+      "macd_histogram": 341,
+      "atr": 361,
+      "vwap": 0,
+      "roc": 362,
+      "cci": 355
+    },
+    "latest": {
+      "sma": 260.96500000000003,
+      "ema": 266.81479323095505,
+      "rsi": 35.91616784172966,
+      "macd": -11.50960306762562,
+      "macd_signal": -13.952831211206945,
+      "macd_histogram": 2.443228143581326,
+      "atr": 9.4389712289639,
+      "vwap": null,
+      "roc": -2.303445650104685,
+      "cci": -53.193554649582694
+    },
+    "vwap_status_counts": {
+      "missing_volume": 374
+    },
+    "warnings": [
+      "VWAP unavailable after missing volume within its anchor period; no substitute volume is used."
+    ],
+    "timing": "Available at the current completed bar; all windows use past/current observations only.",
+    "warmup": "Unavailable values are JSON null / CSV blank; no backward filling.",
+    "ema_seed": "SMA of first period values; alpha=2/(period+1).",
+    "rsi": "Wilder smoothing; flat gain/loss yields 50; gain-only 100, loss-only 0.",
+    "atr": "First true range is High-Low; SMA seed then Wilder smoothing.",
+    "cci": "Typical price HLC3; 0.015 scaling; mean absolute deviation; flat window yields 0.",
+    "vwap": "HLC3 weighted by actual volume; session means input calendar date, not an exchange calendar."
+  }
 }

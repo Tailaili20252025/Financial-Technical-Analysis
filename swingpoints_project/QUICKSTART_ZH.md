@@ -168,3 +168,21 @@ python -m unittest discover -s tests -v
 目前已经完整出现的一个局部窗口，不访问未到来的数据。
 
 提交记录在随附的 `swingpoints.bundle` 中。英文 README 有恢复 Git 仓库的命令。
+
+
+## 新增八项指标
+
+原来的命令 `python app.py data/data.csv` 会依次执行原有 Step 1–3，同时计算指标。
+查看 `output/indicators.png` 和 `output/indicators.csv`；原来的图仍是 `output/prices.png`。
+原始数据没有成交量，所以 VWAP 显示为空，其他七项可计算。不要把空值当成零。
+
+参数在 `swingpoints/indicators.py` 的 `IndicatorSettings` 类中，或用命令行覆盖：
+
+```bash
+python app.py data/data.csv --sma-period 10 --rsi-period 7 --output output/custom
+python app.py data/data.csv --gui
+```
+
+GUI 新增 Indicator settings（参数）、Indicators（数值表）、Indicator chart（图）。
+修改参数后 Apply；Export visible results 会导出当时已应用的参数和结果。
+更详细的公式、默认参数和实际结果见 `INDICATORS.md`。

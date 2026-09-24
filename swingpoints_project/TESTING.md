@@ -71,3 +71,13 @@ On the user's computer:
 
 Automated checks establish the specified arithmetic/timing and integration,
 not a unique financial definition of a significant trend or future profitability.
+
+
+## Indicator extension tests
+
+`tests/test_indicators.py` adds formula fixtures, all 374 observed-prefix checks,
+volume handling, warm-up alignment and CLI/export integration. Existing GUI mock
+tests now also check indicator rows and export of the applied parameter snapshot.
+Run the same `python -m unittest discover -s tests -v` command. The current complete
+log is `INDICATOR_TEST_RESULTS.txt`; earlier test totals in this document describe
+the original Steps 1–3 version.

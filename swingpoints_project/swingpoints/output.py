@@ -9,6 +9,7 @@ import json
 from pathlib import Path
 
 from .data import Bar
+from .indicators import IndicatorSettings, calculate_indicators
 from .detector import SwingPoint
 from .trendlines import TrendSettings, detect_trendlines, select_trendlines
 
@@ -21,11 +22,13 @@ FIELDS = ["kind", "price", "pivot_bar", "pivot_time", "confirmed_bar", "confirme
 
 
 def export_results(output: str | Path, source: str | Path, bars: list[Bar],
-                   points: list[SwingPoint], window: int, basis: str, figure, lines=None, settings=None) -> Path:
+                   points: list[SwingPoint], window: int, basis: str, figure, lines=None, settings=None,
+                   indicator_settings: IndicatorSettings | None = None) -> Path:
     """
     Save the supplied analysis as a chart, swing tables and a run summary.
 
     Writes prices.png, swing_points.csv/json, trendlines.csv/json and run_summary.json.
+    Also writes indicators.csv/json and indicators.png using the same observed bars.
     Existing result files are replaced. The summary describes the observed prefix,
     but the hash covers the complete source file. Export is not atomic: a later
     I/O failure can leave earlier result files written.
@@ -40,6 +43,7 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         figure (matplotlib.figure.Figure): The chart to save as a PNG.
         lines (list[TrendLine] or None): Candidate history; None computes it from bars.
         settings (TrendSettings or None): Settings used to detect and select lines.
+        indicator_settings (IndicatorSettings or None): Indicator periods and VWAP anchor.
 
     Result:
         Path: The output directory, in the same relative/absolute form as supplied.
@@ -51,9 +55,11 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         IndexError: If bars is empty; callers must supply at least one bar.
     """
     output, source = Path(output), Path(source)
-    names = ("prices.png", "swing_points.csv", "swing_points.json", "run_summary.json", "trendlines.csv", "trendlines.json")
+    names = ("prices.png", "swing_points.csv", "swing_points.json", "run_summary.json", "trendlines.csv", "trendlines.json",
+             "indicators.csv", "indicators.json", "indicators.png")
     if any((output / name).resolve() == source.resolve() for name in names):
         raise ValueError("Output paths would overwrite the input file; choose another output directory.")
+    indicators = calculate_indicators(bars, indicator_settings)
     settings = settings or TrendSettings()
     if lines is None:
         lines = detect_trendlines(bars, points, settings)
@@ -91,6 +97,19 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
         "gap_policy": "No filling; window counts observations, including across gaps/sessions.",
     }
+    indicator_records = indicators.records(bars)
+    with (output / "indicators.csv").open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=list(indicator_records[0]))
+        writer.writeheader()
+        writer.writerows(indicator_records)
+    (output / "indicators.json").write_text(json.dumps(indicator_records, indent=2, allow_nan=False), encoding="utf-8")
+    summary["indicators"] = indicators.metadata()
+    from matplotlib.figure import Figure
+    from .indicator_plotting import draw_indicators
+    indicator_figure = Figure(figsize=(14, 13))
+    draw_indicators(indicator_figure, bars, indicators, source.name)
+    indicator_figure.savefig(output / "indicators.png", dpi=150)
+    indicator_figure.clear()
     (output / "run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     figure.savefig(output / "prices.png", dpi=160)
     return output

@@ -1,6 +1,9 @@
 """Optional Tkinter interface; the core program also runs without a display."""
 
 from pathlib import Path
+from dataclasses import fields
+from .indicators import IndicatorSettings, calculate_indicators
+from .indicator_plotting import draw_indicators
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 
@@ -17,7 +20,7 @@ from .trendlines import TrendSettings, detect_trendlines, select_trendlines
 class SwingApp:
     """File picker, configurable detector, historical cutoff, chart and table."""
 
-    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None):
+    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None):
         """
         Build the desktop controls, chart canvas and swing-results table.
 
@@ -29,6 +32,7 @@ class SwingApp:
             window (int): Initial detector window shown in the controls; default is 2.
             basis (str): Initial price basis; default is 'close'.
             settings (TrendSettings or None): Initial trendline settings.
+            indicator_settings (IndicatorSettings or None): Initial indicator periods/anchor.
             output (Path): Initial export-directory preference; default is Path("output").
 
         Result:
@@ -42,9 +46,13 @@ class SwingApp:
         self.root, self.output = root, output
         # bars: All validated bars in chronological order; empty until a file is loaded.
         # source: Path of the loaded input file; None before a successful load.
-        # current_run: Last successful plot snapshot (source, bars, points, window, basis, lines, settings); None initially.
+        # current_run: Last successful plot snapshot (source, bars, points, window, basis, lines, settings, indicator_settings); None initially.
         self.bars, self.source, self.current_run = [], None, None
-        root.title("SwingPoints | Steps 1-3")
+        # indicator_settings: Validated settings applied on the next successful refresh.
+        self.indicator_settings = indicator_settings or IndicatorSettings()
+        # indicator_result: Results for the last successful observed-prefix snapshot.
+        self.indicator_result = None
+        root.title("SwingPoints | Steps 1-3 + Indicators")
         root.geometry("1350x950")
         controls = ttk.Frame(root, padding=8)
         controls.pack(fill="x")
@@ -83,6 +91,8 @@ class SwingApp:
                                 ("Min touches", self.min_touches), ("Max lines / direction", self.max_lines)):
             ttk.Label(trend_controls, text=label).pack(side="left", padx=(8, 4))
             ttk.Entry(trend_controls, textvariable=variable, width=6).pack(side="left")
+        ttk.Button(trend_controls, text="Indicator settings", command=self.edit_indicator_settings).pack(side="left", padx=8)
+        ttk.Button(trend_controls, text="Indicator chart", command=self.show_indicators).pack(side="left", padx=4)
         # status: StringVar bound to the status label showing the latest analysis summary.
         self.status = tk.StringVar(value="Open a CSV or JSON file. Window = bars on each side; all timestamps refer to completed bars.")
         ttk.Label(root, textvariable=self.status, padding=(12, 6)).pack(fill="x")
@@ -108,6 +118,23 @@ class SwingApp:
         self.trend_table.configure(yscrollcommand=trend_scrollbar.set)
         self.trend_table.pack(side="left", fill="both", expand=True)
         trend_scrollbar.pack(side="right", fill="y")
+        indicator_frame = ttk.Frame(notebook)
+        notebook.add(indicator_frame, text="Indicators (blank = unavailable)")
+        indicator_columns = ("bar", "timestamp", "sma", "ema", "rsi", "macd", "macd_signal",
+                             "macd_histogram", "atr", "vwap", "roc", "cci", "vwap_status")
+        # indicator_table: One row per observed bar; dates and missing-data status are explicit.
+        self.indicator_table = ttk.Treeview(indicator_frame, columns=indicator_columns, show="headings", height=7)
+        for col in indicator_columns:
+            self.indicator_table.heading(col, text=col.replace("_", " ").upper())
+            self.indicator_table.column(col, width=170 if col in ("timestamp", "vwap_status") else 100, stretch=False, anchor="center")
+        hscroll = ttk.Scrollbar(indicator_frame, orient="horizontal", command=self.indicator_table.xview)
+        vscroll = ttk.Scrollbar(indicator_frame, orient="vertical", command=self.indicator_table.yview)
+        self.indicator_table.configure(xscrollcommand=hscroll.set, yscrollcommand=vscroll.set)
+        self.indicator_table.grid(row=0, column=0, sticky="nsew")
+        vscroll.grid(row=0, column=1, sticky="ns")
+        hscroll.grid(row=1, column=0, sticky="ew")
+        indicator_frame.columnconfigure(0, weight=1)
+        indicator_frame.rowconfigure(0, weight=1)
         columns = ("kind", "price", "pivot_bar", "pivot_time", "confirmed_bar", "confirmed_at")
         # table: Treeview listing confirmed swings and separate pivot/confirmation times.
         self.table = ttk.Treeview(table_frame, columns=columns, show="headings", height=7)
@@ -118,6 +145,51 @@ class SwingApp:
         self.table.configure(yscrollcommand=scrollbar.set)
         self.table.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
+
+    def edit_indicator_settings(self):
+        """Edit indicator class attributes; validate before applying to the visible prefix."""
+        dialog = tk.Toplevel(self.root)
+        dialog.title("Indicator settings — periods count observed bars")
+        variables = {}
+        for row, field in enumerate(fields(self.indicator_settings)):
+            ttk.Label(dialog, text=field.name.replace("_", " ").title()).grid(row=row, column=0, padx=12, pady=4, sticky="w")
+            variable = tk.StringVar(value=str(getattr(self.indicator_settings, field.name)))
+            variables[field.name] = variable
+            if field.name == "vwap_reset":
+                ttk.Combobox(dialog, textvariable=variable, values=["session", "cumulative"], state="readonly").grid(row=row, column=1, padx=12)
+            else:
+                ttk.Entry(dialog, textvariable=variable).grid(row=row, column=1, padx=12)
+
+        def apply():
+            """Commit valid settings; invalid input leaves existing settings untouched."""
+            try:
+                values = {key: variable.get() if key == "vwap_reset" else int(variable.get())
+                          for key, variable in variables.items()}
+                settings = IndicatorSettings(**values)
+            except ValueError as exc:
+                messagebox.showerror("Invalid indicator settings", str(exc), parent=dialog)
+                return
+            self.indicator_settings = settings
+            dialog.destroy()
+            if self.bars:
+                self.refresh()
+        ttk.Button(dialog, text="Apply", command=apply).grid(row=len(variables), column=0, columnspan=2, pady=12)
+
+    def show_indicators(self):
+        """Open the last successful run's indicator dashboard with zoom/save tools."""
+        if self.current_run is None:
+            messagebox.showinfo("Open data", "Load a file and apply a valid run first.")
+            return
+        source, bars, *_ = self.current_run
+        window = tk.Toplevel(self.root)
+        window.title(f"Indicators — {source.name} — {len(bars)} bars (snapshot)")
+        window.geometry("1100x900")
+        figure = Figure(figsize=(12, 11))
+        draw_indicators(figure, bars, self.indicator_result, source.name)
+        canvas = FigureCanvasTkAgg(figure, master=window)
+        canvas.get_tk_widget().pack(fill="both", expand=True)
+        NavigationToolbar2Tk(canvas, window).update()
+        canvas.draw()
 
     def choose_file(self):
         """
@@ -196,6 +268,7 @@ class SwingApp:
             points = detect_swings(visible, window, basis)
             lines = detect_trendlines(visible, points, settings)
             selected = select_trendlines(lines, settings)
+            indicators = calculate_indicators(visible, self.indicator_settings)
         except ValueError as exc:
             messagebox.showerror("Invalid settings", str(exc))
             return
@@ -210,11 +283,19 @@ class SwingApp:
             record = line.as_record(visible, True)
             self.trend_table.insert("", "end", values=[record[key] if record[key] is not None else ""
                                                       for key in self.trend_table["columns"]])
-        self.current_run = (self.source, visible, points, window, basis, lines, settings)
+        self.indicator_result = indicators
+        self.indicator_table.delete(*self.indicator_table.get_children())
+        for record in indicators.records(visible):
+            self.indicator_table.insert("", "end", values=["" if record[key] is None else
+                f"{record[key]:.6f}" if isinstance(record[key], float) else record[key]
+                for key in self.indicator_table["columns"]])
+        self.current_run = (self.source, visible, points, window, basis, lines, settings, self.indicator_settings)
         self.export_button.configure(state="normal")
         extra = " | Not enough history for this window" if count < 2*window+1 else ""
         if any((b.timestamp-a.timestamp).total_seconds() != 60 for a,b in zip(visible,visible[1:])):
             extra += " | Non-minute intervals present; windows count bars"
+        if "missing_volume" in indicators.vwap_status:
+            extra += " | VWAP: missing volume"
         self.status.set(f"{self.source.name} | {count}/{len(self.bars)} observed bars | {len(points)} confirmed swings | "
                         f"{len(selected)} displayed trendlines | Latest observed: {visible[-1].timestamp}{extra}")
 
@@ -254,7 +335,7 @@ class SwingApp:
             None.
 
         Result:
-            None: Saves six result files and displays a success message. Does nothing
+            None: Saves nine result files and displays a success message. Does nothing
                 when no run exists or the destination dialog is cancelled.
 
         Exception:
@@ -268,14 +349,14 @@ class SwingApp:
         if not folder:
             return
         try:
-            source, bars, points, window, basis, lines, settings = self.current_run
-            export_results(folder, source, bars, points, window, basis, self.figure, lines, settings)
-            messagebox.showinfo("Saved", f"Chart, swing/trendline tables and run summary saved to:\n{folder}")
+            source, bars, points, window, basis, lines, settings, indicator_settings = self.current_run
+            export_results(folder, source, bars, points, window, basis, self.figure, lines, settings, indicator_settings)
+            messagebox.showinfo("Saved", f"Price/indicator charts, swing/trendline/indicator tables and run summary saved to:\n{folder}")
         except (OSError, ValueError) as exc:
             messagebox.showerror("Cannot export", str(exc))
 
 
-def launch(path=None, window=2, basis="close", output=Path("output"), settings=None):
+def launch(path=None, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None):
     """
     Create the desktop application and run its Tk event loop.
 
@@ -287,6 +368,8 @@ def launch(path=None, window=2, basis="close", output=Path("output"), settings=N
         window (int): Initial detector window; default is 2.
         basis (str): Initial price basis; default is 'close'.
         output (Path): Initial export-directory preference.
+        settings (TrendSettings or None): Initial trendline settings.
+        indicator_settings (IndicatorSettings or None): Initial indicator periods/anchor.
 
     Result:
         None: Returns after the Tk event loop ends, normally when the window closes.
@@ -299,7 +382,7 @@ def launch(path=None, window=2, basis="close", output=Path("output"), settings=N
         root = tk.Tk()
     except tk.TclError as exc:
         raise RuntimeError("Tk could not open a display. Install Python with Tk or use CLI mode.") from exc
-    app = SwingApp(root, window, basis, output, settings)
+    app = SwingApp(root, window, basis, output, settings, indicator_settings)
     if path:
         app.load(path)
     root.mainloop()

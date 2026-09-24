@@ -323,7 +323,9 @@ class TrendTests(unittest.TestCase):
                     csv_records = list(csv.DictReader(stream))
                 self.assertEqual(len(csv_records),len(records))
                 self.assertEqual(json.loads(csv_records[0]["touch_bars"]),records[0]["touch_bars"])
-                self.assertEqual(len(list(dest.iterdir())),6)
+                self.assertEqual({p.name for p in dest.iterdir()}, {
+                    "prices.png", "swing_points.csv", "swing_points.json", "trendlines.csv", "trendlines.json",
+                    "run_summary.json", "indicators.csv", "indicators.json", "indicators.png"})
                 outputs.append(records)
             self.assertEqual(*outputs)
             dest = Path(directory)/"empty"
@@ -388,14 +390,20 @@ class TrendTests(unittest.TestCase):
             variable = MagicMock()
             variable.get.return_value = value
             setattr(app,name,variable)
+        from swingpoints.indicators import IndicatorSettings, calculate_indicators
+        app.indicator_settings = IndicatorSettings(sma_period=3)
+        app.indicator_table = MagicMock()
+        app.indicator_table.__getitem__.return_value = ("bar", "sma", "vwap_status")
         app.figure, app.canvas = Figure(), MagicMock()
         app.table, app.trend_table = MagicMock(), MagicMock()
         app.table.__getitem__.return_value = ("kind","pivot_bar")
         app.trend_table.__getitem__.return_value = ("line_id","touch_count","status")
         app.export_button, app.status = MagicMock(), MagicMock()
         app.refresh()
-        source, visible, points, window, basis, lines, settings = app.current_run
+        source, visible, points, window, basis, lines, settings, indicator_settings = app.current_run
         self.assertEqual(len(visible),7)
+        self.assertEqual(app.indicator_table.insert.call_count,7)
+        self.assertEqual(app.indicator_result,calculate_indicators(visible,indicator_settings))
         self.assertEqual(lines,detect_trendlines(visible,detect_swings(visible,1),settings))
         self.assertEqual(app.table.insert.call_count,len(points))
         self.assertEqual(app.trend_table.insert.call_count,len(select_trendlines(lines,settings)))
@@ -415,7 +423,10 @@ class TrendTests(unittest.TestCase):
         from swingpoints.gui import SwingApp
         app = SwingApp.__new__(SwingApp)
         bars, points, lines, settings = analyze([105,100,106,102,108])
-        app.current_run = (Path("example.csv"),bars,points,1,"close",lines,settings)
+        from swingpoints.indicators import IndicatorSettings
+        indicator_settings = IndicatorSettings(sma_period=3)
+        app.current_run = (Path("example.csv"),bars,points,1,"close",lines,settings,indicator_settings)
+        app.indicator_settings = IndicatorSettings(sma_period=99)  # Unapplied edits must not leak into export.
         app.output, app.figure = Path("output"), Figure()
         app.trend_tolerance = MagicMock()
         app.trend_tolerance.get.return_value = "99"
@@ -423,7 +434,7 @@ class TrendTests(unittest.TestCase):
              patch("swingpoints.gui.messagebox.showinfo"), \
              patch("swingpoints.gui.export_results") as export:
             app.export()
-        export.assert_called_once_with("chosen",Path("example.csv"),bars,points,1,"close",app.figure,lines,settings)
+        export.assert_called_once_with("chosen",Path("example.csv"),bars,points,1,"close",app.figure,lines,settings,indicator_settings)
         app.trend_tolerance.get.assert_not_called()
 
 

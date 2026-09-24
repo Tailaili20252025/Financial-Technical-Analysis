@@ -3,6 +3,8 @@
 import argparse
 import sys
 from pathlib import Path
+from dataclasses import fields
+from swingpoints.indicators import IndicatorSettings
 
 from swingpoints import DataError, detect_swings, load_prices
 from swingpoints.trendlines import TrendSettings, detect_trendlines, select_trendlines
@@ -35,7 +37,7 @@ def main(argv=None) -> int:
     Parse command-line options and run the price analysis or desktop interface.
 
     CLI mode loads prices, optionally limits the observed history, detects swings,
-    plots the results and saves six output files. GUI mode starts the Tk event
+    plots the results and saves nine output files, including eight indicators. GUI mode starts the Tk event
     loop. Existing result files in the selected output directory are replaced.
 
     Args:
@@ -65,8 +67,18 @@ def main(argv=None) -> int:
                         help="minimum confirmed touches for displaying a line (at least 2)")
     parser.add_argument("--max-trendlines", type=positive_integer, default=3,
                         help="maximum displayed lines per direction (default: 3)")
+    defaults = IndicatorSettings()
+    for field in fields(defaults):
+        if field.name == "vwap_reset":
+            parser.add_argument("--vwap-reset", choices=["session", "cumulative"], default=defaults.vwap_reset,
+                                help="VWAP anchor: input calendar date or entire input prefix")
+        else:
+            parser.add_argument("--" + field.name.replace("_", "-"), type=positive_integer,
+                                default=getattr(defaults, field.name),
+                                help=f"{field.name.replace('_', ' ')} (default: {getattr(defaults, field.name)})")
     args = parser.parse_args(argv)
     try:
+        indicator_settings = IndicatorSettings(**{field.name: getattr(args, field.name) for field in fields(defaults)})
         settings = TrendSettings(args.trend_tolerance, args.trend_lookback,
                                  args.min_touches, args.max_trendlines)
     except ValueError as exc:
@@ -76,7 +88,7 @@ def main(argv=None) -> int:
             parser.error("--gui has its own chart and observed-bars control; omit --show and --until.")
         try:
             from swingpoints.gui import launch
-            launch(args.input, args.window, args.basis, args.output, settings)
+            launch(args.input, args.window, args.basis, args.output, settings, indicator_settings)
         except (ImportError, RuntimeError) as exc:
             print(f"Desktop interface unavailable: {exc}\nUse the command-line mode to save charts instead.", file=sys.stderr)
             return 1
@@ -101,18 +113,25 @@ def main(argv=None) -> int:
         selected = select_trendlines(lines, settings)
         fig = plt.figure(figsize=(14, 8))
         draw_prices(fig, bars, points, args.window, args.basis, args.input.name, lines, settings)
-        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings)
+        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings, indicator_settings)
         print(f"Loaded {len(bars)} bars: {bars[0].timestamp} to {bars[-1].timestamp}")
         print(f"Swing highs: {sum(p.kind == 'high' for p in points)} | Swing lows: {sum(p.kind == 'low' for p in points)}")
         print(f"Trendlines: {len(lines)} accepted candidates | displayed: "
               f"{sum(line.kind == 'up' for line in selected)} up / {sum(line.kind == 'down' for line in selected)} down")
-        print(f"Saved chart, CSV/JSON swing and trendline tables, and summary to {output.resolve()}")
+        print(f"Saved price/indicator charts, CSV/JSON swing, trendline and indicator tables, and summary to {output.resolve()}")
+        if any(b.volume is None for b in bars):
+            print("VWAP: unavailable from missing volume within each anchor period; other indicators are calculated.")
         if len(bars) < 2*args.window + 1:
             print("Not enough bars for this window; no confirmed swings yet.")
         if any((b.timestamp-a.timestamp).total_seconds() != 60 for a,b in zip(bars,bars[1:])):
             print("Note: some intervals are not one minute. No gaps were filled; the window counts bars.")
         if args.show:
+            from swingpoints.indicators import calculate_indicators
+            from swingpoints.indicator_plotting import draw_indicators
+            dashboard = plt.figure(figsize=(14, 13))
+            draw_indicators(dashboard, bars, calculate_indicators(bars, indicator_settings), args.input.name)
             plt.show()
+            plt.close(dashboard)
         plt.close(fig)
         return 0
     except (DataError, ValueError, OSError, ImportError) as exc:
