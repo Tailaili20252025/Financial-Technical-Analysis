@@ -3,6 +3,10 @@
 import argparse
 import sys
 from pathlib import Path
+from dataclasses import fields
+from swingpoints.indicators import IndicatorSettings
+from swingpoints.methods import METHODS, create_method
+from swingpoints.pipeline import analyze
 
 from swingpoints import DataError, detect_swings, load_prices
 from swingpoints.trendlines import TrendSettings, detect_trendlines, select_trendlines
@@ -35,7 +39,7 @@ def main(argv=None) -> int:
     Parse command-line options and run the price analysis or desktop interface.
 
     CLI mode loads prices, optionally limits the observed history, detects swings,
-    plots the results and saves six output files. GUI mode starts the Tk event
+    plots the results and saves nine output files, including eight indicators. GUI mode starts the Tk event
     loop. Existing result files in the selected output directory are replaced.
 
     Args:
@@ -51,8 +55,8 @@ def main(argv=None) -> int:
     """
     parser = argparse.ArgumentParser(description="Steps 1-3: load CSV/JSON, plot prices, confirmed swings and trendlines.")
     parser.add_argument("input", nargs="?", type=Path, help="CSV or JSON price file")
-    parser.add_argument("--window", type=positive_integer, default=2, help="bars on each side of a pivot (default: 2)")
-    parser.add_argument("--basis", choices=["close", "high-low"], default="close", help="series used to detect swings")
+    parser.add_argument("--window", type=positive_integer, default=None, help="bars on each side of a pivot (default: 2)")
+    parser.add_argument("--basis", choices=["close", "high-low"], default=None, help="TA price basis (default: close)")
     parser.add_argument("--until", type=positive_integer, help="only observe the first N sorted bars (replay cutoff)")
     parser.add_argument("--output", type=Path, default=Path("output"), help="output directory (default: output)")
     parser.add_argument("--show", action="store_true", help="also open a Matplotlib chart window")
@@ -65,8 +69,38 @@ def main(argv=None) -> int:
                         help="minimum confirmed touches for displaying a line (at least 2)")
     parser.add_argument("--max-trendlines", type=positive_integer, default=3,
                         help="maximum displayed lines per direction (default: 3)")
+    parser.add_argument("--method", choices=list(METHODS), default="ta", help="Swing strategy (default: ta)")
+    method_flags = {
+        "reversal_percent": float, "swing_atr_period": positive_integer,
+        "atr_multiplier": float, "radius": positive_integer,
+        "min_prominence_percent": float, "min_distance": positive_integer,
+    }
+    for name, value_type in method_flags.items():
+        parser.add_argument("--" + name.replace("_", "-"), type=value_type, default=None)
+    defaults = IndicatorSettings()
+    for field in fields(defaults):
+        if field.name == "vwap_reset":
+            parser.add_argument("--vwap-reset", choices=["session", "cumulative"], default=defaults.vwap_reset,
+                                help="VWAP anchor: input calendar date or entire input prefix")
+        else:
+            parser.add_argument("--" + field.name.replace("_", "-"), type=positive_integer,
+                                default=getattr(defaults, field.name),
+                                help=f"{field.name.replace('_', ' ')} (default: {getattr(defaults, field.name)})")
     args = parser.parse_args(argv)
     try:
+        method_options = {"ta": {"window": "window", "basis": "basis"},
+                          "percentage": {"reversal_percent": "reversal_percent"},
+                          "atr": {"swing_atr_period": "atr_period", "atr_multiplier": "atr_multiplier"},
+                          "prominence": {"radius": "radius", "min_prominence_percent": "min_prominence_percent",
+                                         "min_distance": "min_distance"}}
+        supplied = {k: getattr(args, k) for k in ["window", "basis", *method_flags] if getattr(args, k) is not None}
+        mapping = method_options[args.method]
+        unused = set(supplied)-set(mapping)
+        if unused:
+            raise ValueError(f"Options {sorted(unused)} do not apply to method {args.method}")
+        method = create_method(args.method, **{mapping[k]: v for k, v in supplied.items()})
+        args.window, args.basis = method.context_radius, method.basis
+        indicator_settings = IndicatorSettings(**{field.name: getattr(args, field.name) for field in fields(defaults)})
         settings = TrendSettings(args.trend_tolerance, args.trend_lookback,
                                  args.min_touches, args.max_trendlines)
     except ValueError as exc:
@@ -76,7 +110,7 @@ def main(argv=None) -> int:
             parser.error("--gui has its own chart and observed-bars control; omit --show and --until.")
         try:
             from swingpoints.gui import launch
-            launch(args.input, args.window, args.basis, args.output, settings)
+            launch(args.input, args.window, args.basis, args.output, settings, indicator_settings, method=method)
         except (ImportError, RuntimeError) as exc:
             print(f"Desktop interface unavailable: {exc}\nUse the command-line mode to save charts instead.", file=sys.stderr)
             return 1
@@ -96,23 +130,31 @@ def main(argv=None) -> int:
         from swingpoints.plotting import draw_prices
         from swingpoints.output import export_results
 
-        points = detect_swings(bars, args.window, args.basis)
-        lines = detect_trendlines(bars, points, settings)
+        analysis = analyze(bars, method, settings)
+        points, lines = analysis.points, analysis.lines
         selected = select_trendlines(lines, settings)
         fig = plt.figure(figsize=(14, 8))
-        draw_prices(fig, bars, points, args.window, args.basis, args.input.name, lines, settings)
-        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings)
+        draw_prices(fig, bars, points, args.window, args.basis, args.input.name, lines, settings, method=method)
+        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings, indicator_settings, method=method)
+        print(f"Swing method: {method.label} | settings: {method.metadata()['settings']}")
         print(f"Loaded {len(bars)} bars: {bars[0].timestamp} to {bars[-1].timestamp}")
         print(f"Swing highs: {sum(p.kind == 'high' for p in points)} | Swing lows: {sum(p.kind == 'low' for p in points)}")
         print(f"Trendlines: {len(lines)} accepted candidates | displayed: "
               f"{sum(line.kind == 'up' for line in selected)} up / {sum(line.kind == 'down' for line in selected)} down")
-        print(f"Saved chart, CSV/JSON swing and trendline tables, and summary to {output.resolve()}")
-        if len(bars) < 2*args.window + 1:
+        print(f"Saved price/indicator charts, CSV/JSON swing, trendline and indicator tables, and summary to {output.resolve()}")
+        if any(b.volume is None for b in bars):
+            print("VWAP: unavailable from missing volume within each anchor period; other indicators are calculated.")
+        if method.context_radius and len(bars) < 2*method.context_radius + 1:
             print("Not enough bars for this window; no confirmed swings yet.")
         if any((b.timestamp-a.timestamp).total_seconds() != 60 for a,b in zip(bars,bars[1:])):
             print("Note: some intervals are not one minute. No gaps were filled; the window counts bars.")
         if args.show:
+            from swingpoints.indicators import calculate_indicators
+            from swingpoints.indicator_plotting import draw_indicators
+            dashboard = plt.figure(figsize=(14, 13))
+            draw_indicators(dashboard, bars, calculate_indicators(bars, indicator_settings), args.input.name)
             plt.show()
+            plt.close(dashboard)
         plt.close(fig)
         return 0
     except (DataError, ValueError, OSError, ImportError) as exc:

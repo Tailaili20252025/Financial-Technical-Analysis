@@ -1,0 +1,50 @@
+[
+  {
+    "run": "001_ta",
+    "method": "ta",
+    "settings": "{\"window\": 2, \"basis\": \"close\"}",
+    "trend_settings": "{\"tolerance_percent\": 0.5, \"lookback\": 20, \"min_touches\": 2, \"max_per_direction\": 3}",
+    "bars": 639,
+    "swing_highs": 91,
+    "swing_lows": 81,
+    "mean_delay": 2.0,
+    "trend_candidates": 263,
+    "displayed": 6
+  },
+  {
+    "run": "002_percentage",
+    "method": "percentage",
+    "settings": "{\"reversal_percent\": 5.0}",
+    "trend_settings": "{\"tolerance_percent\": 0.5, \"lookback\": 20, \"min_touches\": 2, \"max_per_direction\": 3}",
+    "bars": 639,
+    "swing_highs": 43,
+    "swing_lows": 42,
+    "mean_delay": 2.3411764705882354,
+    "trend_candidates": 107,
+    "displayed": 6
+  },
+  {
+    "run": "003_atr",
+    "method": "atr",
+    "settings": "{\"atr_period\": 14, \"atr_multiplier\": 2.0}",
+    "trend_settings": "{\"tolerance_percent\": 0.5, \"lookback\": 20, \"min_touches\": 2, \"max_per_direction\": 3}",
+    "bars": 639,
+    "swing_highs": 16,
+    "swing_lows": 16,
+    "mean_delay": 4.9375,
+    "trend_candidates": 35,
+    "displayed": 6
+  },
+  {
+    "run": "004_prominence",
+    "method": "prominence",
+    "settings": "{\"radius\": 5, \"min_prominence_percent\": 3.0, \"min_distance\": 3}",
+    "trend_settings": "{\"tolerance_percent\": 0.5, \"lookback\": 20, \"min_touches\": 2, \"max_per_direction\": 3}",
+    "bars": 639,
+    "swing_highs": 61,
+    "swing_lows": 63,
+    "mean_delay": 5.0,
+    "trend_candidates": 101,
+    "displayed": 6
+  }
+]

@@ -1,10 +1,10 @@
 {
-  "source_name": "data.csv",
-  "source_sha256": "76fc3a3bfb9b48b6c8baa85b858a7a8cdfbbd8d07e8078865f0c9794af7d4d7e",
-  "observed_bars": 374,
-  "first_timestamp": "2023-05-19T09:16:00",
-  "last_timestamp": "2023-05-19T15:29:00",
-  "window": 2,
+  "source_name": "TSLA_ready.csv",
+  "source_sha256": "e70235c6b08fc01cd81703bb942a56b25bed9bc8f3ddd896fe2b73fb29cc8ca7",
+  "observed_bars": 639,
+  "first_timestamp": "2019-09-30T00:00:00",
+  "last_timestamp": "2022-04-11T00:00:00",
+  "window": null,
   "basis": "close",
   "trend_settings": {
     "tolerance_percent": 0.5,
@@ -12,28 +12,28 @@
     "min_touches": 2,
     "max_per_direction": 3
   },
-  "trendline_candidates": 152,
+  "trendline_candidates": 35,
   "trendlines_displayed": 6,
-  "trendlines_up": 83,
-  "trendlines_down": 69,
+  "trendlines_up": 25,
+  "trendlines_down": 10,
   "trendline_timing_rule": "Created at second anchor confirmation; dashed segment is retrospective. Stop at first crossing beyond tolerance.",
   "trendline_time_axis": "Elapsed minutes, including gaps; no extrapolation beyond observed history.",
-  "swing_highs": 49,
-  "swing_lows": 52,
-  "intervals_not_one_minute": 0,
-  "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
+  "swing_highs": 16,
+  "swing_lows": 16,
+  "intervals_not_one_minute": 638,
+  "timing_rule": "After ATR warm-up, confirm on a reversal of ATR-at-pivot times multiplier; delay varies.",
   "gap_policy": "No filling; window counts observations, including across gaps/sessions.",
   "swing_method": {
-    "method": "ta",
-    "label": "Traditional TA",
+    "method": "atr",
+    "label": "ATR reversal",
     "settings": {
-      "window": 2,
-      "basis": "close"
+      "atr_period": 14,
+      "atr_multiplier": 2.0
     },
-    "timing_rule": "At completed bar t, test pivot t-window using only bars <= t."
+    "timing_rule": "After ATR warm-up, confirm on a reversal of ATR-at-pivot times multiplier; delay varies."
   },
   "trendline_method": "candidate_construction_validation",
-  "mean_confirmation_delay": 2.0,
+  "mean_confirmation_delay": 4.9375,
   "indicators": {
     "settings": {
       "sma_period": 20,
@@ -48,35 +48,33 @@
       "vwap_reset": "session"
     },
     "valid_counts": {
-      "sma": 355,
-      "ema": 355,
-      "rsi": 360,
-      "macd": 349,
-      "macd_signal": 341,
-      "macd_histogram": 341,
-      "atr": 361,
-      "vwap": 0,
-      "roc": 362,
-      "cci": 355
+      "sma": 620,
+      "ema": 620,
+      "rsi": 625,
+      "macd": 614,
+      "macd_signal": 606,
+      "macd_histogram": 606,
+      "atr": 626,
+      "vwap": 639,
+      "roc": 627,
+      "cci": 620
     },
     "latest": {
-      "sma": 260.96500000000003,
-      "ema": 266.81479323095505,
-      "rsi": 35.91616784172966,
-      "macd": -11.50960306762562,
-      "macd_signal": -13.952831211206945,
-      "macd_histogram": 2.443228143581326,
-      "atr": 9.4389712289639,
-      "vwap": null,
-      "roc": -2.303445650104685,
-      "cci": -53.193554649582694
+      "sma": 1007.3329864533204,
+      "ema": 1009.3507828921274,
+      "rsi": 48.11658852638691,
+      "macd": 40.60577780719393,
+      "macd_signal": 48.490256356627086,
+      "macd_histogram": -7.884478549433155,
+      "atr": 50.11501925799624,
+      "vwap": 986.3466593424479,
+      "roc": -3.7468430324586355,
+      "cci": -15.191772255300128
     },
     "vwap_status_counts": {
-      "missing_volume": 374
+      "ok": 639
     },
-    "warnings": [
-      "VWAP unavailable after missing volume within its anchor period; no substitute volume is used."
-    ],
+    "warnings": [],
     "timing": "Available at the current completed bar; all windows use past/current observations only.",
     "warmup": "Unavailable values are JSON null / CSV blank; no backward filling.",
     "ema_seed": "SMA of first period values; alpha=2/(period+1).",

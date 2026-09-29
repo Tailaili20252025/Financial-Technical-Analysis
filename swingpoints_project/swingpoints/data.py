@@ -28,6 +28,8 @@ class Bar:
     close: float
     # open: Opening price; None when the optional input field is absent.
     open: float | None = None
+    # volume: Actual traded volume; None if absent/blank. Zero is valid; never imputed.
+    volume: float | None = None
 
 
 def _timestamp(value, row: int) -> datetime:
@@ -88,12 +90,28 @@ def _number(value, name: str, row: int) -> float:
     return number
 
 
+def _volume(value, row: int) -> float | None:
+    """Accept missing volume or a finite nonnegative amount; reject bad supplied data."""
+    if value is None or (isinstance(value, str) and not value.strip()):
+        return None
+    try:
+        if isinstance(value, bool):
+            raise ValueError
+        number = float(value)
+        if not math.isfinite(number) or number < 0:
+            raise ValueError
+        return number
+    except (ValueError, TypeError):
+        raise DataError(f"Record {row}: volume must be finite and nonnegative, or blank.") from None
+
+
 def load_prices(path: str | Path) -> list[Bar]:
     """
     Load and validate prices for one instrument from a CSV or JSON file.
 
     Required fields are timestamp, high, low and close. Open is optional but
-    validated when present. Names are case-insensitive; CSV supports comma,
+    validated when present. Optional volume permits zero, blank or absent values,
+    but rejects negative/nonfinite amounts. Names are case-insensitive; CSV supports comma,
     semicolon and tab delimiters. JSON accepts a record array or a data array
     inside an object. Low must not exceed Open/Close, which must not exceed High.
     Duplicate records are rejected and missing prices are never filled.
@@ -151,7 +169,7 @@ def load_prices(path: str | Path) -> list[Bar]:
         opening = _number(clean["open"], "open", index) if "open" in clean else None
         if not low <= close <= high or (opening is not None and not low <= opening <= high):
             raise DataError(f"Record {index}: require low <= open/close <= high.")
-        bars.append(Bar(timestamp, high, low, close, opening))
+        bars.append(Bar(timestamp, high, low, close, opening, _volume(clean.get("volume"), index)))
 
     if len({bar.timestamp.utcoffset() is None for bar in bars}) > 1:
         raise DataError("Do not mix timestamps with and without timezone offsets.")

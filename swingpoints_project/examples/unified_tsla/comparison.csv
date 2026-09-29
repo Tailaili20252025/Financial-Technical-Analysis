@@ -1,0 +1,5 @@
+run,method,settings,trend_settings,bars,swing_highs,swing_lows,mean_delay,trend_candidates,displayed
+001_ta,ta,"{""window"": 2, ""basis"": ""close""}","{""tolerance_percent"": 0.5, ""lookback"": 20, ""min_touches"": 2, ""max_per_direction"": 3}",639,91,81,2.0,263,6
+002_percentage,percentage,"{""reversal_percent"": 5.0}","{""tolerance_percent"": 0.5, ""lookback"": 20, ""min_touches"": 2, ""max_per_direction"": 3}",639,43,42,2.3411764705882354,107,6
+003_atr,atr,"{""atr_period"": 14, ""atr_multiplier"": 2.0}","{""tolerance_percent"": 0.5, ""lookback"": 20, ""min_touches"": 2, ""max_per_direction"": 3}",639,16,16,4.9375,35,6
+004_prominence,prominence,"{""radius"": 5, ""min_prominence_percent"": 3.0, ""min_distance"": 3}","{""tolerance_percent"": 0.5, ""lookback"": 20, ""min_touches"": 2, ""max_per_direction"": 3}",639,61,63,5.0,101,6

@@ -1,0 +1,9 @@
+{
+  "swing_grids": {
+    "ta": {"window": [2, 5]},
+    "percentage": {"reversal_percent": [3, 5]},
+    "atr": {"atr_period": [14], "atr_multiplier": [1, 2]},
+    "prominence": {"radius": [5], "min_prominence_percent": [2, 3], "min_distance": [3]}
+  },
+  "trend_grid": {"tolerance_percent": [0.5]}
+}
