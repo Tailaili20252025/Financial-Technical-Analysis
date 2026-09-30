@@ -7,6 +7,7 @@ from dataclasses import fields
 from swingpoints.indicators import IndicatorSettings
 from swingpoints.methods import METHODS, create_method
 from swingpoints.pipeline import analyze
+from swingpoints.breakouts import BreakoutSettings, breakout_summary
 
 from swingpoints import DataError, detect_swings, load_prices
 from swingpoints.trendlines import TrendSettings, detect_trendlines, select_trendlines
@@ -39,7 +40,7 @@ def main(argv=None) -> int:
     Parse command-line options and run the price analysis or desktop interface.
 
     CLI mode loads prices, optionally limits the observed history, detects swings,
-    plots the results and saves nine output files, including eight indicators. GUI mode starts the Tk event
+    plots the results and saves twelve output files, including eight indicators. GUI mode starts the Tk event
     loop. Existing result files in the selected output directory are replaced.
 
     Args:
@@ -53,7 +54,7 @@ def main(argv=None) -> int:
         SystemExit: Raised by argparse for help (0) or invalid arguments (2).
         Handled runtime errors are printed to standard error and return 1.
     """
-    parser = argparse.ArgumentParser(description="Steps 1-3: load CSV/JSON, plot prices, confirmed swings and trendlines.")
+    parser = argparse.ArgumentParser(description="Steps 1-4: prices, confirmed swings, trendlines and Close-based breakout events.")
     parser.add_argument("input", nargs="?", type=Path, help="CSV or JSON price file")
     parser.add_argument("--window", type=positive_integer, default=None, help="bars on each side of a pivot (default: 2)")
     parser.add_argument("--basis", choices=["close", "high-low"], default=None, help="TA price basis (default: close)")
@@ -69,6 +70,10 @@ def main(argv=None) -> int:
                         help="minimum confirmed touches for displaying a line (at least 2)")
     parser.add_argument("--max-trendlines", type=positive_integer, default=3,
                         help="maximum displayed lines per direction (default: 3)")
+    parser.add_argument("--break-confirmation-bars", type=positive_integer, default=2,
+                        help="consecutive closes beyond line + buffer (default: 2)")
+    parser.add_argument("--break-observation-bars", type=positive_integer, default=5,
+                        help="follow-up bars after candidate, inclusive deadline (default: 5)")
     parser.add_argument("--method", choices=list(METHODS), default="ta", help="Swing strategy (default: ta)")
     method_flags = {
         "reversal_percent": float, "swing_atr_period": positive_integer,
@@ -101,6 +106,7 @@ def main(argv=None) -> int:
         method = create_method(args.method, **{mapping[k]: v for k, v in supplied.items()})
         args.window, args.basis = method.context_radius, method.basis
         indicator_settings = IndicatorSettings(**{field.name: getattr(args, field.name) for field in fields(defaults)})
+        breakout_settings = BreakoutSettings(args.break_confirmation_bars, args.break_observation_bars)
         settings = TrendSettings(args.trend_tolerance, args.trend_lookback,
                                  args.min_touches, args.max_trendlines)
     except ValueError as exc:
@@ -110,7 +116,7 @@ def main(argv=None) -> int:
             parser.error("--gui has its own chart and observed-bars control; omit --show and --until.")
         try:
             from swingpoints.gui import launch
-            launch(args.input, args.window, args.basis, args.output, settings, indicator_settings, method=method)
+            launch(args.input, args.window, args.basis, args.output, settings, indicator_settings, method=method, breakout_settings=breakout_settings)
         except (ImportError, RuntimeError) as exc:
             print(f"Desktop interface unavailable: {exc}\nUse the command-line mode to save charts instead.", file=sys.stderr)
             return 1
@@ -130,18 +136,21 @@ def main(argv=None) -> int:
         from swingpoints.plotting import draw_prices
         from swingpoints.output import export_results
 
-        analysis = analyze(bars, method, settings)
+        analysis = analyze(bars, method, settings, breakout_settings)
         points, lines = analysis.points, analysis.lines
         selected = select_trendlines(lines, settings)
         fig = plt.figure(figsize=(14, 8))
         draw_prices(fig, bars, points, args.window, args.basis, args.input.name, lines, settings, method=method)
-        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings, indicator_settings, method=method)
+        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings, indicator_settings, method=method, breakout_settings=breakout_settings, events=analysis.events)
+        status = breakout_summary(analysis.events, breakout_settings, args.basis)
+        print(f"Step 4: {status['status']} | {status['candidate_events']} line events | "
+              f"{status['confirmed']} confirmed | {status['false_breakouts'] + status['false_breakdowns']} false | {status['pending']} pending")
         print(f"Swing method: {method.label} | settings: {method.metadata()['settings']}")
         print(f"Loaded {len(bars)} bars: {bars[0].timestamp} to {bars[-1].timestamp}")
         print(f"Swing highs: {sum(p.kind == 'high' for p in points)} | Swing lows: {sum(p.kind == 'low' for p in points)}")
         print(f"Trendlines: {len(lines)} accepted candidates | displayed: "
               f"{sum(line.kind == 'up' for line in selected)} up / {sum(line.kind == 'down' for line in selected)} down")
-        print(f"Saved price/indicator charts, CSV/JSON swing, trendline and indicator tables, and summary to {output.resolve()}")
+        print(f"Saved 12 files: price/indicator/breakout charts, CSV/JSON tables, and summary to {output.resolve()}")
         if any(b.volume is None for b in bars):
             print("VWAP: unavailable from missing volume within each anchor period; other indicators are calculated.")
         if method.context_radius and len(bars) < 2*method.context_radius + 1:
@@ -153,7 +162,11 @@ def main(argv=None) -> int:
             from swingpoints.indicator_plotting import draw_indicators
             dashboard = plt.figure(figsize=(14, 13))
             draw_indicators(dashboard, bars, calculate_indicators(bars, indicator_settings), args.input.name)
+            from swingpoints.breakout_plotting import draw_breakouts
+            breakout_figure = plt.figure(figsize=(14, 10))
+            draw_breakouts(breakout_figure, bars, analysis.events, lines, args.input.name, breakout_settings, settings, args.basis)
             plt.show()
+            plt.close(breakout_figure)
             plt.close(dashboard)
         plt.close(fig)
         return 0

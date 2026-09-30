@@ -19,6 +19,7 @@ from swingpoints import Bar, detect_swings, load_prices
 from swingpoints.trendlines import TrendSettings, detect_trendlines, select_trendlines
 from swingpoints.plotting import draw_prices
 from swingpoints.output import export_results
+from swingpoints.breakouts import BreakoutSettings
 from test_system import make_bars
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -325,7 +326,7 @@ class TrendTests(unittest.TestCase):
                 self.assertEqual(json.loads(csv_records[0]["touch_bars"]),records[0]["touch_bars"])
                 self.assertEqual({p.name for p in dest.iterdir()}, {
                     "prices.png", "swing_points.csv", "swing_points.json", "trendlines.csv", "trendlines.json",
-                    "run_summary.json", "indicators.csv", "indicators.json", "indicators.png"})
+                    "run_summary.json", "indicators.csv", "indicators.json", "indicators.png", "breakouts.csv", "breakouts.json", "breakouts.png"})
                 outputs.append(records)
             self.assertEqual(*outputs)
             dest = Path(directory)/"empty"
@@ -392,6 +393,9 @@ class TrendTests(unittest.TestCase):
             setattr(app,name,variable)
         from swingpoints.indicators import IndicatorSettings, calculate_indicators
         app.indicator_settings = IndicatorSettings(sma_period=3)
+        app.breakout_settings = BreakoutSettings()
+        app.breakout_table = MagicMock()
+        app.breakout_table.__getitem__.return_value = ("line_id", "outcome")
         app.indicator_table = MagicMock()
         app.indicator_table.__getitem__.return_value = ("bar", "sma", "vwap_status")
         app.figure, app.canvas = Figure(), MagicMock()
@@ -431,6 +435,7 @@ class TrendTests(unittest.TestCase):
         indicator_settings = IndicatorSettings(sma_period=3)
         from swingpoints.methods import TraditionalTAMethod, TASettings
         method = TraditionalTAMethod(TASettings(1))
+        app.breakout_snapshot = ([], BreakoutSettings())
         app.current_run = (Path("example.csv"),bars,points,1,"close",lines,settings,indicator_settings,method)
         app.indicator_settings = IndicatorSettings(sma_period=99)  # Unapplied edits must not leak into export.
         app.output, app.figure = Path("output"), Figure()
@@ -440,7 +445,7 @@ class TrendTests(unittest.TestCase):
              patch("swingpoints.gui.messagebox.showinfo"), \
              patch("swingpoints.gui.export_results") as export:
             app.export()
-        export.assert_called_once_with("chosen",Path("example.csv"),bars,points,1,"close",app.figure,lines,settings,indicator_settings,method=method)
+        export.assert_called_once_with("chosen",Path("example.csv"),bars,points,1,"close",app.figure,lines,settings,indicator_settings,method=method,breakout_settings=app.breakout_snapshot[1],events=[])
         app.trend_tolerance.get.assert_not_called()
 
 

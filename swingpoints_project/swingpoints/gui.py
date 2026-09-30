@@ -13,6 +13,8 @@ from matplotlib.figure import Figure
 from .data import DataError, load_prices
 from .methods import METHODS, TraditionalTAMethod, TASettings
 from .pipeline import analyze
+from .breakouts import BreakoutSettings
+from .breakout_plotting import draw_breakouts
 from .output import export_results
 from .plotting import draw_prices
 from .trendlines import TrendSettings, detect_trendlines, select_trendlines
@@ -21,7 +23,7 @@ from .trendlines import TrendSettings, detect_trendlines, select_trendlines
 class SwingApp:
     """File picker, configurable detector, historical cutoff, chart and table."""
 
-    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None):
+    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None, breakout_settings=None):
         """
         Build the desktop controls, chart canvas and swing-results table.
 
@@ -34,7 +36,8 @@ class SwingApp:
             basis (str): Initial price basis; default is 'close'.
             settings (TrendSettings or None): Initial trendline settings.
             indicator_settings (IndicatorSettings or None): Initial indicator periods/anchor.
-        method (SwingMethod or None): Initial swing strategy; defaults to traditional TA.
+            method (SwingMethod or None): Initial swing strategy; defaults to traditional TA.
+            breakout_settings (BreakoutSettings or None): Initial Step 4 confirmation/follow-up rules.
             output (Path): Initial export-directory preference; default is Path("output").
 
         Result:
@@ -60,7 +63,11 @@ class SwingApp:
         # method_settings: Immutable parameter objects retained separately for each strategy.
         self.method_settings = {name: cls().settings for name, cls in METHODS.items()}
         self.method_settings[method.key] = method.settings
-        root.title("SwingPoints | Four Swing Methods + Indicators")
+        # breakout_settings: Validated rules; pending edits do not alter exported snapshots.
+        self.breakout_settings = breakout_settings or BreakoutSettings()
+        # breakout_snapshot: (events, settings) from the last successful refresh.
+        self.breakout_snapshot = None
+        root.title("SwingPoints | Steps 1-4 + Indicators")
         root.geometry("1350x950")
         controls = ttk.Frame(root, padding=8)
         controls.pack(fill="x")
@@ -117,6 +124,11 @@ class SwingApp:
             ttk.Entry(trend_controls, textvariable=variable, width=6).pack(side="left")
         ttk.Button(trend_controls, text="Indicator settings", command=self.edit_indicator_settings).pack(side="left", padx=8)
         ttk.Button(trend_controls, text="Indicator chart", command=self.show_indicators).pack(side="left", padx=4)
+        breakout_controls = ttk.Frame(root, padding=(12, 3))
+        breakout_controls.pack(fill="x")
+        ttk.Button(breakout_controls, text="Step 4 settings", command=self.edit_breakout_settings).pack(side="left", padx=4)
+        ttk.Button(breakout_controls, text="Breakout chart", command=self.show_breakouts).pack(side="left", padx=4)
+        ttk.Label(breakout_controls, text="Close mode only | confirmation and false-break outcomes are separate").pack(side="left", padx=8)
         # status: StringVar bound to the status label showing the latest analysis summary.
         self.status = tk.StringVar(value="Open a CSV or JSON file. Window = bars on each side; all timestamps refer to completed bars.")
         ttk.Label(root, textvariable=self.status, padding=(12, 6)).pack(fill="x")
@@ -142,6 +154,22 @@ class SwingApp:
         self.trend_table.configure(yscrollcommand=trend_scrollbar.set)
         self.trend_table.pack(side="left", fill="both", expand=True)
         trend_scrollbar.pack(side="right", fill="y")
+        breakout_frame = ttk.Frame(notebook)
+        notebook.add(breakout_frame, text="Step 4: all line events")
+        breakout_columns = ("line_id", "direction", "candidate_bar", "confirmation_status", "confirmation_bar", "failure_bar", "deadline_bar", "outcome")
+        # breakout_table: One row per line, including lines absent from the price chart.
+        self.breakout_table = ttk.Treeview(breakout_frame, columns=breakout_columns, show="headings", height=7)
+        for col in breakout_columns:
+            self.breakout_table.heading(col, text=col.replace("_", " ").title())
+            self.breakout_table.column(col, width=200 if col == "outcome" else 135, stretch=False, anchor="center")
+        bx = ttk.Scrollbar(breakout_frame, orient="horizontal", command=self.breakout_table.xview)
+        by = ttk.Scrollbar(breakout_frame, orient="vertical", command=self.breakout_table.yview)
+        self.breakout_table.configure(xscrollcommand=bx.set, yscrollcommand=by.set)
+        self.breakout_table.grid(row=0, column=0, sticky="nsew")
+        bx.grid(row=1, column=0, sticky="ew")
+        by.grid(row=0, column=1, sticky="ns")
+        breakout_frame.columnconfigure(0, weight=1)
+        breakout_frame.rowconfigure(0, weight=1)
         indicator_frame = ttk.Frame(notebook)
         notebook.add(indicator_frame, text="Indicators (blank = unavailable)")
         indicator_columns = ("bar", "timestamp", "sma", "ema", "rsi", "macd", "macd_signal",
@@ -223,6 +251,47 @@ class SwingApp:
             if self.bars:
                 self.refresh()
         ttk.Button(dialog, text="Apply", command=apply).grid(row=len(variables), column=0, columnspan=2, pady=12)
+
+    def edit_breakout_settings(self):
+        """Edit confirmation and follow-up counts and apply to the visible prefix."""
+        dialog = tk.Toplevel(self.root)
+        dialog.title("Step 4 settings — completed observed bars")
+        variables = {}
+        for row, field in enumerate(fields(self.breakout_settings)):
+            ttk.Label(dialog, text=field.name.replace("_", " ").title()).grid(row=row, column=0, padx=12, pady=5)
+            variable = tk.StringVar(value=str(getattr(self.breakout_settings, field.name)))
+            variables[field.name] = variable
+            ttk.Entry(dialog, textvariable=variable).grid(row=row, column=1, padx=12)
+
+        def apply():
+            """Validate both counts before changing the applied rules."""
+            try:
+                settings = BreakoutSettings(**{name: int(v.get()) for name, v in variables.items()})
+            except ValueError as exc:
+                messagebox.showerror("Invalid Step 4 settings", str(exc), parent=dialog)
+                return
+            self.breakout_settings = settings
+            dialog.destroy()
+            if self.bars:
+                self.refresh()
+        ttk.Button(dialog, text="Apply", command=apply).grid(row=2, column=0, columnspan=2, pady=12)
+
+    def show_breakouts(self):
+        """Show events/settings from the last successful analysis, respecting replay."""
+        if self.current_run is None or self.breakout_snapshot is None:
+            messagebox.showinfo("Open data", "Load data and apply a valid run first.")
+            return
+        source, bars, _, _, basis, lines, trend_settings, _, _ = self.current_run
+        events, settings = self.breakout_snapshot
+        window = tk.Toplevel(self.root)
+        window.title(f"Step 4 — {source.name} — {len(bars)} observed bars")
+        window.geometry("1100x850")
+        figure = Figure(figsize=(12, 9))
+        draw_breakouts(figure, bars, events, lines, source.name, settings, trend_settings, basis)
+        canvas = FigureCanvasTkAgg(figure, master=window)
+        canvas.get_tk_widget().pack(fill="both", expand=True)
+        NavigationToolbar2Tk(canvas, window).update()
+        canvas.draw()
 
     def edit_indicator_settings(self):
         """Edit indicator class attributes; validate before applying to the visible prefix."""
@@ -309,6 +378,7 @@ class SwingApp:
             return
         self.bars, self.source = bars, Path(path)
         self.current_run = None
+        self.breakout_snapshot = None
         self.export_button.configure(state="disabled")
         self.cutoff.set(str(len(bars)))
         self.refresh()
@@ -344,7 +414,7 @@ class SwingApp:
             basis = method.basis
             settings = TrendSettings(float(self.trend_tolerance.get()), int(self.trend_lookback.get()),
                                      int(self.min_touches.get()), int(self.max_lines.get()))
-            analysis = analyze(visible, method, settings)
+            analysis = analyze(visible, method, settings, self.breakout_settings)
             points, lines = analysis.points, analysis.lines
             selected = select_trendlines(lines, settings)
             indicators = calculate_indicators(visible, self.indicator_settings)
@@ -362,6 +432,12 @@ class SwingApp:
             record = line.as_record(visible, True)
             self.trend_table.insert("", "end", values=[record[key] if record[key] is not None else ""
                                                       for key in self.trend_table["columns"]])
+        self.breakout_table.delete(*self.breakout_table.get_children())
+        for event in analysis.events:
+            record = event.as_record(visible)
+            self.breakout_table.insert("", "end", values=[record[k] if record[k] is not None else ""
+                                                        for k in self.breakout_table["columns"]])
+        self.breakout_snapshot = (analysis.events, analysis.breakout_settings)
         self.indicator_result = indicators
         self.indicator_table.delete(*self.indicator_table.get_children())
         for record in indicators.records(visible):
@@ -375,6 +451,8 @@ class SwingApp:
             extra += " | Non-minute intervals present; windows count bars"
         if "missing_volume" in indicators.vwap_status:
             extra += " | VWAP: missing volume"
+        extra += (f" | Step 4: {len(analysis.events)} line events" if basis == "close"
+                  else " | Step 4 unavailable: use Close basis")
         self.status.set(f"{method.label} | {self.source.name} | {count}/{len(self.bars)} observed bars | {len(points)} confirmed swings | "
                         f"{len(selected)} displayed trendlines | Latest observed: {visible[-1].timestamp}{extra}")
 
@@ -414,7 +492,7 @@ class SwingApp:
             None.
 
         Result:
-            None: Saves nine result files and displays a success message. Does nothing
+            None: Saves twelve result files and displays a success message. Does nothing
                 when no run exists or the destination dialog is cancelled.
 
         Exception:
@@ -429,13 +507,15 @@ class SwingApp:
             return
         try:
             source, bars, points, window, basis, lines, settings, indicator_settings, method = self.current_run
-            export_results(folder, source, bars, points, window, basis, self.figure, lines, settings, indicator_settings, method=method)
-            messagebox.showinfo("Saved", f"Price/indicator charts, swing/trendline/indicator tables and run summary saved to:\n{folder}")
+            events, breakout_settings = self.breakout_snapshot
+            export_results(folder, source, bars, points, window, basis, self.figure, lines, settings, indicator_settings,
+                           method=method, breakout_settings=breakout_settings, events=events)
+            messagebox.showinfo("Saved", f"Price/indicator/breakout charts, result tables and run summary saved to:\n{folder}")
         except (OSError, ValueError) as exc:
             messagebox.showerror("Cannot export", str(exc))
 
 
-def launch(path=None, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None):
+def launch(path=None, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None, breakout_settings=None):
     """
     Create the desktop application and run its Tk event loop.
 
@@ -450,6 +530,7 @@ def launch(path=None, window=2, basis="close", output=Path("output"), settings=N
         settings (TrendSettings or None): Initial trendline settings.
         indicator_settings (IndicatorSettings or None): Initial indicator periods/anchor.
         method (SwingMethod or None): Initial swing strategy; defaults to traditional TA.
+        breakout_settings (BreakoutSettings or None): Initial Step 4 confirmation/follow-up rules.
 
     Result:
         None: Returns after the Tk event loop ends, normally when the window closes.
@@ -462,7 +543,7 @@ def launch(path=None, window=2, basis="close", output=Path("output"), settings=N
         root = tk.Tk()
     except tk.TclError as exc:
         raise RuntimeError("Tk could not open a display. Install Python with Tk or use CLI mode.") from exc
-    app = SwingApp(root, window, basis, output, settings, indicator_settings, method=method)
+    app = SwingApp(root, window, basis, output, settings, indicator_settings, method=method, breakout_settings=breakout_settings)
     if path:
         app.load(path)
     root.mainloop()
