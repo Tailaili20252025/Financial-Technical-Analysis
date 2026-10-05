@@ -8,6 +8,7 @@ import hashlib
 import json
 from pathlib import Path
 
+from .breakouts import BreakoutSettings, BREAKOUT_FIELDS, detect_breakouts, breakout_summary
 from .data import Bar
 from .indicators import IndicatorSettings, calculate_indicators
 from .detector import SwingPoint
@@ -23,12 +24,14 @@ FIELDS = ["kind", "price", "pivot_bar", "pivot_time", "confirmed_bar", "confirme
 
 def export_results(output: str | Path, source: str | Path, bars: list[Bar],
                    points: list[SwingPoint], window: int, basis: str, figure, lines=None, settings=None,
-                   indicator_settings: IndicatorSettings | None = None, method=None) -> Path:
+                   indicator_settings: IndicatorSettings | None = None, method=None,
+                   breakout_settings: BreakoutSettings | None = None, events=None) -> Path:
     """
     Save the supplied analysis as a chart, swing tables and a run summary.
 
     Writes prices.png, swing_points.csv/json, trendlines.csv/json and run_summary.json.
     Also writes indicators.csv/json and indicators.png using the same observed bars.
+    Adds breakouts.csv/json and breakouts.png (12 files total).
     Existing result files are replaced. The summary describes the observed prefix,
     but the hash covers the complete source file. Export is not atomic: a later
     I/O failure can leave earlier result files written.
@@ -45,6 +48,8 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         settings (TrendSettings or None): Settings used to detect and select lines.
         indicator_settings (IndicatorSettings or None): Indicator periods and VWAP anchor.
         method (SwingMethod or None): Applied strategy metadata and event export schema.
+        breakout_settings (BreakoutSettings or None): Applied Step 4 settings.
+        events (list or None): Same-prefix Step 4 events; None scans all supplied lines.
 
     Result:
         Path: The output directory, in the same relative/absolute form as supplied.
@@ -57,13 +62,16 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
     """
     output, source = Path(output), Path(source)
     names = ("prices.png", "swing_points.csv", "swing_points.json", "run_summary.json", "trendlines.csv", "trendlines.json",
-             "indicators.csv", "indicators.json", "indicators.png")
+             "indicators.csv", "indicators.json", "indicators.png", "breakouts.csv", "breakouts.json", "breakouts.png")
     if any((output / name).resolve() == source.resolve() for name in names):
         raise ValueError("Output paths would overwrite the input file; choose another output directory.")
     indicators = calculate_indicators(bars, indicator_settings)
     settings = settings or TrendSettings()
     if lines is None:
         lines = detect_trendlines(bars, points, settings)
+    breakout_settings = breakout_settings or BreakoutSettings()
+    if events is None:
+        events = detect_breakouts(bars, lines, breakout_settings)
     selected_ids = {line.line_id for line in select_trendlines(lines, settings)}
     trend_records = [line.as_record(bars, line.line_id in selected_ids) for line in lines]
     output.mkdir(parents=True, exist_ok=True)
@@ -82,6 +90,12 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
             writer.writerow({**record, "touch_bars": json.dumps(record["touch_bars"]),
                              "touch_confirmed_bars": json.dumps(record["touch_confirmed_bars"])})
     (output / "trendlines.json").write_text(json.dumps(trend_records, indent=2), encoding="utf-8")
+    event_records = [event.as_record(bars) for event in events]
+    with (output / "breakouts.csv").open("w", encoding="utf-8", newline="") as stream:
+        writer = csv.DictWriter(stream, fieldnames=BREAKOUT_FIELDS)
+        writer.writeheader()
+        writer.writerows(event_records)
+    (output / "breakouts.json").write_text(json.dumps(event_records, indent=2, allow_nan=False), encoding="utf-8")
     nonminute = sum((b.timestamp-a.timestamp).total_seconds() != 60 for a, b in zip(bars, bars[1:]))
     summary = {
         "source_name": source.name,
@@ -114,12 +128,18 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         writer.writerows(indicator_records)
     (output / "indicators.json").write_text(json.dumps(indicator_records, indent=2, allow_nan=False), encoding="utf-8")
     summary["indicators"] = indicators.metadata()
+    summary["breakouts"] = breakout_summary(events, breakout_settings, basis)
     from matplotlib.figure import Figure
     from .indicator_plotting import draw_indicators
     indicator_figure = Figure(figsize=(14, 13))
     draw_indicators(indicator_figure, bars, indicators, source.name)
     indicator_figure.savefig(output / "indicators.png", dpi=150)
     indicator_figure.clear()
+    from .breakout_plotting import draw_breakouts
+    breakout_figure = Figure(figsize=(14, 10))
+    draw_breakouts(breakout_figure, bars, events, lines, source.name, breakout_settings, settings, basis)
+    breakout_figure.savefig(output / "breakouts.png", dpi=150)
+    breakout_figure.clear()
     (output / "run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     figure.savefig(output / "prices.png", dpi=160)
     return output

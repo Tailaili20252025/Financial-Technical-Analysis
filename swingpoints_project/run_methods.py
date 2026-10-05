@@ -10,6 +10,7 @@ from swingpoints.methods import METHODS, create_method
 from swingpoints.pipeline import run_analysis
 from swingpoints.trendlines import TrendSettings
 from swingpoints.indicators import IndicatorSettings
+from swingpoints.breakouts import BreakoutSettings, breakout_summary
 
 
 @dataclass
@@ -49,9 +50,12 @@ def main(argv=None):
     parser.add_argument("--until", type=int)
     parser.add_argument("--sweep", action="store_true", help="use ExperimentSettings default parameter grids")
     parser.add_argument("--grid", type=Path, help="JSON containing swing_grids and/or trend_grid")
+    parser.add_argument("--break-confirmation-bars", type=int, default=2)
+    parser.add_argument("--break-observation-bars", type=int, default=5)
     args = parser.parse_args(argv)
     experiment = ExperimentSettings()
     try:
+        breakout_settings = BreakoutSettings(args.break_confirmation_bars, args.break_observation_bars)
         if args.grid:
             supplied = json.loads(args.grid.read_text())
             if not isinstance(supplied, dict) or set(supplied)-{"swing_grids", "trend_grid"}:
@@ -85,13 +89,17 @@ def main(argv=None):
         for number, (name, swing, trend) in enumerate(jobs, 1):
             run_name = f"{number:03d}_{name}"
             result = run_analysis(args.input, args.output/run_name, METHODS[name](swing),
-                                  trend, IndicatorSettings(), args.until)
+                                  trend, IndicatorSettings(), args.until, breakout_settings=breakout_settings)
             row = {"run": run_name, "method": name, "settings": json.dumps(asdict(swing)),
                    "trend_settings": json.dumps(asdict(trend)), "bars": len(result.bars),
                    "swing_highs": sum(p.kind == "high" for p in result.points),
                    "swing_lows": sum(p.kind == "low" for p in result.points),
                    "mean_delay": sum(p.confirmed_index-p.pivot_index for p in result.points)/len(result.points) if result.points else None,
                    "trend_candidates": len(result.lines), "displayed": len(result.selected)}
+            stats = breakout_summary(result.events, breakout_settings, result.method.basis)
+            row.update({"breakout_settings": json.dumps(asdict(breakout_settings)),
+                        **{"step4_" + k: stats[k] for k in ("status", "candidate_events", "confirmed", "false_breakouts",
+                          "false_breakdowns", "pending", "fully_observed_candidates", "failure_rate_full_windows")}})
             rows.append(row)
             print(f"{run_name}: {len(result.points)} swings, {len(result.lines)} trendlines", flush=True)
         with (args.output/"comparison.csv").open("w", newline="") as stream:

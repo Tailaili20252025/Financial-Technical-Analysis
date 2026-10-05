@@ -1,0 +1,111 @@
+{
+  "source_name": "TSLA_ready.csv",
+  "source_sha256": "e70235c6b08fc01cd81703bb942a56b25bed9bc8f3ddd896fe2b73fb29cc8ca7",
+  "observed_bars": 639,
+  "first_timestamp": "2019-09-30T00:00:00",
+  "last_timestamp": "2022-04-11T00:00:00",
+  "window": 2,
+  "basis": "close",
+  "trend_settings": {
+    "tolerance_percent": 0.5,
+    "lookback": 20,
+    "min_touches": 2,
+    "max_per_direction": 3
+  },
+  "trendline_candidates": 263,
+  "trendlines_displayed": 6,
+  "trendlines_up": 130,
+  "trendlines_down": 133,
+  "trendline_timing_rule": "Created at second anchor confirmation; dashed segment is retrospective. Stop at first crossing beyond tolerance.",
+  "trendline_time_axis": "Elapsed minutes, including gaps; no extrapolation beyond observed history.",
+  "swing_highs": 91,
+  "swing_lows": 81,
+  "intervals_not_one_minute": 638,
+  "timing_rule": "At completed bar t, test pivot t-window using only bars <= t.",
+  "gap_policy": "No filling; window counts observations, including across gaps/sessions.",
+  "swing_method": {
+    "method": "ta",
+    "label": "Traditional TA",
+    "settings": {
+      "window": 2,
+      "basis": "close"
+    },
+    "timing_rule": "At completed bar t, test pivot t-window using only bars <= t."
+  },
+  "trendline_method": "candidate_construction_validation",
+  "mean_confirmation_delay": 2.0,
+  "indicators": {
+    "settings": {
+      "sma_period": 20,
+      "ema_period": 20,
+      "rsi_period": 14,
+      "macd_fast": 12,
+      "macd_slow": 26,
+      "macd_signal": 9,
+      "atr_period": 14,
+      "roc_period": 12,
+      "cci_period": 20,
+      "vwap_reset": "session"
+    },
+    "valid_counts": {
+      "sma": 620,
+      "ema": 620,
+      "rsi": 625,
+      "macd": 614,
+      "macd_signal": 606,
+      "macd_histogram": 606,
+      "atr": 626,
+      "vwap": 639,
+      "roc": 627,
+      "cci": 620
+    },
+    "latest": {
+      "sma": 1007.3329864533204,
+      "ema": 1009.3507828921274,
+      "rsi": 48.11658852638691,
+      "macd": 40.60577780719393,
+      "macd_signal": 48.490256356627086,
+      "macd_histogram": -7.884478549433155,
+      "atr": 50.11501925799624,
+      "vwap": 986.3466593424479,
+      "roc": -3.7468430324586355,
+      "cci": -15.191772255300128
+    },
+    "vwap_status_counts": {
+      "ok": 639
+    },
+    "warnings": [],
+    "timing": "Available at the current completed bar; all windows use past/current observations only.",
+    "warmup": "Unavailable values are JSON null / CSV blank; no backward filling.",
+    "ema_seed": "SMA of first period values; alpha=2/(period+1).",
+    "rsi": "Wilder smoothing; flat gain/loss yields 50; gain-only 100, loss-only 0.",
+    "atr": "First true range is High-Low; SMA seed then Wilder smoothing.",
+    "cci": "Typical price HLC3; 0.015 scaling; mean absolute deviation; flat window yields 0.",
+    "vwap": "HLC3 weighted by actual volume; session means input calendar date, not an exchange calendar."
+  },
+  "breakouts": {
+    "status": "enabled",
+    "settings": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "basis": "close",
+    "buffer_rule": "Step 3 fixed absolute first-anchor tolerance",
+    "scope": "All accepted Close trendlines; one first-break event per line ID",
+    "candidate_events": 239,
+    "breakouts": 130,
+    "breakdowns": 109,
+    "confirmed": 195,
+    "confirmation_pending": 0,
+    "not_confirmed": 44,
+    "false_breakouts": 39,
+    "false_breakdowns": 46,
+    "pending": 0,
+    "no_failure_within_window": 154,
+    "fully_observed_candidates": 239,
+    "failures_in_fully_observed_candidates": 85,
+    "failure_rate_full_windows": 0.35564853556485354,
+    "mean_confirmation_delay_bars": 1.0256410256410255,
+    "interpretation": "Confirmed can later fail. No failure within the window is not proof of future continuation. Counts are per line, not independent trades."
+  }
+}

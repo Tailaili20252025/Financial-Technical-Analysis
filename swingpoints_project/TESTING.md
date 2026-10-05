@@ -1,3 +1,9 @@
+## Step 4 validation
+
+The test suite now includes `tests/test_breakouts.py`. Existing export assertions
+include the three new Step 4 files (12 total); GUI tests verify applied settings
+and event snapshots. See `STEP4_TEST_RESULTS.txt` and `STEP4_RESULTS.md`.
+
 # Validation: Steps 1–3
 
 Run from `swingpoints_project`:

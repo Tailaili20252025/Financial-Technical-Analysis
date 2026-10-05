@@ -13,6 +13,7 @@ from swingpoints.data import load_prices
 from swingpoints.detector import SwingPoint
 from swingpoints.methods import METHODS, SwingMethod, TASettings, create_method
 from swingpoints.pipeline import analyze, run_analysis
+from swingpoints.breakouts import BreakoutSettings
 from swingpoints.indicators import IndicatorSettings, calculate_indicators
 from swingpoints.plotting import draw_prices
 from run_methods import settings_product
@@ -94,7 +95,7 @@ class MethodTests(unittest.TestCase):
                 summary = json.loads((dest/'run_summary.json').read_text())
                 self.assertEqual(summary['swing_method']['method'], name)
                 self.assertEqual(summary['observed_bars'], 1)
-                self.assertEqual(len(list(dest.iterdir())), 9)
+                self.assertEqual(len(list(dest.iterdir())), 12)
                 self.assertEqual(json.loads((dest/'swing_points.json').read_text()), [])
                 with (dest/'swing_points.csv').open() as stream:
                     self.assertEqual('threshold_price' in csv.DictReader(stream).fieldnames, name != 'ta')
@@ -142,6 +143,9 @@ class MethodTests(unittest.TestCase):
             for key, value in {'method_name':name,'window':'2','basis':'close','cutoff':'100',
                                'trend_tolerance':'0.5','trend_lookback':'20','min_touches':'2','max_lines':'3'}.items():
                 var = MagicMock(); var.get.return_value = value; setattr(app,key,var)
+            app.breakout_settings = BreakoutSettings()
+            app.breakout_table = MagicMock()
+            app.breakout_table.__getitem__.return_value = ("line_id", "outcome")
             app.indicator_settings = IndicatorSettings()
             app.figure, app.canvas = Figure(), MagicMock()
             app.table, app.trend_table, app.indicator_table = MagicMock(), MagicMock(), MagicMock()
@@ -155,11 +159,16 @@ class MethodTests(unittest.TestCase):
             self.assertEqual(snapshot[-1].key,name)
             self.assertEqual(snapshot[2],create_method(name).detect(bars[:100]))
             self.assertEqual(app.indicator_table.insert.call_count,100)
+            saved_events, saved_settings = app.breakout_snapshot
+            self.assertEqual(app.breakout_table.insert.call_count, len(saved_events))
+            app.breakout_settings = BreakoutSettings(1, 1)
             app.method_name.get.return_value = 'unapplied-edit'
             with patch('swingpoints.gui.filedialog.askdirectory',return_value='chosen'), \
                  patch('swingpoints.gui.messagebox.showinfo'), patch('swingpoints.gui.export_results') as export:
                 app.export()
                 self.assertIs(export.call_args.kwargs['method'],snapshot[-1])
+                self.assertIs(export.call_args.kwargs['events'], saved_events)
+                self.assertIs(export.call_args.kwargs['breakout_settings'], saved_settings)
             app.figure.clear()
 
 

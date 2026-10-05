@@ -1,3 +1,10 @@
+## Step 4 update: Breakout and False Breakout
+
+Close-based Step 4 now runs after the shared trendline stage for all four methods.
+Each run writes 12 files, including `breakouts.csv/json` and `breakouts.png`.
+See [Step 4 rules, commands and GUI instructions](swingpoints_project/STEP4.md). Earlier nine-file descriptions
+and saved unified examples below describe the pre-Step-4 version.
+
 > **Unified swing strategies:** Traditional TA, percentage reversal, ATR reversal
 > and local prominence now share one application. See
 > [the guide](swingpoints_project/UNIFIED_METHODS.md) and

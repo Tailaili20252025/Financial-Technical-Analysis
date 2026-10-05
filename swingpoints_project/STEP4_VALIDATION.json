@@ -1,0 +1,82 @@
+{
+  "baseline": "Unified_Swing_Methods/full_project/Financial-Technical-Analysis-main",
+  "based_on_main_2": false,
+  "tests_passed": 113,
+  "original_regression_cases_passed": 14,
+  "new_step4_tests": 18,
+  "unchanged_outputs": [
+    {
+      "run": "examples/step4_data",
+      "original_files_byte_identical": [
+        "indicators.csv",
+        "indicators.png",
+        "prices.png",
+        "swing_points.json",
+        "trendlines.json",
+        "trendlines.csv",
+        "swing_points.csv",
+        "indicators.json"
+      ],
+      "old_summary_values_identical": true
+    },
+    {
+      "run": "examples/step4_tsla/001_ta",
+      "original_files_byte_identical": [
+        "indicators.csv",
+        "indicators.png",
+        "prices.png",
+        "swing_points.json",
+        "trendlines.json",
+        "trendlines.csv",
+        "swing_points.csv",
+        "indicators.json"
+      ],
+      "old_summary_values_identical": true
+    },
+    {
+      "run": "examples/step4_tsla/002_percentage",
+      "original_files_byte_identical": [
+        "indicators.csv",
+        "indicators.png",
+        "prices.png",
+        "swing_points.json",
+        "trendlines.json",
+        "trendlines.csv",
+        "swing_points.csv",
+        "indicators.json"
+      ],
+      "old_summary_values_identical": true
+    },
+    {
+      "run": "examples/step4_tsla/003_atr",
+      "original_files_byte_identical": [
+        "indicators.csv",
+        "indicators.png",
+        "prices.png",
+        "swing_points.json",
+        "trendlines.json",
+        "trendlines.csv",
+        "swing_points.csv",
+        "indicators.json"
+      ],
+      "old_summary_values_identical": true
+    },
+    {
+      "run": "examples/step4_tsla/004_prominence",
+      "original_files_byte_identical": [
+        "indicators.csv",
+        "indicators.png",
+        "prices.png",
+        "swing_points.json",
+        "trendlines.json",
+        "trendlines.csv",
+        "swing_points.csv",
+        "indicators.json"
+      ],
+      "old_summary_values_identical": true
+    }
+  ],
+  "gui_validation": "Real callbacks with mock widgets; native macOS visual test not performed",
+  "rule_source": "User-supplied Breakdown Point Report.docx",
+  "rule_source_sha256": "4a3687e8665e56c0be224f44768d4e445c1745831c420b021342cf169731a1e2"
+}

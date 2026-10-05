@@ -1,3 +1,10 @@
+## Step 4 update: Breakout and False Breakout
+
+Close-based Step 4 now runs after the shared trendline stage for all four methods.
+Each run writes 12 files, including `breakouts.csv/json` and `breakouts.png`.
+See [Step 4 rules, commands and GUI instructions](STEP4.md). Earlier nine-file descriptions
+and saved unified examples below describe the pre-Step-4 version.
+
 > **Four methods in one application:** see [UNIFIED_METHODS.md](UNIFIED_METHODS.md)
 > for the method selector, class API, GUI settings and comparison commands.
 > The original instructions below describe the default traditional TA method.
