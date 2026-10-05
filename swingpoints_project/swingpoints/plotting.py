@@ -9,7 +9,7 @@ from .trendlines import detect_trendlines, select_trendlines
 
 
 def draw_prices(fig: Figure, bars: list[Bar], points: list[SwingPoint], window: int,
-                basis: str, source: str = "Price data", lines=None, settings=None) -> None:
+                basis: str, source: str = "Price data", lines=None, settings=None, method=None) -> None:
     """
     Draw prices, swings and ranked uptrend/downtrend lines for the observed history.
 
@@ -28,6 +28,7 @@ def draw_prices(fig: Figure, bars: list[Bar], points: list[SwingPoint], window: 
         source (str): Descriptive chart title prefix; default is 'Price data'.
         lines (list[TrendLine] or None): Candidates for this prefix; None computes them.
         settings (TrendSettings or None): Detection/display rules; None uses defaults.
+        method (SwingMethod or None): Optional strategy for accurate title/context labeling.
 
     Result:
         None: Modifies the supplied figure without saving it or opening a window.
@@ -76,10 +77,12 @@ def draw_prices(fig: Figure, bars: list[Bar], points: list[SwingPoint], window: 
             ax.scatter([times[end]], [line.value_at(times[end])],
                        marker="X", s=44, color=color, zorder=6)
     # Explain edge regions: no complete left context / no completed right context.
-    if len(bars) > 1:
+    if len(bars) > 1 and window > 0:
         ax.axvspan(times[max(0, len(times) - window)], times[-1], color="#eab308", alpha=.09)
+    description = f"window: {window}" if method is None or method.key == "ta" else (
+        method.label + " | " + ", ".join(f"{k}={v}" for k, v in method.metadata()["settings"].items()))
     ax.set_title(f"{source} | Close, High and Low\n"
-                 f"{len(bars)} observed bars | basis: {basis} | window: {window} | "
+                 f"{len(bars)} observed bars | basis: {basis} | {description} | "
                  f"{sum(p.kind == 'high' for p in points)} highs / {sum(p.kind == 'low' for p in points)} lows",
                  loc="left", fontsize=12, pad=13)
     ax.set_xlabel("Timestamp (input timezone; no timezone assumed for naive timestamps)")

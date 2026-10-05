@@ -1,0 +1,24 @@
+{
+  "tests_passed": 59,
+  "new_indicator_tests": 25,
+  "source_sha256": "76fc3a3bfb9b48b6c8baa85b858a7a8cdfbbd8d07e8078865f0c9794af7d4d7e",
+  "observed_bars": 374,
+  "unmodified_files": [
+    "swingpoints_project/swingpoints/detector.py",
+    "swingpoints_project/swingpoints/trendlines.py",
+    "swingpoints_project/swingpoints/plotting.py",
+    "swingpoints_project/data/data.csv",
+    "swingpoints_project/data/data.json",
+    "swingpoints_project/requirements.txt"
+  ],
+  "fresh_baseline_exports_byte_identical": {
+    "prices.png": true,
+    "swing_points.csv": true,
+    "swing_points.json": true,
+    "trendlines.csv": true,
+    "trendlines.json": true
+  },
+  "original_summary_fields_identical": true,
+  "gui_validation": "Real refresh/export callbacks exercised with mock widgets; no interactive display available.",
+  "vwap_original_data": "374 unavailable rows: no volume column; numerical VWAP verified with synthetic test fixtures only."
+}

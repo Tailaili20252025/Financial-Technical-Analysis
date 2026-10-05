@@ -1,0 +1,150 @@
+[
+  {
+    "method": "ta",
+    "data": "TSLA_ready.csv",
+    "settings": {},
+    "swings_sha256": "dbc01dedee8beb3660753fc986d65779116a8d45c3d0d6f4d813c186a275250d",
+    "trends_sha256": "e771b2c072c8f4c4400c2cd5245ae8e46a99c79660e43c1ae810acfa64a915ee",
+    "swings": 172,
+    "trends": 263
+  },
+  {
+    "method": "ta",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "window": 1
+    },
+    "swings_sha256": "2fdfc3c988f93f4c212e0b8b72f7ea124a3b4efe52aec23786c715f3edc09a5e",
+    "trends_sha256": "490a5656366746878769dd595f68dd6a9c401e59e9edeec11803c133c69ff1fc",
+    "swings": 321,
+    "trends": 566
+  },
+  {
+    "method": "ta",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "window": 5
+    },
+    "swings_sha256": "466cc44e041de2a078c603faf77ee9a6ef01c9b7008e4329266413f2ac0eee69",
+    "trends_sha256": "93a012a31510d4d9d174d19ab85c41222bf1493d2802377979885db5b798cf93",
+    "swings": 67,
+    "trends": 99
+  },
+  {
+    "method": "ta",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "window": 2,
+      "basis": "high-low"
+    },
+    "swings_sha256": "06a623b8d0103000da13f7da77e728c73ddd2dabff93313ff43d8b13de882359",
+    "trends_sha256": "e10e1237fd1988d119931a1d27f5ab421c991ca451161fa3578fd8c3df630101",
+    "swings": 169,
+    "trends": 247
+  },
+  {
+    "method": "percentage",
+    "data": "TSLA_ready.csv",
+    "settings": {},
+    "swings_sha256": "b4545df7f5c25d7f2ddc35c373f693fd3549632f25f622854db7757923763e80",
+    "trends_sha256": "98e28d6ed769f69ab958a2ce5bfd8494c5e07c705eda33bca0421ce3ec67c70e",
+    "swings": 85,
+    "trends": 107
+  },
+  {
+    "method": "percentage",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "reversal_percent": 2
+    },
+    "swings_sha256": "8ac9d6156a2bdf1ea79f0d4052389f9ae381113f82fd985096cf9448a627afbd",
+    "trends_sha256": "6e3978a492c3b6a395a101ee5664ea5499deb4988bf719996accdfddfa06745c",
+    "swings": 169,
+    "trends": 266
+  },
+  {
+    "method": "percentage",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "reversal_percent": 8
+    },
+    "swings_sha256": "77b999162f47afb24e1910d040f3c329af0d9ec64407bceab1d67a1eeb16ae9f",
+    "trends_sha256": "738fff615b7ce57fd715b8315a0b80998e63975d3a1f428efb9d73e8d04448a9",
+    "swings": 48,
+    "trends": 52
+  },
+  {
+    "method": "atr",
+    "data": "TSLA_ready.csv",
+    "settings": {},
+    "swings_sha256": "f6a2e96a4ad86a515531a571fd7eb2bb001b066ec00cfcaddf553eac8a915adb",
+    "trends_sha256": "a741cf4b369a9e670a202ee3bd87160d5e2a1fab35d1c9e3a62fcedfbd83846d",
+    "swings": 32,
+    "trends": 35
+  },
+  {
+    "method": "atr",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "atr_period": 7,
+      "atr_multiplier": 1
+    },
+    "swings_sha256": "88d5efa566d265dc310c8760a337d04af89546606bd791a306bc6eca6939c677",
+    "trends_sha256": "733a171bf42d90b7543aadb8cc01b126d84aea832413059934840621d254a95d",
+    "swings": 80,
+    "trends": 109
+  },
+  {
+    "method": "atr",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "atr_multiplier": 3
+    },
+    "swings_sha256": "09cf1b2257829eba33f09ea4861eb8978b7cb868f246e2c7007dc109b9009c5c",
+    "trends_sha256": "283b1786132d393117a9b92f643d263eb80af0f9bed5e8e38aa7f20092f5410a",
+    "swings": 16,
+    "trends": 6
+  },
+  {
+    "method": "prominence",
+    "data": "TSLA_ready.csv",
+    "settings": {},
+    "swings_sha256": "11f5070b1d89ee51ea132585cb4022d958c92b515a609a4cfbe658dce9d680ad",
+    "trends_sha256": "bb8bfb80c19b603b9a7a754056d6062ef73fe7c4a11de99be961bbb1a2f7a2f7",
+    "swings": 124,
+    "trends": 101
+  },
+  {
+    "method": "prominence",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "radius": 3,
+      "min_prominence_percent": 1,
+      "min_distance": 2
+    },
+    "swings_sha256": "b869e680082c005c0889107575e05081fbe3f54ed4afc8449abc5d58a18c0527",
+    "trends_sha256": "e43083dd013f7b9c556c746fa5d2cbdcde7732cdc54913e342b1dd73d4576dd6",
+    "swings": 219,
+    "trends": 222
+  },
+  {
+    "method": "prominence",
+    "data": "TSLA_ready.csv",
+    "settings": {
+      "min_prominence_percent": 5
+    },
+    "swings_sha256": "d8854135295bd96c2e2faedc7750cf6a644a6979aaa1e8ef805882b5eae19f42",
+    "trends_sha256": "e93a5cf3ee24f5829dd78edcae07f199dfa65381f783340c359f33c6fcf50f6a",
+    "swings": 73,
+    "trends": 55
+  },
+  {
+    "method": "ta",
+    "data": "data.csv",
+    "settings": {},
+    "swings_sha256": "1421dfa92b75ca69fa615c5d00aa249cd7562876b71567f8aeba2694048bfca9",
+    "trends_sha256": "00933d03cf1307b8d6be4a303221f37564ce090d22133fe4a51ed658dee8da03",
+    "swings": 101,
+    "trends": 152
+  }
+]
