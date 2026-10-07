@@ -1,7 +1,26 @@
+## Steps 5–6: trade entries and profit/loss
+
+The unified application now runs **Steps 1–6** for all four swing methods.
+Confirmed breakout → Buy/long; confirmed breakdown → Sell/short. Fixed ATR stops
+and reward/risk targets, trade/equity charts and tables are shared across methods.
+Default confirmation-Close fills follow the supplied slides as an idealised model;
+`--entry-timing next_open` selects the report's execution convention.
+
+See [Step 5–6 rules and settings](STEP56.md),
+[Chinese instructions](STEP56_ZH.md) and
+[results on the original data](STEP56_RESULTS.md).
+Normal runs write **20 files**. Earlier milestone notes below are historical.
+
+```bash
+# Run from swingpoints_project, with the virtual environment active.
+python app.py data/data.csv --output output
+python app.py data/data.csv --gui
+```
+
 ## Step 4 update: Breakout and False Breakout
 
 Close-based Step 4 now runs after the shared trendline stage for all four methods.
-Each run writes 12 files, including `breakouts.csv/json` and `breakouts.png`.
+The Step 4 milestone wrote 12 files, including `breakouts.csv/json` and `breakouts.png`.
 See [Step 4 rules, commands and GUI instructions](STEP4.md). Earlier nine-file descriptions
 and saved unified examples below describe the pre-Step-4 version.
 
@@ -14,14 +33,14 @@ and saved unified examples below describe the pre-Step-4 version.
 This incremental update keeps the existing Steps 1–3. Run the same command to also
 produce `indicators.png` and `indicators.csv/json`. Original `data.csv` has no
 volume, so VWAP is explicitly unavailable for this input. See [INDICATORS.md](INDICATORS.md)
-for settings, formulas, results and GUI instructions. Each run now saves nine files;
+for settings, formulas, results and GUI instructions. The indicator-only milestone saved nine files;
 older examples below remain historical Step 1–3 examples.
 
 # SwingPoints project
 
-A documented Python implementation of **Steps 1, 2 and 3** in the supplied
+A documented Python implementation of **Steps 1–6** in the supplied
 *Model Steps Complete.pdf*: read prices, plot Close/High/Low, and identify and
-display local swing highs/lows and rising/falling trendlines. Includes CSV and JSON examples, a desktop
+display local swing highs/lows, rising/falling trendlines, breakout events and simulated trades with profit/loss. Includes CSV and JSON examples, a desktop
 interface, a command-line interface, automated tests, and sample results.
 
 Start with `QUICKSTART_ZH.md` if you prefer the beginner instructions in Chinese.
@@ -48,7 +67,7 @@ py -m venv .venv
 .\.venv\Scripts\python.exe app.py data/data.csv
 ```
 
-The default command saves six files in `output/`:
+The default command saves 20 files in `output/`:
 
 | File | Content |
 | --- | --- |
@@ -57,17 +76,22 @@ The default command saves six files in `output/`:
 | `swing_points.json` | The same results in machine-readable JSON |
 | `trendlines.csv` | All accepted trendlines, touch counts, timing and displayed flag |
 | `trendlines.json` | The same trendline records in JSON |
-| `run_summary.json` | Input hash, observed range, settings, swing and trendline counts |
+| `run_summary.json` | Input hash, observed range, settings, stage counts and trading statistics |
+| `indicators.csv`, `indicators.json`, `indicators.png` | Eight technical indicators and dashboard |
+| `breakouts.csv`, `breakouts.json`, `breakouts.png` | Step 4 confirmation and false-break lifecycle |
+| `trades.csv`, `trades.json`, `trades.png` | Filled positions, fixed exit levels and realised/open P/L |
+| `equity.csv`, `equity.json`, `equity.png` | Bar-by-bar account value, P/L and drawdown |
+| `trade_signals.csv`, `trade_signals.json` | Grouped entry decisions, pending fills and skip reasons |
 
 Opening `output/prices.png` requires no Python graphical display. Re-running
-with the same output folder replaces those six results; use a different folder
+with the same output folder replaces those 20 results; use a different folder
 to keep multiple runs. The original input is never intentionally overwritten.
 
 ## 2. GUI - Tkinter usage and install
 
 Tkinter supplies the desktop window, controls and file dialogs. Matplotlib draws
-inside it through `FigureCanvasTkAgg`. The GUI runs the same Steps 1–3 as the CLI:
-load and validate data, detect confirmed swings, then calculate and plot trendlines.
+inside it through `FigureCanvasTkAgg`. The GUI runs the same Steps 1–6 as the CLI: load prices, detect confirmed swings,
+construct trendlines, identify breakouts, simulate trades and display profit/loss.
 
 ### Install and check Tkinter
 
@@ -138,6 +162,9 @@ The terminal remains occupied until the GUI window is closed.
 | Anchor lookback | Number of earlier same-kind swing anchors considered per later anchor; default 20. |
 | Min touches | Minimum confirmed touches for a line to be eligible for display; default 2. |
 | Max lines / direction | Display cap for each direction separately; default 3 up and 3 down. |
+| Step 5–6 settings | Change trade entry timing, quantity, ATR stop/target multipliers, account value and costs. |
+| Trade chart | Show Buy/Sell entries and fixed red stop/green target zones. Double-click a trade-table row to focus on it. |
+| Equity / P&L | Show account equity, realised/open P/L and drawdown for the applied prefix. |
 | Export visible results | Select an existing destination folder and save the last successfully displayed analysis. |
 
 For replay, enter a smaller observed count, click **Apply / replay**, then click
@@ -146,12 +173,12 @@ With `window=2`, a pivot becomes confirmed two observations after it occurs.
 
 The chart toolbar provides navigation, pan, zoom and figure saving. The **Confirmed
 swings** tab lists pivot and confirmation times; **Displayed trendlines** lists
-selected lines and break status. Export writes the six files in Section 1;
+selected lines and break status. Export writes the 20 files in Section 1;
 trendline CSV/JSON includes all accepted candidates and a `displayed` flag.
 
 Click **Apply / replay** after editing settings and before exporting. Export uses
 the last successful plot snapshot, not unapplied control edits. Choose a separate
-folder for each dataset to avoid replacing a previous run's six output files.
+folder for each dataset to avoid replacing a previous run's 20 output files.
 See [STEP3.md](STEP3.md) for the full trendline rules.
 
 ### How gui.py connects the controls

@@ -84,5 +84,72 @@
     "atr": "First true range is High-Low; SMA seed then Wilder smoothing.",
     "cci": "Typical price HLC3; 0.015 scaling; mean absolute deviation; flat window yields 0.",
     "vwap": "HLC3 weighted by actual volume; session means input calendar date, not an exchange calendar."
+  },
+  "breakouts": {
+    "status": "enabled",
+    "settings": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "basis": "close",
+    "buffer_rule": "Step 3 fixed absolute first-anchor tolerance",
+    "scope": "All accepted Close trendlines; one first-break event per line ID",
+    "candidate_events": 141,
+    "breakouts": 58,
+    "breakdowns": 83,
+    "confirmed": 114,
+    "confirmation_pending": 0,
+    "not_confirmed": 27,
+    "false_breakouts": 23,
+    "false_breakdowns": 20,
+    "pending": 2,
+    "no_failure_within_window": 96,
+    "fully_observed_candidates": 139,
+    "failures_in_fully_observed_candidates": 43,
+    "failure_rate_full_windows": 0.30935251798561153,
+    "mean_confirmation_delay_bars": 1.0350877192982457,
+    "interpretation": "Confirmed can later fail. No failure within the window is not proof of future continuation. Counts are per line, not independent trades."
+  },
+  "trading": {
+    "status": "enabled",
+    "settings": {
+      "enabled": true,
+      "entry_timing": "confirmation_close",
+      "allow_short": true,
+      "quantity": 1.0,
+      "initial_equity": 10000.0,
+      "atr_period": 14,
+      "atr_stop_multiple": 2.0,
+      "reward_risk_multiple": 2.0,
+      "slippage_bps": 0.0,
+      "fee_per_order": 0.0,
+      "short_borrow_rate_percent": 0.0,
+      "ema_filter": false,
+      "ema_period": 20,
+      "exit_on_false_break": false,
+      "exit_on_opposite": false
+    },
+    "trades": 14,
+    "closed_trades": 13,
+    "open_trades": 1,
+    "long_trades": 7,
+    "short_trades": 7,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": -6.399999999999977,
+    "final_equity": 10145.00898536892,
+    "account_return_percent": 1.4500898536891942,
+    "win_rate_percent": 46.15384615384615,
+    "max_drawdown_percent": 1.618333109785194,
+    "ambiguous_exits": 0,
+    "pending_entries": 0,
+    "skipped_entries": {
+      "position_open": 44
+    },
+    "entry_assumption": "Idealised confirmation-Close fill; not a guaranteed executable price. Protection begins on the next bar.",
+    "exit_assumption": "Fixed ATR stop and reward/risk target. Gap stop at Open; target at limit. Both intrabar levels: stop first.",
+    "timestamp_convention": "Timestamps identify input bars; entry_phase/exit_phase distinguish Open, Close and unknown intrabar time.",
+    "capital_rule": "One position, fixed quantity; entry notional plus entry fee must fit available equity; no leverage.",
+    "costs_assumption": "Configured commission/slippage; short borrow charged on entry notional by elapsed time using actual/365. Zero rates assume zero cost.",
+    "interpretation": "Historical simulation, not live order execution. An open position is marked at the cutoff, not forcibly closed."
   }
 }

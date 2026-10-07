@@ -13,6 +13,12 @@ from .data import Bar
 from .indicators import IndicatorSettings, calculate_indicators
 from .detector import SwingPoint
 from .trendlines import TrendSettings, detect_trendlines, select_trendlines
+from .trading import TradeSettings, simulate_trades, TRADE_FIELDS, EQUITY_FIELDS, SIGNAL_FIELDS
+
+OUTPUT_NAMES = ("prices.png", "swing_points.csv", "swing_points.json", "run_summary.json", "trendlines.csv", "trendlines.json",
+                "indicators.csv", "indicators.json", "indicators.png", "breakouts.csv", "breakouts.json", "breakouts.png",
+                "trades.csv", "trades.json", "trades.png", "equity.csv", "equity.json", "equity.png",
+                "trade_signals.csv", "trade_signals.json")
 
 TREND_FIELDS = ["line_id", "direction", "basis", "anchor1_bar", "anchor1_time", "anchor1_price",
                 "anchor2_bar", "anchor2_time", "anchor2_price", "created_bar", "created_at",
@@ -25,13 +31,15 @@ FIELDS = ["kind", "price", "pivot_bar", "pivot_time", "confirmed_bar", "confirme
 def export_results(output: str | Path, source: str | Path, bars: list[Bar],
                    points: list[SwingPoint], window: int, basis: str, figure, lines=None, settings=None,
                    indicator_settings: IndicatorSettings | None = None, method=None,
-                   breakout_settings: BreakoutSettings | None = None, events=None) -> Path:
+                   breakout_settings: BreakoutSettings | None = None, events=None,
+                   trade_settings: TradeSettings | None = None, trading=None) -> Path:
     """
     Save the supplied analysis as a chart, swing tables and a run summary.
 
     Writes prices.png, swing_points.csv/json, trendlines.csv/json and run_summary.json.
     Also writes indicators.csv/json and indicators.png using the same observed bars.
-    Adds breakouts.csv/json and breakouts.png (12 files total).
+    Adds breakouts.csv/json/png, trades.csv/json/png, equity.csv/json/png and
+    trade_signals.csv/json (20 files total). No new plot uses future bars.
     Existing result files are replaced. The summary describes the observed prefix,
     but the hash covers the complete source file. Export is not atomic: a later
     I/O failure can leave earlier result files written.
@@ -50,6 +58,8 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         method (SwingMethod or None): Applied strategy metadata and event export schema.
         breakout_settings (BreakoutSettings or None): Applied Step 4 settings.
         events (list or None): Same-prefix Step 4 events; None scans all supplied lines.
+        trade_settings (TradeSettings or None): Used only when trading is absent.
+        trading (TradingResult or None): Applied Step 5–6 snapshot; None simulates it.
 
     Result:
         Path: The output directory, in the same relative/absolute form as supplied.
@@ -61,9 +71,7 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
         IndexError: If bars is empty; callers must supply at least one bar.
     """
     output, source = Path(output), Path(source)
-    names = ("prices.png", "swing_points.csv", "swing_points.json", "run_summary.json", "trendlines.csv", "trendlines.json",
-             "indicators.csv", "indicators.json", "indicators.png", "breakouts.csv", "breakouts.json", "breakouts.png")
-    if any((output / name).resolve() == source.resolve() for name in names):
+    if any((output / name).resolve() == source.resolve() for name in OUTPUT_NAMES):
         raise ValueError("Output paths would overwrite the input file; choose another output directory.")
     indicators = calculate_indicators(bars, indicator_settings)
     settings = settings or TrendSettings()
@@ -72,6 +80,10 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
     breakout_settings = breakout_settings or BreakoutSettings()
     if events is None:
         events = detect_breakouts(bars, lines, breakout_settings)
+    if trading is None:
+        trading = simulate_trades(bars, events, trade_settings, method.key if method is not None else "ta", basis)
+    if len(trading.equity) != len(bars) or any(r["timestamp"] != b.timestamp.isoformat() for r, b in zip(trading.equity, bars)):
+        raise ValueError("Trading snapshot must match exported bars")
     selected_ids = {line.line_id for line in select_trendlines(lines, settings)}
     trend_records = [line.as_record(bars, line.line_id in selected_ids) for line in lines]
     output.mkdir(parents=True, exist_ok=True)
@@ -129,6 +141,16 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
     (output / "indicators.json").write_text(json.dumps(indicator_records, indent=2, allow_nan=False), encoding="utf-8")
     summary["indicators"] = indicators.metadata()
     summary["breakouts"] = breakout_summary(events, breakout_settings, basis)
+    summary["trading"] = trading.summary()
+    for name, rows, columns in (("trades", [t.as_record(bars) for t in trading.trades], TRADE_FIELDS),
+                                ("equity", trading.equity, EQUITY_FIELDS),
+                                ("trade_signals", trading.signals, SIGNAL_FIELDS)):
+        with (output / (name+".csv")).open("w", encoding="utf-8", newline="") as stream:
+            writer = csv.DictWriter(stream, fieldnames=columns)
+            writer.writeheader()
+            writer.writerows({key: json.dumps(value) if isinstance(value, list) else value
+                             for key, value in row.items()} for row in rows)
+        (output / (name+".json")).write_text(json.dumps(rows, indent=2, allow_nan=False), encoding="utf-8")
     from matplotlib.figure import Figure
     from .indicator_plotting import draw_indicators
     indicator_figure = Figure(figsize=(14, 13))
@@ -140,6 +162,15 @@ def export_results(output: str | Path, source: str | Path, bars: list[Bar],
     draw_breakouts(breakout_figure, bars, events, lines, source.name, breakout_settings, settings, basis)
     breakout_figure.savefig(output / "breakouts.png", dpi=150)
     breakout_figure.clear()
+    from .trade_plotting import draw_trades, draw_equity
+    for name, draw in (("trades", draw_trades), ("equity", draw_equity)):
+        chart = Figure(figsize=(14, 9))
+        if name == "trades":
+            draw(chart, bars, trading, source.name, lines=lines)
+        else:
+            draw(chart, bars, trading, source.name)
+        chart.savefig(output / (name+".png"), dpi=150)
+        chart.clear()
     (output / "run_summary.json").write_text(json.dumps(summary, indent=2), encoding="utf-8")
     figure.savefig(output / "prices.png", dpi=160)
     return output

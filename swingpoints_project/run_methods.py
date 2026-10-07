@@ -11,6 +11,7 @@ from swingpoints.pipeline import run_analysis
 from swingpoints.trendlines import TrendSettings
 from swingpoints.indicators import IndicatorSettings
 from swingpoints.breakouts import BreakoutSettings, breakout_summary
+from swingpoints.trading_cli import add_trade_arguments, trade_settings_from_args
 
 
 @dataclass
@@ -44,6 +45,7 @@ def settings_product(settings_type, grid, max_runs=100):
 def main(argv=None):
     """Write independent result directories, summary tables and a comparison plot."""
     parser = argparse.ArgumentParser(description=__doc__)
+    add_trade_arguments(parser)
     parser.add_argument("input", type=Path)
     parser.add_argument("--output", type=Path, default=Path("method_results"))
     parser.add_argument("--methods", nargs="+", choices=list(METHODS), default=list(METHODS))
@@ -56,6 +58,7 @@ def main(argv=None):
     experiment = ExperimentSettings()
     try:
         breakout_settings = BreakoutSettings(args.break_confirmation_bars, args.break_observation_bars)
+        trade_settings = trade_settings_from_args(args)
         if args.grid:
             supplied = json.loads(args.grid.read_text())
             if not isinstance(supplied, dict) or set(supplied)-{"swing_grids", "trend_grid"}:
@@ -89,7 +92,7 @@ def main(argv=None):
         for number, (name, swing, trend) in enumerate(jobs, 1):
             run_name = f"{number:03d}_{name}"
             result = run_analysis(args.input, args.output/run_name, METHODS[name](swing),
-                                  trend, IndicatorSettings(), args.until, breakout_settings=breakout_settings)
+                                  trend, IndicatorSettings(), args.until, breakout_settings=breakout_settings, trade_settings=trade_settings)
             row = {"run": run_name, "method": name, "settings": json.dumps(asdict(swing)),
                    "trend_settings": json.dumps(asdict(trend)), "bars": len(result.bars),
                    "swing_highs": sum(p.kind == "high" for p in result.points),
@@ -100,6 +103,10 @@ def main(argv=None):
             row.update({"breakout_settings": json.dumps(asdict(breakout_settings)),
                         **{"step4_" + k: stats[k] for k in ("status", "candidate_events", "confirmed", "false_breakouts",
                           "false_breakdowns", "pending", "fully_observed_candidates", "failure_rate_full_windows")}})
+            trade_stats = result.trading.summary()
+            row.update({"trade_settings": json.dumps(asdict(trade_settings)),
+                        **{"step56_"+key: trade_stats[key] for key in ("status", "trades", "closed_trades", "open_trades",
+                           "realized_net_pnl", "unrealized_net_pnl", "final_equity", "win_rate_percent", "max_drawdown_percent")}})
             rows.append(row)
             print(f"{run_name}: {len(result.points)} swings, {len(result.lines)} trendlines", flush=True)
         with (args.output/"comparison.csv").open("w", newline="") as stream:

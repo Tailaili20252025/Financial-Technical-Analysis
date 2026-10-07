@@ -198,7 +198,7 @@ class BreakoutTests(unittest.TestCase):
                 reader = csv.DictReader(f)
                 self.assertEqual(reader.fieldnames, BREAKOUT_FIELDS)
                 self.assertEqual(len(list(reader)), len(records))
-            self.assertEqual(len(list(Path(folder).iterdir())), 12)
+            self.assertEqual(len(list(Path(folder).iterdir())), 20)
             summary = json.loads((Path(folder)/'run_summary.json').read_text())
             self.assertEqual(summary['breakouts']['settings'], {'confirmation_bars':3, 'observation_bars':4})
             source = Path(folder)/'breakouts.csv'

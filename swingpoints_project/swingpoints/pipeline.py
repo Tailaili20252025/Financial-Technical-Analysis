@@ -1,4 +1,4 @@
-"""Shared Step 1-4 analysis used by CLI, GUI and comparison experiments."""
+"""Shared Step 1–6 analysis used by CLI, GUI and comparison experiments."""
 from dataclasses import dataclass, field
 from .breakouts import BreakoutSettings, detect_breakouts
 from pathlib import Path
@@ -6,6 +6,7 @@ from .data import load_prices
 from .methods import SwingMethod, TraditionalTAMethod
 from .trendlines import TrendSettings, detect_trendlines, select_trendlines
 from .indicators import IndicatorSettings
+from .trading import TradeSettings, TradingResult, simulate_trades
 
 
 @dataclass(frozen=True)
@@ -19,6 +20,7 @@ class AnalysisResult:
 
     events: list = field(default_factory=list)  # Step 4 events for all eligible lines.
     breakout_settings: BreakoutSettings = field(default_factory=BreakoutSettings)  # Applied lifecycle rules.
+    trading: TradingResult | None = None  # Shared Step 5–6 simulation for the same observed prefix.
 
     @property
     def selected(self):
@@ -26,11 +28,12 @@ class AnalysisResult:
         return select_trendlines(self.lines, self.trend_settings)
 
 
-def analyze(bars, method=None, trend_settings=None, breakout_settings=None):
+def analyze(bars, method=None, trend_settings=None, breakout_settings=None, trade_settings=None):
     """Run one strategy followed by the common candidate trendline algorithm.
 
     Args: bars: chronological observed prefix; method: SwingMethod instance.
     breakout_settings: Step 4 consecutive-close and follow-up rules.
+    trade_settings: Step 5–6 entry timing, fixed exits, costs and capital rules.
     Returns: AnalysisResult; no files are read/written and no GUI is required.
     Raises: ValueError for empty history; TypeError for a non-strategy method.
     """
@@ -45,10 +48,11 @@ def analyze(bars, method=None, trend_settings=None, breakout_settings=None):
     lines = detect_trendlines(bars, points, settings)
     breakout_settings = breakout_settings or BreakoutSettings()
     events = detect_breakouts(bars, lines, breakout_settings)
-    return AnalysisResult(bars, points, lines, method, settings, events, breakout_settings)
+    trading = simulate_trades(bars, events, trade_settings, method.key, method.basis)
+    return AnalysisResult(bars, points, lines, method, settings, events, breakout_settings, trading)
 
 
-def run_analysis(source, output, method=None, trend_settings=None, indicator_settings=None, until=None, breakout_settings=None):
+def run_analysis(source, output, method=None, trend_settings=None, indicator_settings=None, until=None, breakout_settings=None, trade_settings=None):
     """Load, analyze, draw and export one method using the same application services.
 
     Existing result files in output are replaced. A cutoff counts sorted bars.
@@ -61,13 +65,13 @@ def run_analysis(source, output, method=None, trend_settings=None, indicator_set
         if isinstance(until, bool) or not isinstance(until, int) or not 1 <= until <= len(bars):
             raise ValueError(f"until must be between 1 and {len(bars)}")
         bars = bars[:until]
-    result = analyze(bars, method, trend_settings, breakout_settings)
+    result = analyze(bars, method, trend_settings, breakout_settings, trade_settings)
     method = result.method
     figure = Figure(figsize=(14, 8))
     draw_prices(figure, bars, result.points, method.context_radius, method.basis,
                 Path(source).name, result.lines, result.trend_settings, method=method)
     export_results(output, source, bars, result.points, method.context_radius, method.basis,
                    figure, result.lines, result.trend_settings, indicator_settings, method=method,
-                   breakout_settings=result.breakout_settings, events=result.events)
+                   breakout_settings=result.breakout_settings, events=result.events, trading=result.trading)
     figure.clear()
     return result
