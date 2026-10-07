@@ -1,0 +1,754 @@
+[
+  {
+    "confirmation_bar": 15,
+    "confirmed_at": "2023-05-19T09:30:00",
+    "side": "long",
+    "line_ids": [
+      "down-6-9"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0001",
+    "fill_bar": 15
+  },
+  {
+    "confirmation_bar": 22,
+    "confirmed_at": "2023-05-19T09:37:00",
+    "side": "long",
+    "line_ids": [
+      "down-9-17"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 62,
+    "confirmed_at": "2023-05-19T10:17:00",
+    "side": "short",
+    "line_ids": [
+      "up-32-57"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0002",
+    "fill_bar": 62
+  },
+  {
+    "confirmation_bar": 64,
+    "confirmed_at": "2023-05-19T10:19:00",
+    "side": "short",
+    "line_ids": [
+      "up-18-32",
+      "up-43-57"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 69,
+    "confirmed_at": "2023-05-19T10:24:00",
+    "side": "long",
+    "line_ids": [
+      "down-55-65"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 71,
+    "confirmed_at": "2023-05-19T10:26:00",
+    "side": "short",
+    "line_ids": [
+      "up-63-67"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 73,
+    "confirmed_at": "2023-05-19T10:28:00",
+    "side": "short",
+    "line_ids": [
+      "up-13-18",
+      "up-13-63",
+      "up-18-63",
+      "up-32-63"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 86,
+    "confirmed_at": "2023-05-19T10:41:00",
+    "side": "long",
+    "line_ids": [
+      "down-50-69",
+      "down-55-69"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0003",
+    "fill_bar": 86
+  },
+  {
+    "confirmation_bar": 95,
+    "confirmed_at": "2023-05-19T10:50:00",
+    "side": "short",
+    "line_ids": [
+      "up-13-78",
+      "up-18-78",
+      "up-13-91",
+      "up-18-91",
+      "up-78-91"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0004",
+    "fill_bar": 95
+  },
+  {
+    "confirmation_bar": 97,
+    "confirmed_at": "2023-05-19T10:52:00",
+    "side": "short",
+    "line_ids": [
+      "up-32-78"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 104,
+    "confirmed_at": "2023-05-19T10:59:00",
+    "side": "short",
+    "line_ids": [
+      "up-13-98",
+      "up-18-98",
+      "up-32-98"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 105,
+    "confirmed_at": "2023-05-19T11:00:00",
+    "side": "short",
+    "line_ids": [
+      "up-78-98"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 113,
+    "confirmed_at": "2023-05-19T11:08:00",
+    "side": "long",
+    "line_ids": [
+      "down-86-101"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 119,
+    "confirmed_at": "2023-05-19T11:14:00",
+    "side": "short",
+    "line_ids": [
+      "up-32-107",
+      "up-107-111",
+      "up-13-111",
+      "up-18-111",
+      "up-32-111"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 120,
+    "confirmed_at": "2023-05-19T11:15:00",
+    "side": "short",
+    "line_ids": [
+      "up-78-107",
+      "up-78-111"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 132,
+    "confirmed_at": "2023-05-19T11:27:00",
+    "side": "long",
+    "line_ids": [
+      "down-114-121"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0005",
+    "fill_bar": 132
+  },
+  {
+    "confirmation_bar": 134,
+    "confirmed_at": "2023-05-19T11:29:00",
+    "side": "long",
+    "line_ids": [
+      "down-86-114"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 138,
+    "confirmed_at": "2023-05-19T11:33:00",
+    "side": "long",
+    "line_ids": [
+      "down-101-114"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 147,
+    "confirmed_at": "2023-05-19T11:42:00",
+    "side": "short",
+    "line_ids": [
+      "up-125-129"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 151,
+    "confirmed_at": "2023-05-19T11:46:00",
+    "side": "short",
+    "line_ids": [
+      "up-125-147",
+      "up-129-147"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 160,
+    "confirmed_at": "2023-05-19T11:55:00",
+    "side": "short",
+    "line_ids": [
+      "up-153-156"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 162,
+    "confirmed_at": "2023-05-19T11:57:00",
+    "side": "short",
+    "line_ids": [
+      "up-13-125",
+      "up-18-125",
+      "up-125-153",
+      "up-129-153"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 165,
+    "confirmed_at": "2023-05-19T12:00:00",
+    "side": "short",
+    "line_ids": [
+      "up-125-161",
+      "up-129-161",
+      "up-13-161",
+      "up-18-161"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0006",
+    "fill_bar": 165
+  },
+  {
+    "confirmation_bar": 166,
+    "confirmed_at": "2023-05-19T12:01:00",
+    "side": "short",
+    "line_ids": [
+      "up-32-125"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 172,
+    "confirmed_at": "2023-05-19T12:07:00",
+    "side": "long",
+    "line_ids": [
+      "down-155-168"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 175,
+    "confirmed_at": "2023-05-19T12:10:00",
+    "side": "long",
+    "line_ids": [
+      "down-142-155",
+      "down-148-155",
+      "down-142-171",
+      "down-148-171",
+      "down-155-171"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 182,
+    "confirmed_at": "2023-05-19T12:17:00",
+    "side": "long",
+    "line_ids": [
+      "down-142-177",
+      "down-148-177"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0007",
+    "fill_bar": 182
+  },
+  {
+    "confirmation_bar": 183,
+    "confirmed_at": "2023-05-19T12:18:00",
+    "side": "long",
+    "line_ids": [
+      "down-155-177"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 187,
+    "confirmed_at": "2023-05-19T12:22:00",
+    "side": "short",
+    "line_ids": [
+      "up-166-170"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0008",
+    "fill_bar": 187
+  },
+  {
+    "confirmation_bar": 189,
+    "confirmed_at": "2023-05-19T12:24:00",
+    "side": "long",
+    "line_ids": [
+      "down-86-142",
+      "down-142-184",
+      "down-148-184",
+      "down-155-184"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0009",
+    "fill_bar": 189
+  },
+  {
+    "confirmation_bar": 197,
+    "confirmed_at": "2023-05-19T12:32:00",
+    "side": "long",
+    "line_ids": [
+      "down-142-188",
+      "down-86-188",
+      "down-142-193",
+      "down-188-193",
+      "down-86-193"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 198,
+    "confirmed_at": "2023-05-19T12:33:00",
+    "side": "long",
+    "line_ids": [
+      "down-50-86",
+      "down-101-137",
+      "down-114-137",
+      "down-101-142",
+      "down-148-188"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 200,
+    "confirmed_at": "2023-05-19T12:35:00",
+    "side": "long",
+    "line_ids": [
+      "down-55-86",
+      "down-114-142"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 208,
+    "confirmed_at": "2023-05-19T12:43:00",
+    "side": "short",
+    "line_ids": [
+      "up-186-191",
+      "up-195-202"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0010",
+    "fill_bar": 208
+  },
+  {
+    "confirmation_bar": 209,
+    "confirmed_at": "2023-05-19T12:44:00",
+    "side": "short",
+    "line_ids": [
+      "up-186-195",
+      "up-191-195"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 211,
+    "confirmed_at": "2023-05-19T12:46:00",
+    "side": "short",
+    "line_ids": [
+      "up-191-207",
+      "up-195-207"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 218,
+    "confirmed_at": "2023-05-19T12:53:00",
+    "side": "long",
+    "line_ids": [
+      "down-205-211"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 229,
+    "confirmed_at": "2023-05-19T13:04:00",
+    "side": "short",
+    "line_ids": [
+      "up-166-219"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 230,
+    "confirmed_at": "2023-05-19T13:05:00",
+    "side": "short",
+    "line_ids": [
+      "up-13-166",
+      "up-18-166",
+      "up-170-186",
+      "up-191-214",
+      "up-170-219",
+      "up-186-219",
+      "up-191-219"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 238,
+    "confirmed_at": "2023-05-19T13:13:00",
+    "side": "long",
+    "line_ids": [
+      "down-217-223"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 251,
+    "confirmed_at": "2023-05-19T13:26:00",
+    "side": "long",
+    "line_ids": [
+      "down-243-247"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 252,
+    "confirmed_at": "2023-05-19T13:27:00",
+    "side": "long",
+    "line_ids": [
+      "down-205-238"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 256,
+    "confirmed_at": "2023-05-19T13:31:00",
+    "side": "long",
+    "line_ids": [
+      "down-211-238"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 258,
+    "confirmed_at": "2023-05-19T13:33:00",
+    "side": "short",
+    "line_ids": [
+      "up-249-253"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 260,
+    "confirmed_at": "2023-05-19T13:35:00",
+    "side": "long",
+    "line_ids": [
+      "down-205-256",
+      "down-211-256",
+      "down-238-256"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 264,
+    "confirmed_at": "2023-05-19T13:39:00",
+    "side": "long",
+    "line_ids": [
+      "down-217-238"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 268,
+    "confirmed_at": "2023-05-19T13:43:00",
+    "side": "short",
+    "line_ids": [
+      "up-249-258"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 269,
+    "confirmed_at": "2023-05-19T13:44:00",
+    "side": "short",
+    "line_ids": [
+      "up-253-258"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 278,
+    "confirmed_at": "2023-05-19T13:53:00",
+    "side": "short",
+    "line_ids": [
+      "up-241-269",
+      "up-249-269",
+      "up-253-269",
+      "up-258-269"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 282,
+    "confirmed_at": "2023-05-19T13:57:00",
+    "side": "short",
+    "line_ids": [
+      "up-241-278",
+      "up-249-278"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0011",
+    "fill_bar": 282
+  },
+  {
+    "confirmation_bar": 283,
+    "confirmed_at": "2023-05-19T13:58:00",
+    "side": "short",
+    "line_ids": [
+      "up-166-241",
+      "up-170-241"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 314,
+    "confirmed_at": "2023-05-19T14:29:00",
+    "side": "long",
+    "line_ids": [
+      "down-298-310"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0012",
+    "fill_bar": 314
+  },
+  {
+    "confirmation_bar": 315,
+    "confirmed_at": "2023-05-19T14:30:00",
+    "side": "long",
+    "line_ids": [
+      "down-303-310"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 322,
+    "confirmed_at": "2023-05-19T14:37:00",
+    "side": "short",
+    "line_ids": [
+      "up-312-318"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0013",
+    "fill_bar": 322
+  },
+  {
+    "confirmation_bar": 338,
+    "confirmed_at": "2023-05-19T14:53:00",
+    "side": "long",
+    "line_ids": [
+      "down-298-317"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 349,
+    "confirmed_at": "2023-05-19T15:04:00",
+    "side": "short",
+    "line_ids": [
+      "up-333-342"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  },
+  {
+    "confirmation_bar": 372,
+    "confirmed_at": "2023-05-19T15:27:00",
+    "side": "long",
+    "line_ids": [
+      "down-360-367"
+    ],
+    "status": "filled",
+    "reason": "confirmed",
+    "trade_id": "T0014",
+    "fill_bar": 372
+  },
+  {
+    "confirmation_bar": 374,
+    "confirmed_at": "2023-05-19T15:29:00",
+    "side": "short",
+    "line_ids": [
+      "up-365-370"
+    ],
+    "status": "skipped",
+    "reason": "position_open",
+    "trade_id": null,
+    "fill_bar": null
+  }
+]

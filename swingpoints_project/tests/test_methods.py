@@ -95,7 +95,7 @@ class MethodTests(unittest.TestCase):
                 summary = json.loads((dest/'run_summary.json').read_text())
                 self.assertEqual(summary['swing_method']['method'], name)
                 self.assertEqual(summary['observed_bars'], 1)
-                self.assertEqual(len(list(dest.iterdir())), 12)
+                self.assertEqual(len(list(dest.iterdir())), 20)
                 self.assertEqual(json.loads((dest/'swing_points.json').read_text()), [])
                 with (dest/'swing_points.csv').open() as stream:
                     self.assertEqual('threshold_price' in csv.DictReader(stream).fieldnames, name != 'ta')
@@ -144,6 +144,11 @@ class MethodTests(unittest.TestCase):
                                'trend_tolerance':'0.5','trend_lookback':'20','min_touches':'2','max_lines':'3'}.items():
                 var = MagicMock(); var.get.return_value = value; setattr(app,key,var)
             app.breakout_settings = BreakoutSettings()
+            from swingpoints.trading import TradeSettings
+            app.trade_settings = TradeSettings()
+            app.trade_table, app.signal_table, app.trade_status = MagicMock(), MagicMock(), MagicMock()
+            app.trade_table.__getitem__.return_value = ('trade_id', 'net_pnl')
+            app.signal_table.__getitem__.return_value = ('confirmation_bar', 'reason')
             app.breakout_table = MagicMock()
             app.breakout_table.__getitem__.return_value = ("line_id", "outcome")
             app.indicator_settings = IndicatorSettings()
@@ -160,8 +165,10 @@ class MethodTests(unittest.TestCase):
             self.assertEqual(snapshot[2],create_method(name).detect(bars[:100]))
             self.assertEqual(app.indicator_table.insert.call_count,100)
             saved_events, saved_settings = app.breakout_snapshot
+            saved_trading = app.trading_snapshot
             self.assertEqual(app.breakout_table.insert.call_count, len(saved_events))
             app.breakout_settings = BreakoutSettings(1, 1)
+            app.trade_settings = TradeSettings(quantity=2)
             app.method_name.get.return_value = 'unapplied-edit'
             with patch('swingpoints.gui.filedialog.askdirectory',return_value='chosen'), \
                  patch('swingpoints.gui.messagebox.showinfo'), patch('swingpoints.gui.export_results') as export:
@@ -169,6 +176,7 @@ class MethodTests(unittest.TestCase):
                 self.assertIs(export.call_args.kwargs['method'],snapshot[-1])
                 self.assertIs(export.call_args.kwargs['events'], saved_events)
                 self.assertIs(export.call_args.kwargs['breakout_settings'], saved_settings)
+                self.assertIs(export.call_args.kwargs['trading'], saved_trading)
             app.figure.clear()
 
 

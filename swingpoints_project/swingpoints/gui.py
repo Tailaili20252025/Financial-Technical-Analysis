@@ -15,6 +15,8 @@ from .methods import METHODS, TraditionalTAMethod, TASettings
 from .pipeline import analyze
 from .breakouts import BreakoutSettings
 from .breakout_plotting import draw_breakouts
+from .trading import TradeSettings
+from .trade_plotting import draw_trades, draw_equity
 from .output import export_results
 from .plotting import draw_prices
 from .trendlines import TrendSettings, detect_trendlines, select_trendlines
@@ -23,7 +25,7 @@ from .trendlines import TrendSettings, detect_trendlines, select_trendlines
 class SwingApp:
     """File picker, configurable detector, historical cutoff, chart and table."""
 
-    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None, breakout_settings=None):
+    def __init__(self, root, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None, breakout_settings=None, trade_settings=None):
         """
         Build the desktop controls, chart canvas and swing-results table.
 
@@ -38,6 +40,7 @@ class SwingApp:
             indicator_settings (IndicatorSettings or None): Initial indicator periods/anchor.
             method (SwingMethod or None): Initial swing strategy; defaults to traditional TA.
             breakout_settings (BreakoutSettings or None): Initial Step 4 confirmation/follow-up rules.
+            trade_settings (TradeSettings or None): Step 5–6 entry/exits/costs configuration.
             output (Path): Initial export-directory preference; default is Path("output").
 
         Result:
@@ -67,8 +70,12 @@ class SwingApp:
         self.breakout_settings = breakout_settings or BreakoutSettings()
         # breakout_snapshot: (events, settings) from the last successful refresh.
         self.breakout_snapshot = None
-        root.title("SwingPoints | Steps 1-4 + Indicators")
-        root.geometry("1350x950")
+        # trade_settings: Editable attributes; export uses the last applied snapshot.
+        self.trade_settings = trade_settings or TradeSettings()
+        # trading_snapshot: Filled trades, audit decisions and equity for visible bars only.
+        self.trading_snapshot = None
+        root.title("SwingPoints | Steps 1-6 + Indicators")
+        root.geometry(f"{min(1350, root.winfo_screenwidth()-40)}x{min(950, root.winfo_screenheight()-80)}")
         controls = ttk.Frame(root, padding=8)
         controls.pack(fill="x")
         ttk.Button(controls, text="Open CSV / JSON", command=self.choose_file).pack(side="left", padx=4)
@@ -129,9 +136,18 @@ class SwingApp:
         ttk.Button(breakout_controls, text="Step 4 settings", command=self.edit_breakout_settings).pack(side="left", padx=4)
         ttk.Button(breakout_controls, text="Breakout chart", command=self.show_breakouts).pack(side="left", padx=4)
         ttk.Label(breakout_controls, text="Close mode only | confirmation and false-break outcomes are separate").pack(side="left", padx=8)
+        trade_controls = ttk.Frame(root, padding=(12, 3))
+        trade_controls.pack(fill="x")
+        ttk.Button(trade_controls, text="Step 5–6 settings", command=self.edit_trade_settings).pack(side="left", padx=4)
+        ttk.Button(trade_controls, text="Trade chart", command=self.show_trades).pack(side="left", padx=4)
+        ttk.Button(trade_controls, text="Equity / P&L", command=self.show_equity).pack(side="left", padx=4)
+        ttk.Label(trade_controls, text="Double-click a trade row for its entry, stop and target chart").pack(side="left", padx=8)
+        # trade_status: Applied simulation summary, not an unsaved control value.
+        self.trade_status = tk.StringVar(value="Step 5–6: load data to simulate Buy/Sell entries and fixed stop/target exits.")
+        ttk.Label(root, textvariable=self.trade_status, padding=(12, 3), wraplength=1250).pack(fill="x")
         # status: StringVar bound to the status label showing the latest analysis summary.
         self.status = tk.StringVar(value="Open a CSV or JSON file. Window = bars on each side; all timestamps refer to completed bars.")
-        ttk.Label(root, textvariable=self.status, padding=(12, 6)).pack(fill="x")
+        ttk.Label(root, textvariable=self.status, padding=(12, 6), wraplength=1250).pack(fill="x")
         # figure: Matplotlib Figure containing prices, swing markers and trendlines.
         self.figure = Figure(figsize=(12, 5.2))
         # canvas: FigureCanvasTkAgg that embeds the Matplotlib figure in the Tk window.
@@ -140,6 +156,18 @@ class SwingApp:
         NavigationToolbar2Tk(self.canvas, root).update()
         notebook = ttk.Notebook(root)
         notebook.pack(fill="x", padx=10, pady=4)
+        trade_frame = ttk.Frame(notebook)
+        notebook.add(trade_frame, text="Steps 5–6: trades")
+        trade_columns = ("trade_id", "action", "status", "confirmation_bar", "entry_bar", "entry_phase", "entry_price",
+                         "stop_price", "target_price", "exit_bar", "exit_price", "exit_reason", "net_pnl", "unrealized_net_pnl")
+        # trade_table: Filled positions; realised/open P/L are separate columns.
+        self.trade_table = self.create_result_table(trade_frame, trade_columns)
+        self.trade_table.bind("<Double-1>", self.show_selected_trade)
+        signal_frame = ttk.Frame(notebook)
+        notebook.add(signal_frame, text="Entry decisions")
+        # signal_table: Confirms why a signal filled, is waiting, or was skipped.
+        self.signal_table = self.create_result_table(signal_frame,
+            ("confirmation_bar", "side", "status", "reason", "trade_id", "fill_bar", "line_ids"))
         table_frame = ttk.Frame(notebook)
         notebook.add(table_frame, text="Confirmed swings")
         trend_frame = ttk.Frame(notebook)
@@ -197,6 +225,101 @@ class SwingApp:
         self.table.configure(yscrollcommand=scrollbar.set)
         self.table.pack(side="left", fill="both", expand=True)
         scrollbar.pack(side="right", fill="y")
+
+    @staticmethod
+    def create_result_table(parent, columns):
+        """Build a horizontally/vertically scrollable table for wide trade records."""
+        table = ttk.Treeview(parent, columns=columns, show="headings", height=6)
+        for key in columns:
+            table.heading(key, text=key.replace("_", " ").title())
+            table.column(key, width=160 if key in ("exit_reason", "reason", "line_ids", "unrealized_net_pnl") else 115,
+                         stretch=False, anchor="center")
+        horizontal = ttk.Scrollbar(parent, orient="horizontal", command=table.xview)
+        vertical = ttk.Scrollbar(parent, orient="vertical", command=table.yview)
+        table.configure(xscrollcommand=horizontal.set, yscrollcommand=vertical.set)
+        table.grid(row=0, column=0, sticky="nsew")
+        horizontal.grid(row=1, column=0, sticky="ew")
+        vertical.grid(row=0, column=1, sticky="ns")
+        parent.columnconfigure(0, weight=1)
+        parent.rowconfigure(0, weight=1)
+        return table
+
+    def edit_trade_settings(self):
+        """Edit documented dataclass attributes, validating before recalculation."""
+        dialog = tk.Toplevel(self.root)
+        dialog.title("Steps 5–6 — simulation settings")
+        variables = {}
+        descriptions = {
+            "enabled": "Calculate simulated trades", "entry_timing": "Slide: confirmation_close; report: next_open",
+            "allow_short": "Sell opens a short position", "quantity": "Units / shares per trade", "initial_equity": "Starting account value",
+            "atr_period": "Trade ATR period (bars)", "atr_stop_multiple": "Stop distance = this × ATR",
+            "reward_risk_multiple": "Target distance = this × stop distance", "slippage_bps": "Adverse slippage (1 bp = 0.01%)",
+            "fee_per_order": "Commission per entry / exit", "short_borrow_rate_percent": "Annual short-borrow rate (%)",
+            "ema_filter": "Require EMA direction agreement", "ema_period": "Trade EMA period (bars)",
+            "exit_on_false_break": "Optional: exit after false break", "exit_on_opposite": "Optional: exit after opposite signal"}
+        for row, field in enumerate(fields(self.trade_settings)):
+            value = getattr(self.trade_settings, field.name)
+            ttk.Label(dialog, text=descriptions[field.name]).grid(row=row, column=0, sticky="w", padx=12, pady=3)
+            variable = tk.BooleanVar(value=value) if isinstance(value, bool) else tk.StringVar(value=str(value))
+            variables[field.name] = variable
+            if isinstance(value, bool):
+                widget = ttk.Checkbutton(dialog, variable=variable)
+            elif field.name == "entry_timing":
+                widget = ttk.Combobox(dialog, textvariable=variable, values=["confirmation_close", "next_open"], state="readonly", width=22)
+            else:
+                widget = ttk.Entry(dialog, textvariable=variable, width=24)
+            widget.grid(row=row, column=1, padx=12, pady=3)
+
+        def apply():
+            """Store valid settings; an invalid entry leaves the last snapshot intact."""
+            try:
+                values = {key: (variable.get() if isinstance(getattr(self.trade_settings, key), bool) or key == "entry_timing"
+                                else int(variable.get()) if key in ("atr_period", "ema_period") else float(variable.get()))
+                          for key, variable in variables.items()}
+                settings = TradeSettings(**values)
+            except (ValueError, tk.TclError) as exc:
+                messagebox.showerror("Invalid trade settings", str(exc), parent=dialog)
+                return
+            self.trade_settings = settings
+            dialog.destroy()
+            if self.bars:
+                self.refresh()
+        ttk.Label(dialog, text="Stops/targets stay fixed after entry. Optional signal exits execute at the next Open.").grid(
+            row=len(variables), column=0, columnspan=2, padx=12, pady=8)
+        ttk.Button(dialog, text="Apply", command=apply).grid(row=len(variables)+1, column=0, columnspan=2, pady=8)
+
+    def show_trades(self, trade_id=None):
+        """Open the applied trade chart, optionally focusing on a selected trade."""
+        self.show_trade_view(False, trade_id)
+
+    def show_equity(self):
+        """Open account equity and P/L for exactly the applied replay cutoff."""
+        self.show_trade_view(True)
+
+    def show_selected_trade(self, event=None):
+        """Display the selected filled trade; double-clicking empty space does nothing."""
+        selected = self.trade_table.selection()
+        if selected:
+            self.show_trades(self.trade_table.item(selected[0], "values")[0])
+
+    def show_trade_view(self, equity=False, trade_id=None):
+        """Render one snapshot in a separate Tk window with zoom/save controls."""
+        if self.current_run is None or self.trading_snapshot is None:
+            messagebox.showinfo("Open data", "Load data and apply a valid run first.")
+            return
+        source, bars, _, _, _, lines, *_ = self.current_run
+        window = tk.Toplevel(self.root)
+        window.title(f"{'Equity / P&L' if equity else 'Trades'} — {source.name} — {len(bars)} observed bars")
+        window.geometry("1150x820")
+        figure = Figure(figsize=(13, 8))
+        if equity:
+            draw_equity(figure, bars, self.trading_snapshot, source.name)
+        else:
+            draw_trades(figure, bars, self.trading_snapshot, source.name, lines=lines, selected_trade_id=trade_id)
+        canvas = FigureCanvasTkAgg(figure, master=window)
+        canvas.get_tk_widget().pack(fill="both", expand=True)
+        NavigationToolbar2Tk(canvas, window).update()
+        canvas.draw()
 
     def method_changed(self, event=None):
         """Enable applicable controls; leave the last plotted snapshot unchanged."""
@@ -379,6 +502,7 @@ class SwingApp:
         self.bars, self.source = bars, Path(path)
         self.current_run = None
         self.breakout_snapshot = None
+        self.trading_snapshot = None
         self.export_button.configure(state="disabled")
         self.cutoff.set(str(len(bars)))
         self.refresh()
@@ -414,7 +538,7 @@ class SwingApp:
             basis = method.basis
             settings = TrendSettings(float(self.trend_tolerance.get()), int(self.trend_lookback.get()),
                                      int(self.min_touches.get()), int(self.max_lines.get()))
-            analysis = analyze(visible, method, settings, self.breakout_settings)
+            analysis = analyze(visible, method, settings, self.breakout_settings, self.trade_settings)
             points, lines = analysis.points, analysis.lines
             selected = select_trendlines(lines, settings)
             indicators = calculate_indicators(visible, self.indicator_settings)
@@ -438,6 +562,18 @@ class SwingApp:
             self.breakout_table.insert("", "end", values=[record[k] if record[k] is not None else ""
                                                         for k in self.breakout_table["columns"]])
         self.breakout_snapshot = (analysis.events, analysis.breakout_settings)
+        self.trading_snapshot = analysis.trading
+        for table, records in ((self.trade_table, [t.as_record(visible) for t in analysis.trading.trades]),
+                                (self.signal_table, analysis.trading.signals)):
+            table.delete(*table.get_children())
+            for record in records:
+                table.insert("", "end", values=["" if record[key] is None else f"{record[key]:.4f}"
+                             if isinstance(record[key], float) else ", ".join(record[key])
+                             if isinstance(record[key], list) else record[key] for key in table["columns"]])
+        stats = analysis.trading.summary()
+        self.trade_status.set(f"Steps 5–6: {stats['status']} | {stats['closed_trades']} closed / {stats['open_trades']} open | "
+                              f"realised net {stats['realized_net_pnl']:+.4f} | open net {stats['unrealized_net_pnl']:+.4f} | "
+                              f"equity {stats['final_equity']:.4f} | {analysis.trading.settings.entry_timing}")
         self.indicator_result = indicators
         self.indicator_table.delete(*self.indicator_table.get_children())
         for record in indicators.records(visible):
@@ -492,7 +628,7 @@ class SwingApp:
             None.
 
         Result:
-            None: Saves twelve result files and displays a success message. Does nothing
+            None: Saves twenty result files and displays a success message. Does nothing
                 when no run exists or the destination dialog is cancelled.
 
         Exception:
@@ -509,13 +645,13 @@ class SwingApp:
             source, bars, points, window, basis, lines, settings, indicator_settings, method = self.current_run
             events, breakout_settings = self.breakout_snapshot
             export_results(folder, source, bars, points, window, basis, self.figure, lines, settings, indicator_settings,
-                           method=method, breakout_settings=breakout_settings, events=events)
-            messagebox.showinfo("Saved", f"Price/indicator/breakout charts, result tables and run summary saved to:\n{folder}")
+                           method=method, breakout_settings=breakout_settings, events=events, trading=self.trading_snapshot)
+            messagebox.showinfo("Saved", f"20 files: price/indicator/breakout/trade/equity charts, result tables and summary saved to:\n{folder}")
         except (OSError, ValueError) as exc:
             messagebox.showerror("Cannot export", str(exc))
 
 
-def launch(path=None, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None, breakout_settings=None):
+def launch(path=None, window=2, basis="close", output=Path("output"), settings=None, indicator_settings=None, method=None, breakout_settings=None, trade_settings=None):
     """
     Create the desktop application and run its Tk event loop.
 
@@ -531,6 +667,7 @@ def launch(path=None, window=2, basis="close", output=Path("output"), settings=N
         indicator_settings (IndicatorSettings or None): Initial indicator periods/anchor.
         method (SwingMethod or None): Initial swing strategy; defaults to traditional TA.
         breakout_settings (BreakoutSettings or None): Initial Step 4 confirmation/follow-up rules.
+        trade_settings (TradeSettings or None): Initial Step 5–6 execution/exit settings.
 
     Result:
         None: Returns after the Tk event loop ends, normally when the window closes.
@@ -543,7 +680,8 @@ def launch(path=None, window=2, basis="close", output=Path("output"), settings=N
         root = tk.Tk()
     except tk.TclError as exc:
         raise RuntimeError("Tk could not open a display. Install Python with Tk or use CLI mode.") from exc
-    app = SwingApp(root, window, basis, output, settings, indicator_settings, method=method, breakout_settings=breakout_settings)
+    app = SwingApp(root, window, basis, output, settings, indicator_settings, method=method,
+                   breakout_settings=breakout_settings, trade_settings=trade_settings)
     if path:
         app.load(path)
     root.mainloop()

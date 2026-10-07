@@ -1,0 +1,59 @@
+confirmation_bar,confirmed_at,side,line_ids,status,reason,trade_id,fill_bar
+15,2023-05-19T09:30:00,long,"[""down-6-9""]",filled,confirmed,T0001,15
+22,2023-05-19T09:37:00,long,"[""down-9-17""]",skipped,position_open,,
+62,2023-05-19T10:17:00,short,"[""up-32-57""]",filled,confirmed,T0002,62
+64,2023-05-19T10:19:00,short,"[""up-18-32"", ""up-43-57""]",skipped,position_open,,
+69,2023-05-19T10:24:00,long,"[""down-55-65""]",skipped,position_open,,
+71,2023-05-19T10:26:00,short,"[""up-63-67""]",skipped,position_open,,
+73,2023-05-19T10:28:00,short,"[""up-13-18"", ""up-13-63"", ""up-18-63"", ""up-32-63""]",skipped,position_open,,
+86,2023-05-19T10:41:00,long,"[""down-50-69"", ""down-55-69""]",filled,confirmed,T0003,86
+95,2023-05-19T10:50:00,short,"[""up-13-78"", ""up-18-78"", ""up-13-91"", ""up-18-91"", ""up-78-91""]",filled,confirmed,T0004,95
+97,2023-05-19T10:52:00,short,"[""up-32-78""]",skipped,position_open,,
+104,2023-05-19T10:59:00,short,"[""up-13-98"", ""up-18-98"", ""up-32-98""]",skipped,position_open,,
+105,2023-05-19T11:00:00,short,"[""up-78-98""]",skipped,position_open,,
+113,2023-05-19T11:08:00,long,"[""down-86-101""]",skipped,position_open,,
+119,2023-05-19T11:14:00,short,"[""up-32-107"", ""up-107-111"", ""up-13-111"", ""up-18-111"", ""up-32-111""]",skipped,position_open,,
+120,2023-05-19T11:15:00,short,"[""up-78-107"", ""up-78-111""]",skipped,position_open,,
+132,2023-05-19T11:27:00,long,"[""down-114-121""]",filled,confirmed,T0005,132
+134,2023-05-19T11:29:00,long,"[""down-86-114""]",skipped,position_open,,
+138,2023-05-19T11:33:00,long,"[""down-101-114""]",skipped,position_open,,
+147,2023-05-19T11:42:00,short,"[""up-125-129""]",skipped,position_open,,
+151,2023-05-19T11:46:00,short,"[""up-125-147"", ""up-129-147""]",skipped,position_open,,
+160,2023-05-19T11:55:00,short,"[""up-153-156""]",skipped,position_open,,
+162,2023-05-19T11:57:00,short,"[""up-13-125"", ""up-18-125"", ""up-125-153"", ""up-129-153""]",skipped,position_open,,
+165,2023-05-19T12:00:00,short,"[""up-125-161"", ""up-129-161"", ""up-13-161"", ""up-18-161""]",filled,confirmed,T0006,165
+166,2023-05-19T12:01:00,short,"[""up-32-125""]",skipped,position_open,,
+172,2023-05-19T12:07:00,long,"[""down-155-168""]",skipped,position_open,,
+175,2023-05-19T12:10:00,long,"[""down-142-155"", ""down-148-155"", ""down-142-171"", ""down-148-171"", ""down-155-171""]",skipped,position_open,,
+182,2023-05-19T12:17:00,long,"[""down-142-177"", ""down-148-177""]",filled,confirmed,T0007,182
+183,2023-05-19T12:18:00,long,"[""down-155-177""]",skipped,position_open,,
+187,2023-05-19T12:22:00,short,"[""up-166-170""]",filled,confirmed,T0008,187
+189,2023-05-19T12:24:00,long,"[""down-86-142"", ""down-142-184"", ""down-148-184"", ""down-155-184""]",filled,confirmed,T0009,189
+197,2023-05-19T12:32:00,long,"[""down-142-188"", ""down-86-188"", ""down-142-193"", ""down-188-193"", ""down-86-193""]",skipped,position_open,,
+198,2023-05-19T12:33:00,long,"[""down-50-86"", ""down-101-137"", ""down-114-137"", ""down-101-142"", ""down-148-188""]",skipped,position_open,,
+200,2023-05-19T12:35:00,long,"[""down-55-86"", ""down-114-142""]",skipped,position_open,,
+208,2023-05-19T12:43:00,short,"[""up-186-191"", ""up-195-202""]",filled,confirmed,T0010,208
+209,2023-05-19T12:44:00,short,"[""up-186-195"", ""up-191-195""]",skipped,position_open,,
+211,2023-05-19T12:46:00,short,"[""up-191-207"", ""up-195-207""]",skipped,position_open,,
+218,2023-05-19T12:53:00,long,"[""down-205-211""]",skipped,position_open,,
+229,2023-05-19T13:04:00,short,"[""up-166-219""]",skipped,position_open,,
+230,2023-05-19T13:05:00,short,"[""up-13-166"", ""up-18-166"", ""up-170-186"", ""up-191-214"", ""up-170-219"", ""up-186-219"", ""up-191-219""]",skipped,position_open,,
+238,2023-05-19T13:13:00,long,"[""down-217-223""]",skipped,position_open,,
+251,2023-05-19T13:26:00,long,"[""down-243-247""]",skipped,position_open,,
+252,2023-05-19T13:27:00,long,"[""down-205-238""]",skipped,position_open,,
+256,2023-05-19T13:31:00,long,"[""down-211-238""]",skipped,position_open,,
+258,2023-05-19T13:33:00,short,"[""up-249-253""]",skipped,position_open,,
+260,2023-05-19T13:35:00,long,"[""down-205-256"", ""down-211-256"", ""down-238-256""]",skipped,position_open,,
+264,2023-05-19T13:39:00,long,"[""down-217-238""]",skipped,position_open,,
+268,2023-05-19T13:43:00,short,"[""up-249-258""]",skipped,position_open,,
+269,2023-05-19T13:44:00,short,"[""up-253-258""]",skipped,position_open,,
+278,2023-05-19T13:53:00,short,"[""up-241-269"", ""up-249-269"", ""up-253-269"", ""up-258-269""]",skipped,position_open,,
+282,2023-05-19T13:57:00,short,"[""up-241-278"", ""up-249-278""]",filled,confirmed,T0011,282
+283,2023-05-19T13:58:00,short,"[""up-166-241"", ""up-170-241""]",skipped,position_open,,
+314,2023-05-19T14:29:00,long,"[""down-298-310""]",filled,confirmed,T0012,314
+315,2023-05-19T14:30:00,long,"[""down-303-310""]",skipped,position_open,,
+322,2023-05-19T14:37:00,short,"[""up-312-318""]",filled,confirmed,T0013,322
+338,2023-05-19T14:53:00,long,"[""down-298-317""]",skipped,position_open,,
+349,2023-05-19T15:04:00,short,"[""up-333-342""]",skipped,position_open,,
+372,2023-05-19T15:27:00,long,"[""down-360-367""]",filled,confirmed,T0014,372
+374,2023-05-19T15:29:00,short,"[""up-365-370""]",skipped,position_open,,

@@ -1,0 +1,3742 @@
+[
+  {
+    "bar": 1,
+    "timestamp": "2023-05-19T09:16:00",
+    "close": 347.1,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 2,
+    "timestamp": "2023-05-19T09:17:00",
+    "close": 358.85,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 3,
+    "timestamp": "2023-05-19T09:18:00",
+    "close": 369.0,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 4,
+    "timestamp": "2023-05-19T09:19:00",
+    "close": 366.3,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 5,
+    "timestamp": "2023-05-19T09:20:00",
+    "close": 357.65,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 6,
+    "timestamp": "2023-05-19T09:21:00",
+    "close": 378.9,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 7,
+    "timestamp": "2023-05-19T09:22:00",
+    "close": 359.45,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 8,
+    "timestamp": "2023-05-19T09:23:00",
+    "close": 357.1,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 9,
+    "timestamp": "2023-05-19T09:24:00",
+    "close": 362.35,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 10,
+    "timestamp": "2023-05-19T09:25:00",
+    "close": 348.15,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 11,
+    "timestamp": "2023-05-19T09:26:00",
+    "close": 342.6,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 12,
+    "timestamp": "2023-05-19T09:27:00",
+    "close": 344.15,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 13,
+    "timestamp": "2023-05-19T09:28:00",
+    "close": 336.2,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 14,
+    "timestamp": "2023-05-19T09:29:00",
+    "close": 341.7,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 15,
+    "timestamp": "2023-05-19T09:30:00",
+    "close": 343.65,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10000.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 16,
+    "timestamp": "2023-05-19T09:31:00",
+    "close": 354.65,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 11.0,
+    "equity": 10011.0,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 17,
+    "timestamp": "2023-05-19T09:32:00",
+    "close": 358.6,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 14.950000000000045,
+    "equity": 10014.95,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 18,
+    "timestamp": "2023-05-19T09:33:00",
+    "close": 351.65,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 8.0,
+    "equity": 10008.0,
+    "drawdown_percent": 0.06939625260236673,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 19,
+    "timestamp": "2023-05-19T09:34:00",
+    "close": 356.9,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 13.25,
+    "equity": 10013.25,
+    "drawdown_percent": 0.016974622938713897,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 20,
+    "timestamp": "2023-05-19T09:35:00",
+    "close": 358.9,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 15.25,
+    "equity": 10015.25,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 21,
+    "timestamp": "2023-05-19T09:36:00",
+    "close": 371.0,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 27.350000000000023,
+    "equity": 10027.35,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 22,
+    "timestamp": "2023-05-19T09:37:00",
+    "close": 393.75,
+    "realized_net_pnl": 0.0,
+    "unrealized_net_pnl": 50.10000000000002,
+    "equity": 10050.1,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0001"
+  },
+  {
+    "bar": 23,
+    "timestamp": "2023-05-19T09:38:00",
+    "close": 400.05,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 24,
+    "timestamp": "2023-05-19T09:39:00",
+    "close": 402.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 25,
+    "timestamp": "2023-05-19T09:40:00",
+    "close": 416.75,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 26,
+    "timestamp": "2023-05-19T09:41:00",
+    "close": 409.4,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 27,
+    "timestamp": "2023-05-19T09:42:00",
+    "close": 417.45,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 28,
+    "timestamp": "2023-05-19T09:43:00",
+    "close": 409.5,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 29,
+    "timestamp": "2023-05-19T09:44:00",
+    "close": 415.05,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 30,
+    "timestamp": "2023-05-19T09:45:00",
+    "close": 415.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 31,
+    "timestamp": "2023-05-19T09:46:00",
+    "close": 420.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 32,
+    "timestamp": "2023-05-19T09:47:00",
+    "close": 401.3,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 33,
+    "timestamp": "2023-05-19T09:48:00",
+    "close": 428.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 34,
+    "timestamp": "2023-05-19T09:49:00",
+    "close": 429.45,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 35,
+    "timestamp": "2023-05-19T09:50:00",
+    "close": 441.65,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 36,
+    "timestamp": "2023-05-19T09:51:00",
+    "close": 457.25,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 37,
+    "timestamp": "2023-05-19T09:52:00",
+    "close": 461.95,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 38,
+    "timestamp": "2023-05-19T09:53:00",
+    "close": 469.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 39,
+    "timestamp": "2023-05-19T09:54:00",
+    "close": 471.55,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 40,
+    "timestamp": "2023-05-19T09:55:00",
+    "close": 480.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 41,
+    "timestamp": "2023-05-19T09:56:00",
+    "close": 503.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 42,
+    "timestamp": "2023-05-19T09:57:00",
+    "close": 503.05,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 43,
+    "timestamp": "2023-05-19T09:58:00",
+    "close": 490.85,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 44,
+    "timestamp": "2023-05-19T09:59:00",
+    "close": 499.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 45,
+    "timestamp": "2023-05-19T10:00:00",
+    "close": 506.05,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 46,
+    "timestamp": "2023-05-19T10:01:00",
+    "close": 506.2,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 47,
+    "timestamp": "2023-05-19T10:02:00",
+    "close": 541.95,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 48,
+    "timestamp": "2023-05-19T10:03:00",
+    "close": 529.65,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 49,
+    "timestamp": "2023-05-19T10:04:00",
+    "close": 538.15,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 50,
+    "timestamp": "2023-05-19T10:05:00",
+    "close": 570.95,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 51,
+    "timestamp": "2023-05-19T10:06:00",
+    "close": 560.7,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 52,
+    "timestamp": "2023-05-19T10:07:00",
+    "close": 552.5,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 53,
+    "timestamp": "2023-05-19T10:08:00",
+    "close": 559.25,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 54,
+    "timestamp": "2023-05-19T10:09:00",
+    "close": 563.85,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 55,
+    "timestamp": "2023-05-19T10:10:00",
+    "close": 567.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 56,
+    "timestamp": "2023-05-19T10:11:00",
+    "close": 543.5,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 57,
+    "timestamp": "2023-05-19T10:12:00",
+    "close": 505.1,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 58,
+    "timestamp": "2023-05-19T10:13:00",
+    "close": 531.35,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 59,
+    "timestamp": "2023-05-19T10:14:00",
+    "close": 530.75,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 60,
+    "timestamp": "2023-05-19T10:15:00",
+    "close": 521.55,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 61,
+    "timestamp": "2023-05-19T10:16:00",
+    "close": 509.6,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 62,
+    "timestamp": "2023-05-19T10:17:00",
+    "close": 514.4,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -0.0,
+    "equity": 10065.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 63,
+    "timestamp": "2023-05-19T10:18:00",
+    "close": 494.7,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 19.69999999999999,
+    "equity": 10084.866326530613,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 64,
+    "timestamp": "2023-05-19T10:19:00",
+    "close": 508.95,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 5.449999999999989,
+    "equity": 10070.616326530613,
+    "drawdown_percent": 0.1413008317473879,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 65,
+    "timestamp": "2023-05-19T10:20:00",
+    "close": 536.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -21.600000000000023,
+    "equity": 10043.566326530612,
+    "drawdown_percent": 0.40952451587138766,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 66,
+    "timestamp": "2023-05-19T10:21:00",
+    "close": 530.7,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -16.300000000000068,
+    "equity": 10048.866326530613,
+    "drawdown_percent": 0.35697052230919046,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 67,
+    "timestamp": "2023-05-19T10:22:00",
+    "close": 522.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -7.600000000000023,
+    "equity": 10057.566326530612,
+    "drawdown_percent": 0.27070264608448025,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 68,
+    "timestamp": "2023-05-19T10:23:00",
+    "close": 532.4,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -18.0,
+    "equity": 10047.166326530612,
+    "drawdown_percent": 0.37382746364046504,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 69,
+    "timestamp": "2023-05-19T10:24:00",
+    "close": 547.8,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -33.39999999999998,
+    "equity": 10031.766326530613,
+    "drawdown_percent": 0.5265315204060595,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 70,
+    "timestamp": "2023-05-19T10:25:00",
+    "close": 521.35,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -6.9500000000000455,
+    "equity": 10058.216326530612,
+    "drawdown_percent": 0.2642573449872346,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 71,
+    "timestamp": "2023-05-19T10:26:00",
+    "close": 524.4,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -10.0,
+    "equity": 10055.166326530612,
+    "drawdown_percent": 0.29450068090508935,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 72,
+    "timestamp": "2023-05-19T10:27:00",
+    "close": 514.75,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -0.35000000000002274,
+    "equity": 10064.816326530612,
+    "drawdown_percent": 0.19881274923054607,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 73,
+    "timestamp": "2023-05-19T10:28:00",
+    "close": 514.2,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 0.1999999999999318,
+    "equity": 10065.366326530613,
+    "drawdown_percent": 0.19335903291747816,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 74,
+    "timestamp": "2023-05-19T10:29:00",
+    "close": 511.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 3.3999999999999773,
+    "equity": 10068.566326530612,
+    "drawdown_percent": 0.16162831982333872,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 75,
+    "timestamp": "2023-05-19T10:30:00",
+    "close": 488.4,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 26.0,
+    "equity": 10091.166326530612,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 76,
+    "timestamp": "2023-05-19T10:31:00",
+    "close": 500.0,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 14.399999999999977,
+    "equity": 10079.566326530612,
+    "drawdown_percent": 0.11495202461882813,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 77,
+    "timestamp": "2023-05-19T10:32:00",
+    "close": 488.2,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 26.19999999999999,
+    "equity": 10091.366326530613,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 78,
+    "timestamp": "2023-05-19T10:33:00",
+    "close": 486.2,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 28.19999999999999,
+    "equity": 10093.366326530613,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 79,
+    "timestamp": "2023-05-19T10:34:00",
+    "close": 491.65,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 22.75,
+    "equity": 10087.916326530612,
+    "drawdown_percent": 0.053995860485864806,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 80,
+    "timestamp": "2023-05-19T10:35:00",
+    "close": 491.2,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 23.19999999999999,
+    "equity": 10088.366326530613,
+    "drawdown_percent": 0.049537486684273026,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 81,
+    "timestamp": "2023-05-19T10:36:00",
+    "close": 494.1,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 20.299999999999955,
+    "equity": 10085.466326530612,
+    "drawdown_percent": 0.0782692289611658,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 82,
+    "timestamp": "2023-05-19T10:37:00",
+    "close": 495.45,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 18.94999999999999,
+    "equity": 10084.116326530613,
+    "drawdown_percent": 0.0916443503659051,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 83,
+    "timestamp": "2023-05-19T10:38:00",
+    "close": 502.45,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": 11.949999999999989,
+    "equity": 10077.116326530613,
+    "drawdown_percent": 0.16099683172388735,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 84,
+    "timestamp": "2023-05-19T10:39:00",
+    "close": 514.45,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -0.05000000000006821,
+    "equity": 10065.116326530613,
+    "drawdown_percent": 0.2798867997661426,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 85,
+    "timestamp": "2023-05-19T10:40:00",
+    "close": 544.5,
+    "realized_net_pnl": 65.16632653061225,
+    "unrealized_net_pnl": -30.100000000000023,
+    "equity": 10035.066326530612,
+    "drawdown_percent": 0.5776070947386343,
+    "open_trade_id": "T0002"
+  },
+  {
+    "bar": 86,
+    "timestamp": "2023-05-19T10:41:00",
+    "close": 554.7,
+    "realized_net_pnl": 20.21379267751803,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10020.213792677518,
+    "drawdown_percent": 0.7247585343337102,
+    "open_trade_id": "T0003"
+  },
+  {
+    "bar": 87,
+    "timestamp": "2023-05-19T10:42:00",
+    "close": 532.0,
+    "realized_net_pnl": 20.21379267751803,
+    "unrealized_net_pnl": -22.700000000000045,
+    "equity": 9997.513792677517,
+    "drawdown_percent": 0.9496587238803169,
+    "open_trade_id": "T0003"
+  },
+  {
+    "bar": 88,
+    "timestamp": "2023-05-19T10:43:00",
+    "close": 541.55,
+    "realized_net_pnl": 20.21379267751803,
+    "unrealized_net_pnl": -13.150000000000091,
+    "equity": 10007.063792677518,
+    "drawdown_percent": 0.8550421243133447,
+    "open_trade_id": "T0003"
+  },
+  {
+    "bar": 89,
+    "timestamp": "2023-05-19T10:44:00",
+    "close": 525.1,
+    "realized_net_pnl": 20.21379267751803,
+    "unrealized_net_pnl": -29.600000000000023,
+    "equity": 9990.613792677517,
+    "drawdown_percent": 1.0180204555046102,
+    "open_trade_id": "T0003"
+  },
+  {
+    "bar": 90,
+    "timestamp": "2023-05-19T10:45:00",
+    "close": 533.15,
+    "realized_net_pnl": 20.21379267751803,
+    "unrealized_net_pnl": -21.550000000000068,
+    "equity": 9998.663792677518,
+    "drawdown_percent": 0.9382651019429198,
+    "open_trade_id": "T0003"
+  },
+  {
+    "bar": 91,
+    "timestamp": "2023-05-19T10:46:00",
+    "close": 515.55,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9979.789355536794,
+    "drawdown_percent": 1.1252635376492792,
+    "open_trade_id": null
+  },
+  {
+    "bar": 92,
+    "timestamp": "2023-05-19T10:47:00",
+    "close": 516.85,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9979.789355536794,
+    "drawdown_percent": 1.1252635376492792,
+    "open_trade_id": null
+  },
+  {
+    "bar": 93,
+    "timestamp": "2023-05-19T10:48:00",
+    "close": 520.8,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9979.789355536794,
+    "drawdown_percent": 1.1252635376492792,
+    "open_trade_id": null
+  },
+  {
+    "bar": 94,
+    "timestamp": "2023-05-19T10:49:00",
+    "close": 514.85,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9979.789355536794,
+    "drawdown_percent": 1.1252635376492792,
+    "open_trade_id": null
+  },
+  {
+    "bar": 95,
+    "timestamp": "2023-05-19T10:50:00",
+    "close": 517.4,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": -0.0,
+    "equity": 9979.789355536794,
+    "drawdown_percent": 1.1252635376492792,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 96,
+    "timestamp": "2023-05-19T10:51:00",
+    "close": 514.6,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 2.7999999999999545,
+    "equity": 9982.589355536793,
+    "drawdown_percent": 1.0975225451060937,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 97,
+    "timestamp": "2023-05-19T10:52:00",
+    "close": 508.6,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 8.799999999999955,
+    "equity": 9988.589355536793,
+    "drawdown_percent": 1.038077561084966,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 98,
+    "timestamp": "2023-05-19T10:53:00",
+    "close": 506.5,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 10.899999999999977,
+    "equity": 9990.689355536793,
+    "drawdown_percent": 1.0172718166775678,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 99,
+    "timestamp": "2023-05-19T10:54:00",
+    "close": 516.6,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 0.7999999999999545,
+    "equity": 9980.589355536793,
+    "drawdown_percent": 1.1173375397798029,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 100,
+    "timestamp": "2023-05-19T10:55:00",
+    "close": 519.7,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": -2.300000000000068,
+    "equity": 9977.489355536794,
+    "drawdown_percent": 1.1480507815240377,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 101,
+    "timestamp": "2023-05-19T10:56:00",
+    "close": 523.1,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": -5.7000000000000455,
+    "equity": 9974.089355536793,
+    "drawdown_percent": 1.1817362724693579,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 102,
+    "timestamp": "2023-05-19T10:57:00",
+    "close": 522.95,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": -5.550000000000068,
+    "equity": 9974.239355536794,
+    "drawdown_percent": 1.1802501478688152,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 103,
+    "timestamp": "2023-05-19T10:58:00",
+    "close": 510.35,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 7.0499999999999545,
+    "equity": 9986.839355536793,
+    "drawdown_percent": 1.0554156814244615,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 104,
+    "timestamp": "2023-05-19T10:59:00",
+    "close": 506.0,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 11.399999999999977,
+    "equity": 9991.189355536793,
+    "drawdown_percent": 1.0123180680091404,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 105,
+    "timestamp": "2023-05-19T11:00:00",
+    "close": 502.0,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 15.399999999999977,
+    "equity": 9995.189355536793,
+    "drawdown_percent": 0.972688078661722,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 106,
+    "timestamp": "2023-05-19T11:01:00",
+    "close": 500.1,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 17.299999999999955,
+    "equity": 9997.089355536793,
+    "drawdown_percent": 0.9538638337217018,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 107,
+    "timestamp": "2023-05-19T11:02:00",
+    "close": 495.3,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 22.099999999999966,
+    "equity": 10001.889355536794,
+    "drawdown_percent": 0.9063078465047889,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 108,
+    "timestamp": "2023-05-19T11:03:00",
+    "close": 504.95,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 12.449999999999989,
+    "equity": 9992.239355536794,
+    "drawdown_percent": 1.0019151958054322,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 109,
+    "timestamp": "2023-05-19T11:04:00",
+    "close": 503.8,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 13.599999999999966,
+    "equity": 9993.389355536794,
+    "drawdown_percent": 0.9905215738680531,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 110,
+    "timestamp": "2023-05-19T11:05:00",
+    "close": 502.55,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 14.849999999999966,
+    "equity": 9994.639355536794,
+    "drawdown_percent": 0.9781372021969849,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 111,
+    "timestamp": "2023-05-19T11:06:00",
+    "close": 498.4,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 19.0,
+    "equity": 9998.789355536794,
+    "drawdown_percent": 0.9370210882490418,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 112,
+    "timestamp": "2023-05-19T11:07:00",
+    "close": 513.45,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 3.949999999999932,
+    "equity": 9983.739355536794,
+    "drawdown_percent": 1.0861289231686964,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 113,
+    "timestamp": "2023-05-19T11:08:00",
+    "close": 508.4,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 9.0,
+    "equity": 9988.789355536794,
+    "drawdown_percent": 1.0360960616175878,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 114,
+    "timestamp": "2023-05-19T11:09:00",
+    "close": 515.05,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 2.3500000000000227,
+    "equity": 9982.139355536794,
+    "drawdown_percent": 1.1019809189076675,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 115,
+    "timestamp": "2023-05-19T11:10:00",
+    "close": 513.4,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 4.0,
+    "equity": 9983.789355536794,
+    "drawdown_percent": 1.0856335483018609,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 116,
+    "timestamp": "2023-05-19T11:11:00",
+    "close": 504.65,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 12.75,
+    "equity": 9992.539355536794,
+    "drawdown_percent": 0.9989429466043831,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 117,
+    "timestamp": "2023-05-19T11:12:00",
+    "close": 506.7,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 10.699999999999989,
+    "equity": 9990.489355536794,
+    "drawdown_percent": 1.0192533161449278,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 118,
+    "timestamp": "2023-05-19T11:13:00",
+    "close": 500.25,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 17.149999999999977,
+    "equity": 9996.939355536793,
+    "drawdown_percent": 0.9553499583222265,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 119,
+    "timestamp": "2023-05-19T11:14:00",
+    "close": 487.0,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 30.399999999999977,
+    "equity": 10010.189355536793,
+    "drawdown_percent": 0.8240756186089029,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 120,
+    "timestamp": "2023-05-19T11:15:00",
+    "close": 476.55,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 40.849999999999966,
+    "equity": 10020.639355536794,
+    "drawdown_percent": 0.720542271438765,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 121,
+    "timestamp": "2023-05-19T11:16:00",
+    "close": 494.45,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 22.94999999999999,
+    "equity": 10002.739355536794,
+    "drawdown_percent": 0.8978864737684589,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 122,
+    "timestamp": "2023-05-19T11:17:00",
+    "close": 475.5,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 41.89999999999998,
+    "equity": 10021.689355536793,
+    "drawdown_percent": 0.710139399235075,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 123,
+    "timestamp": "2023-05-19T11:18:00",
+    "close": 450.0,
+    "realized_net_pnl": -20.210644463206165,
+    "unrealized_net_pnl": 67.39999999999998,
+    "equity": 10047.189355536793,
+    "drawdown_percent": 0.45749821714528255,
+    "open_trade_id": "T0004"
+  },
+  {
+    "bar": 124,
+    "timestamp": "2023-05-19T11:19:00",
+    "close": 446.95,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 125,
+    "timestamp": "2023-05-19T11:20:00",
+    "close": 435.55,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 126,
+    "timestamp": "2023-05-19T11:21:00",
+    "close": 454.2,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 127,
+    "timestamp": "2023-05-19T11:22:00",
+    "close": 449.1,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 128,
+    "timestamp": "2023-05-19T11:23:00",
+    "close": 457.5,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 129,
+    "timestamp": "2023-05-19T11:24:00",
+    "close": 448.2,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 130,
+    "timestamp": "2023-05-19T11:25:00",
+    "close": 465.4,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 131,
+    "timestamp": "2023-05-19T11:26:00",
+    "close": 472.15,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": null
+  },
+  {
+    "bar": 132,
+    "timestamp": "2023-05-19T11:27:00",
+    "close": 485.05,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10053.459340726338,
+    "drawdown_percent": 0.3953783555777479,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 133,
+    "timestamp": "2023-05-19T11:28:00",
+    "close": 496.3,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 11.25,
+    "equity": 10064.709340726338,
+    "drawdown_percent": 0.2839190105381336,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 134,
+    "timestamp": "2023-05-19T11:29:00",
+    "close": 493.75,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 8.699999999999989,
+    "equity": 10062.159340726339,
+    "drawdown_percent": 0.30918312874710563,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 135,
+    "timestamp": "2023-05-19T11:30:00",
+    "close": 496.6,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 11.550000000000011,
+    "equity": 10065.009340726338,
+    "drawdown_percent": 0.28094676133708446,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 136,
+    "timestamp": "2023-05-19T11:31:00",
+    "close": 498.5,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 13.449999999999989,
+    "equity": 10066.909340726339,
+    "drawdown_percent": 0.26212251639704626,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 137,
+    "timestamp": "2023-05-19T11:32:00",
+    "close": 512.6,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 27.55000000000001,
+    "equity": 10081.009340726338,
+    "drawdown_percent": 0.12242680394741076,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 138,
+    "timestamp": "2023-05-19T11:33:00",
+    "close": 510.8,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 25.75,
+    "equity": 10079.209340726338,
+    "drawdown_percent": 0.14026029915374186,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 139,
+    "timestamp": "2023-05-19T11:34:00",
+    "close": 500.1,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 15.050000000000011,
+    "equity": 10068.509340726338,
+    "drawdown_percent": 0.24627052065809332,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 140,
+    "timestamp": "2023-05-19T11:35:00",
+    "close": 506.75,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 21.69999999999999,
+    "equity": 10075.159340726339,
+    "drawdown_percent": 0.18038566336799577,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 141,
+    "timestamp": "2023-05-19T11:36:00",
+    "close": 501.2,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 16.149999999999977,
+    "equity": 10069.609340726338,
+    "drawdown_percent": 0.23537227358754967,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 142,
+    "timestamp": "2023-05-19T11:37:00",
+    "close": 513.4,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 28.349999999999966,
+    "equity": 10081.809340726339,
+    "drawdown_percent": 0.11450080607791627,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 143,
+    "timestamp": "2023-05-19T11:38:00",
+    "close": 510.4,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 25.349999999999966,
+    "equity": 10078.809340726339,
+    "drawdown_percent": 0.14422329808848008,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 144,
+    "timestamp": "2023-05-19T11:39:00",
+    "close": 506.75,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 21.69999999999999,
+    "equity": 10075.159340726339,
+    "drawdown_percent": 0.18038566336799577,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 145,
+    "timestamp": "2023-05-19T11:40:00",
+    "close": 508.15,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 23.099999999999966,
+    "equity": 10076.559340726339,
+    "drawdown_percent": 0.16651516709640293,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 146,
+    "timestamp": "2023-05-19T11:41:00",
+    "close": 494.65,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 9.599999999999966,
+    "equity": 10063.059340726339,
+    "drawdown_percent": 0.3002663811439401,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 147,
+    "timestamp": "2023-05-19T11:42:00",
+    "close": 488.15,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 3.099999999999966,
+    "equity": 10056.559340726339,
+    "drawdown_percent": 0.36466511383349504,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 148,
+    "timestamp": "2023-05-19T11:43:00",
+    "close": 498.4,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 13.349999999999966,
+    "equity": 10066.809340726339,
+    "drawdown_percent": 0.2631132661307353,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 149,
+    "timestamp": "2023-05-19T11:44:00",
+    "close": 492.05,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": 7.0,
+    "equity": 10060.459340726338,
+    "drawdown_percent": 0.3260258742197657,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 150,
+    "timestamp": "2023-05-19T11:45:00",
+    "close": 479.65,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -5.400000000000034,
+    "equity": 10048.059340726339,
+    "drawdown_percent": 0.4488788411967592,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 151,
+    "timestamp": "2023-05-19T11:46:00",
+    "close": 477.9,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -7.150000000000034,
+    "equity": 10046.309340726339,
+    "drawdown_percent": 0.46621696153625475,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 152,
+    "timestamp": "2023-05-19T11:47:00",
+    "close": 468.0,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -17.05000000000001,
+    "equity": 10036.409340726339,
+    "drawdown_percent": 0.5643011851711117,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 153,
+    "timestamp": "2023-05-19T11:48:00",
+    "close": 462.8,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -22.25,
+    "equity": 10031.209340726338,
+    "drawdown_percent": 0.6158201713227629,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 154,
+    "timestamp": "2023-05-19T11:49:00",
+    "close": 472.2,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -12.850000000000023,
+    "equity": 10040.609340726338,
+    "drawdown_percent": 0.5226896963563332,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 155,
+    "timestamp": "2023-05-19T11:50:00",
+    "close": 484.15,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -0.9000000000000341,
+    "equity": 10052.559340726339,
+    "drawdown_percent": 0.4042951031809135,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 156,
+    "timestamp": "2023-05-19T11:51:00",
+    "close": 470.0,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -15.050000000000011,
+    "equity": 10038.409340726339,
+    "drawdown_percent": 0.5444861904974025,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 157,
+    "timestamp": "2023-05-19T11:52:00",
+    "close": 476.4,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -8.650000000000034,
+    "equity": 10044.809340726339,
+    "drawdown_percent": 0.4810782075415367,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 158,
+    "timestamp": "2023-05-19T11:53:00",
+    "close": 473.25,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -11.800000000000011,
+    "equity": 10041.659340726339,
+    "drawdown_percent": 0.512286824152625,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 159,
+    "timestamp": "2023-05-19T11:54:00",
+    "close": 466.15,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -18.900000000000034,
+    "equity": 10034.559340726339,
+    "drawdown_percent": 0.5826300552442963,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 160,
+    "timestamp": "2023-05-19T11:55:00",
+    "close": 470.65,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -14.400000000000034,
+    "equity": 10039.059340726339,
+    "drawdown_percent": 0.5380463172284506,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 161,
+    "timestamp": "2023-05-19T11:56:00",
+    "close": 455.7,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -29.350000000000023,
+    "equity": 10024.109340726338,
+    "drawdown_percent": 0.6861634024144342,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 162,
+    "timestamp": "2023-05-19T11:57:00",
+    "close": 462.0,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -23.05000000000001,
+    "equity": 10030.409340726339,
+    "drawdown_percent": 0.6237461691922394,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 163,
+    "timestamp": "2023-05-19T11:58:00",
+    "close": 456.85,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -28.19999999999999,
+    "equity": 10025.259340726338,
+    "drawdown_percent": 0.674769780477055,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 164,
+    "timestamp": "2023-05-19T11:59:00",
+    "close": 453.0,
+    "realized_net_pnl": 53.45934072633878,
+    "unrealized_net_pnl": -32.05000000000001,
+    "equity": 10021.409340726339,
+    "drawdown_percent": 0.7129136452239309,
+    "open_trade_id": "T0005"
+  },
+  {
+    "bar": 165,
+    "timestamp": "2023-05-19T12:00:00",
+    "close": 445.0,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -0.0,
+    "equity": 10017.45827587117,
+    "drawdown_percent": 0.7520588097542628,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 166,
+    "timestamp": "2023-05-19T12:01:00",
+    "close": 435.55,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": 9.449999999999989,
+    "equity": 10026.90827587117,
+    "drawdown_percent": 0.6584329599209796,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 167,
+    "timestamp": "2023-05-19T12:02:00",
+    "close": 445.6,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -0.6000000000000227,
+    "equity": 10016.85827587117,
+    "drawdown_percent": 0.7580033081563792,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 168,
+    "timestamp": "2023-05-19T12:03:00",
+    "close": 448.55,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -3.5500000000000114,
+    "equity": 10013.90827587117,
+    "drawdown_percent": 0.7872304253000895,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 169,
+    "timestamp": "2023-05-19T12:04:00",
+    "close": 443.25,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": 1.75,
+    "equity": 10019.20827587117,
+    "drawdown_percent": 0.7347206894147672,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 170,
+    "timestamp": "2023-05-19T12:05:00",
+    "close": 441.2,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": 3.8000000000000114,
+    "equity": 10021.258275871169,
+    "drawdown_percent": 0.7144103198742225,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 171,
+    "timestamp": "2023-05-19T12:06:00",
+    "close": 449.6,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -4.600000000000023,
+    "equity": 10012.85827587117,
+    "drawdown_percent": 0.7976332975037976,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 172,
+    "timestamp": "2023-05-19T12:07:00",
+    "close": 443.9,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": 1.1000000000000227,
+    "equity": 10018.55827587117,
+    "drawdown_percent": 0.7411605626837191,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 173,
+    "timestamp": "2023-05-19T12:08:00",
+    "close": 444.95,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": 0.05000000000001137,
+    "equity": 10017.508275871169,
+    "drawdown_percent": 0.7515634348874273,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 174,
+    "timestamp": "2023-05-19T12:09:00",
+    "close": 448.95,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -3.9499999999999886,
+    "equity": 10013.508275871169,
+    "drawdown_percent": 0.7911934242348457,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 175,
+    "timestamp": "2023-05-19T12:10:00",
+    "close": 448.0,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -3.0,
+    "equity": 10014.45827587117,
+    "drawdown_percent": 0.7817813017648266,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 176,
+    "timestamp": "2023-05-19T12:11:00",
+    "close": 457.4,
+    "realized_net_pnl": 17.458275871168667,
+    "unrealized_net_pnl": -12.399999999999977,
+    "equity": 10005.05827587117,
+    "drawdown_percent": 0.8749117767312563,
+    "open_trade_id": "T0006"
+  },
+  {
+    "bar": 177,
+    "timestamp": "2023-05-19T12:12:00",
+    "close": 471.95,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9991.892053241922,
+    "drawdown_percent": 1.0053560923669687,
+    "open_trade_id": null
+  },
+  {
+    "bar": 178,
+    "timestamp": "2023-05-19T12:13:00",
+    "close": 470.95,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9991.892053241922,
+    "drawdown_percent": 1.0053560923669687,
+    "open_trade_id": null
+  },
+  {
+    "bar": 179,
+    "timestamp": "2023-05-19T12:14:00",
+    "close": 470.2,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9991.892053241922,
+    "drawdown_percent": 1.0053560923669687,
+    "open_trade_id": null
+  },
+  {
+    "bar": 180,
+    "timestamp": "2023-05-19T12:15:00",
+    "close": 470.5,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9991.892053241922,
+    "drawdown_percent": 1.0053560923669687,
+    "open_trade_id": null
+  },
+  {
+    "bar": 181,
+    "timestamp": "2023-05-19T12:16:00",
+    "close": 471.2,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9991.892053241922,
+    "drawdown_percent": 1.0053560923669687,
+    "open_trade_id": null
+  },
+  {
+    "bar": 182,
+    "timestamp": "2023-05-19T12:17:00",
+    "close": 473.85,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9991.892053241922,
+    "drawdown_percent": 1.0053560923669687,
+    "open_trade_id": "T0007"
+  },
+  {
+    "bar": 183,
+    "timestamp": "2023-05-19T12:18:00",
+    "close": 474.35,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 0.5,
+    "equity": 9992.392053241922,
+    "drawdown_percent": 1.0004023436985414,
+    "open_trade_id": "T0007"
+  },
+  {
+    "bar": 184,
+    "timestamp": "2023-05-19T12:19:00",
+    "close": 475.6,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": 1.75,
+    "equity": 9993.642053241922,
+    "drawdown_percent": 0.9880179720274731,
+    "open_trade_id": "T0007"
+  },
+  {
+    "bar": 185,
+    "timestamp": "2023-05-19T12:20:00",
+    "close": 471.95,
+    "realized_net_pnl": -8.107946758078185,
+    "unrealized_net_pnl": -1.900000000000034,
+    "equity": 9989.992053241922,
+    "drawdown_percent": 1.0241803373069889,
+    "open_trade_id": "T0007"
+  },
+  {
+    "bar": 186,
+    "timestamp": "2023-05-19T12:21:00",
+    "close": 451.5,
+    "realized_net_pnl": -30.07162097473764,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9969.928379025263,
+    "drawdown_percent": 1.2229611361760553,
+    "open_trade_id": null
+  },
+  {
+    "bar": 187,
+    "timestamp": "2023-05-19T12:22:00",
+    "close": 460.15,
+    "realized_net_pnl": -30.07162097473764,
+    "unrealized_net_pnl": -0.0,
+    "equity": 9969.928379025263,
+    "drawdown_percent": 1.2229611361760553,
+    "open_trade_id": "T0008"
+  },
+  {
+    "bar": 188,
+    "timestamp": "2023-05-19T12:23:00",
+    "close": 485.9,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9947.122037376459,
+    "drawdown_percent": 1.4489149053249766,
+    "open_trade_id": null
+  },
+  {
+    "bar": 189,
+    "timestamp": "2023-05-19T12:24:00",
+    "close": 482.0,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9947.122037376459,
+    "drawdown_percent": 1.4489149053249766,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 190,
+    "timestamp": "2023-05-19T12:25:00",
+    "close": 476.2,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": -5.800000000000011,
+    "equity": 9941.32203737646,
+    "drawdown_percent": 1.5063783898787262,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 191,
+    "timestamp": "2023-05-19T12:26:00",
+    "close": 464.9,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": -17.100000000000023,
+    "equity": 9930.022037376459,
+    "drawdown_percent": 1.618333109785194,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 192,
+    "timestamp": "2023-05-19T12:27:00",
+    "close": 475.4,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": -6.600000000000023,
+    "equity": 9940.522037376459,
+    "drawdown_percent": 1.5143043877482205,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 193,
+    "timestamp": "2023-05-19T12:28:00",
+    "close": 480.3,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": -1.6999999999999886,
+    "equity": 9945.422037376458,
+    "drawdown_percent": 1.4657576507976366,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 194,
+    "timestamp": "2023-05-19T12:29:00",
+    "close": 478.7,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": -3.3000000000000114,
+    "equity": 9943.82203737646,
+    "drawdown_percent": 1.4816096465365896,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 195,
+    "timestamp": "2023-05-19T12:30:00",
+    "close": 474.75,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": -7.25,
+    "equity": 9939.872037376459,
+    "drawdown_percent": 1.5207442610171724,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 196,
+    "timestamp": "2023-05-19T12:31:00",
+    "close": 484.0,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 2.0,
+    "equity": 9949.122037376459,
+    "drawdown_percent": 1.4290999106512674,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 197,
+    "timestamp": "2023-05-19T12:32:00",
+    "close": 508.8,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 26.80000000000001,
+    "equity": 9973.922037376458,
+    "drawdown_percent": 1.1833939766972803,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 198,
+    "timestamp": "2023-05-19T12:33:00",
+    "close": 508.75,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 26.75,
+    "equity": 9973.872037376459,
+    "drawdown_percent": 1.183889351564116,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 199,
+    "timestamp": "2023-05-19T12:34:00",
+    "close": 515.7,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 33.700000000000045,
+    "equity": 9980.82203737646,
+    "drawdown_percent": 1.1150322450729693,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 200,
+    "timestamp": "2023-05-19T12:35:00",
+    "close": 521.2,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 39.200000000000045,
+    "equity": 9986.32203737646,
+    "drawdown_percent": 1.0605410097202688,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 201,
+    "timestamp": "2023-05-19T12:36:00",
+    "close": 508.6,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 26.600000000000023,
+    "equity": 9973.72203737646,
+    "drawdown_percent": 1.1853754761646405,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 202,
+    "timestamp": "2023-05-19T12:37:00",
+    "close": 502.9,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 20.899999999999977,
+    "equity": 9968.022037376459,
+    "drawdown_percent": 1.2418482109847189,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 203,
+    "timestamp": "2023-05-19T12:38:00",
+    "close": 507.1,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 25.100000000000023,
+    "equity": 9972.22203737646,
+    "drawdown_percent": 1.2002367221699224,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 204,
+    "timestamp": "2023-05-19T12:39:00",
+    "close": 512.6,
+    "realized_net_pnl": -52.87796262354124,
+    "unrealized_net_pnl": 30.600000000000023,
+    "equity": 9977.72203737646,
+    "drawdown_percent": 1.145745486817222,
+    "open_trade_id": "T0009"
+  },
+  {
+    "bar": 205,
+    "timestamp": "2023-05-19T12:40:00",
+    "close": 537.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9998.182973485109,
+    "drawdown_percent": 0.9430288168112244,
+    "open_trade_id": null
+  },
+  {
+    "bar": 206,
+    "timestamp": "2023-05-19T12:41:00",
+    "close": 517.55,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9998.182973485109,
+    "drawdown_percent": 0.9430288168112244,
+    "open_trade_id": null
+  },
+  {
+    "bar": 207,
+    "timestamp": "2023-05-19T12:42:00",
+    "close": 504.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 0.0,
+    "equity": 9998.182973485109,
+    "drawdown_percent": 0.9430288168112244,
+    "open_trade_id": null
+  },
+  {
+    "bar": 208,
+    "timestamp": "2023-05-19T12:43:00",
+    "close": 504.4,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": -0.0,
+    "equity": 9998.182973485109,
+    "drawdown_percent": 0.9430288168112244,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 209,
+    "timestamp": "2023-05-19T12:44:00",
+    "close": 506.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": -2.2000000000000455,
+    "equity": 9995.982973485108,
+    "drawdown_percent": 0.9648253109523118,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 210,
+    "timestamp": "2023-05-19T12:45:00",
+    "close": 501.85,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 2.5499999999999545,
+    "equity": 10000.732973485108,
+    "drawdown_percent": 0.9177646986022524,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 211,
+    "timestamp": "2023-05-19T12:46:00",
+    "close": 509.5,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": -5.100000000000023,
+    "equity": 9993.082973485109,
+    "drawdown_percent": 0.9935570532291865,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 212,
+    "timestamp": "2023-05-19T12:47:00",
+    "close": 500.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 4.199999999999989,
+    "equity": 10002.38297348511,
+    "drawdown_percent": 0.9014173279964279,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 213,
+    "timestamp": "2023-05-19T12:48:00",
+    "close": 482.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 22.399999999999977,
+    "equity": 10020.582973485109,
+    "drawdown_percent": 0.7211008764656849,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 214,
+    "timestamp": "2023-05-19T12:49:00",
+    "close": 474.45,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 29.94999999999999,
+    "equity": 10028.13297348511,
+    "drawdown_percent": 0.6462992715724218,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 215,
+    "timestamp": "2023-05-19T12:50:00",
+    "close": 484.35,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 20.049999999999955,
+    "equity": 10018.232973485108,
+    "drawdown_percent": 0.7443834952072969,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 216,
+    "timestamp": "2023-05-19T12:51:00",
+    "close": 476.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 28.399999999999977,
+    "equity": 10026.582973485109,
+    "drawdown_percent": 0.6616558924445572,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 217,
+    "timestamp": "2023-05-19T12:52:00",
+    "close": 489.45,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 14.949999999999989,
+    "equity": 10013.13297348511,
+    "drawdown_percent": 0.7949117316252409,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 218,
+    "timestamp": "2023-05-19T12:53:00",
+    "close": 489.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 15.199999999999989,
+    "equity": 10013.38297348511,
+    "drawdown_percent": 0.7924348572910273,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 219,
+    "timestamp": "2023-05-19T12:54:00",
+    "close": 474.35,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 30.049999999999955,
+    "equity": 10028.232973485108,
+    "drawdown_percent": 0.6453085218387508,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 220,
+    "timestamp": "2023-05-19T12:55:00",
+    "close": 482.7,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 21.69999999999999,
+    "equity": 10019.88297348511,
+    "drawdown_percent": 0.7280361246014723,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 221,
+    "timestamp": "2023-05-19T12:56:00",
+    "close": 479.5,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 24.899999999999977,
+    "equity": 10023.082973485109,
+    "drawdown_percent": 0.6963321331235484,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 222,
+    "timestamp": "2023-05-19T12:57:00",
+    "close": 483.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 21.19999999999999,
+    "equity": 10019.38297348511,
+    "drawdown_percent": 0.7329898732698996,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 223,
+    "timestamp": "2023-05-19T12:58:00",
+    "close": 486.45,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 17.94999999999999,
+    "equity": 10016.13297348511,
+    "drawdown_percent": 0.7651892396146771,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 224,
+    "timestamp": "2023-05-19T12:59:00",
+    "close": 486.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 18.399999999999977,
+    "equity": 10016.582973485109,
+    "drawdown_percent": 0.7607308658131033,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 225,
+    "timestamp": "2023-05-19T13:00:00",
+    "close": 485.45,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 18.94999999999999,
+    "equity": 10017.13297348511,
+    "drawdown_percent": 0.7552817422778225,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 226,
+    "timestamp": "2023-05-19T13:01:00",
+    "close": 484.4,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 20.0,
+    "equity": 10018.182973485109,
+    "drawdown_percent": 0.7448788700741323,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 227,
+    "timestamp": "2023-05-19T13:02:00",
+    "close": 482.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 22.399999999999977,
+    "equity": 10020.582973485109,
+    "drawdown_percent": 0.7211008764656849,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 228,
+    "timestamp": "2023-05-19T13:03:00",
+    "close": 478.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 25.799999999999955,
+    "equity": 10023.982973485108,
+    "drawdown_percent": 0.6874153855203828,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 229,
+    "timestamp": "2023-05-19T13:04:00",
+    "close": 453.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 50.799999999999955,
+    "equity": 10048.982973485108,
+    "drawdown_percent": 0.4397279520990177,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 230,
+    "timestamp": "2023-05-19T13:05:00",
+    "close": 456.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 48.39999999999998,
+    "equity": 10046.582973485109,
+    "drawdown_percent": 0.4635059457074652,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 231,
+    "timestamp": "2023-05-19T13:06:00",
+    "close": 455.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 48.799999999999955,
+    "equity": 10046.982973485108,
+    "drawdown_percent": 0.45954294677272695,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 232,
+    "timestamp": "2023-05-19T13:07:00",
+    "close": 447.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 56.799999999999955,
+    "equity": 10054.982973485108,
+    "drawdown_percent": 0.3802829680778901,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 233,
+    "timestamp": "2023-05-19T13:08:00",
+    "close": 465.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 39.39999999999998,
+    "equity": 10037.582973485109,
+    "drawdown_percent": 0.5526734217391566,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 234,
+    "timestamp": "2023-05-19T13:09:00",
+    "close": 473.75,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 30.649999999999977,
+    "equity": 10028.832973485109,
+    "drawdown_percent": 0.6393640234366345,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 235,
+    "timestamp": "2023-05-19T13:10:00",
+    "close": 465.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 39.39999999999998,
+    "equity": 10037.582973485109,
+    "drawdown_percent": 0.5526734217391566,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 236,
+    "timestamp": "2023-05-19T13:11:00",
+    "close": 474.65,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 29.75,
+    "equity": 10027.932973485109,
+    "drawdown_percent": 0.6482807710398,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 237,
+    "timestamp": "2023-05-19T13:12:00",
+    "close": 482.8,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 21.599999999999966,
+    "equity": 10019.78297348511,
+    "drawdown_percent": 0.7290268743351613,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 238,
+    "timestamp": "2023-05-19T13:13:00",
+    "close": 489.4,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 15.0,
+    "equity": 10013.182973485109,
+    "drawdown_percent": 0.7944163567584054,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 239,
+    "timestamp": "2023-05-19T13:14:00",
+    "close": 485.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 19.399999999999977,
+    "equity": 10017.582973485109,
+    "drawdown_percent": 0.7508233684762488,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 240,
+    "timestamp": "2023-05-19T13:15:00",
+    "close": 471.1,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 33.299999999999955,
+    "equity": 10031.482973485108,
+    "drawdown_percent": 0.6131091554939733,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 241,
+    "timestamp": "2023-05-19T13:16:00",
+    "close": 444.15,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 60.25,
+    "equity": 10058.432973485109,
+    "drawdown_percent": 0.3461021022657345,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 242,
+    "timestamp": "2023-05-19T13:17:00",
+    "close": 450.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 54.19999999999999,
+    "equity": 10052.38297348511,
+    "drawdown_percent": 0.40604246115369763,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 243,
+    "timestamp": "2023-05-19T13:18:00",
+    "close": 459.55,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 44.849999999999966,
+    "equity": 10043.03297348511,
+    "drawdown_percent": 0.4986775612532918,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 244,
+    "timestamp": "2023-05-19T13:19:00",
+    "close": 456.05,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 48.349999999999966,
+    "equity": 10046.53297348511,
+    "drawdown_percent": 0.46400132057430066,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 245,
+    "timestamp": "2023-05-19T13:20:00",
+    "close": 457.7,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 46.69999999999999,
+    "equity": 10044.88297348511,
+    "drawdown_percent": 0.4803486911801072,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 246,
+    "timestamp": "2023-05-19T13:21:00",
+    "close": 458.95,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 45.44999999999999,
+    "equity": 10043.63297348511,
+    "drawdown_percent": 0.49273306285117546,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 247,
+    "timestamp": "2023-05-19T13:22:00",
+    "close": 459.45,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 44.94999999999999,
+    "equity": 10043.13297348511,
+    "drawdown_percent": 0.49768681151960276,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 248,
+    "timestamp": "2023-05-19T13:23:00",
+    "close": 458.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 46.19999999999999,
+    "equity": 10044.38297348511,
+    "drawdown_percent": 0.4853024398485345,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 249,
+    "timestamp": "2023-05-19T13:24:00",
+    "close": 456.85,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 47.549999999999955,
+    "equity": 10045.732973485108,
+    "drawdown_percent": 0.4719273184437952,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 250,
+    "timestamp": "2023-05-19T13:25:00",
+    "close": 469.8,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 34.599999999999966,
+    "equity": 10032.78297348511,
+    "drawdown_percent": 0.6002294089560515,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 251,
+    "timestamp": "2023-05-19T13:26:00",
+    "close": 478.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 25.799999999999955,
+    "equity": 10023.982973485108,
+    "drawdown_percent": 0.6874153855203828,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 252,
+    "timestamp": "2023-05-19T13:27:00",
+    "close": 479.55,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 24.849999999999966,
+    "equity": 10023.03297348511,
+    "drawdown_percent": 0.696827507990384,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 253,
+    "timestamp": "2023-05-19T13:28:00",
+    "close": 468.9,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 35.5,
+    "equity": 10033.682973485109,
+    "drawdown_percent": 0.591312661352886,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 254,
+    "timestamp": "2023-05-19T13:29:00",
+    "close": 479.8,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 24.599999999999966,
+    "equity": 10022.78297348511,
+    "drawdown_percent": 0.6993043823245976,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 255,
+    "timestamp": "2023-05-19T13:30:00",
+    "close": 479.35,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 25.049999999999955,
+    "equity": 10023.232973485108,
+    "drawdown_percent": 0.6948460085230238,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 256,
+    "timestamp": "2023-05-19T13:31:00",
+    "close": 480.4,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 24.0,
+    "equity": 10022.182973485109,
+    "drawdown_percent": 0.7052488807267139,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 257,
+    "timestamp": "2023-05-19T13:32:00",
+    "close": 476.1,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 28.299999999999955,
+    "equity": 10026.482973485108,
+    "drawdown_percent": 0.6626466421782463,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 258,
+    "timestamp": "2023-05-19T13:33:00",
+    "close": 476.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 28.399999999999977,
+    "equity": 10026.582973485109,
+    "drawdown_percent": 0.6616558924445572,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 259,
+    "timestamp": "2023-05-19T13:34:00",
+    "close": 482.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 22.399999999999977,
+    "equity": 10020.582973485109,
+    "drawdown_percent": 0.7211008764656849,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 260,
+    "timestamp": "2023-05-19T13:35:00",
+    "close": 482.3,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 22.099999999999966,
+    "equity": 10020.28297348511,
+    "drawdown_percent": 0.7240731256667341,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 261,
+    "timestamp": "2023-05-19T13:36:00",
+    "close": 483.85,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 20.549999999999955,
+    "equity": 10018.732973485108,
+    "drawdown_percent": 0.7394297465388695,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 262,
+    "timestamp": "2023-05-19T13:37:00",
+    "close": 488.5,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 15.899999999999977,
+    "equity": 10014.082973485109,
+    "drawdown_percent": 0.7854996091552399,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 263,
+    "timestamp": "2023-05-19T13:38:00",
+    "close": 495.75,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 8.649999999999977,
+    "equity": 10006.832973485109,
+    "drawdown_percent": 0.8573289648474357,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 264,
+    "timestamp": "2023-05-19T13:39:00",
+    "close": 505.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": -0.8000000000000114,
+    "equity": 9997.38297348511,
+    "drawdown_percent": 0.950954814680701,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 265,
+    "timestamp": "2023-05-19T13:40:00",
+    "close": 501.4,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 3.0,
+    "equity": 10001.182973485109,
+    "drawdown_percent": 0.9133063248006607,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 266,
+    "timestamp": "2023-05-19T13:41:00",
+    "close": 506.9,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": -2.5,
+    "equity": 9995.682973485109,
+    "drawdown_percent": 0.9677975601533609,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 267,
+    "timestamp": "2023-05-19T13:42:00",
+    "close": 490.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 14.399999999999977,
+    "equity": 10012.582973485109,
+    "drawdown_percent": 0.8003608551605217,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 268,
+    "timestamp": "2023-05-19T13:43:00",
+    "close": 486.55,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 17.849999999999966,
+    "equity": 10016.03297348511,
+    "drawdown_percent": 0.7661799893483662,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 269,
+    "timestamp": "2023-05-19T13:44:00",
+    "close": 482.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 22.19999999999999,
+    "equity": 10020.38297348511,
+    "drawdown_percent": 0.723082375933045,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 270,
+    "timestamp": "2023-05-19T13:45:00",
+    "close": 491.6,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 12.799999999999955,
+    "equity": 10010.982973485108,
+    "drawdown_percent": 0.8162128508994927,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 271,
+    "timestamp": "2023-05-19T13:46:00",
+    "close": 485.45,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 18.94999999999999,
+    "equity": 10017.13297348511,
+    "drawdown_percent": 0.7552817422778225,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 272,
+    "timestamp": "2023-05-19T13:47:00",
+    "close": 499.05,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 5.349999999999966,
+    "equity": 10003.53297348511,
+    "drawdown_percent": 0.8900237060590487,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 273,
+    "timestamp": "2023-05-19T13:48:00",
+    "close": 494.75,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 9.649999999999977,
+    "equity": 10007.832973485109,
+    "drawdown_percent": 0.8474214675105811,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 274,
+    "timestamp": "2023-05-19T13:49:00",
+    "close": 497.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 7.199999999999989,
+    "equity": 10005.38297348511,
+    "drawdown_percent": 0.8716948359858641,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 275,
+    "timestamp": "2023-05-19T13:50:00",
+    "close": 488.4,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 16.0,
+    "equity": 10014.182973485109,
+    "drawdown_percent": 0.7845088594215508,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 276,
+    "timestamp": "2023-05-19T13:51:00",
+    "close": 489.5,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 14.899999999999977,
+    "equity": 10013.082973485109,
+    "drawdown_percent": 0.7954071064920945,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 277,
+    "timestamp": "2023-05-19T13:52:00",
+    "close": 478.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 26.399999999999977,
+    "equity": 10024.582973485109,
+    "drawdown_percent": 0.6814708871182665,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 278,
+    "timestamp": "2023-05-19T13:53:00",
+    "close": 462.1,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 42.299999999999955,
+    "equity": 10040.482973485108,
+    "drawdown_percent": 0.5239416794622819,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 279,
+    "timestamp": "2023-05-19T13:54:00",
+    "close": 468.8,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 35.599999999999966,
+    "equity": 10033.78297348511,
+    "drawdown_percent": 0.5903219116191969,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 280,
+    "timestamp": "2023-05-19T13:55:00",
+    "close": 465.0,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 39.39999999999998,
+    "equity": 10037.582973485109,
+    "drawdown_percent": 0.5526734217391566,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 281,
+    "timestamp": "2023-05-19T13:56:00",
+    "close": 452.2,
+    "realized_net_pnl": -1.8170265148901876,
+    "unrealized_net_pnl": 52.19999999999999,
+    "equity": 10050.38297348511,
+    "drawdown_percent": 0.42585745582740686,
+    "open_trade_id": "T0010"
+  },
+  {
+    "bar": 282,
+    "timestamp": "2023-05-19T13:57:00",
+    "close": 437.2,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": -0.0,
+    "equity": 10063.40115340355,
+    "drawdown_percent": 0.29687987295475765,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 283,
+    "timestamp": "2023-05-19T13:58:00",
+    "close": 439.0,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": -1.8000000000000114,
+    "equity": 10061.601153403552,
+    "drawdown_percent": 0.3147133681610887,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 284,
+    "timestamp": "2023-05-19T13:59:00",
+    "close": 430.8,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": 6.399999999999977,
+    "equity": 10069.80115340355,
+    "drawdown_percent": 0.23347188999889176,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 285,
+    "timestamp": "2023-05-19T14:00:00",
+    "close": 438.25,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": -1.0500000000000114,
+    "equity": 10062.351153403552,
+    "drawdown_percent": 0.3072827451584478,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 286,
+    "timestamp": "2023-05-19T14:01:00",
+    "close": 397.45,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": 39.75,
+    "equity": 10103.15115340355,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 287,
+    "timestamp": "2023-05-19T14:02:00",
+    "close": 404.45,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": 32.75,
+    "equity": 10096.15115340355,
+    "drawdown_percent": 0.06928531399475142,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 288,
+    "timestamp": "2023-05-19T14:03:00",
+    "close": 395.45,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": 41.75,
+    "equity": 10105.15115340355,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 289,
+    "timestamp": "2023-05-19T14:04:00",
+    "close": 402.1,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": 35.099999999999966,
+    "equity": 10098.501153403551,
+    "drawdown_percent": 0.0658080210681443,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 290,
+    "timestamp": "2023-05-19T14:05:00",
+    "close": 394.35,
+    "realized_net_pnl": 63.40115340355106,
+    "unrealized_net_pnl": 42.849999999999966,
+    "equity": 10106.251153403551,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0011"
+  },
+  {
+    "bar": 291,
+    "timestamp": "2023-05-19T14:06:00",
+    "close": 377.25,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 292,
+    "timestamp": "2023-05-19T14:07:00",
+    "close": 386.95,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 293,
+    "timestamp": "2023-05-19T14:08:00",
+    "close": 383.7,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 294,
+    "timestamp": "2023-05-19T14:09:00",
+    "close": 385.5,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 295,
+    "timestamp": "2023-05-19T14:10:00",
+    "close": 398.2,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 296,
+    "timestamp": "2023-05-19T14:11:00",
+    "close": 388.6,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 297,
+    "timestamp": "2023-05-19T14:12:00",
+    "close": 411.85,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 298,
+    "timestamp": "2023-05-19T14:13:00",
+    "close": 424.4,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 299,
+    "timestamp": "2023-05-19T14:14:00",
+    "close": 398.85,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 300,
+    "timestamp": "2023-05-19T14:15:00",
+    "close": 373.65,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 301,
+    "timestamp": "2023-05-19T14:16:00",
+    "close": 363.5,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 302,
+    "timestamp": "2023-05-19T14:17:00",
+    "close": 370.9,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 303,
+    "timestamp": "2023-05-19T14:18:00",
+    "close": 377.15,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 304,
+    "timestamp": "2023-05-19T14:19:00",
+    "close": 357.45,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 305,
+    "timestamp": "2023-05-19T14:20:00",
+    "close": 370.8,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 306,
+    "timestamp": "2023-05-19T14:21:00",
+    "close": 364.15,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 307,
+    "timestamp": "2023-05-19T14:22:00",
+    "close": 360.25,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 308,
+    "timestamp": "2023-05-19T14:23:00",
+    "close": 360.25,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 309,
+    "timestamp": "2023-05-19T14:24:00",
+    "close": 363.25,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 310,
+    "timestamp": "2023-05-19T14:25:00",
+    "close": 366.8,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 311,
+    "timestamp": "2023-05-19T14:26:00",
+    "close": 360.15,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 312,
+    "timestamp": "2023-05-19T14:27:00",
+    "close": 355.5,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 313,
+    "timestamp": "2023-05-19T14:28:00",
+    "close": 360.65,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 314,
+    "timestamp": "2023-05-19T14:29:00",
+    "close": 369.0,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10116.723595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 315,
+    "timestamp": "2023-05-19T14:30:00",
+    "close": 363.75,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": -5.25,
+    "equity": 10111.473595800555,
+    "drawdown_percent": 0.051894271404027206,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 316,
+    "timestamp": "2023-05-19T14:31:00",
+    "close": 367.9,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": -1.1000000000000227,
+    "equity": 10115.623595800555,
+    "drawdown_percent": 0.010873085437037867,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 317,
+    "timestamp": "2023-05-19T14:32:00",
+    "close": 374.35,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": 5.350000000000023,
+    "equity": 10122.073595800555,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 318,
+    "timestamp": "2023-05-19T14:33:00",
+    "close": 364.05,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": -4.949999999999989,
+    "equity": 10111.773595800554,
+    "drawdown_percent": 0.10175780587363398,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 319,
+    "timestamp": "2023-05-19T14:34:00",
+    "close": 367.35,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": -1.6499999999999773,
+    "equity": 10115.073595800555,
+    "drawdown_percent": 0.06915579039954975,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 320,
+    "timestamp": "2023-05-19T14:35:00",
+    "close": 365.2,
+    "realized_net_pnl": 116.72359580055434,
+    "unrealized_net_pnl": -3.8000000000000114,
+    "equity": 10112.923595800556,
+    "drawdown_percent": 0.09039649745083643,
+    "open_trade_id": "T0012"
+  },
+  {
+    "bar": 321,
+    "timestamp": "2023-05-19T14:36:00",
+    "close": 346.25,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10083.58881991108,
+    "drawdown_percent": 0.3802064421408897,
+    "open_trade_id": null
+  },
+  {
+    "bar": 322,
+    "timestamp": "2023-05-19T14:37:00",
+    "close": 345.9,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": -0.0,
+    "equity": 10083.58881991108,
+    "drawdown_percent": 0.3802064421408897,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 323,
+    "timestamp": "2023-05-19T14:38:00",
+    "close": 351.0,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": -5.100000000000023,
+    "equity": 10078.48881991108,
+    "drawdown_percent": 0.43059137514627954,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 324,
+    "timestamp": "2023-05-19T14:39:00",
+    "close": 349.15,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": -3.25,
+    "equity": 10080.33881991108,
+    "drawdown_percent": 0.4123144876835378,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 325,
+    "timestamp": "2023-05-19T14:40:00",
+    "close": 345.65,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 0.25,
+    "equity": 10083.83881991108,
+    "drawdown_percent": 0.37773659248376296,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 326,
+    "timestamp": "2023-05-19T14:41:00",
+    "close": 326.45,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 19.44999999999999,
+    "equity": 10103.03881991108,
+    "drawdown_percent": 0.1880521388164193,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 327,
+    "timestamp": "2023-05-19T14:42:00",
+    "close": 330.45,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 15.449999999999989,
+    "equity": 10099.03881991108,
+    "drawdown_percent": 0.22756973333044775,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 328,
+    "timestamp": "2023-05-19T14:43:00",
+    "close": 321.65,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 24.25,
+    "equity": 10107.83881991108,
+    "drawdown_percent": 0.14063102539959238,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 329,
+    "timestamp": "2023-05-19T14:44:00",
+    "close": 328.6,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 17.299999999999955,
+    "equity": 10100.888819911079,
+    "drawdown_percent": 0.20929284586772395,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 330,
+    "timestamp": "2023-05-19T14:45:00",
+    "close": 325.15,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 20.75,
+    "equity": 10104.33881991108,
+    "drawdown_percent": 0.17520892059936727,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 331,
+    "timestamp": "2023-05-19T14:46:00",
+    "close": 328.0,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 17.899999999999977,
+    "equity": 10101.48881991108,
+    "drawdown_percent": 0.2033652066906161,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 332,
+    "timestamp": "2023-05-19T14:47:00",
+    "close": 312.0,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 33.89999999999998,
+    "equity": 10117.48881991108,
+    "drawdown_percent": 0.045294828634502404,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 333,
+    "timestamp": "2023-05-19T14:48:00",
+    "close": 309.25,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 36.64999999999998,
+    "equity": 10120.23881991108,
+    "drawdown_percent": 0.018126482406107865,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 334,
+    "timestamp": "2023-05-19T14:49:00",
+    "close": 315.7,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 30.19999999999999,
+    "equity": 10113.78881991108,
+    "drawdown_percent": 0.08184860355996791,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 335,
+    "timestamp": "2023-05-19T14:50:00",
+    "close": 322.25,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 23.649999999999977,
+    "equity": 10107.23881991108,
+    "drawdown_percent": 0.14655866457670025,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 336,
+    "timestamp": "2023-05-19T14:51:00",
+    "close": 322.45,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 23.44999999999999,
+    "equity": 10107.03881991108,
+    "drawdown_percent": 0.14853454430239088,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 337,
+    "timestamp": "2023-05-19T14:52:00",
+    "close": 325.1,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 20.799999999999955,
+    "equity": 10104.388819911079,
+    "drawdown_percent": 0.1747149506679491,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 338,
+    "timestamp": "2023-05-19T14:53:00",
+    "close": 323.9,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 22.0,
+    "equity": 10105.58881991108,
+    "drawdown_percent": 0.16285967231373338,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 339,
+    "timestamp": "2023-05-19T14:54:00",
+    "close": 332.0,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 13.899999999999977,
+    "equity": 10097.48881991108,
+    "drawdown_percent": 0.24288280120464453,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 340,
+    "timestamp": "2023-05-19T14:55:00",
+    "close": 334.65,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 11.25,
+    "equity": 10094.83881991108,
+    "drawdown_percent": 0.26906320757018476,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 341,
+    "timestamp": "2023-05-19T14:56:00",
+    "close": 317.25,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 28.649999999999977,
+    "equity": 10112.23881991108,
+    "drawdown_percent": 0.09716167143416471,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 342,
+    "timestamp": "2023-05-19T14:57:00",
+    "close": 314.8,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 31.099999999999966,
+    "equity": 10114.68881991108,
+    "drawdown_percent": 0.07295714479431512,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 343,
+    "timestamp": "2023-05-19T14:58:00",
+    "close": 317.45,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 28.44999999999999,
+    "equity": 10112.03881991108,
+    "drawdown_percent": 0.09913755115985536,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 344,
+    "timestamp": "2023-05-19T14:59:00",
+    "close": 318.7,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 27.19999999999999,
+    "equity": 10110.78881991108,
+    "drawdown_percent": 0.11148679944548924,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 345,
+    "timestamp": "2023-05-19T15:00:00",
+    "close": 321.7,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 24.19999999999999,
+    "equity": 10107.78881991108,
+    "drawdown_percent": 0.14112499533101056,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 346,
+    "timestamp": "2023-05-19T15:01:00",
+    "close": 332.85,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 13.049999999999955,
+    "equity": 10096.638819911079,
+    "drawdown_percent": 0.2512802900388792,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 347,
+    "timestamp": "2023-05-19T15:02:00",
+    "close": 321.5,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 24.399999999999977,
+    "equity": 10107.98881991108,
+    "drawdown_percent": 0.13914911560531992,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 348,
+    "timestamp": "2023-05-19T15:03:00",
+    "close": 311.45,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 34.44999999999999,
+    "equity": 10118.03881991108,
+    "drawdown_percent": 0.03986115938881272,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 349,
+    "timestamp": "2023-05-19T15:04:00",
+    "close": 302.5,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 43.39999999999998,
+    "equity": 10126.98881991108,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 350,
+    "timestamp": "2023-05-19T15:05:00",
+    "close": 303.4,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 42.5,
+    "equity": 10126.08881991108,
+    "drawdown_percent": 0.008887143217045031,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 351,
+    "timestamp": "2023-05-19T15:06:00",
+    "close": 302.85,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 43.049999999999955,
+    "equity": 10126.638819911079,
+    "drawdown_percent": 0.003456111251078057,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 352,
+    "timestamp": "2023-05-19T15:07:00",
+    "close": 301.9,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 44.0,
+    "equity": 10127.58881991108,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 353,
+    "timestamp": "2023-05-19T15:08:00",
+    "close": 295.6,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 50.299999999999955,
+    "equity": 10133.888819911079,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 354,
+    "timestamp": "2023-05-19T15:09:00",
+    "close": 291.65,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 54.25,
+    "equity": 10137.83881991108,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 355,
+    "timestamp": "2023-05-19T15:10:00",
+    "close": 284.1,
+    "realized_net_pnl": 83.5888199110804,
+    "unrealized_net_pnl": 61.799999999999955,
+    "equity": 10145.388819911079,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0013"
+  },
+  {
+    "bar": 356,
+    "timestamp": "2023-05-19T15:11:00",
+    "close": 265.9,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 357,
+    "timestamp": "2023-05-19T15:12:00",
+    "close": 264.4,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 358,
+    "timestamp": "2023-05-19T15:13:00",
+    "close": 265.1,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 359,
+    "timestamp": "2023-05-19T15:14:00",
+    "close": 259.7,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 360,
+    "timestamp": "2023-05-19T15:15:00",
+    "close": 268.95,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 361,
+    "timestamp": "2023-05-19T15:16:00",
+    "close": 261.3,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 362,
+    "timestamp": "2023-05-19T15:17:00",
+    "close": 262.65,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 363,
+    "timestamp": "2023-05-19T15:18:00",
+    "close": 255.5,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 364,
+    "timestamp": "2023-05-19T15:19:00",
+    "close": 247.95,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 365,
+    "timestamp": "2023-05-19T15:20:00",
+    "close": 247.15,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 366,
+    "timestamp": "2023-05-19T15:21:00",
+    "close": 254.15,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 367,
+    "timestamp": "2023-05-19T15:22:00",
+    "close": 262.0,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 368,
+    "timestamp": "2023-05-19T15:23:00",
+    "close": 261.65,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 369,
+    "timestamp": "2023-05-19T15:24:00",
+    "close": 260.7,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 370,
+    "timestamp": "2023-05-19T15:25:00",
+    "close": 259.0,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 371,
+    "timestamp": "2023-05-19T15:26:00",
+    "close": 263.85,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": null
+  },
+  {
+    "bar": 372,
+    "timestamp": "2023-05-19T15:27:00",
+    "close": 263.0,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": 0.0,
+    "equity": 10151.40898536892,
+    "drawdown_percent": 0.0,
+    "open_trade_id": "T0014"
+  },
+  {
+    "bar": 373,
+    "timestamp": "2023-05-19T15:28:00",
+    "close": 255.65,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": -7.349999999999994,
+    "equity": 10144.05898536892,
+    "drawdown_percent": 0.0724037422843845,
+    "open_trade_id": "T0014"
+  },
+  {
+    "bar": 374,
+    "timestamp": "2023-05-19T15:29:00",
+    "close": 256.6,
+    "realized_net_pnl": 151.4089853689194,
+    "unrealized_net_pnl": -6.399999999999977,
+    "equity": 10145.00898536892,
+    "drawdown_percent": 0.06304543545850497,
+    "open_trade_id": "T0014"
+  }
+]
