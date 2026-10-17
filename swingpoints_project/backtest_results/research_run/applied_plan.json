@@ -1,0 +1,123 @@
+{
+  "data_dir": "data/backtest",
+  "symbols": [
+    "AAPL",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "JPM",
+    "BAC",
+    "XOM",
+    "CVX",
+    "JNJ",
+    "PFE",
+    "PG",
+    "KO",
+    "WMT",
+    "HD",
+    "GE",
+    "BA",
+    "CAT",
+    "MMM",
+    "DIS",
+    "VZ"
+  ],
+  "periods": [
+    {
+      "name": "2014",
+      "start": "2014-01-01",
+      "end": "2014-12-31"
+    },
+    {
+      "name": "2015",
+      "start": "2015-01-01",
+      "end": "2015-12-31"
+    },
+    {
+      "name": "2016",
+      "start": "2016-01-01",
+      "end": "2016-12-31"
+    },
+    {
+      "name": "2017_to_2018_02",
+      "start": "2017-01-01",
+      "end": "2018-02-07"
+    }
+  ],
+  "minimum_warmup_bars": 200,
+  "methods": [
+    {
+      "name": "ta",
+      "attributes": {
+        "window": 2,
+        "basis": "close"
+      }
+    },
+    {
+      "name": "percentage",
+      "attributes": {
+        "reversal_percent": 5.0
+      }
+    },
+    {
+      "name": "atr",
+      "attributes": {
+        "atr_period": 14,
+        "atr_multiplier": 2.0
+      }
+    },
+    {
+      "name": "prominence",
+      "attributes": {
+        "radius": 5,
+        "min_prominence_percent": 3.0,
+        "min_distance": 3
+      }
+    }
+  ],
+  "trend_settings": {
+    "tolerance_percent": 0.5,
+    "lookback": 20,
+    "min_touches": 2,
+    "max_per_direction": 3
+  },
+  "breakout_settings": {
+    "confirmation_bars": 2,
+    "observation_bars": 5
+  },
+  "trade_settings": {
+    "entry_timing": "next_open",
+    "quantity": 1.0,
+    "initial_equity": 10000.0,
+    "allow_short": true,
+    "atr_period": 14,
+    "atr_stop_multiple": 2.0,
+    "reward_risk_multiple": 2.0,
+    "ema_filter": false,
+    "exit_on_false_break": false,
+    "exit_on_opposite": false
+  },
+  "cost_scenarios": [
+    {
+      "name": "zero",
+      "slippage_bps": 0.0,
+      "fee_per_order": 0.0,
+      "short_borrow_rate_percent": 0.0
+    },
+    {
+      "name": "base",
+      "slippage_bps": 5.0,
+      "fee_per_order": 0.1,
+      "short_borrow_rate_percent": 3.0
+    },
+    {
+      "name": "stress",
+      "slippage_bps": 10.0,
+      "fee_per_order": 0.5,
+      "short_borrow_rate_percent": 6.0
+    }
+  ],
+  "prefix_audit_symbols": [
+    "AAPL"
+  ]
+}
