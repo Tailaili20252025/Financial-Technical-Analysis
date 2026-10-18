@@ -1,0 +1,5762 @@
+[
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 56,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 87,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 116,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 32,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 100,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 134,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 63,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 102,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 134,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 54,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 88,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 9,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 21,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 94,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 121,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 50,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 88,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 116,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 67,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 105,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 141,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 4,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 6,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 9,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 16,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 56,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 87,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 117,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 9,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 56,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 88,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 6,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 7,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 62,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 104,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 137,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 8,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 66,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 102,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 132,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 8,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 16,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 24,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 60,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 97,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 127,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 5,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 7,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 55,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 91,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 125,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 7,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 8,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 84,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 118,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 8,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 21,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 62,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 95,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 126,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 9,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 66,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 103,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 130,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 3,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 96,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 24,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 58,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 96,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 5,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 7,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 9,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 62,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 96,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 128,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 7,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 227,
+    "confirmed_swings": 65,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 352,
+    "confirmed_swings": 97,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "ta",
+    "cutoff_bars": 478,
+    "confirmed_swings": 128,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 227,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 352,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "percentage",
+    "cutoff_bars": 478,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 227,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 352,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2014",
+    "method": "atr",
+    "cutoff_bars": 478,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 116,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 156,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 191,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 27,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 32,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 134,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 166,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 204,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 38,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 134,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 177,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 213,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 157,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 193,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 27,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 151,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 191,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 36,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 44,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 117,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 156,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 201,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 38,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 141,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 176,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 214,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 10,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 117,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 154,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 188,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 27,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 36,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 123,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 161,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 203,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 137,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 174,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 212,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 30,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 132,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 170,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 206,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 11,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 24,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 127,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 161,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 195,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 16,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 32,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 125,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 165,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 201,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 16,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 39,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 118,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 159,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 194,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 126,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 164,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 199,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 38,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 130,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 163,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 199,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 16,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 38,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 158,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 189,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 24,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 122,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 156,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 197,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 9,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 12,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 128,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 168,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 203,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 13,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 39,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 479,
+    "confirmed_swings": 128,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 604,
+    "confirmed_swings": 163,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "ta",
+    "cutoff_bars": 730,
+    "confirmed_swings": 194,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 479,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 604,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "percentage",
+    "cutoff_bars": 730,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 479,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 604,
+    "confirmed_swings": 38,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2015",
+    "method": "atr",
+    "cutoff_bars": 730,
+    "confirmed_swings": 47,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 191,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 225,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 255,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 54,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 60,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 204,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 235,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 269,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 213,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 242,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 278,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 36,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 50,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 60,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 193,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 231,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 265,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 45,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 50,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 191,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 224,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 252,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 44,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 55,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 201,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 229,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 257,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 214,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 253,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 290,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 18,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 47,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 188,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 221,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 263,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 203,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 238,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 277,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 45,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 51,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 212,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 247,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 284,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 45,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 206,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 244,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 286,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 47,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 195,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 231,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 275,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 24,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 47,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 55,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 202,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 239,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 282,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 19,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 27,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 39,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 45,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 52,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 194,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 228,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 266,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 199,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 238,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 269,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 38,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 44,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 199,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 233,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 264,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 50,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 189,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 221,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 260,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 44,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 48,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 197,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 231,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 264,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 14,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 15,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 50,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 203,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 241,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 269,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 731,
+    "confirmed_swings": 194,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 856,
+    "confirmed_swings": 226,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "ta",
+    "cutoff_bars": 982,
+    "confirmed_swings": 259,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 731,
+    "confirmed_swings": 23,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 856,
+    "confirmed_swings": 27,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "percentage",
+    "cutoff_bars": 982,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 731,
+    "confirmed_swings": 48,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 856,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2016",
+    "method": "atr",
+    "cutoff_bars": 982,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 255,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 295,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 335,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 48,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 51,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 60,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 66,
+    "passed": true
+  },
+  {
+    "symbol": "AAPL",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 81,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 269,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 307,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 347,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 39,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 65,
+    "passed": true
+  },
+  {
+    "symbol": "MSFT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 72,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 278,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 317,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 358,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 55,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 60,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 68,
+    "passed": true
+  },
+  {
+    "symbol": "AMZN",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 77,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 265,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 294,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 333,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 45,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 54,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 69,
+    "passed": true
+  },
+  {
+    "symbol": "GOOGL",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 76,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 253,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 290,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 330,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 55,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 62,
+    "passed": true
+  },
+  {
+    "symbol": "JPM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 68,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 258,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 295,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 335,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 54,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 66,
+    "passed": true
+  },
+  {
+    "symbol": "BAC",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 72,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 290,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 334,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 374,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 31,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 47,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 56,
+    "passed": true
+  },
+  {
+    "symbol": "XOM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 62,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 263,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 310,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 349,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 43,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 66,
+    "passed": true
+  },
+  {
+    "symbol": "CVX",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 72,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 277,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 308,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 349,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 51,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "JNJ",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 68,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 284,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 320,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 359,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 41,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 42,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 49,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 54,
+    "passed": true
+  },
+  {
+    "symbol": "PFE",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 64,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 286,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 328,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 371,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 22,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 47,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "PG",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 60,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 275,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 310,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 348,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 24,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 55,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 58,
+    "passed": true
+  },
+  {
+    "symbol": "KO",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 68,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 282,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 323,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 364,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 27,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 30,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 32,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 52,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "WMT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 64,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 266,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 312,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 339,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 28,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 33,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 64,
+    "passed": true
+  },
+  {
+    "symbol": "HD",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 70,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 269,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 305,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 349,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 44,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 46,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "GE",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 63,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 264,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 303,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 338,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 35,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 37,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 39,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 67,
+    "passed": true
+  },
+  {
+    "symbol": "BA",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 74,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 260,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 300,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 338,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 44,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 52,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 64,
+    "passed": true
+  },
+  {
+    "symbol": "CAT",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 67,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 264,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 304,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 342,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 17,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 20,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 61,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 69,
+    "passed": true
+  },
+  {
+    "symbol": "MMM",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 78,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 269,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 304,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 345,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 25,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 26,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 32,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 53,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 59,
+    "passed": true
+  },
+  {
+    "symbol": "DIS",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 68,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 983,
+    "confirmed_swings": 259,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 298,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "ta",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 333,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 983,
+    "confirmed_swings": 29,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 34,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "percentage",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 40,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 983,
+    "confirmed_swings": 57,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1120,
+    "confirmed_swings": 63,
+    "passed": true
+  },
+  {
+    "symbol": "VZ",
+    "period": "2017_to_2018_02",
+    "method": "atr",
+    "cutoff_bars": 1259,
+    "confirmed_swings": 72,
+    "passed": true
+  }
+]

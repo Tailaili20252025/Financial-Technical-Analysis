@@ -1,0 +1,6860 @@
+{
+  "passed": true,
+  "audited_runs": 960,
+  "audited_equity_rows": 247920,
+  "audited_trades": 5519,
+  "maximum_equity_error": 2.656164383562e-12,
+  "prefix_audits": [
+    {
+      "symbol": "AAPL",
+      "period": "2014",
+      "method": "ta",
+      "cutoff": "2014-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2014",
+      "method": "percentage",
+      "cutoff": "2014-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2014",
+      "method": "atr",
+      "cutoff": "2014-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2014",
+      "method": "prominence",
+      "cutoff": "2014-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2015",
+      "method": "ta",
+      "cutoff": "2015-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2015",
+      "method": "percentage",
+      "cutoff": "2015-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2015",
+      "method": "atr",
+      "cutoff": "2015-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2015",
+      "method": "prominence",
+      "cutoff": "2015-07-02T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2016",
+      "method": "ta",
+      "cutoff": "2016-07-01T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2016",
+      "method": "percentage",
+      "cutoff": "2016-07-01T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2016",
+      "method": "atr",
+      "cutoff": "2016-07-01T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2016",
+      "method": "prominence",
+      "cutoff": "2016-07-01T00:00:00",
+      "checked_bars": 126,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2017_to_2018_02",
+      "method": "ta",
+      "cutoff": "2017-07-20T00:00:00",
+      "checked_bars": 138,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2017_to_2018_02",
+      "method": "percentage",
+      "cutoff": "2017-07-20T00:00:00",
+      "checked_bars": 138,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2017_to_2018_02",
+      "method": "atr",
+      "cutoff": "2017-07-20T00:00:00",
+      "checked_bars": 138,
+      "passed": true
+    },
+    {
+      "symbol": "AAPL",
+      "period": "2017_to_2018_02",
+      "method": "prominence",
+      "cutoff": "2017-07-20T00:00:00",
+      "checked_bars": 138,
+      "passed": true
+    }
+  ],
+  "arithmetic_audits": [
+    {
+      "run_id": "AAPL:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.94e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.163287671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.701492054795e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 15,
+      "maximum_equity_error": 1.809e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.203383561643e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.023993424658e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.64e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 2.40145315069e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.83712328767e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.7e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.99853150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.31506849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.066e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.01646794521e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.128333260275e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.604e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.82575276712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.003168876712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.71e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.06509479452e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.03972602739e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.31e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.10308739726e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.00775890412e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.8e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.907534246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.990410958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.406e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.708705041095e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.767169643836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.91e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.87410958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.248537534242e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.558e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.96293052055e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.14716756164e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.37e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.15067589041e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.93918136986e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.86e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.42782383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.123211506848e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.986e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.99305150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.138102191783e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.66e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 16,
+      "maximum_equity_error": 2.170821917809e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.71325808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.01e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.340552876712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.401856438356e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.0401369863e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.93531945206e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.87e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.942617534244e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.798499726029e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.716e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.289452054794e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.253402520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.93e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.549589041096e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.219178082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.7904109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.8397260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.23e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.02671232876e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.901506849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.32731506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.40273972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.29e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.540730136986e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.3698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.593e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.003699780821e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.506849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.08590849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.31506849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.27e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.28164383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 7.397260274e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 3.8e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.247945205479e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 6.47534246575e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.246801561644e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.830616438356e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 2.3e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.19e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 9.94e-13,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 7.74e-13,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.9e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.151917808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.213688767123e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.242855342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.496849315069e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.01e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.197779342465e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.052812931506e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.76e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.14439835616e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.04767123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.09e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.0450569863e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.42876712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.29e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.8888931507e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.58904109589e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 6.8e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.318767123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.21547780822e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.056e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.858551643836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.506849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.06e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.724520547945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.110533150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.7904109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.8397260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.14e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.95720958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.04410958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.9e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.41917808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.150684931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.45e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.43709260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.894383561644e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.754e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.297095397261e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.871488657534e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.56e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.30643178082e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.49389315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.86e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.64871369863e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.83643835616e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.05e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.88849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.32493150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.54e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.813150684931e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.020808219178e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.58e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.37e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.451234520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.036e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.96084931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.33783243836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.83e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.96819369862e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.98245424658e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.24285534247e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.459452054795e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.601e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.88371150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.685789917809e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.29e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.390666849323e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.71742684932e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.79e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.403826575342e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.7e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.72794520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.55792219178e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.318767123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.955203835617e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.9e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.554109589042e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.037747890412e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 8e-14,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.150684931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.219178082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.91369863014e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.826506849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.45e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.850878082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.903388493152e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.9e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.95479452055e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.49315068493e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 8.4e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.397867260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.360547945205e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.162e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.072850465753e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.019e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.4e-13,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.0410958904e-13,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.366156164384e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 2e-14,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1e-14,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.501387013699e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.376785205479e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.01e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.197779342465e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.052812931506e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.4e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.67095232877e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.814413150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.26e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.003282739726e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.27397260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.29e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.8888931507e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.58904109589e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 3.5e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 6.4e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 3.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.3e-13,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.506849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2014:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.506849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 16,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.802344383561e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 16,
+      "maximum_equity_error": 2.045931506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.921e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.07179671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.344178082191e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.14e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.13849315069e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.72205479452e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.656164383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.168493150684e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.679e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.9082430137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.737427671231e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.039e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.856553698629e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.754625095896e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.82e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.884394246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.587993972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.95e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.265924109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.263287671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.89e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.056301369862e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.126052054791e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.026e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.863933726027e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.241681972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.64e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.89947013699e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.81105260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.83e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.098517671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.763315068493e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.075e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.991460164384e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.461640547945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.7e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.932876712328e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.198990136983e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.757e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.122035178082e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.047123287671e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.14e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.064246575342e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.43e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.163835616439e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.821340821917e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.36e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.133150684931e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.354794520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.97e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 2.29470493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 2.126712328767e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.89e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.068147671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.075630136986e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.619447945206e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.197920547945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.635e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.978019863014e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.826342465754e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.05e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.619178082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.647846575343e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.016e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.3698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 2.16268558904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.839e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.090876712327e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.06247945206e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.835616438356e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.328767123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.82e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.672290958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.574931506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.59e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.534520547946e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 2.116575342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.09e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.360331945205e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.887876712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.33e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.592321369863e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.414794520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.765e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 2.116164383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 2.467260273973e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 6.4e-13,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.51904109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.87383890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.04e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.872191780822e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.670696438356e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.228e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.975868931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.767564493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.37e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.3098630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.890410958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.53e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.51491506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.34246575342e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.8e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 8.8040356164e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.214969863e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 7.4e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 9.4289479452e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.259041095891e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.156e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.427572328767e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.905322410959e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.619447945206e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.197920547945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.525e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.175541780821e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.656780821918e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.05e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.619178082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.647846575343e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.816e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.59302684931e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.16268558904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.839e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.090876712327e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.06247945206e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.32e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.824383561644e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.667671232877e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.26e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.3122909589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.574931506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.55e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.93150684932e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.997671232874e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.26e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.848738e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.957476986301e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.05e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.96369863014e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.83821917808e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.765e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.07420260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.954150684931e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.65e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.17362805479e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.987131506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.04e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.872191780822e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.670696438356e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.228e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.975868931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.767564493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.91e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.12e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.872876712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.28e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.919709589036e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.34246575342e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.15e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.710301917809e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.990136986301e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.96e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.80603808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.852739726027e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.614e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.978961643836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.366001643836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.775325205482e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.197920547945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.525e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.782121232877e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.656780821918e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.3698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.095890410959e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.619178082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.701057534244e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.936e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.70482191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.16268558904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 8.66e-13,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.15939726027e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.372849315064e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.79e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.955068493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.228767123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.35e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.31849315069e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.93178082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.44e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.90109589041e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.52821917808e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.55e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.874232136987e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.355684931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.13e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.280958904109e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.606575342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.3e-13,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 2e-14,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 6.85e-13,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.5e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.04109589041e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.47882191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.52e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.273677260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.228e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.805829561648e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.109805589042e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.44e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.97890410959e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.784396712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.43e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.51491506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.34246575342e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.12e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.327134794521e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.404931506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 9.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.246575342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 9.04109589041e-13,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2015:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.66e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.128255342472e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.06849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.394e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.756901479449e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.177045589041e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.8e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.14632054794e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.0602739726e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.934065753426e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.868936986301e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.73e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.95360460274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.19532558904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 2.082e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.8562039178e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.92306849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.03e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.98464109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.083287671241e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.66e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.90268246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.78261260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.12e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.56435260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.96328767123e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.804e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.51298471233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.868684931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.72e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.77346657534e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.069315068496e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.025e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.501982191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.182143561644e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.58e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.821876712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.595548767123e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.65e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.82246246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.9568290411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.657e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.39112947945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.747249534245e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.68e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.9583660274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.88603068493e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.536e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.68944465754e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.17331506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.86e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.14586739726e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.95493150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.98e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.072863561648e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.610140273975e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:ta:zero",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.39e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:ta:base",
+      "checked_bars": 252,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.11070120548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:ta:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.968781369863e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.92e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.43728821918e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.06849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.245e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.870271342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.134679671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.8e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.05894520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.857534246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.4e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.979632876712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.883282191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.08e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.10698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.78082191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.604e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.049273972605e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.845589041098e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.29e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.403423013699e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.533564931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.048219178082e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.91005972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.43e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.63849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.63919945205e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.688e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.98191780822e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.762438356169e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 2.5e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 2.4e-13,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.44e-13,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 8.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.45e-13,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.53e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.575616438356e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.72e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.473561643836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.462021917808e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.913e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.726315287672e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.768912219179e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.54e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.51834219178e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.81410958905e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.516e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.42862273973e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.038904109585e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.652328767123e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.301369863014e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.47e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.10821917808e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.79005150685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:percentage:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.155e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:percentage:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.44273972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:percentage:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.687013698625e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.92e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.43728821918e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.06849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.245e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.870271342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.134679671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.9e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.05894520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.857534246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.828947945205e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.838717808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.08e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.10698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.78082191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.971e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.883232876711e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.702671232879e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.73e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.60968082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.77013369863e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.15e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.39e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.98e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.71e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.75136986301e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.93684931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.688e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.09150684932e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.923013698639e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.25e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 2.06506931507e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.37698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.439e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.233972602741e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.543945205481e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.705e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.512945205479e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.73e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.72e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.82863013699e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.103583013699e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.913e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.726315287672e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.768912219179e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.58e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.30341068493e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.40410958905e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.804e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.18862273973e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.88835616438e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.59e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.73152986302e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.2624460274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.58e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.013013698626e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.00484876712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:atr:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.01e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:atr:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.01051868492e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:atr:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.851753424655e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.54e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.64783616439e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.06849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.68e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.900134356164e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.530368109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.5e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.06837808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.55753424658e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.9e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.9818630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.618104109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.16e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 2.16970093151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.7577479452e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.072e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.903922082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.981814684923e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.36e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.5034230137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.77506520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.66e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.76534246575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.84827890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 3.8e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 6.3e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 3.8e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.726e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.3698630137e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.94157534247e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.181812876712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.31506849315e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 5.95e-13,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.287945205479e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 8.01232876712e-13,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.39e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.60288164383e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.258082191778e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.685e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.654991232877e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.299373808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.32e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.14384712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.15260273972e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.794e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.707319315072e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.32630136987e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.638630136986e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.301369863014e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.04e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.973972602745e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.34926082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:prominence:zero",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.4e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:prominence:base",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.204275835616e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2016:prominence:stress",
+      "checked_bars": 252,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.171205479452e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.73e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 2.55012547946e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.925618630135e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.94e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.98164383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.871785753422e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.25384383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 1.67808219178e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.03288493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.73795616439e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.67e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.23693890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.038219178082e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.912e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.688368246574e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.032654958901e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.99e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.30141671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.84167506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.74e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.24630136986e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.9251989041e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 1.54e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.091743835614e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 18,
+      "maximum_equity_error": 2.128192876712e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.031e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 15,
+      "maximum_equity_error": 2.363372383562e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 18,
+      "maximum_equity_error": 2.143342465754e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.88e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.144782191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.977088767124e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.529e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.191575342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.050869041096e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.86e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.882191780821e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.057476712329e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.97e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.05397260274e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.852625753422e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 12,
+      "maximum_equity_error": 1.83e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.22689353424e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 12,
+      "maximum_equity_error": 2.22589041096e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.23e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.938467123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 13,
+      "maximum_equity_error": 1.847260273972e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.63e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 1.99657534247e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 2.149726027394e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.73e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.40917808219e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.643424657537e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.01e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 1.94843890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 11,
+      "maximum_equity_error": 2.1556e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:ta:zero",
+      "checked_bars": 277,
+      "checked_trades": 16,
+      "maximum_equity_error": 2.02e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:ta:base",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 1.9085339726e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:ta:stress",
+      "checked_bars": 277,
+      "checked_trades": 14,
+      "maximum_equity_error": 2.138820054794e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.02e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 2.02e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 9e-13,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.601369863013e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.249315068494e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.146731506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.765753424658e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.1e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.017398082192e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.31506849315e-13,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.054e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.377729972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.643835616438e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.17e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.81383561644e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.78082191781e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.62e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.58726027397e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.866712328767e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 8.3e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 8.3e-13,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.242e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.719881890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.482821917809e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.24e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.201508493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.41e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.19e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.58e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 4e-14,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.494e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.055748493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.187315068493e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.57e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.652054794521e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.584657534247e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.51e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 2.054794520548e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.695479452055e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:percentage:zero",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.73e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:percentage:base",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.22115079452e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:percentage:stress",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.855326684932e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.28e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.02e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 2.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.336567123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.195890410959e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.038471232877e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 2.096043835618e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.6e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.146731506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.660273972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.16e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.283425479452e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.335890410959e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.054e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.377729972603e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.643835616438e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.65e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.76383561644e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.899452054791e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.99e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.18047671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.904091506851e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.19e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.98849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.95467506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 2.242e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.719881890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.482821917809e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.87e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.528767123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 2.208219178082e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.481e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.96e-12,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.87e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.59e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.550810410959e-12,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 7,
+      "maximum_equity_error": 1.844931506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.88e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.874170958904e-12,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.296849315069e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.575e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 1.831320054795e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.17109589041e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 4e-14,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.643835616438e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 3.56164383562e-13,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.57e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.652054794521e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 4,
+      "maximum_equity_error": 1.584657534247e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.66e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.899054246576e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 5,
+      "maximum_equity_error": 1.48931506849e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 8,
+      "maximum_equity_error": 2.43e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 2e-12,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 9,
+      "maximum_equity_error": 1.87820109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:atr:zero",
+      "checked_bars": 277,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.744e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:atr:base",
+      "checked_bars": 277,
+      "checked_trades": 10,
+      "maximum_equity_error": 1.710520547945e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:atr:stress",
+      "checked_bars": 277,
+      "checked_trades": 10,
+      "maximum_equity_error": 2.095068493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 2e-13,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 9.9670246575e-13,
+      "passed": true
+    },
+    {
+      "run_id": "AAPL:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.34327123288e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 5.9e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.84532054795e-13,
+      "passed": true
+    },
+    {
+      "run_id": "MSFT:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.17435890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.1e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.21095890411e-12,
+      "passed": true
+    },
+    {
+      "run_id": "AMZN:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 9.93150684932e-13,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.95939726027e-13,
+      "passed": true
+    },
+    {
+      "run_id": "GOOGL:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 8.53293150685e-13,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "JPM:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.054e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.730898054795e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BAC:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.80904109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.643835616438e-12,
+      "passed": true
+    },
+    {
+      "run_id": "XOM:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.506849315068e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.3e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.719589041096e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CVX:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 2,
+      "maximum_equity_error": 1.35768109589e-12,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "JNJ:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PFE:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "PG:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "KO:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "WMT:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 4e-14,
+      "passed": true
+    },
+    {
+      "run_id": "HD:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.6e-13,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 6,
+      "maximum_equity_error": 1.494e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.055748493151e-12,
+      "passed": true
+    },
+    {
+      "run_id": "GE:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 6,
+      "maximum_equity_error": 2.187315068493e-12,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "BA:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.48e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.246575342466e-12,
+      "passed": true
+    },
+    {
+      "run_id": "CAT:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 3,
+      "maximum_equity_error": 1.573561643836e-12,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "MMM:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 0,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 7.7e-13,
+      "passed": true
+    },
+    {
+      "run_id": "DIS:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 9.9e-13,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:prominence:zero",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 0.0,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:prominence:base",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.23287671233e-12,
+      "passed": true
+    },
+    {
+      "run_id": "VZ:2017_to_2018_02:prominence:stress",
+      "checked_bars": 277,
+      "checked_trades": 1,
+      "maximum_equity_error": 1.369863013699e-12,
+      "passed": true
+    }
+  ],
+  "scope": "Independent Decimal ledger/equity reconstruction and selected real-data prefix checks; not proof of market realism"
+}
