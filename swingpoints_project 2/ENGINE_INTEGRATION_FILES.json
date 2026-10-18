@@ -1,0 +1,160 @@
+{
+  "baseline_archive": "Financial-Technical-Analysis-main (1).zip",
+  "baseline_sha256": "5ae363343cf1a886c29756605fedf360aea7bb5e6392a7ff8a8ef6fd90f978a1",
+  "prior_backtesting_zip_sha256": "158d9652b8bd0157625a0dd77e5dd4166e5b0f8c90b61de2bfea06d817ac32e3",
+  "added_file_count_including_manifest": 30,
+  "modified_existing_files": [],
+  "overlapping_paths_with_backtesting_pr": [],
+  "dependencies_for_comparison": [
+    "swingpoints_project/swingpoints/trading.py",
+    "swingpoints_project/data/backtest/"
+  ],
+  "reference_trading_sha256": "bf446aa298ba2748b192677e3248d75c1df035a5a0ff81956a6a52defcc55371",
+  "files": [
+    {
+      "path": "swingpoints_project/ENGINE_INTEGRATION.md",
+      "sha256": "85104743dfca645fc0a7b9102f9d2df05895aeb72caaed5a794f8cb5ee9fb1e6",
+      "bytes": 10434
+    },
+    {
+      "path": "swingpoints_project/ENGINE_INTEGRATION_PR_DESCRIPTION.md",
+      "sha256": "062553789d8a65408a8c6a4d30dcc5470a6ad503e1fa498282921277d29ef5c4",
+      "bytes": 1279
+    },
+    {
+      "path": "swingpoints_project/ENGINE_INTEGRATION_TEST_RESULTS.json",
+      "sha256": "021f2442010abb0cbf1652460c44fcc4f38295e1b85409785ef596f963e80a48",
+      "bytes": 802
+    },
+    {
+      "path": "swingpoints_project/compare_engines.py",
+      "sha256": "bc3e73e8155551bb8469fa4100c52b8c346a4251495d8e664607a39f891d492b",
+      "bytes": 14078
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_plan.json",
+      "sha256": "4d812aa2de49b35d680f57a7d97cd4780ea69334c4492c90a1a85ea0c4b35784",
+      "bytes": 1823
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/applied_plan.json",
+      "sha256": "4d812aa2de49b35d680f57a7d97cd4780ea69334c4492c90a1a85ea0c4b35784",
+      "bytes": 1823
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/comparisons.csv",
+      "sha256": "31dbc36fc625376721e304f34955896e08c89a3e18ac50a115c583eef5c648a5",
+      "bytes": 69863
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/confirmed_events.csv",
+      "sha256": "366dd0698afe6b4670ea956ccfee94ec0f314347cade7c25c2d1b71d4a5011ec",
+      "bytes": 625119
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/decisions.json.gz",
+      "sha256": "1d53f9954da3df829bcecaa09cb876e6b4fc55fd49e5b6b406e9f92c669d2132",
+      "bytes": 206050
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/engine_differences_and_timing.png",
+      "sha256": "1a4327199270ecd6c546aacef66c50cf382eae030c550dd7cca8e2ac3457f45f",
+      "bytes": 77113
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/engine_equity_comparison.png",
+      "sha256": "9c0712f606013c8d7201c95c1041f030f65cd577c070d0485df39e939eccc717",
+      "bytes": 287231
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/engine_pnl_comparison.png",
+      "sha256": "c554ee8819ede97c4354b94421c5655fec5427b04161f861f24c13db791bf65d",
+      "bytes": 49859
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/equity_by_run.csv.gz",
+      "sha256": "79aef493bf5a0e5b4d9a83ed37005eed5f700093ee1f4fbe4774d6ab7ab617cb",
+      "bytes": 1649493
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/experiment.json",
+      "sha256": "6c0ff5469d999f89183633c69bd903560f9a1426fdad6847e6b449852e6ca829",
+      "bytes": 17483
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/portfolio_equity.csv",
+      "sha256": "605145703aedca2ab6e4784cc62a727d66a42f27f7e942d854ede4a1831d33b4",
+      "bytes": 1542801
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/portfolio_summary.csv",
+      "sha256": "cc8dd1384331454834528f9a393d4d335810101dbcc640e9783c09bd7049bf55",
+      "bytes": 6089
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/summary.csv",
+      "sha256": "11dd884aee9bdaac191560e2d28a4142414ae8637b49a69ba8e1650c4f8fbc8d",
+      "bytes": 289795
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/target_gap_differences.csv",
+      "sha256": "15cf39935192cda87d1901638be24a14cbde300865681b068549a847246486ed",
+      "bytes": 29597
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/timing.csv",
+      "sha256": "7b1f778adb31b5685beb48cac48f2dd4cebeec5269b5a3e36ed18243ad7324d6",
+      "bytes": 340161
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/trades.csv",
+      "sha256": "a7d093e600649cc088045ab97ec269e333637ded2557908ef71d24c2bd957ca9",
+      "bytes": 1597455
+    },
+    {
+      "path": "swingpoints_project/engine_comparison_results/research_run/validation.json",
+      "sha256": "b3af1860c27b495e6068b01a1d96bd06d40b25e80d7c3c70fb11deada02f9b3e",
+      "bytes": 261589
+    },
+    {
+      "path": "swingpoints_project/reports/Alternative_Engine_Integration_Report.docx",
+      "sha256": "ee666f97fe478dc8492b62fd2ca930a2ff78b10205a169ad8b0957a48125f9fc",
+      "bytes": 41206
+    },
+    {
+      "path": "swingpoints_project/requirements-engines.txt",
+      "sha256": "3edc0c21b1505ddd2ae0a836e39ada0fa4c97163e99d2e6e80345a145f51568f",
+      "bytes": 114
+    },
+    {
+      "path": "swingpoints_project/swingpoints/engine_adapters/__init__.py",
+      "sha256": "62b5b2ba17f4e28075ebd994bd4abee89e471cecf87d9c9b2a6fd10634bb330d",
+      "bytes": 736
+    },
+    {
+      "path": "swingpoints_project/swingpoints/engine_adapters/common.py",
+      "sha256": "74a5b41cd0b729e73427f74b6653c5ee2ab2a1230426562e30b4e0461dbd1054",
+      "bytes": 11368
+    },
+    {
+      "path": "swingpoints_project/swingpoints/engine_adapters/experiment.py",
+      "sha256": "834779197567e920c038e03c4f8d177dbb0df35ed0d431ca8fce8e8682dd35d3",
+      "bytes": 9674
+    },
+    {
+      "path": "swingpoints_project/swingpoints/engine_adapters/framework.py",
+      "sha256": "060cdef05dc2333d269ca9afb9a6f9ac7d09fff48d921a8abe3eda4b809e4d9a",
+      "bytes": 8702
+    },
+    {
+      "path": "swingpoints_project/swingpoints/engine_adapters/native.py",
+      "sha256": "4082c2a04cf5d6187e9515125ea164048ce700f3c706545e71e2274583d9d717",
+      "bytes": 1877
+    },
+    {
+      "path": "swingpoints_project/tests/test_engine_adapters.py",
+      "sha256": "3e7899cef47fabf8cac5370e6ddc26f2e4bad072069b7a7e9b29947d0fb81a69",
+      "bytes": 11443
+    }
+  ]
+}

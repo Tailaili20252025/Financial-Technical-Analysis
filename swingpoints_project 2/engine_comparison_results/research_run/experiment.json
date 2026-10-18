@@ -1,0 +1,507 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-17T23:53:07.842163+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "engines": [
+    "application",
+    "backtesting_py"
+  ],
+  "packages": {
+    "backtesting": "0.6.5",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "bokeh": "3.10.1"
+  },
+  "plan": {
+    "data_dir": "data/backtest",
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "JPM",
+      "BAC",
+      "XOM",
+      "CVX",
+      "JNJ",
+      "PFE",
+      "PG",
+      "KO",
+      "WMT",
+      "HD",
+      "GE",
+      "BA",
+      "CAT",
+      "MMM",
+      "DIS",
+      "VZ"
+    ],
+    "periods": [
+      {
+        "name": "2014",
+        "start": "2014-01-01",
+        "end": "2014-12-31"
+      },
+      {
+        "name": "2015",
+        "start": "2015-01-01",
+        "end": "2015-12-31"
+      },
+      {
+        "name": "2016",
+        "start": "2016-01-01",
+        "end": "2016-12-31"
+      },
+      {
+        "name": "2017_to_2018_02",
+        "start": "2017-01-01",
+        "end": "2018-02-07"
+      }
+    ],
+    "minimum_warmup_bars": 200,
+    "methods": [
+      {
+        "name": "ta",
+        "attributes": {
+          "window": 2,
+          "basis": "close"
+        }
+      },
+      {
+        "name": "percentage",
+        "attributes": {
+          "reversal_percent": 5.0
+        }
+      },
+      {
+        "name": "atr",
+        "attributes": {
+          "atr_period": 14,
+          "atr_multiplier": 2.0
+        }
+      },
+      {
+        "name": "prominence",
+        "attributes": {
+          "radius": 5,
+          "min_prominence_percent": 3.0,
+          "min_distance": 3
+        }
+      }
+    ],
+    "trend_settings": {
+      "tolerance_percent": 0.5,
+      "lookback": 20,
+      "min_touches": 2,
+      "max_per_direction": 3
+    },
+    "breakout_settings": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "cost_scenarios": [
+      {
+        "name": "zero",
+        "fee_per_order": 0.0
+      },
+      {
+        "name": "fees_only",
+        "fee_per_order": 0.1
+      }
+    ],
+    "prefix_audit_symbols": [
+      "AAPL"
+    ],
+    "engine_settings": {
+      "quantity": 1,
+      "initial_equity": 10000.0,
+      "allow_short": true,
+      "atr_period": 14,
+      "atr_stop_multiple": 2.0,
+      "reward_risk_multiple": 2.0
+    },
+    "timing_repetitions": 3
+  },
+  "input_files": [
+    {
+      "symbol": "AAPL",
+      "sha256": "c02d7911f7f2102b61a5df2951246cbb0c1b46059611d72fa60130f0d9975c63",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "MSFT",
+      "sha256": "b24b9b9f92da7ec9a7b358798585738e43a31da33c60f68bc1112832cfc8776d",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "AMZN",
+      "sha256": "b7dfab6f43313eca20c7995ab2a48f47f18a0e2c364bcdb8c081d273f084112c",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "GOOGL",
+      "sha256": "c64fd9183d19bb5f765419f1f2982cf0ca9c5482e29af3dc6f76878b8aa23482",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "JPM",
+      "sha256": "3a2ba97f021e91522a09317777fa45b39784ceb64fb45664cf9b8eb6dcedbc01",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "BAC",
+      "sha256": "04d24ed19af9e14f7a809429e7016ae9d1f4aff007463581f8dd1f19cf34a3e4",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "XOM",
+      "sha256": "5e6107557589129b17715a147e2d87ca5d137475af7faaaa76398c6df105e601",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "CVX",
+      "sha256": "f912193e6bfca50e60350fac82a3601609c1297bdc0df5940d3c2ec745167e8c",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "JNJ",
+      "sha256": "a4f1f46e8cc0c9276b058bf455e06ba4c7ec3e22a3a0672ecdc27039443264e1",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "PFE",
+      "sha256": "bf609bfabdefda94d6ea2c2ea61eb528221c480ed0ec6833be35a5cfcb6d309a",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "PG",
+      "sha256": "41fe24d4c84503a865b8412b710c5be3f12cc0ca886a74968c8ef63faa9246b7",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "KO",
+      "sha256": "03f83ba005cfe58d302ee43b6d2fd09a6b9096a859ff9d0cb6f2892e79653773",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "WMT",
+      "sha256": "55fa8fb5b2365bcba1f0cf7f9c4cc015f3b4f485fb610ba9adc19274bbe4c52e",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "HD",
+      "sha256": "12ed994804d73ddb23ed1719f83f4f5cb4fc72b0f7e1201ef39452e0c94cd00e",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "GE",
+      "sha256": "05507045c35f1a5fb24bd0ee49dca14b28a6adf0de74841c566008007334ae29",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "BA",
+      "sha256": "59652b3008b8c8265ee186821e5427ce11a8924105a8b9b630039ad1d3fa1fae",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "CAT",
+      "sha256": "fc07f737122ae241e93fb770e6544b7ed81bf0876460251c9364de9774f7eb9f",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "MMM",
+      "sha256": "79c2aa4d966a7f1409731e9e3b840e1409c55d320a91ba074bd546af03e46bb3",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "DIS",
+      "sha256": "2e1c7b9942727b7f349d54f8d72ed2893c3e5fe986c022e9cf751620b9b30ca0",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    },
+    {
+      "symbol": "VZ",
+      "sha256": "469bb087376f70075eca60b890fd6411e6b9480d8f9090853d739b35792c33a4",
+      "rows": 1259,
+      "first": "2013-02-08T00:00:00",
+      "last": "2018-02-07T00:00:00"
+    }
+  ],
+  "source_manifest": {
+    "source_page": "https://www.kaggle.com/datasets/camnugent/sandp500",
+    "download_url": "https://www.kaggle.com/api/v1/datasets/download/camnugent/sandp500",
+    "source_file": "all_stocks_5yr.csv",
+    "source_sha256": "6aea253cd19de60b568143991aaf1fa482456565c389205658d236e595e716cf",
+    "source_rows": 619040,
+    "source_symbols": 505,
+    "publisher": "Cam Nugent on Kaggle",
+    "publisher_license": "CC0 Public Domain",
+    "upstream": "IEX, as identified by the archive's getSandP.py download script",
+    "selection": "20 predeclared large-cap stocks across sectors; not a point-in-time S&P 500 universe",
+    "preparation": "date renamed timestamp; Name split into files; prices and volume preserved; no imputation",
+    "limitations": [
+      "Historical static snapshot, not a current market feed",
+      "Constituent selection can introduce survivorship bias",
+      "Corporate-action/adjustment methodology is not independently certified",
+      "No dividends, splits ledger, delisting returns or short-availability history"
+    ],
+    "files": [
+      {
+        "symbol": "AAPL",
+        "file": "AAPL.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "c02d7911f7f2102b61a5df2951246cbb0c1b46059611d72fa60130f0d9975c63"
+      },
+      {
+        "symbol": "MSFT",
+        "file": "MSFT.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "b24b9b9f92da7ec9a7b358798585738e43a31da33c60f68bc1112832cfc8776d"
+      },
+      {
+        "symbol": "AMZN",
+        "file": "AMZN.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "b7dfab6f43313eca20c7995ab2a48f47f18a0e2c364bcdb8c081d273f084112c"
+      },
+      {
+        "symbol": "GOOGL",
+        "file": "GOOGL.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "c64fd9183d19bb5f765419f1f2982cf0ca9c5482e29af3dc6f76878b8aa23482"
+      },
+      {
+        "symbol": "JPM",
+        "file": "JPM.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "3a2ba97f021e91522a09317777fa45b39784ceb64fb45664cf9b8eb6dcedbc01"
+      },
+      {
+        "symbol": "BAC",
+        "file": "BAC.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "04d24ed19af9e14f7a809429e7016ae9d1f4aff007463581f8dd1f19cf34a3e4"
+      },
+      {
+        "symbol": "XOM",
+        "file": "XOM.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "5e6107557589129b17715a147e2d87ca5d137475af7faaaa76398c6df105e601"
+      },
+      {
+        "symbol": "CVX",
+        "file": "CVX.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "f912193e6bfca50e60350fac82a3601609c1297bdc0df5940d3c2ec745167e8c"
+      },
+      {
+        "symbol": "JNJ",
+        "file": "JNJ.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "a4f1f46e8cc0c9276b058bf455e06ba4c7ec3e22a3a0672ecdc27039443264e1"
+      },
+      {
+        "symbol": "PFE",
+        "file": "PFE.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "bf609bfabdefda94d6ea2c2ea61eb528221c480ed0ec6833be35a5cfcb6d309a"
+      },
+      {
+        "symbol": "PG",
+        "file": "PG.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "41fe24d4c84503a865b8412b710c5be3f12cc0ca886a74968c8ef63faa9246b7"
+      },
+      {
+        "symbol": "KO",
+        "file": "KO.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "03f83ba005cfe58d302ee43b6d2fd09a6b9096a859ff9d0cb6f2892e79653773"
+      },
+      {
+        "symbol": "WMT",
+        "file": "WMT.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "55fa8fb5b2365bcba1f0cf7f9c4cc015f3b4f485fb610ba9adc19274bbe4c52e"
+      },
+      {
+        "symbol": "HD",
+        "file": "HD.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "12ed994804d73ddb23ed1719f83f4f5cb4fc72b0f7e1201ef39452e0c94cd00e"
+      },
+      {
+        "symbol": "GE",
+        "file": "GE.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "05507045c35f1a5fb24bd0ee49dca14b28a6adf0de74841c566008007334ae29"
+      },
+      {
+        "symbol": "BA",
+        "file": "BA.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "59652b3008b8c8265ee186821e5427ce11a8924105a8b9b630039ad1d3fa1fae"
+      },
+      {
+        "symbol": "CAT",
+        "file": "CAT.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "fc07f737122ae241e93fb770e6544b7ed81bf0876460251c9364de9774f7eb9f"
+      },
+      {
+        "symbol": "MMM",
+        "file": "MMM.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "79c2aa4d966a7f1409731e9e3b840e1409c55d320a91ba074bd546af03e46bb3"
+      },
+      {
+        "symbol": "DIS",
+        "file": "DIS.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "2e1c7b9942727b7f349d54f8d72ed2893c3e5fe986c022e9cf751620b9b30ca0"
+      },
+      {
+        "symbol": "VZ",
+        "file": "VZ.csv",
+        "rows": 1259,
+        "first_date": "2013-02-08",
+        "last_date": "2018-02-07",
+        "sha256": "469bb087376f70075eca60b890fd6411e6b9480d8f9090853d739b35792c33a4"
+      }
+    ],
+    "selected_rows": 25180
+  },
+  "unique_input_rows": 25180,
+  "engine_contract": "Next original Open, original Close marks, integer quantity, one position, no forced cutoff exit",
+  "cost_contract": "Zero spread/slippage/borrow. Zero or fixed per-order fees. Not the previous base-cost scenario.",
+  "target_difference": "Application uses limit price; Backtesting.py permits favourable gap improvement.",
+  "independence": "Shared Steps 1\u20134 events and ATR values; order execution/accounting is independent.",
+  "code_sha256": {
+    "swingpoints/__init__.py": "b90f24abfdc829d7112ffe2bf362657c3ec120b97805ccaada54e0fe16c504e1",
+    "swingpoints/alternative_algorithms.py": "d90cac4e784d74215abcd4138c3509f5c7bbf2e8656202cf3227f9a45eb75207",
+    "swingpoints/breakout_plotting.py": "d7bd9c4c8ac2f6b14142e2954b5ec698c53ccc0ce02e28e05190083ae9344add",
+    "swingpoints/breakouts.py": "5d009a127bcb71467229bddaeabf311a64b64f9808735859e31abbe6bf99b516",
+    "swingpoints/data.py": "6ae4e671c4a23f234189e03e0f4e678d4767ff521ad3bca517cbe131f0e6b610",
+    "swingpoints/detector.py": "1d2d97d233bae329f3714eaacffadd74e0e5c9efe041ceec36a562fd38615fb8",
+    "swingpoints/engine_adapters/__init__.py": "62b5b2ba17f4e28075ebd994bd4abee89e471cecf87d9c9b2a6fd10634bb330d",
+    "swingpoints/engine_adapters/common.py": "74a5b41cd0b729e73427f74b6653c5ee2ab2a1230426562e30b4e0461dbd1054",
+    "swingpoints/engine_adapters/experiment.py": "834779197567e920c038e03c4f8d177dbb0df35ed0d431ca8fce8e8682dd35d3",
+    "swingpoints/engine_adapters/framework.py": "060cdef05dc2333d269ca9afb9a6f9ac7d09fff48d921a8abe3eda4b809e4d9a",
+    "swingpoints/engine_adapters/native.py": "4082c2a04cf5d6187e9515125ea164048ce700f3c706545e71e2274583d9d717",
+    "swingpoints/gui.py": "7b12b6257aaf6caa878885a338bc23c8f4306010299705f72c6c4d8a9b2075fc",
+    "swingpoints/indicator_plotting.py": "38daad9bc3d6ba441febe7c825c99915e76b4e27339046e1a0ecd908bbe3e33e",
+    "swingpoints/indicators.py": "9eb81fe5bcdb5157cc27f7c2dbf129e9ec8016ac8bc2c0f332986ad4d37512dc",
+    "swingpoints/methods.py": "633187604eeb414606e3a2a204f321ece15ef4df85010d88333d9d08defbe5fd",
+    "swingpoints/output.py": "436742d6976c3b08dae2260894ecaf89ece90f1b1ab550e221a04670ccefc02b",
+    "swingpoints/pipeline.py": "70e78759b0d78594eec3ff6e0508f1ebe51ee315947c6a67a220ecc4f025d1b5",
+    "swingpoints/plotting.py": "e4dcf294dbfa9e6b3c5029e510b13ad54451399aec76ca63ca3122a66323fdc9",
+    "swingpoints/trading.py": "bf446aa298ba2748b192677e3248d75c1df035a5a0ff81956a6a52defcc55371",
+    "swingpoints/trendlines.py": "c891f974adcb7b22e91ab00eb15f195f9b54d33ec8de5f5f5ff50f8d9f11088b"
+  },
+  "runner_sha256": "bc3e73e8155551bb8469fa4100c52b8c346a4251495d8e664607a39f891d492b",
+  "timing_scope": "Median repeated adapter wall time, excludes Steps 1\u20134, imports and file I/O",
+  "completed_utc": "2026-10-17T23:54:08.554861+00:00",
+  "wall_seconds": 60.701230874999965,
+  "engine_runs": 1280,
+  "matched_cases": 640,
+  "warnings": {
+    "application": [],
+    "backtesting_py": [
+      "Data index is not datetime. Assuming simple periods, but `pd.DateTimeIndex` is advised.",
+      "Some trades remain open at the end of backtest. Use `Backtest(..., finalize_trades=True)` to close them and include them in stats."
+    ]
+  },
+  "output_sha256": {
+    "applied_plan.json": "4d812aa2de49b35d680f57a7d97cd4780ea69334c4492c90a1a85ea0c4b35784",
+    "comparisons.csv": "31dbc36fc625376721e304f34955896e08c89a3e18ac50a115c583eef5c648a5",
+    "confirmed_events.csv": "366dd0698afe6b4670ea956ccfee94ec0f314347cade7c25c2d1b71d4a5011ec",
+    "decisions.json.gz": "1d53f9954da3df829bcecaa09cb876e6b4fc55fd49e5b6b406e9f92c669d2132",
+    "engine_differences_and_timing.png": "1a4327199270ecd6c546aacef66c50cf382eae030c550dd7cca8e2ac3457f45f",
+    "engine_equity_comparison.png": "9c0712f606013c8d7201c95c1041f030f65cd577c070d0485df39e939eccc717",
+    "engine_pnl_comparison.png": "c554ee8819ede97c4354b94421c5655fec5427b04161f861f24c13db791bf65d",
+    "equity_by_run.csv.gz": "79aef493bf5a0e5b4d9a83ed37005eed5f700093ee1f4fbe4774d6ab7ab617cb",
+    "portfolio_equity.csv": "605145703aedca2ab6e4784cc62a727d66a42f27f7e942d854ede4a1831d33b4",
+    "portfolio_summary.csv": "cc8dd1384331454834528f9a393d4d335810101dbcc640e9783c09bd7049bf55",
+    "summary.csv": "11dd884aee9bdaac191560e2d28a4142414ae8637b49a69ba8e1650c4f8fbc8d",
+    "target_gap_differences.csv": "15cf39935192cda87d1901638be24a14cbde300865681b068549a847246486ed",
+    "timing.csv": "7b1f778adb31b5685beb48cac48f2dd4cebeec5269b5a3e36ed18243ad7324d6",
+    "trades.csv": "a7d093e600649cc088045ab97ec269e333637ded2557908ef71d24c2bd957ca9",
+    "validation.json": "b3af1860c27b495e6068b01a1d96bd06d40b25e80d7c3c70fb11deada02f9b3e"
+  }
+}
