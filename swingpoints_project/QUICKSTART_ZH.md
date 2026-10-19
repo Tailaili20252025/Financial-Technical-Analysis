@@ -1,7 +1,13 @@
+## 最新版本：Step 1–6
+
+现在同一个程序会依次运行 swing points、trendlines、breakouts、交易入场和盈亏计算。
+共输出 **20 个文件**，用 `trades.png` 看入场／止盈／止损，用 `equity.png` 看盈亏。
+详细命令、GUI 按钮和上传步骤见 [STEP56_ZH.md](STEP56_ZH.md)。
+
 ## Step 4 update: Breakout and False Breakout
 
 Close-based Step 4 now runs after the shared trendline stage for all four methods.
-Each run writes 12 files, including `breakouts.csv/json` and `breakouts.png`.
+The Step 4 milestone wrote 12 files, including `breakouts.csv/json` and `breakouts.png`.
 See [Step 4 rules, commands and GUI instructions](STEP4.md). Earlier nine-file descriptions
 and saved unified examples below describe the pre-Step-4 version.
 
@@ -86,7 +92,7 @@ python app.py --gui data/data.csv
 ```
 
 也可以运行 `python app.py --gui`，然后点击 **Open CSV / JSON** 选文件。
-读取文件后会自动完成 Step 1–3，并显示全部数据的分析结果。
+读取文件后会自动完成 Step 1–6，并显示全部数据的分析结果。
 
 1. **Window**：拐点左右各比较多少条数据，默认 2，不一定是两分钟。
 2. **Swing basis**：`close` 用收盘价；`high-low` 用最高价找高点、最低价找低点。

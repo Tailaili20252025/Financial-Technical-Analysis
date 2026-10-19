@@ -8,6 +8,7 @@ from swingpoints.indicators import IndicatorSettings
 from swingpoints.methods import METHODS, create_method
 from swingpoints.pipeline import analyze
 from swingpoints.breakouts import BreakoutSettings, breakout_summary
+from swingpoints.trading_cli import add_trade_arguments, trade_settings_from_args
 
 from swingpoints import DataError, detect_swings, load_prices
 from swingpoints.trendlines import TrendSettings, detect_trendlines, select_trendlines
@@ -40,7 +41,7 @@ def main(argv=None) -> int:
     Parse command-line options and run the price analysis or desktop interface.
 
     CLI mode loads prices, optionally limits the observed history, detects swings,
-    plots the results and saves twelve output files, including eight indicators. GUI mode starts the Tk event
+    plots the results and saves twenty output files, including eight indicators and trade/equity results. GUI mode starts the Tk event
     loop. Existing result files in the selected output directory are replaced.
 
     Args:
@@ -54,7 +55,8 @@ def main(argv=None) -> int:
         SystemExit: Raised by argparse for help (0) or invalid arguments (2).
         Handled runtime errors are printed to standard error and return 1.
     """
-    parser = argparse.ArgumentParser(description="Steps 1-4: prices, confirmed swings, trendlines and Close-based breakout events.")
+    parser = argparse.ArgumentParser(description="Steps 1-6: prices, swings, trendlines, breakouts, simulated trades and P/L.")
+    add_trade_arguments(parser)
     parser.add_argument("input", nargs="?", type=Path, help="CSV or JSON price file")
     parser.add_argument("--window", type=positive_integer, default=None, help="bars on each side of a pivot (default: 2)")
     parser.add_argument("--basis", choices=["close", "high-low"], default=None, help="TA price basis (default: close)")
@@ -107,6 +109,7 @@ def main(argv=None) -> int:
         args.window, args.basis = method.context_radius, method.basis
         indicator_settings = IndicatorSettings(**{field.name: getattr(args, field.name) for field in fields(defaults)})
         breakout_settings = BreakoutSettings(args.break_confirmation_bars, args.break_observation_bars)
+        trade_settings = trade_settings_from_args(args)
         settings = TrendSettings(args.trend_tolerance, args.trend_lookback,
                                  args.min_touches, args.max_trendlines)
     except ValueError as exc:
@@ -116,7 +119,8 @@ def main(argv=None) -> int:
             parser.error("--gui has its own chart and observed-bars control; omit --show and --until.")
         try:
             from swingpoints.gui import launch
-            launch(args.input, args.window, args.basis, args.output, settings, indicator_settings, method=method, breakout_settings=breakout_settings)
+            launch(args.input, args.window, args.basis, args.output, settings, indicator_settings, method=method,
+                   breakout_settings=breakout_settings, trade_settings=trade_settings)
         except (ImportError, RuntimeError) as exc:
             print(f"Desktop interface unavailable: {exc}\nUse the command-line mode to save charts instead.", file=sys.stderr)
             return 1
@@ -136,12 +140,13 @@ def main(argv=None) -> int:
         from swingpoints.plotting import draw_prices
         from swingpoints.output import export_results
 
-        analysis = analyze(bars, method, settings, breakout_settings)
+        analysis = analyze(bars, method, settings, breakout_settings, trade_settings)
         points, lines = analysis.points, analysis.lines
         selected = select_trendlines(lines, settings)
         fig = plt.figure(figsize=(14, 8))
         draw_prices(fig, bars, points, args.window, args.basis, args.input.name, lines, settings, method=method)
-        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings, indicator_settings, method=method, breakout_settings=breakout_settings, events=analysis.events)
+        output = export_results(args.output, args.input, bars, points, args.window, args.basis, fig, lines, settings, indicator_settings,
+                                method=method, breakout_settings=breakout_settings, events=analysis.events, trading=analysis.trading)
         status = breakout_summary(analysis.events, breakout_settings, args.basis)
         print(f"Step 4: {status['status']} | {status['candidate_events']} line events | "
               f"{status['confirmed']} confirmed | {status['false_breakouts'] + status['false_breakdowns']} false | {status['pending']} pending")
@@ -150,7 +155,12 @@ def main(argv=None) -> int:
         print(f"Swing highs: {sum(p.kind == 'high' for p in points)} | Swing lows: {sum(p.kind == 'low' for p in points)}")
         print(f"Trendlines: {len(lines)} accepted candidates | displayed: "
               f"{sum(line.kind == 'up' for line in selected)} up / {sum(line.kind == 'down' for line in selected)} down")
-        print(f"Saved 12 files: price/indicator/breakout charts, CSV/JSON tables, and summary to {output.resolve()}")
+        trade_stats = analysis.trading.summary()
+        print(f"Steps 5-6: {trade_stats['status']} | {trade_stats['closed_trades']} closed / {trade_stats['open_trades']} open | "
+              f"realised net P/L {trade_stats['realized_net_pnl']:+.4f} | open net P/L {trade_stats['unrealized_net_pnl']:+.4f}")
+        print(f"Entry: {trade_settings.entry_timing} | final equity {trade_stats['final_equity']:.4f} | "
+              f"pending entries {trade_stats['pending_entries']} | skipped {trade_stats['skipped_entries']}")
+        print(f"Saved 20 files: price/indicator/breakout/trade/equity charts, CSV/JSON tables and summary to {output.resolve()}")
         if any(b.volume is None for b in bars):
             print("VWAP: unavailable from missing volume within each anchor period; other indicators are calculated.")
         if method.context_radius and len(bars) < 2*method.context_radius + 1:
@@ -165,7 +175,13 @@ def main(argv=None) -> int:
             from swingpoints.breakout_plotting import draw_breakouts
             breakout_figure = plt.figure(figsize=(14, 10))
             draw_breakouts(breakout_figure, bars, analysis.events, lines, args.input.name, breakout_settings, settings, args.basis)
+            from swingpoints.trade_plotting import draw_trades, draw_equity
+            trade_figure, equity_figure = plt.figure(figsize=(14, 9)), plt.figure(figsize=(14, 9))
+            draw_trades(trade_figure, bars, analysis.trading, args.input.name, lines=lines)
+            draw_equity(equity_figure, bars, analysis.trading, args.input.name)
             plt.show()
+            plt.close(trade_figure)
+            plt.close(equity_figure)
             plt.close(breakout_figure)
             plt.close(dashboard)
         plt.close(fig)

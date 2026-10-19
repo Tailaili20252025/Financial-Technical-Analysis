@@ -1,0 +1,228 @@
+test_higher_of_two_bases (test_alternative_algorithms.ProminenceTests.test_higher_of_two_bases) ... ok
+test_higher_peak_stops_base_search (test_alternative_algorithms.ProminenceTests.test_higher_peak_stops_base_search) ... ok
+test_plateaus_excluded (test_alternative_algorithms.ProminenceTests.test_plateaus_excluded) ... ok
+test_spacing_first_accepted_not_largest_future (test_alternative_algorithms.ProminenceTests.test_spacing_first_accepted_not_largest_future) ... ok
+test_trough_and_exact_threshold (test_alternative_algorithms.ProminenceTests.test_trough_and_exact_threshold) ... ok
+test_window_edge_not_emitted (test_alternative_algorithms.ProminenceTests.test_window_edge_not_emitted) ... ok
+test_atr_hand_values_and_gaps (test_alternative_algorithms.ReversalTests.test_atr_hand_values_and_gaps) ... ok
+test_atr_threshold_frozen_despite_later_volatility (test_alternative_algorithms.ReversalTests.test_atr_threshold_frozen_despite_later_volatility) ... ok
+test_atr_warmup (test_alternative_algorithms.ReversalTests.test_atr_warmup) ... ok
+test_constant_zero_range_produces_no_swings (test_alternative_algorithms.ReversalTests.test_constant_zero_range_produces_no_swings) ... ok
+test_equal_extreme_keeps_first (test_alternative_algorithms.ReversalTests.test_equal_extreme_keeps_first) ... ok
+test_new_atr_extreme_updates_threshold (test_alternative_algorithms.ReversalTests.test_new_atr_extreme_updates_threshold) ... ok
+test_percentage_hand_example_and_alternation (test_alternative_algorithms.ReversalTests.test_percentage_hand_example_and_alternation) ... ok
+test_terminal_extreme_not_forced (test_alternative_algorithms.ReversalTests.test_terminal_extreme_not_forced) ... ok
+test_down_line (test_alternative_algorithms.TrendTests.test_down_line) ... ok
+test_elapsed_time_including_gaps (test_alternative_algorithms.TrendTests.test_elapsed_time_including_gaps) ... ok
+test_hand_line_creation_break_and_touches (test_alternative_algorithms.TrendTests.test_hand_line_creation_break_and_touches) ... ok
+test_late_confirmation_rejects_precreation_break (test_alternative_algorithms.TrendTests.test_late_confirmation_rejects_precreation_break) ... ok
+test_tolerance_absolute_and_exact_boundary (test_alternative_algorithms.TrendTests.test_tolerance_absolute_and_exact_boundary) ... ok
+test_wrong_direction_and_flat_rejected (test_alternative_algorithms.TrendTests.test_wrong_direction_and_flat_rejected) ... ok
+test_bad_settings (test_alternative_algorithms.ValidationTests.test_bad_settings) ... ok
+test_csv_rejects_duplicate_and_bad_ohlc (test_alternative_algorithms.ValidationTests.test_csv_rejects_duplicate_and_bad_ohlc) ... ok
+test_swing_prefix_invariance_all_tsla_prefixes (test_alternative_algorithms.ValidationTests.test_swing_prefix_invariance_all_tsla_prefixes) ... ok
+test_timestamp_rejection (test_alternative_algorithms.ValidationTests.test_timestamp_rejection) ... ok
+test_trend_prefix_geometry_and_first_break_are_stable (test_alternative_algorithms.ValidationTests.test_trend_prefix_geometry_and_first_break_are_stable) ... ok
+test_all_lines_not_just_display_subset_and_original_breaks (test_breakouts.BreakoutTests.test_all_lines_not_just_display_subset_and_original_breaks) ... ok
+test_batch_results_replayed_at_every_prefix (test_breakouts.BreakoutTests.test_batch_results_replayed_at_every_prefix)
+Appending observations reveals statuses only at their recorded times. ... ok
+test_cli_parameters_and_high_low (test_breakouts.BreakoutTests.test_cli_parameters_and_high_low) ... ok
+test_configurable_rules (test_breakouts.BreakoutTests.test_configurable_rules) ... ok
+test_confirmation_on_deadline_and_expiry_without_confirmation (test_breakouts.BreakoutTests.test_confirmation_on_deadline_and_expiry_without_confirmation) ... ok
+test_creation_and_unobserved_line (test_breakouts.BreakoutTests.test_creation_and_unobserved_line) ... ok
+test_deadline_inclusive_and_next_bar_excluded (test_breakouts.BreakoutTests.test_deadline_inclusive_and_next_bar_excluded) ... ok
+test_equality_and_numeric_allowance (test_breakouts.BreakoutTests.test_equality_and_numeric_allowance) ... ok
+test_exports_cutoff_and_input_protection (test_breakouts.BreakoutTests.test_exports_cutoff_and_input_protection) ... ok
+test_failure_before_confirmation_and_no_second_event (test_breakouts.BreakoutTests.test_failure_before_confirmation_and_no_second_event) ... ok
+test_full_window_rate_excludes_early_known_failure (test_breakouts.BreakoutTests.test_full_window_rate_excludes_early_known_failure) ... ok
+test_incomplete_window_is_pending_even_if_confirmed (test_breakouts.BreakoutTests.test_incomplete_window_is_pending_even_if_confirmed) ... ok
+test_neutral_resets_then_late_confirmation (test_breakouts.BreakoutTests.test_neutral_resets_then_late_confirmation) ... ok
+test_opposite_threshold_equality_is_not_failure (test_breakouts.BreakoutTests.test_opposite_threshold_equality_is_not_failure) ... ok
+test_plot_markers_use_availability_times (test_breakouts.BreakoutTests.test_plot_markers_use_availability_times) ... ok
+test_report_example_both_directions (test_breakouts.BreakoutTests.test_report_example_both_directions) ... ok
+test_time_geometry_and_observed_bar_deadline_across_gap (test_breakouts.BreakoutTests.test_time_geometry_and_observed_bar_deadline_across_gap) ... ok
+test_wick_only_and_high_low_skip (test_breakouts.BreakoutTests.test_wick_only_and_high_low_skip) ... ok
+test_all_prefixes (test_indicators.DataTests.test_all_prefixes)
+All 374 data prefixes preserve previously calculated indicator values. ... ok
+test_bad_volume_loading (test_indicators.DataTests.test_bad_volume_loading)
+Invalid present volume fails rather than being silently dropped. ... ok
+test_optional_volume_loading (test_indicators.DataTests.test_optional_volume_loading)
+Case-insensitive optional volume, zeros and blanks survive sorting. ... ok
+test_original_data_and_warmup (test_indicators.DataTests.test_original_data_and_warmup)
+Each default series starts at the documented one-based bar. ... ok
+test_atr_gaps_and_wilder (test_indicators.FormulaTests.test_atr_gaps_and_wilder)
+TR=2,5,3,4; mean seed=10/3; next Wilder ATR=32/9. ... ok
+test_cci (test_indicators.FormulaTests.test_cci)
+HLC3=1,4,2 -> mean=7/3, MAD=10/9, CCI=-20 (not std deviation). ... ok
+test_ema (test_indicators.FormulaTests.test_ema)
+Period-three alpha=1/2, seeded with arithmetic mean 5. ... ok
+test_invalid_inputs (test_indicators.FormulaTests.test_invalid_inputs)
+Public pipeline rejects nonfinite prices/volume and repeated timestamps. ... ok
+test_macd_hand_values (test_indicators.FormulaTests.test_macd_hand_values)
+Independent rational results verify both EMA seeds and signal alignment. ... ok
+test_period_one (test_indicators.FormulaTests.test_period_one)
+Minimal periods and flat-window conventions remain well-defined. ... ok
+test_roc (test_indicators.FormulaTests.test_roc)
+Lag is measured in changes; zero reference yields None. ... ok
+test_rsi_flat_and_one_sided (test_indicators.FormulaTests.test_rsi_flat_and_one_sided)
+Explicit boundary conventions avoid zero-denominator errors. ... ok
+test_rsi_wilder (test_indicators.FormulaTests.test_rsi_wilder)
+Three changes seed gains 5/3 and loss 1/3; next RSI=2/3*100. ... ok
+test_settings (test_indicators.FormulaTests.test_settings)
+Reject bad periods, anchors and inconsistent MACD settings. ... ok
+test_short_and_empty (test_indicators.FormulaTests.test_short_and_empty)
+All arrays keep their alignment without invented warm-up observations. ... ok
+test_sma (test_indicators.FormulaTests.test_sma)
+Trailing three-value sums, not centered or expanding averages. ... ok
+test_vwap_hlc3 (test_indicators.FormulaTests.test_vwap_hlc3)
+High=16, Low=10, Close=10 gives typical price 12. ... ok
+test_vwap_missing (test_indicators.FormulaTests.test_vwap_missing)
+Missing weight invalidates the rest of an anchor; next day can recover. ... ok
+test_vwap_reset (test_indicators.FormulaTests.test_vwap_reset)
+Session anchor resets on input calendar date; cumulative does not. ... ok
+test_vwap_weights (test_indicators.FormulaTests.test_vwap_weights)
+Actual-volume weighting differs from an unweighted price average. ... ok
+test_vwap_zero_volume (test_indicators.FormulaTests.test_vwap_zero_volume)
+Zero weight before the first trade leaves VWAP undefined. ... ok
+test_cli_overrides_export_dashboard (test_indicators.IntegrationTests.test_cli_overrides_export_dashboard)
+Custom CLI periods reach JSON/CSV and both exported figures are valid PNGs. ... ok
+test_cli_rejects_bad_macd (test_indicators.IntegrationTests.test_cli_rejects_bad_macd)
+Inconsistent MACD periods produce a readable CLI error. ... ok
+test_export_source_guard (test_indicators.IntegrationTests.test_export_source_guard)
+The new indicator filenames cannot overwrite an input file. ... ok
+test_volume_csv_through_export (test_indicators.IntegrationTests.test_volume_csv_through_export)
+A temporary volume-bearing fixture produces real VWAP in exports and chart. ... ok
+test_cli_all_methods_empty_output (test_methods.MethodTests.test_cli_all_methods_empty_output) ... ok
+test_cli_inapplicable_flags_and_separate_atr_periods (test_methods.MethodTests.test_cli_inapplicable_flags_and_separate_atr_periods) ... ok
+test_grid_validation (test_methods.MethodTests.test_grid_validation) ... ok
+test_gui_all_methods_and_export_snapshot (test_methods.MethodTests.test_gui_all_methods_and_export_snapshot)
+Exercise real callbacks with mock widgets; not a desktop display test. ... ok
+test_indicators_independent_of_method (test_methods.MethodTests.test_indicators_independent_of_method) ... ok
+test_invalid_settings (test_methods.MethodTests.test_invalid_settings) ... ok
+test_new_strategy_without_pipeline_branch (test_methods.MethodTests.test_new_strategy_without_pipeline_branch) ... ok
+test_original_zip_golden_results (test_methods.MethodTests.test_original_zip_golden_results)
+Match 14 legacy runs, including geometry, confirmation, touches and breaks. ... ok
+test_pipeline_cutoff (test_methods.MethodTests.test_pipeline_cutoff) ... ok
+test_reuse_and_empty_detection (test_methods.MethodTests.test_reuse_and_empty_detection) ... ok
+test_variable_delay_plot (test_methods.MethodTests.test_variable_delay_plot) ... ok
+test_bad_settings_and_order (test_system.DetectionTests.test_bad_settings_and_order)
+Verify rejection of invalid detector settings and repeated timestamps. ... ok
+test_changed_future_cannot_change_prior_events (test_system.DetectionTests.test_changed_future_cannot_change_prior_events)
+Verify that changing future prices leaves already confirmed events unchanged. ... ok
+test_constant_monotone_and_plateau_have_no_strict_pivots (test_system.DetectionTests.test_constant_monotone_and_plateau_have_no_strict_pivots)
+Verify that the selected flat, increasing and plateau sequences emit no swings. ... ok
+test_every_prefix_equals_events_available_by_cutoff (test_system.DetectionTests.test_every_prefix_equals_events_available_by_cutoff)
+Verify that each historical prefix contains exactly the events known by then. ... ok
+test_high_low_outside_bar_can_have_both_kinds (test_system.DetectionTests.test_high_low_outside_bar_can_have_both_kinds)
+Verify that an outside bar can be both a High peak and a Low trough. ... ok
+test_known_extrema_and_delays (test_system.DetectionTests.test_known_extrema_and_delays)
+Verify exact pivot types, prices and one-bar confirmation delays. ... ok
+test_short_input (test_system.DetectionTests.test_short_input)
+Verify that insufficient history produces no confirmed swings. ... ok
+test_window_two_only_confirms_after_two_later_bars (test_system.DetectionTests.test_window_two_only_confirms_after_two_later_bars)
+Verify that a window of two requires two completed bars after the pivot. ... ok
+test_cli_both_formats_and_replay (test_system.IntegrationTests.test_cli_both_formats_and_replay)
+Verify command-line analysis, replay cutoff and exported CSV/JSON consistency. ... ok
+test_cli_rejects_bad_window_and_cutoff (test_system.IntegrationTests.test_cli_rejects_bad_window_and_cutoff)
+Verify that invalid CLI settings fail with a readable error and no traceback. ... ok
+test_export_refuses_source_overwrite (test_system.IntegrationTests.test_export_refuses_source_overwrite)
+Verify that export rejects a destination that would overwrite its input. ... ok
+test_csv_bom_semicolon_and_duplicate_headers (test_system.LoadingTests.test_csv_bom_semicolon_and_duplicate_headers)
+Verify CSV BOM/semicolon support and rejection of duplicate column names. ... ok
+test_invalid_records_are_rejected (test_system.LoadingTests.test_invalid_records_are_rejected)
+Verify that malformed or inconsistent input records raise DataError. ... ok
+test_iso_wrapper_case_and_sorting (test_system.LoadingTests.test_iso_wrapper_case_and_sorting)
+Verify wrapped JSON, mixed-case field names, UTC timestamps and time sorting. ... ok
+test_supplied_csv_json_equivalence (test_system.LoadingTests.test_supplied_csv_json_equivalence)
+Verify that the supplied CSV and JSON produce identical validated bars. ... ok
+test_ambiguous_bar_stop_first_and_target_gap_priority (test_trading.TradeArithmeticTests.test_ambiguous_bar_stop_first_and_target_gap_priority)
+Unknown intrabar sequence uses stop-first; known target at Open takes priority. ... ok
+test_gap_stops_are_not_guaranteed_stop_prices (test_trading.TradeArithmeticTests.test_gap_stops_are_not_guaranteed_stop_prices)
+Adverse opening gaps fill at Open, on either side. ... ok
+test_invalid_numbers_and_capital (test_trading.TradeArithmeticTests.test_invalid_numbers_and_capital)
+Bad attributes fail early; insufficient equity and nonpositive targets are audited. ... ok
+test_long_and_short_slide_targets (test_trading.TradeArithmeticTests.test_long_and_short_slide_targets)
+Both sides gain four units with two units of risk; short target is lower. ... ok
+test_open_mark_is_not_realized (test_trading.TradeArithmeticTests.test_open_mark_is_not_realized)
+A still-open position has no exit, realised P/L or win-rate observation. ... ok
+test_report_short_worked_example (test_trading.TradeArithmeticTests.test_report_short_worked_example)
+E=500, ATR=10, q=10, S=520, T=460, total fees=10 gives net +390. ... ok
+test_short_borrow_cost_and_equity (test_trading.TradeArithmeticTests.test_short_borrow_cost_and_equity)
+One day at 36.5% on notional 100 costs 0.1, with no sale-proceeds gain. ... ok
+test_short_stop_slippage (test_trading.TradeArithmeticTests.test_short_stop_slippage)
+Short cover is a buy and therefore receives an adverse upward adjustment. ... ok
+test_slippage_is_in_price_not_double_counted (test_trading.TradeArithmeticTests.test_slippage_is_in_price_not_double_counted)
+10bp adverse entry and two fixed fees leave zero net at a 4-unit target. ... ok
+test_cli_settings_and_no_trade_mode (test_trading.TradeIntegrationTests.test_cli_settings_and_no_trade_mode)
+The actual CLI reaches the shared engine and records exact applied attributes. ... ok
+test_display_ranking_does_not_change_trades (test_trading.TradeIntegrationTests.test_display_ranking_does_not_change_trades)
+All eligible line events drive trading even when no lines qualify for the chart. ... ok
+test_export_schema_values_and_all_output_input_guards (test_trading.TradeIntegrationTests.test_export_schema_values_and_all_output_input_guards)
+CSV and JSON agree; the equity identity holds at every observed bar. ... ok
+test_gui_trade_and_equity_callbacks_use_applied_prefix (test_trading.TradeIntegrationTests.test_gui_trade_and_equity_callbacks_use_applied_prefix)
+Popup buttons use the saved replay result even after settings are edited. ... ok
+test_plot_levels_and_marker_timing (test_trading.TradeIntegrationTests.test_plot_levels_and_marker_timing)
+One trade's three horizontal levels begin at its fill and end at its exit. ... ok
+test_real_prefixes_preserve_fills_and_equity_all_methods (test_trading.TradeIntegrationTests.test_real_prefixes_preserve_fills_and_equity_all_methods)
+Later prices cannot change prior fills, equity marks, or closed-trade results. ... ok
+test_close_entry_does_not_use_prior_intrabar_extremes (test_trading.TradeTimingTests.test_close_entry_does_not_use_prior_intrabar_extremes)
+Signal bar crosses both eventual levels, but protection has not begun yet. ... ok
+test_deduplication_order_and_conflicts (test_trading.TradeTimingTests.test_deduplication_order_and_conflicts)
+Primary reference is stable; opposite directions together are not traded. ... ok
+test_later_false_label_never_erases_entry (test_trading.TradeTimingTests.test_later_false_label_never_erases_entry)
+Failure at Close 5 is observed later; an optional exit occurs at Open 6. ... ok
+test_next_open_same_bar_stop_and_final_signal (test_trading.TradeTimingTests.test_next_open_same_bar_stop_and_final_signal)
+Next-Open entry permits that bar's protection; final Close signal is unfilled. ... ok
+test_next_open_uses_confirmation_atr_not_fill_bar_atr (test_trading.TradeTimingTests.test_next_open_uses_confirmation_atr_not_fill_bar_atr)
+A large gap/range at fill must not change the already-known ATR. ... ok
+test_no_pyramiding_and_short_toggle (test_trading.TradeTimingTests.test_no_pyramiding_and_short_toggle)
+Later same-direction confirmations do not add positions; long-only logs Sell skips. ... ok
+test_opposite_signal_exits_without_automatic_reverse (test_trading.TradeTimingTests.test_opposite_signal_exits_without_automatic_reverse)
+Optional opposite exit queues a close, not a new short at that earlier signal. ... ok
+test_unsupported_or_inconsistent_events_rejected (test_trading.TradeTimingTests.test_unsupported_or_inconsistent_events_rejected)
+Bad event timing and duplicate IDs cannot create accidental repeated trades. ... ok
+test_warmup_filter_missing_open_and_empty (test_trading.TradeTimingTests.test_warmup_filter_missing_open_and_empty)
+Unavailable observations are explicit; they are never backfilled. ... ok
+test_cli_csv_json_and_empty_outputs (test_trendlines.TrendTests.test_cli_csv_json_and_empty_outputs)
+Check equivalent CSV/JSON trend exports and valid empty-result output files. ... ok
+test_cli_invalid_options (test_trendlines.TrendTests.test_cli_invalid_options)
+Reject invalid trendline CLI settings without an unhandled traceback. ... ok
+test_elapsed_time_handles_gaps (test_trendlines.TrendTests.test_elapsed_time_handles_gaps)
+Use elapsed minutes rather than bar numbers when timestamps have gaps. ... ok
+test_equal_anchors_and_insufficient_history (test_trendlines.TrendTests.test_equal_anchors_and_insufficient_history)
+Exclude horizontal lines, monotonic prices and insufficient observations. ... ok
+test_every_prefix_reproduces_available_candidate_history (test_trendlines.TrendTests.test_every_prefix_reproduces_available_candidate_history)
+Compare every supplied-data prefix with the available full-run history for both bases. ... ok
+test_falling_highs (test_trendlines.TrendTests.test_falling_highs)
+Check a hand-calculated falling resistance line and negative slope. ... ok
+test_first_break_stops_line_and_late_touch_confirmation (test_trendlines.TrendTests.test_first_break_stops_line_and_late_touch_confirmation)
+Stop at the first break and exclude touches confirmed at or after it. ... ok
+test_gui_export_uses_applied_settings (test_trendlines.TrendTests.test_gui_export_uses_applied_settings)
+Export the stored run even when the control values have since changed. ... ok
+test_gui_replay_uses_visible_prefix_and_updates_both_tables (test_trendlines.TrendTests.test_gui_replay_uses_visible_prefix_and_updates_both_tables)
+Exercise the actual refresh callback with mock widgets and real analysis. ... ok
+test_high_low_uses_wicks_for_breaks (test_trendlines.TrendTests.test_high_low_uses_wicks_for_breaks)
+Distinguish Close-based support from Low-based support on a long wick. ... ok
+test_lookback_limits_anchor_search (test_trendlines.TrendTests.test_lookback_limits_anchor_search)
+Limit candidate pairs to the configured count of prior same-kind swings. ... ok
+test_mismatched_events_and_bad_order_rejected (test_trendlines.TrendTests.test_mismatched_events_and_bad_order_rejected)
+Reject duplicate or inconsistent swings and unordered input bars. ... ok
+test_new_output_names_cannot_overwrite_source (test_trendlines.TrendTests.test_new_output_names_cannot_overwrite_source)
+Protect source files named like either new trendline export. ... ok
+test_plot_creation_and_break_segments (test_trendlines.TrendTests.test_plot_creation_and_break_segments)
+Verify dashed/solid timing segments stay within the observed timestamps. ... ok
+test_reject_crossing_before_creation (test_trendlines.TrendTests.test_reject_crossing_before_creation)
+Reject lines crossed between anchors or during confirmation delay. ... ok
+test_rising_lows_slope_touches_and_confirmation (test_trendlines.TrendTests.test_rising_lows_slope_touches_and_confirmation)
+Check a hand-calculated rising line, three touches and delayed creation. ... ok
+test_settings_validation_and_display_only_filter (test_trendlines.TrendTests.test_settings_validation_and_display_only_filter)
+Validate numeric settings and keep display filtering separate from detection. ... ok
+test_tolerance_boundary_and_near_touch (test_trendlines.TrendTests.test_tolerance_boundary_and_near_touch)
+Check inclusive tolerance boundaries and approximate swing touches. ... ok
+test_unobserved_swings_ignored_and_future_changes_cannot_leak (test_trendlines.TrendTests.test_unobserved_swings_ignored_and_future_changes_cannot_leak)
+Ignore unconfirmed events and prevent changed future prices from affecting a prefix. ... ok
+
+----------------------------------------------------------------------
+Ran 137 tests in 32.604s
+
+OK

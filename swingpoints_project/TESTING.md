@@ -1,6 +1,29 @@
+# Current validation: Steps 1–6
+
+The complete suite passed **137 tests** on Python 3.12.14 / Matplotlib 3.10.8,
+including 24 new Step 5–6 tests and the existing 113 tests. See
+`STEP56_TEST_RESULTS.txt` for the complete run and `STEP56_RESULTS.md` for data
+results. New trading formula/timing tests are in `tests/test_trading.py`.
+Existing export assertions now cover 20 files; GUI fixtures include the applied
+trading snapshot. New GUI callbacks are exercised with mock widgets and actual
+analysis; a local graphical display is still required for a desktop window check.
+
+```bash
+python -m unittest discover -s tests -v
+python app.py data/data.csv --gui
+```
+
+For manual verification: open the trade and equity charts, double-click a trade
+row, change the entry timing and apply it, replay a shorter prefix, then export.
+Confirm that `trades.csv/json` and the displayed snapshot agree. Input data and
+Steps 1–4 algorithms remain unchanged. No additional dependency was added.
+
+The sections below preserve earlier milestone validation records; their smaller
+file counts/test totals describe those older versions.
+
 ## Step 4 validation
 
-The test suite now includes `tests/test_breakouts.py`. Existing export assertions
+The Step 4 test suite added `tests/test_breakouts.py`. Existing export assertions
 include the three new Step 4 files (12 total); GUI tests verify applied settings
 and event snapshots. See `STEP4_TEST_RESULTS.txt` and `STEP4_RESULTS.md`.
 
@@ -84,14 +107,14 @@ not a unique financial definition of a significant trend or future profitability
 `tests/test_indicators.py` adds formula fixtures, all 374 observed-prefix checks,
 volume handling, warm-up alignment and CLI/export integration. Existing GUI mock
 tests now also check indicator rows and export of the applied parameter snapshot.
-Run the same `python -m unittest discover -s tests -v` command. The current complete
+Run the same `python -m unittest discover -s tests -v` command. The indicator milestone
 log is `INDICATOR_TEST_RESULTS.txt`; earlier test totals in this document describe
 the original Steps 1–3 version.
 
 
 ## Unified strategy regression
 
-Run `python -m unittest discover -s tests -v`: 95 tests pass in this delivery.
+Run `python -m unittest discover -s tests -v`: 95 tests passed in that earlier delivery.
 See UNIFIED_METHODS.md and UNIFIED_TEST_RESULTS.txt for baseline provenance,
 algorithm-equivalence tests, parameter validation, causal replay and GUI callback
 coverage. Desktop rendering on macOS remains a manual check.
