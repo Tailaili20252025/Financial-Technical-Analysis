@@ -1,0 +1,16 @@
+{
+  "combined_tests": 156,
+  "new_comparison_tests": 9,
+  "failures": 0,
+  "skipped": 0,
+  "test_elapsed_seconds": 36.944,
+  "backtest_runs": 720,
+  "paired_method_comparisons": 480,
+  "swing_prefix_checks": 720,
+  "trade_prefix_checks": 12,
+  "audited_equity_rows": 185940,
+  "audited_trade_instances": 4837,
+  "maximum_equity_error": 2.656164383562e-12,
+  "exact_matches_with_previous_backtest": 720,
+  "scope": "Existing Step 1-2 strategy integration and shared Steps 3-6; no external broker framework."
+}

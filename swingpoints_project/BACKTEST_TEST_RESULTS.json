@@ -1,0 +1,49 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "python": "3.12.14",
+  "total_tests": 147,
+  "preexisting_tests": 113,
+  "added_tests": 34,
+  "failures": 0,
+  "errors": 0,
+  "result": "OK",
+  "elapsed_seconds": 21.591,
+  "scope": [
+    "Existing application regression suite",
+    "Trading arithmetic, costs, gaps, targets and causal entry timing",
+    "Chronological test boundaries and warm-up exclusions",
+    "Independent Decimal equity reconciliation",
+    "Source conversion and manifest checks",
+    "CLI export and overwrite protection"
+  ],
+  "hand_checks": [
+    {
+      "case": "Short target with two fees",
+      "quantity": 10,
+      "entry": 500,
+      "exit": 460,
+      "entry_fee": 5,
+      "exit_fee": 5,
+      "net_pnl": 390
+    },
+    {
+      "case": "Buy-and-hold mark after slippage and entry fee",
+      "initial_equity": 10000,
+      "quantity": 2,
+      "open": 100,
+      "slippage_bps": 10,
+      "entry_fill": 100.1,
+      "last_close": 102,
+      "entry_fee": 0.5,
+      "final_equity": 10003.3
+    },
+    {
+      "case": "Short borrow over two calendar days",
+      "quantity": 1,
+      "entry_fill": 100,
+      "annual_rate_percent": 36.5,
+      "days": 2,
+      "borrow_cost": 0.2
+    }
+  ]
+}

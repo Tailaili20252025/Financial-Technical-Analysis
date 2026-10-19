@@ -1,0 +1,184 @@
+{
+  "status": "completed",
+  "started_utc": "2026-10-18T14:54:23.590074+00:00",
+  "scope": "Two Step 1-2 alternatives versus traditional TA; shared Steps 3-6 and trade engine",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "plan": {
+    "data_dir": "data/backtest",
+    "symbols": [
+      "AAPL",
+      "MSFT",
+      "AMZN",
+      "GOOGL",
+      "JPM",
+      "BAC",
+      "XOM",
+      "CVX",
+      "JNJ",
+      "PFE",
+      "PG",
+      "KO",
+      "WMT",
+      "HD",
+      "GE",
+      "BA",
+      "CAT",
+      "MMM",
+      "DIS",
+      "VZ"
+    ],
+    "periods": [
+      {
+        "name": "2014",
+        "start": "2014-01-01",
+        "end": "2014-12-31"
+      },
+      {
+        "name": "2015",
+        "start": "2015-01-01",
+        "end": "2015-12-31"
+      },
+      {
+        "name": "2016",
+        "start": "2016-01-01",
+        "end": "2016-12-31"
+      },
+      {
+        "name": "2017_to_2018_02",
+        "start": "2017-01-01",
+        "end": "2018-02-07"
+      }
+    ],
+    "minimum_warmup_bars": 200,
+    "methods": [
+      {
+        "name": "ta",
+        "attributes": {
+          "window": 2,
+          "basis": "close"
+        }
+      },
+      {
+        "name": "percentage",
+        "attributes": {
+          "reversal_percent": 5.0
+        }
+      },
+      {
+        "name": "atr",
+        "attributes": {
+          "atr_period": 14,
+          "atr_multiplier": 2.0
+        }
+      }
+    ],
+    "trend_settings": {
+      "tolerance_percent": 0.5,
+      "lookback": 20,
+      "min_touches": 2,
+      "max_per_direction": 3
+    },
+    "breakout_settings": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "trade_settings": {
+      "entry_timing": "next_open",
+      "quantity": 1.0,
+      "initial_equity": 10000.0,
+      "allow_short": true,
+      "atr_period": 14,
+      "atr_stop_multiple": 2.0,
+      "reward_risk_multiple": 2.0,
+      "ema_filter": false,
+      "exit_on_false_break": false,
+      "exit_on_opposite": false
+    },
+    "cost_scenarios": [
+      {
+        "name": "zero",
+        "slippage_bps": 0.0,
+        "fee_per_order": 0.0,
+        "short_borrow_rate_percent": 0.0
+      },
+      {
+        "name": "base",
+        "slippage_bps": 5.0,
+        "fee_per_order": 0.1,
+        "short_borrow_rate_percent": 3.0
+      },
+      {
+        "name": "stress",
+        "slippage_bps": 10.0,
+        "fee_per_order": 0.5,
+        "short_borrow_rate_percent": 6.0
+      }
+    ],
+    "prefix_audit_symbols": [
+      "AAPL"
+    ]
+  },
+  "measurements": {
+    "timing_repetitions": 3,
+    "preview_bars": 160
+  },
+  "code_sha256": {
+    "compare_swing_methods.py": "4743da2fd8cac7d13d8c2adf17883064cdb049eede93f31f7ef895b98b96b548",
+    "swing_comparison.py": "1638c0ec3ed63e84e924ec1adbc08ce02e08fbef883a065789706f07f9cedc99"
+  },
+  "completed_utc": "2026-10-18T14:54:49.362544+00:00",
+  "input_rows": 25180,
+  "stocks": 20,
+  "backtest_runs": 720,
+  "paired_comparisons": 480,
+  "swing_prefix_checks": 720,
+  "arithmetic_audits": 720,
+  "maximum_equity_error": 2.656164383562e-12,
+  "shared_rules": {
+    "trend": {
+      "tolerance_percent": 0.5,
+      "lookback": 20,
+      "min_touches": 2,
+      "max_per_direction": 3
+    },
+    "breakout": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "trades": {
+      "entry_timing": "next_open",
+      "quantity": 1.0,
+      "initial_equity": 10000.0,
+      "allow_short": true,
+      "atr_period": 14,
+      "atr_stop_multiple": 2.0,
+      "reward_risk_multiple": 2.0,
+      "ema_filter": false,
+      "exit_on_false_break": false,
+      "exit_on_opposite": false
+    }
+  },
+  "figure_symbol": "AAPL",
+  "figure_period": "2017_to_2018_02",
+  "output_sha256": {
+    "backtest/applied_plan.json": "22f8936acc518cb4936beea58f61e19c61fefd148459b24475fb50082dc894c0",
+    "backtest/cost_comparison.png": "08847fd9c0a60857d82d6bf40306dd0115a095fed158c935a86c2e45901a890e",
+    "backtest/equity_by_run.csv.gz": "bde42d67c62482f638cf07dec58fe6bfa217674d05ef2bc2c3aaeccf3e26a972",
+    "backtest/equity_comparison.png": "2f6b50837cdbd1cba5a2eda77d06f93aad439614f4d1bade098dd205ae38ca8f",
+    "backtest/experiment.json": "f42a75d64a3f1a3e4eaa4aca1f33d6acc8c15bf2acba0b647665cf257fca5637",
+    "backtest/portfolio_equity.csv": "1afbdf111f6eac278bad879047f70d88278259aafe7be8f3f05be57d70f0f3df",
+    "backtest/portfolio_summary.csv": "39a60174cb5d14c45fb9ffbbb272970e3bd28ac8ef1311b17f61c6d792380591",
+    "backtest/signals.csv.gz": "12659c619da2a58980af88ff5f3d368ca9bad9a4d32408d02a9f4a201e0e5dc5",
+    "backtest/summary.csv": "a507837ef1923c597461a2ce2bef41b1d2e44882665b5cf265bbf2bde5767316",
+    "backtest/trades.csv": "9d8d56aa66c1b68d7ead3e8d65f8af553cb91a2f5704a0d4c245067bb9e65e18",
+    "backtest/validation.json": "e5d5d2a1d837a6fbd69faf499b5ae8b4a33f6c51403151abc5434021488d655d",
+    "confirmed_swings.csv": "097ba2632ef5e89904f2a2b300e0415c14007d7069b28377cbf002e27cb4828f",
+    "detection_comparison.png": "17145ec533d9f4b3cebdbed32b719a31afdc8569a3ec2a10071277eda336f690",
+    "detection_metrics.csv": "5f290c16b59bedf4808f87ff7d3548b9340f269817dbfc7945e83e8677d18497",
+    "method_totals.csv": "d3139fd6c84b534e8dc7ac7d2e0d1d320bdddd6a27acb876c71af4c6e4a98d7b",
+    "paired_pnl_vs_ta.csv": "2d673af3de3f4673914b9faedfc690b77602d102c847ed044ed10a643e808707",
+    "swing_and_trendline_comparison.png": "458ef92d9aeb557496afe5fb78ff15686943871f46fb3d67e3b6e6cc5930d66c",
+    "swing_prefix_checks.json": "2686d70d1dc0d57b83170e07d8e0285744e95eaf98db225f50c8a27822da5cbb"
+  }
+}
