@@ -1,0 +1,91 @@
+{
+  "data_dir": "../../data/parameter_search",
+  "symbols": [
+    "INTC",
+    "NVDA",
+    "ADBE",
+    "GS",
+    "WFC",
+    "PRU",
+    "ALL",
+    "MRK",
+    "AMGN",
+    "ABT",
+    "TMO",
+    "COST",
+    "MCD",
+    "SBUX",
+    "FDX",
+    "LMT",
+    "UTX",
+    "SO",
+    "LOW",
+    "ADP"
+  ],
+  "periods": [
+    {
+      "name": "test2017",
+      "start": "2017-01-01",
+      "end": "2017-12-31"
+    }
+  ],
+  "minimum_warmup_bars": 200,
+  "methods": [
+    {
+      "name": "percentage",
+      "attributes": {
+        "reversal_percent": 5
+      }
+    }
+  ],
+  "trend_settings": {
+    "tolerance_percent": 0.5,
+    "lookback": 20,
+    "min_touches": 2,
+    "max_per_direction": 3
+  },
+  "breakout_settings": {
+    "confirmation_bars": 2,
+    "observation_bars": 5
+  },
+  "trade_settings": {
+    "enabled": true,
+    "entry_timing": "next_open",
+    "allow_short": true,
+    "quantity": 1.0,
+    "initial_equity": 10000.0,
+    "atr_period": 14,
+    "atr_stop_multiple": 2,
+    "reward_risk_multiple": 1.5,
+    "slippage_bps": 0.0,
+    "fee_per_order": 0.0,
+    "short_borrow_rate_percent": 0.0,
+    "ema_filter": false,
+    "ema_period": 20,
+    "exit_on_false_break": false,
+    "exit_on_opposite": false
+  },
+  "cost_scenarios": [
+    {
+      "name": "zero",
+      "slippage_bps": 0.0,
+      "fee_per_order": 0.0,
+      "short_borrow_rate_percent": 0.0
+    },
+    {
+      "name": "base",
+      "slippage_bps": 5.0,
+      "fee_per_order": 0.1,
+      "short_borrow_rate_percent": 3.0
+    },
+    {
+      "name": "stress",
+      "slippage_bps": 10.0,
+      "fee_per_order": 0.5,
+      "short_borrow_rate_percent": 6.0
+    }
+  ],
+  "prefix_audit_symbols": [
+    "INTC"
+  ]
+}
