@@ -1,0 +1,28 @@
+Parameter-selection validation
+
+Command: python -m unittest discover -s tests -q
+Environment: Python 3.12.14
+Result: 191 tests passed (180 existing + 11 added); 35.355 seconds.
+
+Executed reference search: parameter_results/reference
+192 completed trials; 0 failed; 190 eligible across two selection rounds.
+60 stock files; 75,540 unique daily input rows.
+2,400 independently audited outer stock/configuration/cost simulations.
+603,360 closing-equity observations; 12,174 trade records.
+Maximum independent Decimal equity discrepancy: 2.69e-12 input-currency units.
+72 real-data prefix-invariance checks passed.
+
+Integration checks:
+- Existing backtest.py replays selected_backtest_plan.json successfully.
+- Selected held-out metrics match the search output for zero/base/stress costs
+  (net P/L, final equity, return, drawdown, realized/unrealized P/L and benchmark;
+  tolerance 1e-10).
+- run_selected_parameters.py runs the normal pipeline on original data/data.csv.
+- A repeated full search has byte-identical trials.jsonl and test_portfolios.csv.
+- All frozen input and Python code hashes match the delivered files.
+- New automated tests alter future test prices and held-out stock prices;
+  selection and validation trial logs remain identical, including with 1 vs 2 workers.
+
+Scope: accounting, reproducibility and integration checks, not proof of trading
+profitability, execution realism or statistical significance. Desktop GUI was
+not interactively tested; its source and defaults are unchanged.
