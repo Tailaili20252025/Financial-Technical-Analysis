@@ -398,3 +398,16 @@ function documentation from `Add-Function-Notation`. Upload the update files to
 The existing `swingpoints.bundle` and older example/output folders are retained
 as historical Step 1–2 artifacts. They do **not** contain this Step 3 revision.
 Use the current source files and `examples/step3_*` for this milestone.
+
+## Parameter selection and expanded backtests
+
+The unified application also has a separate parameter-selection experiment using
+the existing Steps 1–6 engines. It includes 60 historical stocks, four swing
+methods, chronological validation, frozen later-period tests and cost checks.
+See [PARAMETER_SELECTION.md](PARAMETER_SELECTION.md) for commands and design, and
+[the executed results](parameter_results/reference/RESULTS.md) for plots and
+limitations. The search does not change application or GUI defaults.
+
+```bash
+python optimize_parameters.py --plan parameter_search_plan.json --output parameter_results/my_search --workers 4
+```

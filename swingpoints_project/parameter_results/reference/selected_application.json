@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "config": {
+    "method": {
+      "name": "percentage",
+      "attributes": {
+        "reversal_percent": 5
+      }
+    },
+    "trend": {
+      "tolerance_percent": 0.5,
+      "lookback": 20,
+      "min_touches": 2,
+      "max_per_direction": 3
+    },
+    "breakout": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "trade": {
+      "enabled": true,
+      "entry_timing": "next_open",
+      "allow_short": true,
+      "quantity": 1.0,
+      "initial_equity": 10000.0,
+      "atr_period": 14,
+      "atr_stop_multiple": 2,
+      "reward_risk_multiple": 1.5,
+      "slippage_bps": 0.0,
+      "fee_per_order": 0.0,
+      "short_borrow_rate_percent": 0.0,
+      "ema_filter": false,
+      "ema_period": 20,
+      "exit_on_false_break": false,
+      "exit_on_opposite": false
+    }
+  },
+  "config_id": "0aaaa7b33b16f36a",
+  "costs": {
+    "slippage_bps": 5.0,
+    "fee_per_order": 0.1,
+    "short_borrow_rate_percent": 3.0
+  },
+  "selection_round": "wf2017",
+  "validation_end": "2016-12-31",
+  "qualified": true,
+  "note": "A validation-selected preset, not a profitability guarantee; application defaults are unchanged"
+}

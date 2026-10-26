@@ -1,0 +1,261 @@
+{
+  "round": "wf2017",
+  "validation": [
+    {
+      "name": "2014_H1",
+      "start": "2014-01-01",
+      "end": "2014-06-30"
+    },
+    {
+      "name": "2014_H2",
+      "start": "2014-07-01",
+      "end": "2014-12-31"
+    },
+    {
+      "name": "2015_H1",
+      "start": "2015-01-01",
+      "end": "2015-06-30"
+    },
+    {
+      "name": "2015_H2",
+      "start": "2015-07-01",
+      "end": "2015-12-31"
+    },
+    {
+      "name": "2016_H1",
+      "start": "2016-01-01",
+      "end": "2016-06-30"
+    },
+    {
+      "name": "2016_H2",
+      "start": "2016-07-01",
+      "end": "2016-12-31"
+    }
+  ],
+  "test": {
+    "name": "test2017",
+    "start": "2017-01-01",
+    "end": "2017-12-31"
+  },
+  "frozen_before_outer_evaluation": true,
+  "stage1_parents": {
+    "ta": {
+      "config_id": "03e7f4abfe340645",
+      "eligible": true
+    },
+    "percentage": {
+      "config_id": "9f54bc5848957641",
+      "eligible": true
+    },
+    "atr": {
+      "config_id": "be359316f7cca061",
+      "eligible": true
+    },
+    "prominence": {
+      "config_id": "21d30470dd95d742",
+      "eligible": true
+    }
+  },
+  "qualified": true,
+  "selected_config": {
+    "method": {
+      "name": "percentage",
+      "attributes": {
+        "reversal_percent": 5
+      }
+    },
+    "trend": {
+      "tolerance_percent": 0.5,
+      "lookback": 20,
+      "min_touches": 2,
+      "max_per_direction": 3
+    },
+    "breakout": {
+      "confirmation_bars": 2,
+      "observation_bars": 5
+    },
+    "trade": {
+      "enabled": true,
+      "entry_timing": "next_open",
+      "allow_short": true,
+      "quantity": 1.0,
+      "initial_equity": 10000.0,
+      "atr_period": 14,
+      "atr_stop_multiple": 2,
+      "reward_risk_multiple": 1.5,
+      "slippage_bps": 0.0,
+      "fee_per_order": 0.0,
+      "short_borrow_rate_percent": 0.0,
+      "ema_filter": false,
+      "ema_period": 20,
+      "exit_on_false_break": false,
+      "exit_on_opposite": false
+    }
+  },
+  "selected_score": 0.0010102540764621915,
+  "per_method": {
+    "ta": {
+      "qualified": true,
+      "config": {
+        "method": {
+          "name": "ta",
+          "attributes": {
+            "window": 3,
+            "basis": "close"
+          }
+        },
+        "trend": {
+          "tolerance_percent": 0.25,
+          "lookback": 20,
+          "min_touches": 2,
+          "max_per_direction": 3
+        },
+        "breakout": {
+          "confirmation_bars": 2,
+          "observation_bars": 5
+        },
+        "trade": {
+          "enabled": true,
+          "entry_timing": "next_open",
+          "allow_short": true,
+          "quantity": 1.0,
+          "initial_equity": 10000.0,
+          "atr_period": 14,
+          "atr_stop_multiple": 2,
+          "reward_risk_multiple": 1.5,
+          "slippage_bps": 0.0,
+          "fee_per_order": 0.0,
+          "short_borrow_rate_percent": 0.0,
+          "ema_filter": false,
+          "ema_period": 20,
+          "exit_on_false_break": false,
+          "exit_on_opposite": false
+        }
+      },
+      "score": -0.016562149810795637
+    },
+    "percentage": {
+      "qualified": true,
+      "config": {
+        "method": {
+          "name": "percentage",
+          "attributes": {
+            "reversal_percent": 5
+          }
+        },
+        "trend": {
+          "tolerance_percent": 0.5,
+          "lookback": 20,
+          "min_touches": 2,
+          "max_per_direction": 3
+        },
+        "breakout": {
+          "confirmation_bars": 2,
+          "observation_bars": 5
+        },
+        "trade": {
+          "enabled": true,
+          "entry_timing": "next_open",
+          "allow_short": true,
+          "quantity": 1.0,
+          "initial_equity": 10000.0,
+          "atr_period": 14,
+          "atr_stop_multiple": 2,
+          "reward_risk_multiple": 1.5,
+          "slippage_bps": 0.0,
+          "fee_per_order": 0.0,
+          "short_borrow_rate_percent": 0.0,
+          "ema_filter": false,
+          "ema_period": 20,
+          "exit_on_false_break": false,
+          "exit_on_opposite": false
+        }
+      },
+      "score": 0.0010102540764621915
+    },
+    "atr": {
+      "qualified": true,
+      "config": {
+        "method": {
+          "name": "atr",
+          "attributes": {
+            "atr_period": 14,
+            "atr_multiplier": 3
+          }
+        },
+        "trend": {
+          "tolerance_percent": 0.5,
+          "lookback": 20,
+          "min_touches": 2,
+          "max_per_direction": 3
+        },
+        "breakout": {
+          "confirmation_bars": 3,
+          "observation_bars": 5
+        },
+        "trade": {
+          "enabled": true,
+          "entry_timing": "next_open",
+          "allow_short": true,
+          "quantity": 1.0,
+          "initial_equity": 10000.0,
+          "atr_period": 14,
+          "atr_stop_multiple": 1.5,
+          "reward_risk_multiple": 1,
+          "slippage_bps": 0.0,
+          "fee_per_order": 0.0,
+          "short_borrow_rate_percent": 0.0,
+          "ema_filter": false,
+          "ema_period": 20,
+          "exit_on_false_break": false,
+          "exit_on_opposite": false
+        }
+      },
+      "score": -0.004971564839861096
+    },
+    "prominence": {
+      "qualified": true,
+      "config": {
+        "method": {
+          "name": "prominence",
+          "attributes": {
+            "radius": 5,
+            "min_prominence_percent": 3,
+            "min_distance": 3
+          }
+        },
+        "trend": {
+          "tolerance_percent": 0.25,
+          "lookback": 20,
+          "min_touches": 2,
+          "max_per_direction": 3
+        },
+        "breakout": {
+          "confirmation_bars": 1,
+          "observation_bars": 5
+        },
+        "trade": {
+          "enabled": true,
+          "entry_timing": "next_open",
+          "allow_short": true,
+          "quantity": 1.0,
+          "initial_equity": 10000.0,
+          "atr_period": 14,
+          "atr_stop_multiple": 3,
+          "reward_risk_multiple": 1,
+          "slippage_bps": 0.0,
+          "fee_per_order": 0.0,
+          "short_borrow_rate_percent": 0.0,
+          "ema_filter": false,
+          "ema_period": 20,
+          "exit_on_false_break": false,
+          "exit_on_opposite": false
+        }
+      },
+      "score": -0.0019056719851452126
+    }
+  },
+  "trials": 96,
+  "eligible_trials": 95,
+  "reason": "Highest eligible median net validation return; ties use drawdown, aggregate P/L, then ID"
+}

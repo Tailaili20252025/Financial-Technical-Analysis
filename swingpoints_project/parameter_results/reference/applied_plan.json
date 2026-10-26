@@ -1,0 +1,255 @@
+{
+  "version": 1,
+  "data_dir": "data/parameter_search",
+  "development_symbols": [
+    "AAPL",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "JPM",
+    "BAC",
+    "XOM",
+    "CVX",
+    "JNJ",
+    "PFE",
+    "PG",
+    "KO",
+    "WMT",
+    "HD",
+    "GE",
+    "BA",
+    "CAT",
+    "MMM",
+    "DIS",
+    "VZ",
+    "CSCO",
+    "IBM",
+    "QCOM",
+    "TXN",
+    "AXP",
+    "C",
+    "USB",
+    "MET",
+    "AIG",
+    "UNH",
+    "ABBV",
+    "GILD",
+    "MDT",
+    "CL",
+    "TGT",
+    "NKE",
+    "UPS",
+    "HON",
+    "DUK",
+    "PEP"
+  ],
+  "heldout_symbols": [
+    "INTC",
+    "NVDA",
+    "ADBE",
+    "GS",
+    "WFC",
+    "PRU",
+    "ALL",
+    "MRK",
+    "AMGN",
+    "ABT",
+    "TMO",
+    "COST",
+    "MCD",
+    "SBUX",
+    "FDX",
+    "LMT",
+    "UTX",
+    "SO",
+    "LOW",
+    "ADP"
+  ],
+  "rounds": [
+    {
+      "name": "wf2016",
+      "validation": [
+        {
+          "name": "2014_H1",
+          "start": "2014-01-01",
+          "end": "2014-06-30"
+        },
+        {
+          "name": "2014_H2",
+          "start": "2014-07-01",
+          "end": "2014-12-31"
+        },
+        {
+          "name": "2015_H1",
+          "start": "2015-01-01",
+          "end": "2015-06-30"
+        },
+        {
+          "name": "2015_H2",
+          "start": "2015-07-01",
+          "end": "2015-12-31"
+        }
+      ],
+      "test": {
+        "name": "test2016",
+        "start": "2016-01-01",
+        "end": "2016-12-31"
+      }
+    },
+    {
+      "name": "wf2017",
+      "validation": [
+        {
+          "name": "2014_H1",
+          "start": "2014-01-01",
+          "end": "2014-06-30"
+        },
+        {
+          "name": "2014_H2",
+          "start": "2014-07-01",
+          "end": "2014-12-31"
+        },
+        {
+          "name": "2015_H1",
+          "start": "2015-01-01",
+          "end": "2015-06-30"
+        },
+        {
+          "name": "2015_H2",
+          "start": "2015-07-01",
+          "end": "2015-12-31"
+        },
+        {
+          "name": "2016_H1",
+          "start": "2016-01-01",
+          "end": "2016-06-30"
+        },
+        {
+          "name": "2016_H2",
+          "start": "2016-07-01",
+          "end": "2016-12-31"
+        }
+      ],
+      "test": {
+        "name": "test2017",
+        "start": "2017-01-01",
+        "end": "2017-12-31"
+      }
+    }
+  ],
+  "minimum_warmup_bars": 200,
+  "seed": 20261022,
+  "swing_grids": {
+    "ta": {
+      "attribute": "window",
+      "values": [
+        2,
+        3,
+        5,
+        8
+      ]
+    },
+    "percentage": {
+      "attribute": "reversal_percent",
+      "values": [
+        2,
+        3,
+        5,
+        8
+      ]
+    },
+    "atr": {
+      "attribute": "atr_multiplier",
+      "values": [
+        1,
+        1.5,
+        2,
+        3
+      ]
+    },
+    "prominence": {
+      "attribute": "min_prominence_percent",
+      "values": [
+        1,
+        2,
+        3,
+        5
+      ]
+    }
+  },
+  "joint_space": {
+    "tolerance_percent": [
+      0.25,
+      0.5,
+      1
+    ],
+    "confirmation_bars": [
+      1,
+      2,
+      3
+    ],
+    "atr_stop_multiple": [
+      1,
+      1.5,
+      2,
+      3
+    ],
+    "reward_risk_multiple": [
+      1,
+      1.5,
+      2,
+      3
+    ]
+  },
+  "joint_trials_per_method": 20,
+  "constraints": {
+    "minimum_blocks": 3,
+    "minimum_closed_trades": 50,
+    "minimum_closed_per_block": 10,
+    "maximum_drawdown_percent": 5
+  },
+  "trend_settings": {
+    "tolerance_percent": 0.5,
+    "lookback": 20,
+    "min_touches": 2,
+    "max_per_direction": 3
+  },
+  "breakout_settings": {
+    "confirmation_bars": 2,
+    "observation_bars": 5
+  },
+  "trade_settings": {
+    "entry_timing": "next_open",
+    "quantity": 1.0,
+    "initial_equity": 10000.0,
+    "allow_short": true,
+    "atr_period": 14,
+    "atr_stop_multiple": 2.0,
+    "reward_risk_multiple": 2.0,
+    "ema_filter": false,
+    "exit_on_false_break": false,
+    "exit_on_opposite": false
+  },
+  "cost_scenarios": {
+    "zero": {
+      "slippage_bps": 0.0,
+      "fee_per_order": 0.0,
+      "short_borrow_rate_percent": 0.0
+    },
+    "base": {
+      "slippage_bps": 5.0,
+      "fee_per_order": 0.1,
+      "short_borrow_rate_percent": 3.0
+    },
+    "stress": {
+      "slippage_bps": 10.0,
+      "fee_per_order": 0.5,
+      "short_borrow_rate_percent": 6.0
+    }
+  },
+  "selection_scenario": "base",
+  "prefix_audit_symbols": [
+    "AAPL",
+    "INTC"
+  ]
+}

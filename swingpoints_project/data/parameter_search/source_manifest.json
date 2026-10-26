@@ -1,0 +1,574 @@
+{
+  "source_page": "https://www.kaggle.com/datasets/camnugent/sandp500",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/camnugent/sandp500",
+  "source_file": "all_stocks_5yr.csv",
+  "source_sha256": "6aea253cd19de60b568143991aaf1fa482456565c389205658d236e595e716cf",
+  "source_rows": 619040,
+  "source_symbols": 505,
+  "publisher": "Cam Nugent on Kaggle",
+  "publisher_license": "CC0 Public Domain",
+  "upstream": "IEX, as identified by the archive's getSandP.py download script",
+  "selection": "60 predeclared archival stocks; 40 development and 20 held out from parameter selection",
+  "preparation": "date renamed timestamp; Name split into files; prices and volume preserved; no imputation",
+  "limitations": [
+    "Historical static snapshot, not a current market feed",
+    "Constituent selection can introduce survivorship bias",
+    "Corporate-action/adjustment methodology is not independently certified",
+    "No dividends, splits ledger, delisting returns or short-availability history"
+  ],
+  "files": [
+    {
+      "symbol": "AAPL",
+      "file": "AAPL.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "c02d7911f7f2102b61a5df2951246cbb0c1b46059611d72fa60130f0d9975c63"
+    },
+    {
+      "symbol": "MSFT",
+      "file": "MSFT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "b24b9b9f92da7ec9a7b358798585738e43a31da33c60f68bc1112832cfc8776d"
+    },
+    {
+      "symbol": "AMZN",
+      "file": "AMZN.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "b7dfab6f43313eca20c7995ab2a48f47f18a0e2c364bcdb8c081d273f084112c"
+    },
+    {
+      "symbol": "GOOGL",
+      "file": "GOOGL.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "c64fd9183d19bb5f765419f1f2982cf0ca9c5482e29af3dc6f76878b8aa23482"
+    },
+    {
+      "symbol": "JPM",
+      "file": "JPM.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "3a2ba97f021e91522a09317777fa45b39784ceb64fb45664cf9b8eb6dcedbc01"
+    },
+    {
+      "symbol": "BAC",
+      "file": "BAC.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "04d24ed19af9e14f7a809429e7016ae9d1f4aff007463581f8dd1f19cf34a3e4"
+    },
+    {
+      "symbol": "XOM",
+      "file": "XOM.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "5e6107557589129b17715a147e2d87ca5d137475af7faaaa76398c6df105e601"
+    },
+    {
+      "symbol": "CVX",
+      "file": "CVX.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "f912193e6bfca50e60350fac82a3601609c1297bdc0df5940d3c2ec745167e8c"
+    },
+    {
+      "symbol": "JNJ",
+      "file": "JNJ.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "a4f1f46e8cc0c9276b058bf455e06ba4c7ec3e22a3a0672ecdc27039443264e1"
+    },
+    {
+      "symbol": "PFE",
+      "file": "PFE.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "bf609bfabdefda94d6ea2c2ea61eb528221c480ed0ec6833be35a5cfcb6d309a"
+    },
+    {
+      "symbol": "PG",
+      "file": "PG.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "41fe24d4c84503a865b8412b710c5be3f12cc0ca886a74968c8ef63faa9246b7"
+    },
+    {
+      "symbol": "KO",
+      "file": "KO.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "03f83ba005cfe58d302ee43b6d2fd09a6b9096a859ff9d0cb6f2892e79653773"
+    },
+    {
+      "symbol": "WMT",
+      "file": "WMT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "55fa8fb5b2365bcba1f0cf7f9c4cc015f3b4f485fb610ba9adc19274bbe4c52e"
+    },
+    {
+      "symbol": "HD",
+      "file": "HD.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "12ed994804d73ddb23ed1719f83f4f5cb4fc72b0f7e1201ef39452e0c94cd00e"
+    },
+    {
+      "symbol": "GE",
+      "file": "GE.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "05507045c35f1a5fb24bd0ee49dca14b28a6adf0de74841c566008007334ae29"
+    },
+    {
+      "symbol": "BA",
+      "file": "BA.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "59652b3008b8c8265ee186821e5427ce11a8924105a8b9b630039ad1d3fa1fae"
+    },
+    {
+      "symbol": "CAT",
+      "file": "CAT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "fc07f737122ae241e93fb770e6544b7ed81bf0876460251c9364de9774f7eb9f"
+    },
+    {
+      "symbol": "MMM",
+      "file": "MMM.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "79c2aa4d966a7f1409731e9e3b840e1409c55d320a91ba074bd546af03e46bb3"
+    },
+    {
+      "symbol": "DIS",
+      "file": "DIS.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "2e1c7b9942727b7f349d54f8d72ed2893c3e5fe986c022e9cf751620b9b30ca0"
+    },
+    {
+      "symbol": "VZ",
+      "file": "VZ.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "469bb087376f70075eca60b890fd6411e6b9480d8f9090853d739b35792c33a4"
+    },
+    {
+      "symbol": "CSCO",
+      "file": "CSCO.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "8423f3ca80d3267e287d914205cddfe4cb5956e7cc5e21ea848a79a7c9147335"
+    },
+    {
+      "symbol": "IBM",
+      "file": "IBM.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "378f14079fea43508f54601c8668460917f955c5fb2fb128cc7f5fe09a8d0512"
+    },
+    {
+      "symbol": "QCOM",
+      "file": "QCOM.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "bfbe6134b6b7eae01314f43607374db8bed4fccf27c8c46c3ef6ec14b3ff679f"
+    },
+    {
+      "symbol": "TXN",
+      "file": "TXN.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "42e1d70825c2b25aab6652a9c64cf1e39d05d8d4d02f144997c778826d08ee16"
+    },
+    {
+      "symbol": "AXP",
+      "file": "AXP.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "6d12567ec518f1979c5b3404300af879b09990fb11ddc4a2ed34a412c1d9664a"
+    },
+    {
+      "symbol": "C",
+      "file": "C.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "7e6b82adfe554e8e72e5722d4e7669c39e307d51796832ba7b81098188da0543"
+    },
+    {
+      "symbol": "USB",
+      "file": "USB.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "2243ac102331b3981a9e1ab462483b92609b05b1b209f7729642b79cf1d34fa4"
+    },
+    {
+      "symbol": "MET",
+      "file": "MET.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "e4c5b4cb0cb6d1d6cce7d199b9c869eb63ad546a507f252f6146750b87b3be13"
+    },
+    {
+      "symbol": "AIG",
+      "file": "AIG.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "eaa1a0b06d004ba1eab9e5f0a6015d50add8d69cec150d429647df310d252de5"
+    },
+    {
+      "symbol": "UNH",
+      "file": "UNH.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "fef0213cca49b9dea5b6a0cc586f96e5b064b6148555c67a0f35b48ec50d7ada"
+    },
+    {
+      "symbol": "ABBV",
+      "file": "ABBV.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "243749c7b04131560e8e7bec66c9f873c2b1c1f83929b8bb777cbee2a10b1fc0"
+    },
+    {
+      "symbol": "GILD",
+      "file": "GILD.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "358e97429e964af6a3c0dd5afc8eab41e67928fa5de941e595644e7dd5f98ce3"
+    },
+    {
+      "symbol": "MDT",
+      "file": "MDT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "d3f2b6ee336b5559d51236866337998a25e60462c3f1ad8e88cc7a000269a38b"
+    },
+    {
+      "symbol": "CL",
+      "file": "CL.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "7c1eef843137a1fdb37201fb730b08b25abcad8d1880615b395bdd5b10671e2a"
+    },
+    {
+      "symbol": "TGT",
+      "file": "TGT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "f439d69dd8ffa5666a4855081c1f515264cec8daaaf1e54e5ea0d54b3b906237"
+    },
+    {
+      "symbol": "NKE",
+      "file": "NKE.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "ea447727065c2e8dd76484cda8561d6e166dd37e528ea79d25ab202b699d0e79"
+    },
+    {
+      "symbol": "UPS",
+      "file": "UPS.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "f3ef83067f20c1a044ec376255276b7cfad29d7f3d2c47904fbf59910056c98a"
+    },
+    {
+      "symbol": "HON",
+      "file": "HON.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "9b4bb1ef439525f628d14003ed1fb54c063f891147f3024e8e2a592357f31509"
+    },
+    {
+      "symbol": "DUK",
+      "file": "DUK.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "fd899403f6bb4504532e8ce718f2d8cf85f12671441ea3e069dc607ae89a2b45"
+    },
+    {
+      "symbol": "PEP",
+      "file": "PEP.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "d5bb0564f75f9f1428a33ad1e524157b18bbeb217d14d7242bb566bc6757e7e0"
+    },
+    {
+      "symbol": "INTC",
+      "file": "INTC.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "b1abf3764c451e6d703551db2c225b3626117f8cef0ee04c12cebde4ab65fdaf"
+    },
+    {
+      "symbol": "NVDA",
+      "file": "NVDA.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "539b162cd9607cb0c5439d5256c1d42a00408afb75960aac9ffb3ba78037087c"
+    },
+    {
+      "symbol": "ADBE",
+      "file": "ADBE.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "34371be411c8228b295afcb6897b886516dc3759a9c63922d1c375d8dc2e7200"
+    },
+    {
+      "symbol": "GS",
+      "file": "GS.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "b8f1730fd1ca7abee73ec184ceaa5adb6247ea31fb928f8a8804ae9fcad67bbb"
+    },
+    {
+      "symbol": "WFC",
+      "file": "WFC.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "6e3d03858942d2ba58f2f9856fe6383609c92d2807c7556397b4614c719edd13"
+    },
+    {
+      "symbol": "PRU",
+      "file": "PRU.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "b959aca14e98311bf528137461e2dae1fe96ba4ece7067e7cd86ec6774201491"
+    },
+    {
+      "symbol": "ALL",
+      "file": "ALL.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "cdda0e553f928851c851ed9a2963e12d3aa207815ecb96b6fb2dbcc60a392004"
+    },
+    {
+      "symbol": "MRK",
+      "file": "MRK.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "ffcc3c571c7c271e39021c119c8dc3410d2ae05ab3ff1226a569bfc8c8aa617e"
+    },
+    {
+      "symbol": "AMGN",
+      "file": "AMGN.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "01430b14d429aea911766555e2704ab480789e43a2715ddbb81bd9d37d48ee22"
+    },
+    {
+      "symbol": "ABT",
+      "file": "ABT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "a88718c5114918505719d6556cc333fa53a08a49e501bad1f7698678364a1faf"
+    },
+    {
+      "symbol": "TMO",
+      "file": "TMO.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "22454199746b294876d264e85a424b17ba6f388c8519eaecde842b4aa72a5844"
+    },
+    {
+      "symbol": "COST",
+      "file": "COST.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "2976dea72c0e8fcd2cec6d26be972978706395fe1ef49a1fe8c36e84cb7c1cc6"
+    },
+    {
+      "symbol": "MCD",
+      "file": "MCD.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "ba7e11bf6bf5137721044ed8780b19ddcd34d4a99707881d3fc9e2bb098ea921"
+    },
+    {
+      "symbol": "SBUX",
+      "file": "SBUX.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "95f0f1c144c6f97621e733b6db12e851d8516b171b07da3e36aa4ba92d798f0e"
+    },
+    {
+      "symbol": "FDX",
+      "file": "FDX.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "dc55ddf15c59be99e90b8927f15bb2f7c66b1adce685936563ed251c7f11e1c0"
+    },
+    {
+      "symbol": "LMT",
+      "file": "LMT.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "09aeae427055a3c43e56530fdc5047cd2208df689031b1eeb44321209efd9c94"
+    },
+    {
+      "symbol": "UTX",
+      "file": "UTX.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "7e867806cadb9735ce3035a20d729d4aaeb1e01221a8d10153730a5f405248b4"
+    },
+    {
+      "symbol": "SO",
+      "file": "SO.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "8daedaf6356a15e6ff670e4fac80fa84b612f7ff2fba2a535a1d9fc242794720"
+    },
+    {
+      "symbol": "LOW",
+      "file": "LOW.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "6ce4e8f3bf76b4f99facf52eed864970b473232b12af9bd8b0da92212fd87767"
+    },
+    {
+      "symbol": "ADP",
+      "file": "ADP.csv",
+      "rows": 1259,
+      "first_date": "2013-02-08",
+      "last_date": "2018-02-07",
+      "sha256": "eb4851bb55dc1a4483f3d3f6aa3f64d024d32519ef31f881a9bae354761639fa"
+    }
+  ],
+  "selected_rows": 75540,
+  "development_symbols": [
+    "AAPL",
+    "MSFT",
+    "AMZN",
+    "GOOGL",
+    "JPM",
+    "BAC",
+    "XOM",
+    "CVX",
+    "JNJ",
+    "PFE",
+    "PG",
+    "KO",
+    "WMT",
+    "HD",
+    "GE",
+    "BA",
+    "CAT",
+    "MMM",
+    "DIS",
+    "VZ",
+    "CSCO",
+    "IBM",
+    "QCOM",
+    "TXN",
+    "AXP",
+    "C",
+    "USB",
+    "MET",
+    "AIG",
+    "UNH",
+    "ABBV",
+    "GILD",
+    "MDT",
+    "CL",
+    "TGT",
+    "NKE",
+    "UPS",
+    "HON",
+    "DUK",
+    "PEP"
+  ],
+  "heldout_symbols": [
+    "INTC",
+    "NVDA",
+    "ADBE",
+    "GS",
+    "WFC",
+    "PRU",
+    "ALL",
+    "MRK",
+    "AMGN",
+    "ABT",
+    "TMO",
+    "COST",
+    "MCD",
+    "SBUX",
+    "FDX",
+    "LMT",
+    "UTX",
+    "SO",
+    "LOW",
+    "ADP"
+  ],
+  "selection_basis": "Coverage and sector variety only, fixed before parameter-search P/L; not a point-in-time investable universe",
+  "expansion": "40 additional ticker histories beyond the previous 20; broader stock coverage, not newer dates",
+  "quality_checks": "Exact pinned raw hash, required OHLCV columns, positive OHLC, unique sorted dates, identical observed calendars; no imputation",
+  "quality_exclusions": [
+    "ORCL and BMY have 1,257 rather than 1,259 rows",
+    "DHR has a shorter history and missing OHLC values"
+  ],
+  "previously_examined_periods": "These historical dates were used in earlier project research; this is an exploratory chronological evaluation, not a pristine future-market test"
+}
